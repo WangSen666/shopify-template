@@ -232,6 +232,11 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "main-contact-form": {
+        "type": "main-contact-form",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
