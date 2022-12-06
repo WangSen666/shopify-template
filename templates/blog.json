@@ -48,6 +48,69 @@
         "show_text_below": true
       }
     },
+    "50d87361-44cb-4863-adf4-c03da0e97bdf": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-0": {
+          "type": "column",
+          "settings": {
+            "title": "Dealer",
+            "text": "<p>PODX GO makes quality<br\/>products that you can trust to<br\/>bring to your customers with<br\/>confidence. Our partners<br\/>receive great pricing,<br\/>promotional assets, in-house<br\/>assistance, and more.<br\/><br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-1": {
+          "type": "column",
+          "settings": {
+            "title": "Affiliate",
+            "text": "<p>PODX GO strongly believes<br\/>that our success is tied to the<br\/>success of our affiliate<br\/>partners. We offer special<br\/>assiatance to affilate to seek<br\/>for a long-term collaboration.<br\/><br\/><br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-2": {
+          "type": "column",
+          "settings": {
+            "title": "Ambassador",
+            "text": "<p>PODX GO Ambassadors are a<br\/>select group of skilled TINY<br\/>HOUSE LIVING enthusiasts<br\/>and content creators who<br\/>bring to life our ethos of<br\/>downsized living.<br\/><br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "3e1fe6ec-7000-43be-ab8a-e1d96acf64e1": {
+          "type": "column",
+          "settings": {
+            "title": "Referral",
+            "text": "<p>Referral Program is a win-win<br\/>for tiny house advocates and<br\/>your friends. Sign up and<br\/>share the referral link to earn<br\/>3% of your friend's first<br\/>purchase while they save 3%.<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-0",
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-1",
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-2",
+        "3e1fe6ec-7000-43be-ab8a-e1d96acf64e1"
+      ],
+      "settings": {
+        "title": "Who we are looking for?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -63,6 +126,7 @@
   },
   "order": [
     "98144780-d1d1-4e28-9b8e-89136382b29e",
+    "50d87361-44cb-4863-adf4-c03da0e97bdf",
     "main"
   ]
 }
