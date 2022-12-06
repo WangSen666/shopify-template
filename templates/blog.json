@@ -55,7 +55,7 @@
           "type": "column",
           "settings": {
             "title": "Dealer",
-            "text": "<p>PODX GO makes quality<br\/>products that you can trust to<br\/>bring to your customers with<br\/>confidence. Our partners<br\/>receive great pricing,<br\/>promotional assets, in-house<br\/>assistance, and more.<br\/><br\/><\/p>",
+            "text": "<p>PODX GO makes quality products that you can trust to bring to your customers with confidence. Our partners receive great pricing, promotional assets, in-house assistance, and more.  <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -64,7 +64,7 @@
           "type": "column",
           "settings": {
             "title": "Affiliate",
-            "text": "<p>PODX GO strongly believes<br\/>that our success is tied to the<br\/>success of our affiliate<br\/>partners. We offer special<br\/>assiatance to affilate to seek<br\/>for a long-term collaboration.<br\/><br\/><br\/><\/p>",
+            "text": "<p>PODX GO strongly believes that our success is tied to the success of our affiliate partners. We offer special assiatance to affilate to seek for a long-term collaboration.   <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -73,7 +73,7 @@
           "type": "column",
           "settings": {
             "title": "Ambassador",
-            "text": "<p>PODX GO Ambassadors are a<br\/>select group of skilled TINY<br\/>HOUSE LIVING enthusiasts<br\/>and content creators who<br\/>bring to life our ethos of<br\/>downsized living.<br\/><br\/><\/p>",
+            "text": "<p>PODX GO Ambassadors are a select group of skilled TINY HOUSE LIVING enthusiasts and content creators who bring to life our ethos of downsized living.  <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -82,7 +82,7 @@
           "type": "column",
           "settings": {
             "title": "Referral",
-            "text": "<p>Referral Program is a win-win<br\/>for tiny house advocates and<br\/>your friends. Sign up and<br\/>share the referral link to earn<br\/>3% of your friend's first<br\/>purchase while they save 3%.<br\/><\/p>",
+            "text": "<p>Referral Program is a win-win for tiny house advocates and your friends. Sign up and share the referral link to earn 3% of your friend's first purchase while they save 3%. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -105,8 +105,18 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "accent-1",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "787b1960-92d6-4a2a-a7ef-aca334a2d6bd": {
+      "type": "main-contact-form",
+      "settings": {
+        "heading": "Become A Partner",
+        "heading_size": "h1",
+        "color_scheme": "accent-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -127,6 +137,7 @@
   "order": [
     "98144780-d1d1-4e28-9b8e-89136382b29e",
     "50d87361-44cb-4863-adf4-c03da0e97bdf",
+    "787b1960-92d6-4a2a-a7ef-aca334a2d6bd",
     "main"
   ]
 }
