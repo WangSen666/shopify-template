@@ -111,6 +111,16 @@
         "padding_bottom": 36
       }
     },
+    "787b1960-92d6-4a2a-a7ef-aca334a2d6bd": {
+      "type": "main-contact-form",
+      "settings": {
+        "heading": "Contact form1",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -127,6 +137,7 @@
   "order": [
     "98144780-d1d1-4e28-9b8e-89136382b29e",
     "50d87361-44cb-4863-adf4-c03da0e97bdf",
+    "787b1960-92d6-4a2a-a7ef-aca334a2d6bd",
     "main"
   ]
 }
