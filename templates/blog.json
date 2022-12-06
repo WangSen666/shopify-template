@@ -1,1 +1,67 @@
-{"sections":{"main":{"type":"main-blog","settings":{"layout":"collage","show_image":true,"image_height":"medium","show_date":true,"show_author":false,"padding_top":36,"padding_bottom":36}}},"order":["main"]}
+{
+  "sections": {
+    "98144780-d1d1-4e28-9b8e-89136382b29e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PARTNER WITH THE FUTURE",
+            "heading_size": "h1"
+          }
+        },
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-1": {
+          "type": "text",
+          "settings": {
+            "text": "We create value for our partners by designing together.",
+            "text_style": "body"
+          }
+        },
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-0",
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-1",
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "98144780-d1d1-4e28-9b8e-89136382b29e",
+    "main"
+  ]
+}
