@@ -122,11 +122,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "e88e8509-49a6-47cd-8b11-3e7fc4095315": {
+      "type": "page",
+      "settings": {
+        "page": "contact",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "98144780-d1d1-4e28-9b8e-89136382b29e",
     "50d87361-44cb-4863-adf4-c03da0e97bdf",
-    "main"
+    "main",
+    "e88e8509-49a6-47cd-8b11-3e7fc4095315"
   ]
 }
