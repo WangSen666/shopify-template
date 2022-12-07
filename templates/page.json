@@ -82,11 +82,48 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "95ac6ba0-7b6e-4f7a-a9cb-da2ef11b9c33": {
+      "type": "podxgo-team-tip",
+      "blocks": {
+        "template--15546009780324__95ac6ba0-7b6e-4f7a-a9cb-da2ef11b9c33-16704059629a9cb94c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--15546009780324__95ac6ba0-7b6e-4f7a-a9cb-da2ef11b9c33-16704059629a9cb94c-1": {
+          "type": "tip",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009780324__95ac6ba0-7b6e-4f7a-a9cb-da2ef11b9c33-16704059629a9cb94c-0",
+        "template--15546009780324__95ac6ba0-7b6e-4f7a-a9cb-da2ef11b9c33-16704059629a9cb94c-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/luxurious-home-in-the-desert.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
     "522756c7-9015-45db-a1fb-81cff63756e3",
-    "e3b315b1-e615-4e90-a430-e43c7e4e1c93"
+    "e3b315b1-e615-4e90-a430-e43c7e4e1c93",
+    "95ac6ba0-7b6e-4f7a-a9cb-da2ef11b9c33"
   ]
 }
