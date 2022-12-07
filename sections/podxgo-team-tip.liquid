@@ -10,7 +10,6 @@
       }
     }
 
-
     @media screen and (min-width: 750px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
         padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
@@ -28,7 +27,7 @@
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+<div id="Banner-{{ section.id }} " class="banner podxgo-team-text banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} " style="background:{{ section.settings.color_scheme }}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -54,38 +53,9 @@
        , alt: section.settings.image.alt | escape
        }}
     </div>
-  {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
-      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-    </div>
   {%- endif -%}
-  {%- if section.settings.image_2 != blank -%}
-    <div class="banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}">
-      {%-liquid
-        assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
-        if section.settings.image != blank
-          assign image_class_2 = "banner__media-image-half"
-        endif
-        if section.settings.image != blank and section.settings.stack_images_on_mobile
-          assign sizes = "(min-width: 750px) 50vw, 100vw"
-        elsif section.settings.image != blank
-          assign sizes = "50vw"
-        else
-          assign sizes = "100vw"
-        endif
-      -%}
-      {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
-       loading: 'lazy'
-       , width: section.settings.image_2.width
-       , height: image_height_2
-       , class: image_class_2
-       , sizes: sizes
-       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-       , alt: section.settings.image_2.alt | escape
-       }}
-    </div>
-  {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width {{ section.settings.is_podxgo_text }} ">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -93,29 +63,39 @@
             <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
-          {%- when 'heading_1' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading_1 | escape }}</span>
-            </h2>
-          {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }}</span>
-            </div>
-          {%- when 'buttons' -%}
-            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
-              {%- if block.settings.button_label_1 != blank -%}
-                <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}" {% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
-              {%- endif -%}
-              {%- if block.settings.button_label_2 != blank -%}
-                <a {% if block.settings.button_link_2 == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}" {% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
-              {%- endif -%}
-
-            </div>
+          </div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
 </div>
+
+<div class="text-info">
+  <div class="text-info-wrapper">
+    {{block.type}}
+    {%- for block in section.blocks -%}
+      {%if block.type == "text" %}
+          <h2>
+            <span>{{ block.settings.text | escape }}</span>
+          </h2>
+        </div>
+      {%endif%}
+    {%- endfor -%}
+    
+  </div>
+</div>
+
+
+
+{%style%}
+  .text-info{
+    margin:14px auto;
+    width:100%;
+    background:100px;
+    background:black;
+    color:#fff;
+  }
+{%endstyle%}
 
 {% schema %}
   {
@@ -345,59 +325,17 @@
             "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
           }
         ]
-      }, {
-        "type": "buttons",
-        "name": "t:sections.image-banner.blocks.buttons.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_label_1",
-            "default": "Button label",
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
-            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
-          },
-          {
-            "type": "url",
-            "id": "button_link_1",
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
-          },
-          {
-            "type": "checkbox",
-            "id": "button_style_secondary_1",
-            "default": false,
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
-          },
-          {
-            "type": "text",
-            "id": "button_label_2",
-            "default": "Button label",
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
-            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
-          }, {
-            "type": "url",
-            "id": "button_link_2",
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
-          }, {
-            "type": "checkbox",
-            "id": "button_style_secondary_2",
-            "default": false,
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
-          }
-        ]
       }
 
     ],
     "presets": [
       {
-        "name": "t:sections.image-banner.presets.name",
+        "name": "podxgo-team-tip",
         "blocks": [
           {
             "type": "heading"
           }, {
             "type": "text"
-          }, {
-            "type": "buttons"
           }
         ]
       }

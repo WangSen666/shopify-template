@@ -98,35 +98,39 @@
     }
     .why-podxgo {
       width: 100%;
-      /* margin-bottom: */
     }
   }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient ">
   <div class="podxgo-partner">
-    {%- comment -%}
-      Why PODX GO?
-    {%- endcomment -%}
     <div class="why-podxgo">
       <div class="why-podxgo-header">Why PODX GO?</div>
       <div class="why-podxgo-content">
-        <div class="why-podxgo-cell">
-          <img src="" alt="占位图片"/>
-          <div class="why-podxgo-cell-content">Marketing Support</div>
-        </div>
-        <div class="why-podxgo-cell">
-          <img src="" alt="占位图片"/>
-          <div class="why-podxgo-cell-content">CustomizationSupport</div>
-        </div>
-        <div class="why-podxgo-cell">
-          <img src="" alt="占位图片"/>
-          <div class="why-podxgo-cell-content">QualityWarranty</div>
-        </div>
-        <div class="why-podxgo-cell">
-          <img src="" alt="占位图片"/>
-          <div class="why-podxgo-cell-content">Drop-shipping Support</div>
-        </div>
+        {%- if section.settings.image != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
+        {%- if section.settings.image_1 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_1 | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
+        {%- if section.settings.image_2 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_2 | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
+        {%- if section.settings.image_3 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_3 | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
       </div>
     </div>
 
@@ -160,7 +164,7 @@
           <div class="field">
             <div class="field-title">name*</div>
             <div class="field-content">
-              <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+              <input class="field__input" autocomplete="name" type="text" id="first-name" name="contact[FirstName]" value="{% if form.FirstName %}{{ form.FirstName }}{% elsif customer %}{{ customer.FirstName }}{% endif %}" placeholder="{{ 'templates.contact.form.FirstName' | t }}">
             </div>
             <div class="field-tip">First Name</div>
           </div>
@@ -168,7 +172,7 @@
             <div class="field-title" style="color:#fff;">name*</div>
 
             <div class="field-content">
-              <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+              <input class="field__input" autocomplete="name" type="text" id="last-name" name="contact[LastName]" value="{% if form.LastName %}{{ form.LastName }}{% elsif customer %}{{ customer.LastName }}{% endif %}" placeholder="{{ 'templates.contact.form.LastName' | t }}">
             </div>
             <div class="field-tip">Last Name</div>
           </div>
@@ -178,7 +182,11 @@
           <div class="field-title">Your Business Name*</div>
 
           <div class="field-content">
-            <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+            {%- comment -%}
+              <input class="field__input" autocomplete="name" type="text" id="business-name" name="contact[{{ 'templates.contact.form.businessName' | t }}]" value="{% if form.businessName %}{{ form.businessName }}{% elsif customer %}{{ customer.businessName }}{% endif %}" placeholder="{{ 'templates.contact.form.businessName' | t }}">
+            {%- endcomment -%}
+
+            <input class="field__input" autocomplete="name" type="text" id="business-name" name="contact[businessName]" value="{% if form.businessName %}{{ form.businessName }}{% elsif customer %}{{ customer.businessName }}{% endif %}" placeholder="{{ 'templates.contact.form.businessName' | t }}">
           </div>
         </div>
 
@@ -233,6 +241,24 @@
         "label": "Heading"
       },
       {
+        "type": "image_picker",
+        "id": "image",
+        "label": "第一张照片"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "第二张照片"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "第三张照片"
+      }, {
+        "type": "image_picker",
+        "id": "image_3",
+        "label": "第四张照片"
+      }, {
         "type": "select",
         "id": "heading_size",
         "options": [
@@ -249,8 +275,7 @@
         ],
         "default": "h1",
         "label": "t:sections.all.heading_size.label"
-      },
-      {
+      }, {
         "type": "select",
         "id": "color_scheme",
         "options": [
@@ -276,8 +301,7 @@
         ],
         "default": "background-1",
         "label": "t:sections.all.colors.label"
-      },
-      {
+      }, {
         "type": "header",
         "content": "t:sections.all.padding.section_padding_heading"
       }, {
@@ -300,6 +324,7 @@
         "default": 36
       }
     ],
+
     "presets": [
       {
         "name": "t:sections.contact-form.presets.name"
