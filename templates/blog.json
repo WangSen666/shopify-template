@@ -115,6 +115,10 @@
       "type": "main-contact-form",
       "settings": {
         "heading": "Become A Partner",
+        "image": "shopify:\/\/shop_images\/1_6b877d48-0847-48b6-bf91-5d0e8823dc0d.png",
+        "image_1": "shopify:\/\/shop_images\/Group3.png",
+        "image_2": "shopify:\/\/shop_images\/2.png",
+        "image_3": "shopify:\/\/shop_images\/Path_2.png",
         "heading_size": "h1",
         "image": "shopify:\/\/shop_images\/1_6b877d48-0847-48b6-bf91-5d0e8823dc0d.png",
         "image_1": "shopify:\/\/shop_images\/Group3.png",
@@ -129,13 +133,13 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "collage",
-        "show_image": true,
-        "image_height": "medium",
+        "layout": "grid",
+        "show_image": false,
+        "image_height": "small",
         "show_date": true,
         "show_author": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
