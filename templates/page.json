@@ -7,14 +7,10 @@
         "padding_bottom": 28
       }
     },
-    "79cab0be-1060-4d75-9b38-f75b2118bc9c": {
-      "type": "main-contact-form",
+    "54f11a81-8ec7-4b4d-875d-9a0e327265a1": {
+      "type": "contact-form",
       "settings": {
-        "heading": "Contact form1",
-        "image": "shopify:\/\/shop_images\/1_6b877d48-0847-48b6-bf91-5d0e8823dc0d.png",
-        "image_1": "shopify:\/\/shop_images\/Group3.png",
-        "image_2": "shopify:\/\/shop_images\/Shape.png",
-        "image_3": "shopify:\/\/shop_images\/Path_2.png",
+        "heading": "Contact form",
         "heading_size": "h1",
         "color_scheme": "background-1",
         "padding_top": 36,
@@ -24,6 +20,6 @@
   },
   "order": [
     "main",
-    "79cab0be-1060-4d75-9b38-f75b2118bc9c"
+    "54f11a81-8ec7-4b4d-875d-9a0e327265a1"
   ]
 }
