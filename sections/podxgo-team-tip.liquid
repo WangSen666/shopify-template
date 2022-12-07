@@ -72,14 +72,14 @@
 
 <div class="text-info">
   <div class="text-info-wrapper">
+    {{block.type}}
     {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'text' -%}
+      {%if block.type == "text" %}
           <h2>
             <span>{{ block.settings.text | escape }}</span>
           </h2>
         </div>
-      {%- endcase -%}
+      {%endif%}
     {%- endfor -%}
     
   </div>
