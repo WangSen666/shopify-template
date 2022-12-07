@@ -83,28 +83,30 @@
         "show_text_below": true
       }
     },
-    "e28d2f60-70ab-4bb0-90ff-935813322765": {
+    "015b80b6-20a5-48c4-a1ac-874256d48648": {
       "type": "podxgo-team-tip",
       "blocks": {
-        "template--15546009780324__e28d2f60-70ab-4bb0-90ff-935813322765-1670406655da178d31-0": {
+        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-0": {
           "type": "heading",
           "settings": {
             "heading": "Image banner",
             "heading_size": "h1"
           }
         },
-        "template--15546009780324__e28d2f60-70ab-4bb0-90ff-935813322765-1670406655da178d31-1": {
-          "type": "tip",
+        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1": {
+          "type": "text",
           "settings": {
-            "text": "A Mobile & Foldable Tiny House."
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "template--15546009780324__e28d2f60-70ab-4bb0-90ff-935813322765-1670406655da178d31-0",
-        "template--15546009780324__e28d2f60-70ab-4bb0-90ff-935813322765-1670406655da178d31-1"
+        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-0",
+        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/luxurious-home-in-the-desert.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -122,6 +124,6 @@
     "main",
     "522756c7-9015-45db-a1fb-81cff63756e3",
     "e3b315b1-e615-4e90-a430-e43c7e4e1c93",
-    "e28d2f60-70ab-4bb0-90ff-935813322765"
+    "015b80b6-20a5-48c4-a1ac-874256d48648"
   ]
 }
