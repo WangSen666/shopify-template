@@ -27,7 +27,7 @@
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }} " class="banner podxgo-team-tip banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} " style="background:{{ section.settings.color_scheme }}">
+<div id="Banner-{{ section.id }} " class="banner podxgo-team-text banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} " style="background:{{ section.settings.color_scheme }}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -55,7 +55,7 @@
     </div>
   {%- endif -%}
 
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width {{ section.settings.is_podxgo_tip }} ">
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width {{ section.settings.is_podxgo_text }} ">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -70,10 +70,10 @@
   </div>
 </div>
 
-<div class="tip-info">
-  <div class="tip-info-wrapper">
+<div class="text-info">
+  <div class="text-info-wrapper">
     <h2>
-      <span>{{ block.settings.tip | escape }}</span>
+      <span>{{ block.settings.text | escape }}</span>
     </h2>
   </div>
 </div>
@@ -81,7 +81,7 @@
 
 
 {%style%}
-  .tip-info{
+  .text-info{
     margin:14px auto;
     width:100%;
     background:100px;
@@ -285,7 +285,7 @@
             }
           ]
         }, {
-          "type": "tip",
+          "type": "text",
           "name": "t:sections.image-banner.blocks.text.name",
           "limit": 1,
           "settings": [
@@ -300,12 +300,12 @@
       ],
       "presets": [
         {
-          "name": "podxgo-team-tip",
+          "name": "podxgo-team-text",
           "blocks": [
             {
               "type": "heading"
             }, {
-              "type": "tip"
+              "type": "text"
               
             }
           ]
