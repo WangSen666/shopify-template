@@ -46,6 +46,13 @@
     border-top: 1px solid #fff;
     width: 200px;
   }
+  .footer-block__newsletter .field {
+    border-bottom: 1px solid #fff;
+  }
+  .footer-block__newsletter .field:after {
+    box-shadow: none;
+
+  }
   .footer-block__newsletter .newsletter-form__button {
     display: none;
   }
@@ -158,9 +165,9 @@
                           <input type="hidden" name="contact[tags]" value="newsletter">
                           <div class="newsletter-form__field-wrapper">
                             <div class="field">
-                              <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]" class="field__input" value="{{ form.email }}" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" {% if form.errors %}autofocus aria-invalid="true"aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%}placeholder="{{ 'newsletter.label' | t }}" required>
+                              <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]" class="field__input" value="{{ form.email }}" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" {% if form.errors %}autofocus aria-invalid="true"aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%} placeholder="Email Address" required>
                               <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                                {{ 'newsletter.label' | t }}
+                                Email Address
                               </label>
                               <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                                 {% render 'icon-arrow' %}
