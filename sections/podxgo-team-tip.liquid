@@ -55,7 +55,7 @@
     </div>
   {%- endif -%}
 
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width {{ section.settings.is_podxgo_text }} ">
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }}  {{ section.settings.is_podxgo_text }} ">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -89,12 +89,73 @@
 
 {%style%}
   .text-info{
-    margin:14px auto;
     width:100%;
-    background:100px;
     background:black;
-    color:#fff;
+    text-align:center; 
+    padding:40px 0;
+    
   }
+  .text-info h2{
+    width:360px;
+    margin:0 auto;
+  }
+  .text-info h2 span{
+    color:#fff;
+    font-size:36px;
+    font-weight:bolder;
+  }
+ .podxgo-team-text .banner__content{
+  padding:0;
+  width:90%;
+  margin:0 auto;
+ }
+ .podxgo-team-text .banner__content .banner__box{
+  padding:14px 0;
+ }
+ .podxgo-team-text .banner__content h2{
+  padding:0 14px;
+  font-size:56px;
+  width:500px;
+  text-align:left;
+  font-weight:bolder;
+  color:black;
+ }
+  /*  */
+ .podxgo-team-text .banner__media{
+    position:absolute;
+    width:94%;
+    height:84%;
+    top:16%;
+    left:6%;
+  }
+  .podxgo-team-text .banner__media img{
+    object-fit: fill;
+  }
+  @media screen and (max-width: 749px) {
+    .podxgo-team-text .banner__content{
+      width:100%;
+    }
+    .podxgo-team-text .banner__content h2{
+      width:unset;
+      text-align:left;
+      font-weight:bolder;
+      color:black;
+      padding:14px;
+      font-size:36px;
+    }
+    .podxgo-team-text .banner__media{
+      position:relative;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+    .text-info h2{
+      width:unset;
+      margin:0 auto;
+    }
+  }
+
 {%endstyle%}
 
 {% schema %}
@@ -304,7 +365,7 @@
           {
             "type": "text",
             "id": "text",
-            "default": "Give customers details about the banner image(s) or content on the template.",
+            "default": "A Mobile & Foldable Tiny House.",
             "label": "t:sections.image-banner.blocks.text.settings.text.label"
           }, {
             "type": "select",

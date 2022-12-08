@@ -51,6 +51,8 @@
     background: #B5EF35;
     border-radius: 40px;
     font-weight: bolder;
+    padding: 14px 34px;
+    font-size: 20px;
   }
 
 
@@ -73,6 +75,11 @@
     font-weight: bolder;
     color: black;
   }
+  @media screen and (max-width: 1660px) {
+    .podxgo-partner {
+      width: 90%;
+    }
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -84,6 +91,10 @@
       width: 80%;
       flex-wrap: wrap;
 
+    }
+    .why-podxgo-cell img {
+      width: 60px;
+      height: 60px;
     }
     .become-a-partner {
       width: 100%;

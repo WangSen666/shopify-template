@@ -63,48 +63,21 @@
         "show_text_below": true
       }
     },
-    "e3b315b1-e615-4e90-a430-e43c7e4e1c93": {
-      "type": "image-banner",
-      "blocks": {
-        "template--15546009780324__e3b315b1-e615-4e90-a430-e43c7e4e1c93-16703936713e57ac05-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hi, we are teamPODX GO.",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "template--15546009780324__e3b315b1-e615-4e90-a430-e43c7e4e1c93-16703936713e57ac05-0"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/luxurious-home-in-the-desert.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "top-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
+   
     "015b80b6-20a5-48c4-a1ac-874256d48648": {
       "type": "podxgo-team-tip",
       "blocks": {
         "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Hi, we are team PODX GO.",
             "heading_size": "h1"
           }
         },
         "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "A Mobile & Foldable Tiny House.",
             "text_style": "body"
           }
         }
@@ -118,10 +91,10 @@
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "#B5EF35",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
@@ -131,7 +104,6 @@
   "order": [
     "main",
     "522756c7-9015-45db-a1fb-81cff63756e3",
-    "e3b315b1-e615-4e90-a430-e43c7e4e1c93",
     "015b80b6-20a5-48c4-a1ac-874256d48648"
   ]
 }

@@ -91,10 +91,32 @@
   .section-header {
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
-
+  .header-wrapper {
+    position: fixed;
+    width: 100%;
+    background: none;
+    z-index:10;
+  }
+  .header-wrapper a,
+  .header-wrapper .header__active-menu-item,
+  .header-wrapper a:hover{
+    color:#fff;
+  }
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .header-wrapper {
+      position: relative;
+      width: 100%;
+      background: #fff;
+      z-index:10;
+    }
+    .header-wrapper a,
+    .header-wrapper .header__active-menu-item{
+      color:black;
     }
   }
 
