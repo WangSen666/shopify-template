@@ -1,12 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "522756c7-9015-45db-a1fb-81cff63756e3": {
       "type": "image-banner",
       "blocks": {
@@ -63,7 +56,6 @@
         "show_text_below": true
       }
     },
-   
     "015b80b6-20a5-48c4-a1ac-874256d48648": {
       "type": "podxgo-team-tip",
       "blocks": {
@@ -99,11 +91,18 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
-    "main",
     "522756c7-9015-45db-a1fb-81cff63756e3",
-    "015b80b6-20a5-48c4-a1ac-874256d48648"
+    "015b80b6-20a5-48c4-a1ac-874256d48648",
+    "main"
   ]
 }
