@@ -187,6 +187,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33": {
+      "type": "image-with-text",
+      "blocks": {
+        "404d056c-babb-4945-bc41-d45e8f4b6954": {
+          "type": "caption",
+          "settings": {
+            "caption": "ADon't Miss Out.",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join PODX GO Community",
+            "heading_size": "h1"
+          }
+        },
+        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shared stories and experience about tiny house living<br\/><\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sign Me Up",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "404d056c-babb-4945-bc41-d45e8f4b6954",
+        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-0",
+        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-1",
+        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12_9c5c7d11-32eb-44e2-a314-edb137061b86.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -194,6 +247,7 @@
     "015b80b6-20a5-48c4-a1ac-874256d48648",
     "main",
     "e1e03f82-d9be-4520-9cb3-80eb9a3ca35a",
-    "c7429989-0c84-4a3a-b6a8-30e910667f5a"
+    "c7429989-0c84-4a3a-b6a8-30e910667f5a",
+    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33"
   ]
 }
