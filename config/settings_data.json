@@ -454,6 +454,13 @@
           "settings": {
             "color_scheme": "background-1"
           }
+        },
+        "image-width-text":{
+          "type": "image-width-text",
+          "settings":{
+            "newsletter_enable": true,
+            "show_social": true
+          }
         }
       }
     }
