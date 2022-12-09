@@ -142,7 +142,7 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36,
-        "show_social": false
+        "show_social": true
       }
     },
     "c7429989-0c84-4a3a-b6a8-30e910667f5a": {
