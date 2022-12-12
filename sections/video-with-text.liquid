@@ -36,6 +36,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+   @media screen and (max-width: 750px) {
+     .collage{
+    flex-wrap:wrap;
+  }
+  .collage__item{width:96%;margin: 0 auto;height:200px;}
+  }
+ 
 {%- endstyle -%}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
