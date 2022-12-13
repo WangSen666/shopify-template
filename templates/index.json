@@ -216,6 +216,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "811262fa-dfb8-4331-95a8-890b40e00fcd": {
+      "type": "smart-and-comfortable-home",
+      "blocks": {
+        "b025aab7-537d-4243-b2c2-3e732d30ed1f": {
+          "type": "text",
+          "settings": {
+            "text": "Let's go for a",
+            "text_style": "body"
+          }
+        },
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "smart and comfortable home",
+            "heading_size": "h1"
+          }
+        },
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-1": {
+          "type": "text",
+          "settings": {
+            "text": "all the way down.",
+            "text_style": "body"
+          }
+        },
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2": {
+          "type": "leftBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "left_icon": "shopify:\/\/shop_images\/Group3.png"
+          }
+        },
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3": {
+          "type": "rightBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "right_icon": "shopify:\/\/shop_images\/Path_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "b025aab7-537d-4243-b2c2-3e732d30ed1f",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-1",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/a-cottage-home-with-picket-fence.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -223,6 +285,7 @@
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
     "961a35fd-1fc0-4ace-a3ac-67fd6eeb8400",
-    "multicolumn"
+    "multicolumn",
+    "811262fa-dfb8-4331-95a8-890b40e00fcd"
   ]
 }
