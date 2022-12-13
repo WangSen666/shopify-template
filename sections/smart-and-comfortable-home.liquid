@@ -328,7 +328,9 @@
             "label": "t:sections.all.heading_size.label"
           }
         ]
-      }, {
+      },
+      
+      {
         "type": "text",
         "name": "t:sections.image-banner.blocks.text.name",
         "limit": 3,
@@ -357,8 +359,53 @@
             "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
           }
         ]
+      },
+      {
+        "type":"leftBottomInfo",
+        "name":"左边底部信息",
+        "settings":[
+          {
+            "type":"text",
+            "id":"heading",
+            "default":"FUll SIZE",
+            "label":"标题"
+          },
+          {
+            "type":"text",
+            "id":"heading_1",
+            "default":"Kitchen/Bedroom/Great Room",
+            "label":"副标题"
+          },
+          {
+            "type":"image_picker",
+            "label":"图标",
+            "id":"left_icon"
+          }
+        ]
+      },
+      {
+        "type":"rightBottomInfo",
+        "name":"右边底部信息",
+        "settings":[
+          {
+            "type":"text",
+            "id":"heading",
+            "default":"FUll SIZE",
+            "label":"标题"
+          },
+          {
+            "type":"text",
+            "id":"heading_1",
+            "default":"Kitchen/Bedroom/Great Room",
+            "label":"副标题"
+          },
+          {
+            "type":"image_picker",
+            "label":"图标",
+            "id":"right_icon"
+          }
+        ]
       }
-
     ],
     "presets": [
       {
@@ -368,6 +415,12 @@
             "type": "heading"
           }, {
             "type": "text"
+          },
+          {
+            "type":"leftBottomInfo"
+          },
+          {
+            "type":"rightBottomInfo"
           }
         ]
       }
