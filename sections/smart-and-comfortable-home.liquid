@@ -133,6 +133,32 @@
                 </div>
               {%- endif -%}
             </div>
+
+            {%- when 'rightBottomInfo' -%}
+            <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
+              {%- if block.settings.left_icon!= blank -%}
+                <div>
+                  <img
+                    src="{{ block.settings.left_icon | image_url: width: 140 }}"
+                    alt="{{ item.image.alt | escape }}"
+                    width="70"
+                    height="70"
+                    loading="lazy"
+                  >
+                </div>
+              {%- endif -%}
+              {%- if block.settings.heading != blank -%}
+                <div class="heaing">
+                  {{block.settings.heading  }}
+                </div>
+              {%- endif -%}
+               {%- if block.settings.heading_1 != blank -%}
+                <div class="heaing_1">
+                  {{block.settings.heading_1  }}
+                </div>
+              {%- endif -%}
+            </div>
+          
         {%- endcase -%}
       {%- endfor -%}
     </div>
