@@ -21,18 +21,26 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "",
             "button_style_secondary_1": true,
-            "button_label_2": "",
+            "button_label_2": "ceshi",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": true
+          }
+        },
+        "9b393264-1f9f-45f6-bad1-88b58a56027f": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
         "heading",
         "text",
-        "button"
+        "button",
+        "9b393264-1f9f-45f6-bad1-88b58a56027f"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
@@ -112,83 +120,66 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
+    "811262fa-dfb8-4331-95a8-890b40e00fcd": {
+      "type": "smart-and-comfortable-home",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "b025aab7-537d-4243-b2c2-3e732d30ed1f": {
+          "type": "text",
           "settings": {
-            "collection": ""
+            "text": "Let's go for a",
+            "text_style": "body"
           }
         },
-        "product": {
-          "type": "product",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0": {
+          "type": "heading",
           "settings": {
-            "product": "",
-            "second_image": false
+            "heading": "smart and comfortable home",
+            "heading_size": "h1"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-1": {
+          "type": "text",
           "settings": {
-            "collection": ""
+            "text": "all the way down.",
+            "text_style": "body"
+          }
+        },
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2": {
+          "type": "leftBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "left_icon": "shopify:\/\/shop_images\/Group3.png"
+          }
+        },
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3": {
+          "type": "rightBottomInfo",
+          "settings": {
+            "heading": "SMART HOME",
+            "heading_1": "Devices Control\/Enhanced Security",
+            "right_icon": "shopify:\/\/shop_images\/Path_2.png"
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "b025aab7-537d-4243-b2c2-3e732d30ed1f",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-1",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2",
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
+        "image": "shopify:\/\/shop_images\/a-cottage-home-with-picket-fence.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "multicolumn": {
@@ -249,9 +240,7 @@
     "image_banner",
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
-    "featured_collection",
-    "collage",
-    "video",
+    "811262fa-dfb8-4331-95a8-890b40e00fcd",
     "multicolumn"
   ]
 }
