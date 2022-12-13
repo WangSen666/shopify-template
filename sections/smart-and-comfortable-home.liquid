@@ -28,6 +28,9 @@
   #Banner-{{ section.id }}::after{
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+  .banner{
+    position:relative;
+  }
   .banner__heading{font-weight:bold;}
   .banner__text{font-size:30px;font-weight:bold;}
   .banner_bottom_info{
@@ -41,6 +44,16 @@
   .banner_bottom_info .heading_1{
     color:#fff;
     font-size:20px;
+  }
+  .banner_left_bottom_info{
+    position:absolute;
+    bottom:100px;
+    left:100px;
+  }
+  .banner_left_bottom_info{
+    position:absolute;
+    bottom:100px;
+    right:100px;
   }
   @media screen and (max-width: 749px) {
     .banner__content {
