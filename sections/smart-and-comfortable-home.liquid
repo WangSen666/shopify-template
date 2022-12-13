@@ -136,10 +136,10 @@
 
             {%- when 'rightBottomInfo' -%}
             <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-              {%- if block.settings.left_icon!= blank -%}
+              {%- if block.settings.right_icon!= blank -%}
                 <div>
                   <img
-                    src="{{ block.settings.left_icon | image_url: width: 140 }}"
+                    src="{{ block.settings.right_icon | image_url: width: 140 }}"
                     alt="{{ item.image.alt | escape }}"
                     width="70"
                     height="70"
