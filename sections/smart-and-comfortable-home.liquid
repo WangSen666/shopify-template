@@ -122,10 +122,16 @@
                   >
                 </div>
               {%- endif -%}
-              {%- if block.settings.button_label_2 != blank -%}
-                <a {% if block.settings.button_link_2 == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}" {% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+              {%- if block.settings.heading != blank -%}
+                <div class="heaing">
+                  {{block.settings.heading  }}
+                </div>
               {%- endif -%}
-
+               {%- if block.settings.heading_1 != blank -%}
+                <div class="heaing_1">
+                  {{block.settings.heading_1  }}
+                </div>
+              {%- endif -%}
             </div>
         {%- endcase -%}
       {%- endfor -%}
