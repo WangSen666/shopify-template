@@ -28,6 +28,9 @@
   #Banner-{{ section.id }}::after{
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+  .banner_bottom_info{
+    color:#fff;
+  }
   @media screen and (max-width: 749px) {
     .banner__content {
       position: absolute;
@@ -110,7 +113,7 @@
             </div>
   
           {%- when 'leftBottomInfo' -%}
-            <div class="banner__left_bottom_info" {{ block.shopify_attributes }}>
+            <div class="banner__left_bottom_info banner_bottom_info" {{ block.shopify_attributes }}>
               {%- if block.settings.left_icon!= blank -%}
                 <div>
                   <img
@@ -135,7 +138,7 @@
             </div>
 
             {%- when 'rightBottomInfo' -%}
-            <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
+            <div class="banner__right_bottom_info banner_bottom_info" {{ block.shopify_attributes }}>
               {%- if block.settings.right_icon!= blank -%}
                 <div>
                   <img
