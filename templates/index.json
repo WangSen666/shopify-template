@@ -305,26 +305,42 @@
     "1467da59-c41b-4670-a937-8536c57e0f67": {
       "type": "image-banner-text-diy",
       "blocks": {
+        "7da226ff-d70a-4fc7-9112-2541e9282ab5": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The Community To Co-create A Unique",
+            "heading_color": "#fff",
+            "font_size": 28
+          }
+        },
+        "4d96a35f-b043-4620-b6e9-e500a544b198": {
+          "type": "heading",
+          "settings": {
+            "heading": "OFF-GRID",
+            "heading_color": "#B5EF35",
+            "font_size": 52
+          }
+        },
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_color": "#000",
-            "font_size": 24
+            "heading": "TINY HOUSE",
+            "heading_color": "#B5EF35",
+            "font_size": 52
           }
         },
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_color": "#000",
+            "text": "We make your ideas come true.",
+            "text_color": "#B5EF35",
             "font_size": 24
           }
         },
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "JOIN!",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -336,6 +352,8 @@
         }
       },
       "block_order": [
+        "7da226ff-d70a-4fc7-9112-2541e9282ab5",
+        "4d96a35f-b043-4620-b6e9-e500a544b198",
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-0",
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-1",
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-2"
@@ -345,9 +363,9 @@
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
