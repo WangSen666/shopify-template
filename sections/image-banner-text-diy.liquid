@@ -113,11 +113,11 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px">
+            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }} style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px">
+            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }} style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
               <span>{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
@@ -341,6 +341,26 @@
             "unit": "px",
             "label": "文本字体大小",
             "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
           }
         ]
       }, {
@@ -383,7 +403,28 @@
             "unit": "px",
             "label": "文本字体大小",
             "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
           }
+          
         ]
       }, {
         "type": "buttons",
