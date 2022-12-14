@@ -182,126 +182,6 @@
         "show_text_below": true
       }
     },
-    "8458e866-01a2-4f1b-b11b-21412904b260": {
-      "type": "image-banner",
-      "blocks": {
-        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Join The Community To Co-create A Unique",
-            "heading_size": "h1"
-          }
-        },
-        "36f414ab-f684-4f0a-be6c-78d82245d2c9": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "95de0a97-bc85-4307-8e5e-e450062ce080": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-1": {
-          "type": "text",
-          "settings": {
-            "text": "We make your ideas come true.",
-            "text_style": "body"
-          }
-        },
-        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-0",
-        "36f414ab-f684-4f0a-be6c-78d82245d2c9",
-        "95de0a97-bc85-4307-8e5e-e450062ce080",
-        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-1",
-        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/s.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "top-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
-            "title": "We reward creative contributors.",
-            "text": "<p>Our accomplishments will be shared with our community builders, and any adopted outstanding idea will be awarded $500 cash back<br\/><\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
-            "title": "Know how your ideas are made.",
-            "text": "<p>Everything we make will be updated to the contributor, you know how your idea is made and where it is.<br\/><\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ef78f03d-5a22-491c-8553-1c2a8ccae6f2.png",
-            "title": "We give back for every sale.",
-            "text": "<p>We've pledged 1% of sales to help the homeless and natural environment.<br\/><\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "accent-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1467da59-c41b-4670-a937-8536c57e0f67": {
       "type": "image-banner-text-diy",
       "blocks": {
@@ -379,6 +259,62 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
+            "title": "We reward creative contributors.",
+            "text": "<p>Our accomplishments will be shared with our community builders, and any adopted outstanding idea will be awarded $500 cash back<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
+            "title": "Know how your ideas are made.",
+            "text": "<p>Everything we make will be updated to the contributor, you know how your idea is made and where it is.<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ef78f03d-5a22-491c-8553-1c2a8ccae6f2.png",
+            "title": "We give back for every sale.",
+            "text": "<p>We've pledged 1% of sales to help the homeless and natural environment.<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -386,8 +322,7 @@
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
     "811262fa-dfb8-4331-95a8-890b40e00fcd",
-    "8458e866-01a2-4f1b-b11b-21412904b260",
-    "multicolumn",
-    "1467da59-c41b-4670-a937-8536c57e0f67"
+    "1467da59-c41b-4670-a937-8536c57e0f67",
+    "multicolumn"
   ]
 }
