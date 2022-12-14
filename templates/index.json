@@ -182,6 +182,62 @@
         "show_text_below": true
       }
     },
+    "8458e866-01a2-4f1b-b11b-21412904b260": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The Community To Co-create A Unique",
+            "heading_size": "h1"
+          }
+        },
+        "36f414ab-f684-4f0a-be6c-78d82245d2c9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-0",
+        "36f414ab-f684-4f0a-be6c-78d82245d2c9",
+        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-1",
+        "template--15546009845860__8458e866-01a2-4f1b-b11b-21412904b260-16709881345d9257f8-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/s.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -244,6 +300,7 @@
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
     "811262fa-dfb8-4331-95a8-890b40e00fcd",
+    "8458e866-01a2-4f1b-b11b-21412904b260",
     "multicolumn"
   ]
 }
