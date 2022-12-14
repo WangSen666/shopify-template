@@ -310,7 +310,9 @@
           "settings": {
             "heading": "Join The Community To Co-create A Unique",
             "heading_color": "#fff",
-            "font_size": 28
+            "font_size": 28,
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "4d96a35f-b043-4620-b6e9-e500a544b198": {
@@ -318,7 +320,9 @@
           "settings": {
             "heading": "OFF-GRID",
             "heading_color": "#B5EF35",
-            "font_size": 52
+            "font_size": 52,
+            "margin_top": 44,
+            "margin_bottom": 0
           }
         },
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-0": {
@@ -326,7 +330,9 @@
           "settings": {
             "heading": "TINY HOUSE",
             "heading_color": "#B5EF35",
-            "font_size": 52
+            "font_size": 52,
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-1": {
@@ -334,7 +340,9 @@
           "settings": {
             "text": "We make your ideas come true.",
             "text_color": "#B5EF35",
-            "font_size": 24
+            "font_size": 24,
+            "margin_top": 76,
+            "margin_bottom": 0
           }
         },
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-2": {
