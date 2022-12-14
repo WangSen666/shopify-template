@@ -309,6 +309,7 @@
           "type": "heading",
           "settings": {
             "heading": "Image banner",
+            "heading_color": "#000",
             "font_size": 24
           }
         },
@@ -316,6 +317,7 @@
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_color": "#000",
             "font_size": 24
           }
         },
@@ -327,7 +329,9 @@
             "button_style_secondary_1": false,
             "button_label_2": "Button label",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
           }
         }
       },
@@ -337,6 +341,7 @@
         "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/s.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
