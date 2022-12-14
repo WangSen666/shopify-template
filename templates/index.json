@@ -17,17 +17,6 @@
             "text_style": "body"
           }
         },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "",
-            "button_style_secondary_1": true,
-            "button_label_2": "ceshi",
-            "button_link_2": "",
-            "button_style_secondary_2": true
-          }
-        },
         "9b393264-1f9f-45f6-bad1-88b58a56027f": {
           "type": "heading",
           "settings": {
@@ -39,7 +28,6 @@
       "block_order": [
         "heading",
         "text",
-        "button",
         "9b393264-1f9f-45f6-bad1-88b58a56027f"
       ],
       "settings": {
@@ -315,6 +303,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "87643d95-d0d1-49cc-8af2-0f3d355644cc": {
+      "type": "image-banner-text-diy",
+      "blocks": {
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO CO-CREATION LAB",
+            "heading_color": "#B5EF35",
+            "font_size": 52,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_color": "#fff",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-0",
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1",
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -323,6 +366,7 @@
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
     "811262fa-dfb8-4331-95a8-890b40e00fcd",
     "1467da59-c41b-4670-a937-8536c57e0f67",
-    "multicolumn"
+    "multicolumn",
+    "87643d95-d0d1-49cc-8af2-0f3d355644cc"
   ]
 }
