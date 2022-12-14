@@ -17,17 +17,6 @@
             "text_style": "body"
           }
         },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "",
-            "button_style_secondary_1": true,
-            "button_label_2": "ceshi",
-            "button_link_2": "",
-            "button_style_secondary_2": true
-          }
-        },
         "9b393264-1f9f-45f6-bad1-88b58a56027f": {
           "type": "heading",
           "settings": {
@@ -39,7 +28,6 @@
       "block_order": [
         "heading",
         "text",
-        "button",
         "9b393264-1f9f-45f6-bad1-88b58a56027f"
       ],
       "settings": {
@@ -182,14 +170,93 @@
         "show_text_below": true
       }
     },
+    "1467da59-c41b-4670-a937-8536c57e0f67": {
+      "type": "image-banner-text-diy",
+      "blocks": {
+        "7da226ff-d70a-4fc7-9112-2541e9282ab5": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The Community To Co-create A Unique",
+            "heading_color": "#fff",
+            "font_size": 28,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "4d96a35f-b043-4620-b6e9-e500a544b198": {
+          "type": "heading",
+          "settings": {
+            "heading": "OFF-GRID",
+            "heading_color": "#B5EF35",
+            "font_size": 52,
+            "margin_top": 44,
+            "margin_bottom": 0
+          }
+        },
+        "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "TINY HOUSE",
+            "heading_color": "#B5EF35",
+            "font_size": 52,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-1": {
+          "type": "text",
+          "settings": {
+            "text": "We make your ideas come true.",
+            "text_color": "#B5EF35",
+            "font_size": 24,
+            "margin_top": 76,
+            "margin_bottom": 0
+          }
+        },
+        "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "JOIN!",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
+        }
+      },
+      "block_order": [
+        "7da226ff-d70a-4fc7-9112-2541e9282ab5",
+        "4d96a35f-b043-4620-b6e9-e500a544b198",
+        "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-0",
+        "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-1",
+        "template--15546009845860__1467da59-c41b-4670-a937-8536c57e0f67-1670999337ce1f6743-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/s.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
+            "title": "We reward creative contributors.",
+            "text": "<p>Our accomplishments will be shared with our community builders, and any adopted outstanding idea will be awarded $500 cash back<br\/><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -197,8 +264,9 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
+            "title": "Know how your ideas are made.",
+            "text": "<p>Everything we make will be updated to the contributor, you know how your idea is made and where it is.<br\/><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -206,8 +274,9 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/ef78f03d-5a22-491c-8553-1c2a8ccae6f2.png",
+            "title": "We give back for every sale.",
+            "text": "<p>We've pledged 1% of sales to help the homeless and natural environment.<br\/><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -228,11 +297,89 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "87643d95-d0d1-49cc-8af2-0f3d355644cc": {
+      "type": "image-banner-text-diy",
+      "blocks": {
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO CO-CREATION LAB",
+            "heading_color": "#B5EF35",
+            "font_size": 52,
+            "margin_top": 0,
+            "margin_bottom": 52
+          }
+        },
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1": {
+          "type": "text",
+          "settings": {
+            "text": "CASH BACK.",
+            "text_color": "#fff",
+            "font_size": 24,
+            "margin_top": 44,
+            "margin_bottom": 4
+          }
+        },
+        "85c9688f-10a1-4976-beba-223aa6afd2d2": {
+          "type": "text",
+          "settings": {
+            "text": "SMART FACTORY.",
+            "text_color": "#fff",
+            "font_size": 24,
+            "margin_top": 8,
+            "margin_bottom": 24
+          }
+        },
+        "86661cfa-4497-4182-b16b-59a0efceebe6": {
+          "type": "text",
+          "settings": {
+            "text": "1% FOR THE COMMUNITY.",
+            "text_color": "#fff",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "LEARN MORE !",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-0",
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1",
+        "85c9688f-10a1-4976-beba-223aa6afd2d2",
+        "86661cfa-4497-4182-b16b-59a0efceebe6",
+        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/s2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
@@ -241,6 +388,8 @@
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
     "811262fa-dfb8-4331-95a8-890b40e00fcd",
-    "multicolumn"
+    "1467da59-c41b-4670-a937-8536c57e0f67",
+    "multicolumn",
+    "87643d95-d0d1-49cc-8af2-0f3d355644cc"
   ]
 }

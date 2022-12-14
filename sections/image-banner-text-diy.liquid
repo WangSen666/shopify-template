@@ -19,7 +19,9 @@
         content: '';
         display: block;
       }
-
+      .banner__content.banner__content--bottom-center {
+        align-items: center !important;
+      }
     }
   {%- endstyle -%}
 {%- endif -%}
@@ -28,73 +30,38 @@
   #Banner-{{ section.id }}::after{
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
-  .banner-bottom-info .banner {
-    position: relative;
+  .banner__buttons {
+    padding: 14px 0;
   }
-  .banner-bottom-info .banner__box {
-    max-width: 100%;
-    height: 100%;
-    padding: 0;
+  .banner__content {
+    font-weight: bolder;
   }
-  .banner-bottom-info .banner__content {
-    display: block;
-    width: 100%;
-  }
-  .banner__heading {
+  .banner__buttons a {
+    background: none;
+    color: #000;
     font-weight: bold;
   }
-  .banner-bottom-info .banner__text {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .banner-bottom-info .banner_bottom_info {
-    color: #fff;
-  }
-  .banner-bottom-info .banner_bottom_info .heading {
-    color: #B5EF35;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .banner-bottom-info .banner_bottom_info .heading_1 {
-    color: #fff;
-    font-size: 20px;
-  }
-  .banner-bottom-info .banner__left_bottom_info {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-  }
-  .banner-bottom-info .banner__right_bottom_info {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
+  @media screen and (min-width: 750px) {
+
+    .banner__content.banner__content--bottom-center {
+      align-items: center !important;
+    }
   }
   @media screen and (max-width: 749px) {
-
-    .banner-bottom-info .banner__text {
-      font-size: 24px;
-      font-weight: bold;
+    .banner-text-diy {
+      position: relative;
+      display: block;
+    }
+    .banner-text-diy .banner__media {
+      position: absolute !important;
+      top: 0;
+      height: 100% !important;
     }
 
-    .banner-bottom-info .banner_bottom_info .heading {
-      font-size: 20px;
-    }
-    .banner-bottom-info .banner_bottom_info .heading_1 {
-      font-size: 16px;
-    }
-    .banner-bottom-info .banner__left_bottom_info {
-      position: static;
-    }
-    .banner-bottom-info .banner__right_bottom_info {
-      position: static;
-    }
-    .banner-bottom-info .banner__media {
-      height: 62rem !important;
-    }
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="banner banner-bottom-info banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+<div id="Banner-{{ section.id }}" class="banner banner-text-diy banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -120,82 +87,76 @@
        , alt: section.settings.image.alt | escape
        }}
     </div>
-
+  {%- elsif section.settings.image_2 == blank -%}
+    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {%- endif -%}
+  {%- if section.settings.image_2 != blank -%}
+    <div class="banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}">
+      {%-liquid
+        assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
+        if section.settings.image != blank
+          assign image_class_2 = "banner__media-image-half"
+        endif
+        if section.settings.image != blank and section.settings.stack_images_on_mobile
+          assign sizes = "(min-width: 750px) 50vw, 100vw"
+        elsif section.settings.image != blank
+          assign sizes = "50vw"
+        else
+          assign sizes = "100vw"
+        endif
+      -%}
+      {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
+       loading: 'lazy'
+       , width: section.settings.image_2.width
+       , height: image_height_2
+       , class: image_class_2
+       , sizes: sizes
+       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+       , alt: section.settings.image_2.alt | escape
+       }}
+    </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
-          {%- when 'heading_1' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading_1 | escape }}</span>
-            </h2>
           {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }} style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
               <span>{{ block.settings.text | escape }}</span>
             </div>
+          {%- when 'buttons' -%}
+            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }} style="background:{{ block.settings.button_background }};border-radius:{{ block.settings.btn_radius }}px">
+              {%- if block.settings.button_label_1 != blank -%}
+                <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}" {% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
+              {%- endif -%}
+              {%- if block.settings.button_label_2 != blank -%}
+                <a {% if block.settings.button_link_2 == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}" {% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+              {%- endif -%}
 
-          {%- when 'leftBottomInfo' -%}
-            <div class="banner__left_bottom_info banner_bottom_info" {{ block.shopify_attributes }}>
-              {%- if block.settings.left_icon!= blank -%}
-                <div>
-                  <img src="{{ block.settings.left_icon | image_url: width: 140 }}" alt="{{ item.image.alt | escape }}" width="70" height="70" loading="lazy">
-                </div>
-              {%- endif -%}
-              {%- if block.settings.heading != blank -%}
-                <div class="heading">
-                  {{block.settings.heading  }}
-                </div>
-              {%- endif -%}
-              {%- if block.settings.heading_1 != blank -%}
-                <div class="heading_1">
-                  {{block.settings.heading_1  }}
-                </div>
-              {%- endif -%}
             </div>
-
-          {%- when 'rightBottomInfo' -%}
-            <div class="banner__right_bottom_info banner_bottom_info" {{ block.shopify_attributes }}>
-              {%- if block.settings.right_icon!= blank -%}
-                <div>
-                  <img src="{{ block.settings.right_icon | image_url: width: 140 }}" alt="{{ item.image.alt | escape }}" width="70" height="70" loading="lazy">
-                </div>
-              {%- endif -%}
-              {%- if block.settings.heading != blank -%}
-                <div class="heading">
-                  {{block.settings.heading  }}
-                </div>
-              {%- endif -%}
-              {%- if block.settings.heading_1 != blank -%}
-                <div class="heading_1">
-                  {{block.settings.heading_1  }}
-                </div>
-              {%- endif -%}
-            </div>
-
         {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
-
 </div>
 
 {% schema %}
   {
-    "name": "首页comfortable模块",
+    "name": "带文本的图片diy",
     "tag": "section",
     "class": "section",
     "settings": [
       {
         "type": "image_picker",
         "id": "image",
-        "label": "背景图"
+        "label": "t:sections.image-banner.settings.image.label"
       },
-
       {
         "type": "range",
         "id": "image_overlay_opacity",
@@ -354,30 +315,60 @@
       {
         "type": "heading",
         "name": "t:sections.image-banner.blocks.heading.name",
-        "limit": 2,
+        "limit": 4,
         "settings": [
           {
             "type": "text",
             "id": "heading",
             "default": "Image banner",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
-          }, {
+          },
+          {
             "type": "select",
-            "id": "heading_size",
+            "id": "heading_color",
             "options": [
               {
-                "value": "h2",
-                "label": "t:sections.all.heading_size.options__1.label"
+                "value": "#B5EF35",
+                "label": "主题色"
               }, {
-                "value": "h1",
-                "label": "t:sections.all.heading_size.options__2.label"
+                "value": "#fff",
+                "label": "白色"
               }, {
-                "value": "h0",
-                "label": "t:sections.all.heading_size.options__3.label"
+                "value": "#000",
+                "label": "黑色"
               }
             ],
-            "default": "h1",
-            "label": "t:sections.all.heading_size.label"
+            "default": "#000",
+            "label": "黑色"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
           }
         ]
       }, {
@@ -390,79 +381,132 @@
             "id": "text",
             "default": "Give customers details about the banner image(s) or content on the template.",
             "label": "t:sections.image-banner.blocks.text.settings.text.label"
-          }, {
+          },
+          {
             "type": "select",
-            "id": "text_style",
+            "id": "text_color",
             "options": [
               {
-                "value": "body",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+                "value": "#B5EF35",
+                "label": "主题色"
               }, {
-                "value": "subtitle",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+                "value": "#fff",
+                "label": "白色"
               }, {
-                "value": "caption-with-letter-spacing",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+                "value": "#000",
+                "label": "黑色"
               }
             ],
-            "default": "body",
-            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+            "default": "#000",
+            "label": "黑色"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
           }
+
         ]
       }, {
-        "type": "leftBottomInfo",
-        "name": "左边底部信息",
+        "type": "buttons",
+        "name": "t:sections.image-banner.blocks.buttons.name",
+        "limit": 1,
         "settings": [
           {
             "type": "text",
-            "id": "heading",
-            "default": "FUll SIZE",
-            "label": "标题"
-          }, {
-            "type": "text",
-            "id": "heading_1",
-            "default": "Kitchen/Bedroom/Great Room",
-            "label": "副标题"
-          }, {
-            "type": "image_picker",
-            "label": "图标",
-            "id": "left_icon"
-          }
-        ]
-      }, {
-        "type": "rightBottomInfo",
-        "name": "右边底部信息",
-        "settings": [
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          },
+          {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary_1",
+            "default": false,
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+          },
           {
             "type": "text",
-            "id": "heading",
-            "default": "FUll SIZE",
-            "label": "标题"
+            "id": "button_label_2",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
           }, {
-            "type": "text",
-            "id": "heading_1",
-            "default": "Kitchen/Bedroom/Great Room",
-            "label": "副标题"
+            "type": "url",
+            "id": "button_link_2",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
           }, {
-            "type": "image_picker",
-            "label": "图标",
-            "id": "right_icon"
+            "type": "checkbox",
+            "id": "button_style_secondary_2",
+            "default": false,
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+          }, {
+            "type": "select",
+            "id": "button_background",
+            "options": [
+              {
+                "value": "#000",
+                "label": "黑色"
+              }, {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }
+            ],
+            "default": "#B5EF35",
+            "label": "主题色"
+          }, {
+            "type": "range",
+            "id": "btn_radius",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "圆角幅度",
+            "default": 24
           }
         ]
       }
+
     ],
     "presets": [
       {
-        "name": "首页comfortable模块",
+        "name": "带文本的图片diy",
         "blocks": [
           {
             "type": "heading"
           }, {
             "type": "text"
           }, {
-            "type": "leftBottomInfo"
-          }, {
-            "type": "rightBottomInfo"
+            "type": "buttons"
           }
         ]
       }

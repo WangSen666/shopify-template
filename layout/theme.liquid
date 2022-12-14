@@ -296,18 +296,24 @@
         }
       }
       @media screen and (max-width: 750px) {
-        .banner__content {
-          position: absolute !important;
-        }
 
-       .banner {
+        .banner {
           position: relative;
-          min-height:39rem !important;
+          display: block !important;
         }
-        .collage{
-          flex-wrap:wrap;
+        .banner .banner__media {
+          position: absolute !important;
+          height: 100% !important;
+          top: 0;
         }
-        .collage__item{width:96%;margin: 0 auto;height:200px;}
+        .collage {
+          flex-wrap: wrap;
+        }
+        .collage__item {
+          width: 96%;
+          margin: 0 auto;
+          height: 200px;
+        }
       }
     {% endstyle %}
 
