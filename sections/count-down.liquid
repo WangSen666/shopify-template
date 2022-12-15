@@ -140,13 +140,13 @@
                     {% render 'icon-arrow' %}
                   </button>
                 </div>
-                {%- if form.errors -%}
+<!--                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="ContactFooter-error">
                     {%- render 'icon-error' -%}
                     {{- form.errors.translated_fields.email | capitalize }}
                     {{ form.errors.messages.email -}}
                   </small>
-                {%- endif -%}
+                {%- endif -%} -->
               </div>
               {%- if form.posted_successfully? -%}
                 <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>
