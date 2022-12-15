@@ -247,7 +247,7 @@
   var HourDom=document.getElementsByClassName("hours-time-wrapper")[0];
   var minDom=document.getElementsByClassName("mins-time-wrapper")[0];
   var secDom=document.getElementsByClassName("secs-time-wrapper")[0];
-  setInterVal(function(){
+  setInterval(function(){
     var nowDate=new Date().getTime();
     var lastDate=new Date("2023-02-01").getTime();
     var timeDifference=lastDate-nowDate;
