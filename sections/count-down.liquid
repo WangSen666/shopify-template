@@ -242,13 +242,15 @@
 
 <script>
   window.onload=function(){
-  var nowDate=new Date();
-  var lastDate=new Date("2023-02-01");
+  var nowDate=new Date().getTime();
+  var lastDate=new Date("2023-02-01").getTime();
   var dayDom=document.getElementByClassName("days-time-wrapper")[0];
   var HourDom=document.getElementByClassName("hours-time-wrapper")[0];
   var minDom=document.getElementByClassName("mins-time-wrapper")[0];
   var secDom=document.getElementByClassName("secs-time-wrapper")[0];
+  setTimeOut(function(){
     
+  },1000)  
   console.log("lastDate",lastDate);
   }
 </script>
