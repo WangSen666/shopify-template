@@ -397,6 +397,60 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "5e90d13b-23c2-4988-b271-691555503d66": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h1"
+          }
+        },
+        "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. Tiny homes, homes on wheels, and even ADU are now more appealing than the traditional cookie-cutter house in the suburbs. Experience the freedom of life and also bring people closer to nature<br\/><\/p>",
+            "text_style": "body"
+          }
+        },
+        "9596ae6e-0033-4692-8c9d-295d4fe591d5": {
+          "type": "caption",
+          "settings": {
+            "caption": "PODX GO IS CHANGING THAT!",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN MORE",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-0",
+        "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-1",
+        "9596ae6e-0033-4692-8c9d-295d4fe591d5",
+        "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/s2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "show_social": false
+      }
     }
   },
   "order": [
@@ -407,6 +461,7 @@
     "1467da59-c41b-4670-a937-8536c57e0f67",
     "multicolumn",
     "87643d95-d0d1-49cc-8af2-0f3d355644cc",
-    "5b076acf-4c6c-4e33-b22d-f347e15f5967"
+    "5b076acf-4c6c-4e33-b22d-f347e15f5967",
+    "5e90d13b-23c2-4988-b271-691555503d66"
   ]
 }
