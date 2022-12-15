@@ -243,10 +243,10 @@
 <script>
   window.onload=function(){
   
-  var dayDom=document.getElementByClassName("days-time-wrapper")[0];
-  var HourDom=document.getElementByClassName("hours-time-wrapper")[0];
-  var minDom=document.getElementByClassName("mins-time-wrapper")[0];
-  var secDom=document.getElementByClassName("secs-time-wrapper")[0];
+  var dayDom=document.getElementsByClassName("days-time-wrapper")[0];
+  var HourDom=document.getElementsByClassName("hours-time-wrapper")[0];
+  var minDom=document.getElementsByClassName("mins-time-wrapper")[0];
+  var secDom=document.getElementsByClassName("secs-time-wrapper")[0];
   setTimeOut(function(){
     var nowDate=new Date().getTime();
     var lastDate=new Date("2023-02-01").getTime();
