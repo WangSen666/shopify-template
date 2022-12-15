@@ -242,14 +242,27 @@
 
 <script>
   window.onload=function(){
-  var nowDate=new Date().getTime();
-  var lastDate=new Date("2023-02-01").getTime();
+  
   var dayDom=document.getElementByClassName("days-time-wrapper")[0];
   var HourDom=document.getElementByClassName("hours-time-wrapper")[0];
   var minDom=document.getElementByClassName("mins-time-wrapper")[0];
   var secDom=document.getElementByClassName("secs-time-wrapper")[0];
   setTimeOut(function(){
-    
+    var nowDate=new Date().getTime();
+    var lastDate=new Date("2023-02-01").getTime();
+    var timeDifference=lastDate-nowDate;
+    //计算小时数 转化为整数
+    var h = parseInt(timeDifference / 60 / 60 % 24);
+    //如果小时数小于 10，要变成 0 + 数字的形式 赋值给盒子
+    HourDom.innerHTML = h < 10 ? "0" + h : h;
+    //计算分钟数 转化为整数
+    var m = parseInt(timeDifference / 60 % 60);
+    //如果分钟数小于 10，要变成 0 + 数字的形式 赋值给盒子
+    minDom.innerHTML = m < 10 ? "0" + m : m;
+    //计算描述 转化为整数
+    var s = parseInt(timeDifference % 60);
+    secDom.innerHTML = s < 10 ? "0" + s : s;
+
   },1000)  
   console.log("lastDate",lastDate);
   }
