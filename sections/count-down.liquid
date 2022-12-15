@@ -251,6 +251,10 @@
     var nowDate=new Date().getTime();
     var lastDate=new Date("2023-02-01").getTime();
     var timeDifference=(lastDate-nowDate)/1000;
+    
+    var days=parseInt(timeDifference / (60 * 60 * 24))
+    dayDom.innerHTML = days < 10 ? "0" + days : days;
+    
     //计算小时数 转化为整数
     var h = parseInt(timeDifference/60/60%24);
     //如果小时数小于 10，要变成 0 + 数字的形式 赋值给盒子
