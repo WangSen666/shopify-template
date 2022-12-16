@@ -451,6 +451,62 @@
         "padding_bottom": 36,
         "show_social": false
       }
+    },
+    "dc319046-72c9-416e-acdf-236f7dee755c": {
+      "type": "image-banner-text-diy",
+      "blocks": {
+        "template--15546009845860__dc319046-72c9-416e-acdf-236f7dee755c-167115270853989385-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We are born designer.",
+            "heading_color": "#fff",
+            "font_size": 52,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15546009845860__dc319046-72c9-416e-acdf-236f7dee755c-167115270853989385-1": {
+          "type": "text",
+          "settings": {
+            "text": "We believe that everyone has a unique perspective on how we should live.",
+            "text_color": "#fff",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15546009845860__dc319046-72c9-416e-acdf-236f7dee755c-167115270853989385-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "GO DESIGNING",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009845860__dc319046-72c9-416e-acdf-236f7dee755c-167115270853989385-0",
+        "template--15546009845860__dc319046-72c9-416e-acdf-236f7dee755c-167115270853989385-1",
+        "template--15546009845860__dc319046-72c9-416e-acdf-236f7dee755c-167115270853989385-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -462,6 +518,7 @@
     "multicolumn",
     "87643d95-d0d1-49cc-8af2-0f3d355644cc",
     "5b076acf-4c6c-4e33-b22d-f347e15f5967",
-    "5e90d13b-23c2-4988-b271-691555503d66"
+    "5e90d13b-23c2-4988-b271-691555503d66",
+    "dc319046-72c9-416e-acdf-236f7dee755c"
   ]
 }
