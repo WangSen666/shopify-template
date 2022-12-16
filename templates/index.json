@@ -157,9 +157,9 @@
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/a-cottage-home-with-picket-fence.jpg",
+        "image": "shopify:\/\/shop_images\/001.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "top-left",
         "show_text_box": true,
@@ -237,7 +237,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/s.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "top-left",
         "show_text_box": true,
