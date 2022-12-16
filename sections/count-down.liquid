@@ -138,9 +138,7 @@
                   autocorrect="off"
                   autocapitalize="off"
                   autocomplete="email"
-                  {% if form.errors %}autofocusaria-invalid="true"aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%}
-                  placeholder="Email Address"
-                  required>
+                  {% if form.errors %}autofocusaria-invalid="true"aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%}placeholder="Email Address"required>
                 <label class="field__label" for="NewsletterForm--{{ section.id }}">
                   ENTER YOUR EMAIL
                 </label>
@@ -189,6 +187,21 @@
 {% style %}
   .count-down {
     color: #fff;
+  }
+  .time-head {
+    font-size: 34px;
+    font-weight: bolder;
+    line-height: 68px;
+  }
+  .time-tip {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .time-box {
+    margin: 14px auto;
+    width: 100%;
+    line-height: 110px;
+    display: flex;
   }
   .time-head {
     font-size: 34px;
