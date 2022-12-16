@@ -237,7 +237,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/s.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "top-left",
         "show_text_box": true,
