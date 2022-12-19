@@ -36,47 +36,50 @@
         "show_text_below": false
       }
     },
-    "5ad2bd3e-104b-44fd-a068-182441903274": {
-      "type": "image-banner-text-diy",
+    "a1deb0dd-d7e5-47fe-936c-93dea8c0b469": {
+      "type": "smart-and-comfortable-home",
       "blocks": {
-        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-0": {
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-0": {
           "type": "heading",
           "settings": {
-            "heading": "GATHER TO CREATE",
-            "heading_color": "#fff",
-            "font_size": 64,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         },
-        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-1": {
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-1": {
           "type": "text",
           "settings": {
-            "text": "What If An Idea Is More Than An Idea",
-            "text_color": "#fff",
-            "font_size": 16,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
           }
         },
-        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-2": {
-          "type": "buttons",
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-2": {
+          "type": "leftBottomInfo",
           "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "button_background": "#B5EF35",
-            "btn_radius": 24
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room"
+          }
+        },
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-3": {
+          "type": "centerBottomInfo",
+          "settings": {
+            "heading_1": "Kitchen\/Bedroom\/Great Room"
+          }
+        },
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-4": {
+          "type": "rightBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room"
           }
         }
       },
       "block_order": [
-        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-0",
-        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-1",
-        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-2"
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-0",
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-1",
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-2",
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-3",
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-4"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/3.png",
@@ -559,7 +562,7 @@
   },
   "order": [
     "image_banner",
-    "5ad2bd3e-104b-44fd-a068-182441903274",
+    "a1deb0dd-d7e5-47fe-936c-93dea8c0b469",
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
     "811262fa-dfb8-4331-95a8-890b40e00fcd",
