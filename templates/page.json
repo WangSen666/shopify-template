@@ -93,7 +93,7 @@
       }
     },
     "main": {
-      "type": "main-page",
+      "type": "main-co-creation",
       "disabled": true,
       "settings": {
         "padding_top": 28,
