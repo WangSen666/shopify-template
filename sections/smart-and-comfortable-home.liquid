@@ -166,7 +166,7 @@
                 </div>
               {%- endif -%}
               {%- if block.settings.heading != blank -%}
-                <div class="heading">
+                <div class="heading_1">
                   {{block.settings.heading  }}
                 </div>
               {%- endif -%}
@@ -443,7 +443,24 @@
             "id": "left_icon"
           }
         ]
-      }, {
+      },
+      {
+        "type": "centerBottomInfo",
+        "name": "中间底部信息",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading_1",
+            "default": "Kitchen/Bedroom/Great Room",
+            "label": "副标题"
+          }, {
+            "type": "image_picker",
+            "label": "图标",
+            "id": "left_icon"
+          }
+        ]
+      },
+      {
         "type": "rightBottomInfo",
         "name": "右边底部信息",
         "settings": [
