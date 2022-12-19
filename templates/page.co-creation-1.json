@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "bf9e9c41-bb5e-4714-bbf4-891dc5356158": {
+      "type": "image-banner-text-diy",
+      "blocks": {
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CO-CREATION LAB",
+            "heading_color": "#fff",
+            "font_size": 52,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-1": {
+          "type": "text",
+          "settings": {
+            "text": "The Home That Runs Upon Cool Ideas",
+            "text_color": "#fff",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-0",
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-1",
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/001.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-co-creation",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "bf9e9c41-bb5e-4714-bbf4-891dc5356158",
+    "main"
+  ]
+}
