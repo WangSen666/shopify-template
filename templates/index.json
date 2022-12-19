@@ -80,9 +80,9 @@
         "template--15546009845860__f3b456c7-6f77-4965-ab79-a780c4f04178-1670833943be74c0c3-1": {
           "type": "text",
           "settings": {
-            "text_1": "Image with text",
-            "text_2": "Image with text",
-            "text_3": "Image with text"
+            "text_1": "Unpack in 15 mins..",
+            "text_2": "Up to 3X bigger.",
+            "text_3": "Off-grid supported."
           }
         },
         "template--15546009845860__f3b456c7-6f77-4965-ab79-a780c4f04178-1670833943be74c0c3-0": {
@@ -98,7 +98,7 @@
         "template--15546009845860__f3b456c7-6f77-4965-ab79-a780c4f04178-1670833943be74c0c3-0"
       ],
       "settings": {
-        "heading": "Multimedia collage",
+        "heading": "Together we design and build tiny homes for......",
         "heading_size": "h1",
         "desktop_layout": "right",
         "mobile_layout": "collage",
