@@ -1,41 +1,5 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "GATHER TO CREATE",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "What If An Idea Is More Than An Idea",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "a1deb0dd-d7e5-47fe-936c-93dea8c0b469": {
       "type": "smart-and-comfortable-home",
       "blocks": {
@@ -50,7 +14,10 @@
           "type": "text",
           "settings": {
             "text": "What If An Idea Is More Than An Idea",
-            "text_style": "body"
+            "text_style": "body",
+            "font_size": 12,
+            "margin_top": 84,
+            "margin_bottom": 24
           }
         },
         "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-3": {
@@ -155,7 +122,10 @@
           "type": "text",
           "settings": {
             "text": "Let's go for a",
-            "text_style": "body"
+            "text_style": "body",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0": {
@@ -169,7 +139,10 @@
           "type": "text",
           "settings": {
             "text": "all the way down.",
-            "text_style": "body"
+            "text_style": "body",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2": {
@@ -550,7 +523,6 @@
     }
   },
   "order": [
-    "image_banner",
     "a1deb0dd-d7e5-47fe-936c-93dea8c0b469",
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
