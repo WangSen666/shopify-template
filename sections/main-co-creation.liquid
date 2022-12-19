@@ -9,18 +9,6 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  /*关于我们页面图片轮播快 */
-
-  /* .banner__box {
-    background: none;
-  }
-  .banner__box .banner__heading {
-    color: #fff;
-    font-size: 48px;
-  }
-  .banner__box .banner__text {
-    color: #fff;
-  } */
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -28,17 +16,7 @@
     }
   }
   @media screen and (max-width:750px) {
-    .banner {
-      position: relative;
-      min-height: 39rem !important;
-    }
-    .banner__box .banner__heading {
-      color: #fff;
-      font-size: 28px;
-    }
 
-
-  }
 {%- endstyle -%}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
