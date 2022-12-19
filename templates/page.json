@@ -7,9 +7,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "658b18d3-0b18-467b-8f8a-9ede2840dac7": {
+      "type": "page",
+      "settings": {
+        "page": "co-creation",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "658b18d3-0b18-467b-8f8a-9ede2840dac7"
   ]
 }
