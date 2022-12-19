@@ -157,7 +157,21 @@
                 </div>
               {%- endif -%}
             </div>
-
+          {%- when 'centerBottomInfo' -%}
+          <div class="banner__center_bottom_info banner_bottom_info">
+            <div class="banner__center_bottom_item">
+              {%- if block.settings.center_icon!= blank -%}
+                <div>
+                  <img src="{{ block.settings.center_icon | image_url: width: 140 }}" alt="{{ item.image.alt | escape }}" width="60" height="60" loading="lazy">
+                </div>
+              {%- endif -%}
+              {%- if block.settings.heading != blank -%}
+                <div class="heading">
+                  {{block.settings.heading  }}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
           {%- when 'rightBottomInfo' -%}
             <div class="banner__right_bottom_info banner_bottom_info" {{ block.shopify_attributes }}>
               {%- if block.settings.right_icon!= blank -%}
