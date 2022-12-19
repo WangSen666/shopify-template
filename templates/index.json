@@ -16,19 +16,11 @@
             "text": "What If An Idea Is More Than An Idea",
             "text_style": "body"
           }
-        },
-        "9b393264-1f9f-45f6-bad1-88b58a56027f": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "9b393264-1f9f-45f6-bad1-88b58a56027f"
+        "text"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
@@ -42,6 +34,62 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "5ad2bd3e-104b-44fd-a068-182441903274": {
+      "type": "image-banner-text-diy",
+      "blocks": {
+        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "GATHER TO CREATE",
+            "heading_color": "#fff",
+            "font_size": 64,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-1": {
+          "type": "text",
+          "settings": {
+            "text": "What If An Idea Is More Than An Idea",
+            "text_color": "#fff",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-0",
+        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-1",
+        "template--15546009845860__5ad2bd3e-104b-44fd-a068-182441903274-16714126519fa3ee66-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "rich_text": {
@@ -511,6 +559,7 @@
   },
   "order": [
     "image_banner",
+    "5ad2bd3e-104b-44fd-a068-182441903274",
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
     "811262fa-dfb8-4331-95a8-890b40e00fcd",
