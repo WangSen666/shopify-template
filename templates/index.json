@@ -53,23 +53,9 @@
             "text_style": "body"
           }
         },
-        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-2": {
-          "type": "leftBottomInfo",
-          "settings": {
-            "heading": "FUll SIZE",
-            "heading_1": "Kitchen\/Bedroom\/Great Room"
-          }
-        },
         "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-3": {
           "type": "centerBottomInfo",
           "settings": {
-            "heading_1": "Kitchen\/Bedroom\/Great Room"
-          }
-        },
-        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-4": {
-          "type": "rightBottomInfo",
-          "settings": {
-            "heading": "FUll SIZE",
             "heading_1": "Kitchen\/Bedroom\/Great Room"
           }
         }
@@ -77,9 +63,7 @@
       "block_order": [
         "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-0",
         "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-1",
-        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-2",
-        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-3",
-        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-4"
+        "template--15546009845860__a1deb0dd-d7e5-47fe-936c-93dea8c0b469-1671414225749c6ae7-3"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/3.png",
