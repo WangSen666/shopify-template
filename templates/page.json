@@ -243,6 +243,41 @@
         "padding_bottom": 36,
         "show_social": false
       }
+    },
+    "ea8483ca-5d41-4c5b-a9c8-b14a27425e60": {
+      "type": "podxgo-team-tip",
+      "blocks": {
+        "template--15546009780324__ea8483ca-5d41-4c5b-a9c8-b14a27425e60-16714306985a6a3317-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--15546009780324__ea8483ca-5d41-4c5b-a9c8-b14a27425e60-16714306985a6a3317-1": {
+          "type": "text",
+          "settings": {
+            "text": "A Mobile & Foldable Tiny House.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15546009780324__ea8483ca-5d41-4c5b-a9c8-b14a27425e60-16714306985a6a3317-0",
+        "template--15546009780324__ea8483ca-5d41-4c5b-a9c8-b14a27425e60-16714306985a6a3317-1"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -251,6 +286,7 @@
     "main",
     "e1e03f82-d9be-4520-9cb3-80eb9a3ca35a",
     "c7429989-0c84-4a3a-b6a8-30e910667f5a",
-    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33"
+    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33",
+    "ea8483ca-5d41-4c5b-a9c8-b14a27425e60"
   ]
 }
