@@ -1,30 +1,29 @@
 {
   "sections": {
-    "522756c7-9015-45db-a1fb-81cff63756e3": {
-      "type": "image-banner",
+    "bf9e9c41-bb5e-4714-bbf4-891dc5356158": {
+      "type": "image-banner-text-diy",
       "blocks": {
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0": {
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-0": {
           "type": "heading",
           "settings": {
-            "heading": "BE CREATIVE.",
-            "heading_size": "h1"
+            "heading": "CO-CREATION LAB",
+            "heading_color": "#fff",
+            "font_size": 52,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
-        "74add986-2b77-48f9-ade2-a927aeb40756": {
-          "type": "heading",
-          "settings": {
-            "heading": "BE RELIABLE.",
-            "heading_size": "h1"
-          }
-        },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1": {
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-1": {
           "type": "text",
           "settings": {
-            "text": "We strive for sustainable solutions, taking into account all people.",
-            "text_style": "body"
+            "text": "CO-CREATION LAB",
+            "text_color": "#fff",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2": {
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "",
@@ -32,18 +31,19 @@
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
           }
         }
       },
       "block_order": [
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0",
-        "74add986-2b77-48f9-ade2-a927aeb40756",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2"
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-0",
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-1",
+        "template--15559734788196__bf9e9c41-bb5e-4714-bbf4-891dc5356158-167143768954adc6d4-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
+        "image": "shopify:\/\/shop_images\/001.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -58,6 +58,7 @@
     },
     "main": {
       "type": "main-co-creation",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -65,7 +66,7 @@
     }
   },
   "order": [
-    "522756c7-9015-45db-a1fb-81cff63756e3",
+    "bf9e9c41-bb5e-4714-bbf4-891dc5356158",
     "main"
   ]
 }
