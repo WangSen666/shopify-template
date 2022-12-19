@@ -168,14 +168,38 @@
           {%- when 'centerBottomInfo' -%}
           <div class="banner__center_bottom_info banner_bottom_info">
             <div class="banner__center_bottom_item">
+              {%- if block.settings.center_icon_1!= blank -%}
+                <div>
+                  <img src="{{ block.settings.center_icon_1 | image_url: width: 140 }}" alt="{{ item.image.alt | escape }}" width="60" height="60" loading="lazy">
+                </div>
+              {%- endif -%}
+              {%- if block.settings.heading_1 != blank -%}
+                <div class="heading_1">
+                  {{block.settings.heading_1  }}
+                </div>
+              {%- endif -%}
+            </div>
+          <div class="banner__center_bottom_item">
               {%- if block.settings.center_icon!= blank -%}
                 <div>
                   <img src="{{ block.settings.center_icon | image_url: width: 140 }}" alt="{{ item.image.alt | escape }}" width="60" height="60" loading="lazy">
                 </div>
               {%- endif -%}
-              {%- if block.settings.heading != blank -%}
+              {%- if block.settings.heading_2 != blank -%}
                 <div class="heading_1">
-                  {{block.settings.heading  }}
+                  {{block.settings.heading_2  }}
+                </div>
+              {%- endif -%}
+            </div>
+            <div class="banner__center_bottom_item">
+              {%- if block.settings.center_icon_3!= blank -%}
+                <div>
+                  <img src="{{ block.settings.center_icon_3 | image_url: width: 140 }}" alt="{{ item.image.alt | escape }}" width="60" height="60" loading="lazy">
+                </div>
+              {%- endif -%}
+              {%- if block.settings.heading_3 != blank -%}
+                <div class="heading_1">
+                  {{block.settings.heading_3  }}
                 </div>
               {%- endif -%}
             </div>
