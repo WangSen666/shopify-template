@@ -150,7 +150,7 @@
               <span>{{ block.settings.heading_1 | escape }}</span>
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
               <span>{{ block.settings.text | escape }}</span>
             </div>
 
@@ -167,7 +167,7 @@
                 </div>
               {%- endif -%}
               {%- if block.settings.heading_1 != blank -%}
-                <div class="heading_1" style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
+                <div class="heading_1" >
                   {{block.settings.heading_1  }}
                 </div>
               {%- endif -%}
