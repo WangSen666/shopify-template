@@ -19,10 +19,10 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-    .media--transparent {
+    .media--transparent-with-text {
       position: relative;
     }
-    .media--transparent img {
+    .media--transparent-with-text img {
       width: 50px !important;
       height: 50px !important;
       top: 50% !important;
@@ -31,7 +31,7 @@
   }
   @media screen and (max-width: 1024px) {
 
-    .media--transparent img {
+    .media--transparent-with-text img {
       width: 100px !important;
       height: 100px !important;
       top: 50% !important;
@@ -40,7 +40,7 @@
   }
   @media screen and (max-width: 500px) {
 
-    .media--transparent img {
+    .media--transparent-with-text img {
       width: 60px !important;
       height: 60px !important;
       top: 50% !important;
@@ -93,7 +93,7 @@
                   {% assign spaced_image = true %}
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}" {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"{% endif %}>
+                  <div class="media media--transparent-with-text media--{{ section.settings.image_ratio }}" {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"{% endif %}>
                     {%- capture sizes -%}(min-width: 990px)
                       {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px)
                       {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
