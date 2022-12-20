@@ -98,8 +98,9 @@
             {%- when 'text' -%}
             <div class="text-wrapper">
                 <div>
+                  <p class="text-wrapper-heading"  style="color:{{ block.settings.text_color }}">{{ block.settings.text_2 | escape }}</p>
                   <p style="color:{{ block.settings.text_color }}">{{ block.settings.text_1 | escape }}</p>
-                  <p style="color:{{ block.settings.text_color }}">{{ block.settings.text_2 | escape }}</p>
+                  <p class="text-wrapper-heading"  style="color:{{ block.settings.text_color }}">{{ block.settings.text_2 | escape }}</p>
                   <p style="color:{{ block.settings.text_color }}">{{ block.settings.text_3 | escape }}</p>
                 </div>
             </div>
@@ -351,6 +352,11 @@
             "default": "#000",
             "label": "黑色"
           },
+          {
+           "type":"text",
+           "id":"heading_1",
+           "label":"标题1"
+         },
          {
            "type":"text",
            "id":"text_1",
@@ -358,13 +364,13 @@
          },
           {
            "type":"text",
-           "id":"text_2",
-            "label":"文本2"
+           "id":"heading_2",
+            "label":"标题2"
          },
           {
            "type":"text",
-           "id":"text_3",
-           "label":"文本3"
+           "id":"text_2",
+           "label":"文本2"
          }
         ]
       }, {
