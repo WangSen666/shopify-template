@@ -10,7 +10,14 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
     px;
   }
-  .video-with-text {}
+ .video-text-diy {
+    display: flex;
+    justify-content: space-around;
+  }
+  .video-text-diy .page-width {
+    width: 50%;
+    margin: unset;
+  }
   .video-with-text .collage__item {
     position: relative
   }
