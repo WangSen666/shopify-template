@@ -24,6 +24,12 @@
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {% when 'image_item' %}
+            <div class="image_box">
+              <div class="image_item">
+                
+              </div>
+            </div>
             {%- when 'heading' -%}
               <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
