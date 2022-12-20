@@ -106,7 +106,7 @@
           </div>
 
             {%- when 'video' -%}
-              <<div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}>
+              <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}>
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}{{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
                 <noscript>
                   <a href="{{ block.settings.video_url }}" class="collage-card__link{% if block.settings.image_padding %} collage-card-spacing{% endif %}">
