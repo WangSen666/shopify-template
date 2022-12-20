@@ -23,9 +23,14 @@
   <div class="co-creation-work">
     
 
-   {% for block in settings %}
-    
-    {% endfor %}
+   {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when "leftWrapper" -%}
+        <div class="left-wrapper"></div>
+        {%- when "rightWrapper" -%}
+        <div class="right-wrapper"></div>
+      {%- endcase -%}
+    {%- endfor -%}
     
   </div>
 </div>
