@@ -40,6 +40,10 @@
   .right-wrapper{
     width:48%;
   }
+  .right-wrapper .right-text{
+    color:#fff;
+    margin:20px auto;
+  }
   @media screen and (max-width: 1660px) {
   
   }
@@ -89,16 +93,16 @@
         </div>
         {%- when "rightWrapper" -%}
         <div class="right-wrapper">
-           <div class="right-heading">
+           <div class="right-text">
             {{ block.settings.text_1  }}
           </div>
-          <div class="right-heading">
+          <div class="right-text">
             {{ block.settings.text_2  }}
           </div>
-          <div class="right-heading">
+          <div class="right-text">
             {{ block.settings.text_3  }}
           </div>
-          <div class="right-heading">
+          <div class="right-text">
             {{ block.settings.text_4  }}
           </div>
         </div>
