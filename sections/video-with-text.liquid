@@ -10,14 +10,6 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
     px;
   }
- .video-text-diy {
-    display: flex;
-    justify-content: space-around;
-  }
-  .video-text-diy .page-width {
-    width: 50%;
-    margin: unset;
-  }
   .video-with-text .collage__item {
     position: relative
   }
@@ -52,14 +44,7 @@
     }
   }
   @media screen and (max-width: 750px) {
-    .video-text-diy {
-      display: block;
-
-    }
-    .video-text-diy .page-width {
-      width: 90%;
-      margin: 0 auto;
-    }
+   
     .collage {
       flex-wrap: wrap;
     }
@@ -77,7 +62,7 @@
   media="print"
   onload="this.media='all'">
 
-<div class="video-text-diy color-{{ section.settings.color_scheme }} gradient isolate">
+<div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
     <h2 class="collage-wrapper-title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
     <div class="collage video-with-text {% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
