@@ -91,21 +91,7 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type":"image_picker",
-      "id":"image_item_1",
-      "label":"顶部照片1"
-    },
-    {
-      "type":"image_picker",
-      "id":"image_item_2",
-      "label":"顶部照片2"
-    },
-    {
-      "type":"image_picker",
-      "id":"image_item_3",
-      "label":"顶部照片3"
-    },
+    
     {
       "type": "select",
       "id": "desktop_content_position",
@@ -207,7 +193,27 @@
     }
   ],
   "blocks": [
-   
+    {
+      "type":"image_item" ,
+      "name":"图片内容",
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"image_item_1",
+          "label":"顶部照片1"
+        },
+        {
+          "type":"image_picker",
+          "id":"image_item_2",
+          "label":"顶部照片2"
+        },
+        {
+          "type":"image_picker",
+          "id":"image_item_3",
+          "label":"顶部照片3"
+        }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.rich-text.blocks.heading.name",
@@ -357,7 +363,9 @@
         {
           "type": "heading"
         },
-       
+       {
+         "type":"image_item"
+       },
         {
           "type": "text"
         },
