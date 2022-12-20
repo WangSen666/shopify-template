@@ -231,6 +231,73 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "e3e01276-755c-4785-bb02-6d501e7bb0d5": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15559734788196__e3e01276-755c-4785-bb02-6d501e7bb0d5-1671525063740f9f90-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s2_2766399b-7fe3-4c5f-a414-8ef50e36b6d6.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15559734788196__e3e01276-755c-4785-bb02-6d501e7bb0d5-1671525063740f9f90-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s2_2766399b-7fe3-4c5f-a414-8ef50e36b6d6.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15559734788196__e3e01276-755c-4785-bb02-6d501e7bb0d5-1671525063740f9f90-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/001.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "28a0c507-4f0b-4163-9ed0-4a4943166780": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s2_2766399b-7fe3-4c5f-a414-8ef50e36b6d6.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15559734788196__e3e01276-755c-4785-bb02-6d501e7bb0d5-1671525063740f9f90-0",
+        "template--15559734788196__e3e01276-755c-4785-bb02-6d501e7bb0d5-1671525063740f9f90-1",
+        "template--15559734788196__e3e01276-755c-4785-bb02-6d501e7bb0d5-1671525063740f9f90-2",
+        "28a0c507-4f0b-4163-9ed0-4a4943166780"
+      ],
+      "settings": {
+        "title": "Inspiration Cases",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -239,6 +306,7 @@
     "main",
     "0dbdf82d-8492-49f0-8c5b-4952a77f9b6e",
     "91af719e-60f8-48b3-8e5b-db5074a4194d",
-    "b5fd320a-5f00-4727-a99c-82d36a599113"
+    "b5fd320a-5f00-4727-a99c-82d36a599113",
+    "e3e01276-755c-4785-bb02-6d501e7bb0d5"
   ]
 }
