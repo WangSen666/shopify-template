@@ -121,8 +121,18 @@
         "template--15559734788196__de5ad20b-2f42-4e65-97f0-0ba7a33fcc40-16715041843ce51fee-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "In 2020 PODX GO and RENOGY partered on a highly original concept involving the use of renewable energy. As we dubbed it: A Solar Powered Mobile Showroom, the objective was made clear: a whole tiny house could be powered by solar energy.",
             "text_color": "#fff",
+            "font_size": 12,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "e99d3048-3bc3-4955-843a-d055162a70d5": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_color": "#000",
             "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24
@@ -138,6 +148,7 @@
       },
       "block_order": [
         "template--15559734788196__de5ad20b-2f42-4e65-97f0-0ba7a33fcc40-16715041843ce51fee-1",
+        "e99d3048-3bc3-4955-843a-d055162a70d5",
         "template--15559734788196__de5ad20b-2f42-4e65-97f0-0ba7a33fcc40-16715041843ce51fee-0"
       ],
       "settings": {
