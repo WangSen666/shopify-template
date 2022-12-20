@@ -69,7 +69,7 @@
       {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'image' -%}
-          <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}></div>
+          <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}>
             <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
               <div
                 class="media media--transparent ratio"
