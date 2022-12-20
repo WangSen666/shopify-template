@@ -207,43 +207,19 @@
         "template--15559734788196__b5fd320a-5f00-4727-a99c-82d36a599113-167152489055fc60b0-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_color": "#000",
-            "font_size": 24,
+            "heading": "Customize Your HomeInside Out",
+            "heading_color": "#B5EF35",
+            "font_size": 56,
             "margin_top": 24,
             "margin_bottom": 24
-          }
-        },
-        "template--15559734788196__b5fd320a-5f00-4727-a99c-82d36a599113-167152489055fc60b0-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_color": "#000",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24
-          }
-        },
-        "template--15559734788196__b5fd320a-5f00-4727-a99c-82d36a599113-167152489055fc60b0-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "button_background": "#B5EF35",
-            "btn_radius": 24
           }
         }
       },
       "block_order": [
-        "template--15559734788196__b5fd320a-5f00-4727-a99c-82d36a599113-167152489055fc60b0-0",
-        "template--15559734788196__b5fd320a-5f00-4727-a99c-82d36a599113-167152489055fc60b0-1",
-        "template--15559734788196__b5fd320a-5f00-4727-a99c-82d36a599113-167152489055fc60b0-2"
+        "template--15559734788196__b5fd320a-5f00-4727-a99c-82d36a599113-167152489055fc60b0-0"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/s2_2766399b-7fe3-4c5f-a414-8ef50e36b6d6.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
