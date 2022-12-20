@@ -1,12 +1,345 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  .podxgo-partner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  .become-a-partner,
+  .why-podxgo {
+    width: 55%;
+    padding: 36px 20px;
+    background: #fff;
+    border-radius: 24px;
+  }
+  .why-podxgo {
+    width: 35%;
+  }
+  .become-a-partner .title,
+  .why-podxgo .why-podxgo-header {
+    color: black;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+  }
+  .become-a-partner .field {
+    display: block;
+  }
+  .become-a-partner .field input,
+  #ContactForm-body {
+    background: #E0E6E6;
+    border-radius: 14px;
+  }
+  .become-a-partner .field .field-title {
+    display: block;
+    color: black;
+    font-weight: bolder;
+  }
+  .become-a-partner .field .field-tip {
+    color: #737373;
+  }
+
+  .become-a-partner .contact__button .button {
+    margin: 14px auto;
+    background: #B5EF35;
+    border-radius: 40px;
+    font-weight: bolder;
+    padding: 14px 34px;
+    font-size: 20px;
+  }
+
+
+  .why-podxgo-content {
+    padding-top: 100px;
+  }
+  .why-podxgo-cell {
+    margin: 14px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .why-podxgo-cell img {
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .why-podxgo-cell .why-podxgo-cell-content {
+    font-weight: bolder;
+    color: black;
+  }
+  @media screen and (max-width: 1660px) {
+    .podxgo-partner {
+      width: 90%;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .podxgo-partner {
+      width: 80%;
+      flex-wrap: wrap;
+
+    }
+    .why-podxgo-cell img {
+      width: 60px;
+      height: 60px;
+    }
+    .become-a-partner {
+      width: 100%;
+      margin: 24px auto 14px;
+      padding: 16px 14px;
+    }
+    .become-a-partner .title {
+      font-size: 30px;
+    }
+    .contact .field {
+      margin-bottom: 0.5rem;
+    }
+    .why-podxgo {
+      width: 100%;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient ">
+  <div class="podxgo-partner">
+    <div class="why-podxgo">
+      <div class="why-podxgo-header">Why PODX GO?</div>
+      <div class="why-podxgo-content">
+        {%- if section.settings.image != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
+        {%- if section.settings.image_1 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_1 | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
+        {%- if section.settings.image_2 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_2 | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
+        {%- if section.settings.image_3 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_3 | image_url: width: 100 }}"/>
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {%endif%}
+      </div>
+    </div>
+
+    {%- comment -%}
+      Become a partner
+    {%- endcomment -%}
+    <div class="contact become-a-partner page-width page-width--narrow section-{{ section.id }}-padding">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+      {%- else -%}
+        <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+      {%- endif -%}
+      {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
+        {%- if form.posted_successfully? -%}
+          <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
+        {%- elsif form.errors -%}
+          <div class="form__message">
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+          </div>
+          {%- comment -%}
+            <ul class="form-status-list caption-large" role="list">
+            <li>
+            <a href="#ContactForm-email" class="link">
+            {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+            </a>
+            </li>
+            </ul>
+          {%- endcomment -%}
+        {%- endif -%}
+        <div class="contact__fields">
+          <div class="field">
+            <div class="field-title">name*</div>
+            <div class="field-content">
+              <input class="field__input" autocomplete="name" type="text" id="first-name" name="contact[FirstName]" value="{% if form.FirstName %}{{ form.FirstName }}{% elsif customer %}{{ customer.FirstName }}{% endif %}" placeholder="{{ 'templates.contact.form.FirstName' | t }}">
+            </div>
+            <div class="field-tip">First Name</div>
+          </div>
+          <div class="field">
+            <div class="field-title" style="color:#fff;">name*</div>
+
+            <div class="field-content">
+              <input class="field__input" autocomplete="name" type="text" id="last-name" name="contact[LastName]" value="{% if form.LastName %}{{ form.LastName }}{% elsif customer %}{{ customer.LastName }}{% endif %}" placeholder="{{ 'templates.contact.form.LastName' | t }}">
+            </div>
+            <div class="field-tip">Last Name</div>
+          </div>
+
+        </div>
+        <div class="field">
+          <div class="field-title">Your Business Name*</div>
+
+          <div class="field-content">
+            {%- comment -%}
+              <input class="field__input" autocomplete="name" type="text" id="business-name" name="contact[{{ 'templates.contact.form.businessName' | t }}]" value="{% if form.businessName %}{{ form.businessName }}{% elsif customer %}{{ customer.businessName }}{% endif %}" placeholder="{{ 'templates.contact.form.businessName' | t }}">
+            {%- endcomment -%}
+
+            <input class="field__input" autocomplete="name" type="text" id="business-name" name="contact[businessName]" value="{% if form.businessName %}{{ form.businessName }}{% elsif customer %}{{ customer.businessName }}{% endif %}" placeholder="{{ 'templates.contact.form.businessName' | t }}">
+          </div>
+        </div>
+
+        <div class="field field--with-error">
+          <div class="field-title">email*</div>
+          <div class="field-content">
+            <input autocomplete="email" type="email" id="ContactForm-email" class="field__input" name="contact[email]" spellcheck="false" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" aria-required="true" {% if form.errors contains 'email' %}aria-invalid="true"aria-describedby="ContactForm-email-error"{% endif %}placeholder="{{ 'templates.contact.form.email' | t }}">
+            {%- comment -%}
+              {%- if form.errors contains 'email' -%}
+              <small class="contact__field-error" id="ContactForm-email-error">
+              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+              <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+              </small>
+              {%- endif -%}
+            {%- endcomment -%}
+          </div>
+
+        </div>
+        <div class="field">
+          <div class="field-title">Phone Number*</div>
+          <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+        </div>
+        <div class="field">
+
+          <div class="field-title">Your Concerns</div>
+
+          <textarea rows="10" id="ContactForm-body" class="text-area field__input" name="contact[{{ 'templates.contact.form.comment' | t }}]" placeholder="{{ 'templates.contact.form.comment' | t }}">
+            {{- form.body -}}
+          </textarea>
+        </div>
+        <div class="contact__button" style="text-align:center;">
+          <button type="submit" class="button">
+            Submit
+          </button>
+        </div>
+      {%- endform -%}
+    </div>
+  </div>
+
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "成为合作伙伴",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Become A Partner",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "第一张照片"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "第二张照片"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "第三张照片"
+      }, {
+        "type": "image_picker",
+        "id": "image_3",
+        "label": "第四张照片"
+      }, {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "成为合作伙伴"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
