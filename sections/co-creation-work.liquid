@@ -26,7 +26,41 @@
    {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when "leftWrapper" -%}
-        <div class="left-wrapper"></div>
+        <div class="left-wrapper">
+          <div class="left-heading">
+            {{block.settings.heading_1  }}
+          </div>
+          <div class="left-image">
+            <img src="{{  section.settings.image | image_url: width: 140 }}"
+                alt="{{ item.image.alt | escape }}"
+                width="180"
+                height="40"
+                loading="lazy" />
+          </div>
+          <div class="left-heading">
+            {{block.settings.heading_2  }}
+          </div>
+             <div class="left-image">
+                <img src="{{  section.settings.image | image_url: width: 140 }}"
+                    alt="{{ item.image.alt | escape }}"
+                    width="180"
+                    height="40"
+                    loading="lazy" />
+             </div>
+          <div class="left-heading">
+            {{block.settings.heading_3  }}
+          </div>
+          <div class="left-image">
+              <img src="{{ section.settings.image | image_url: width: 140 }}"
+                  alt="{{ item.image.alt | escape }}"
+                  width="180"
+                  height="40"
+                  loading="lazy" />
+           </div>
+          <div class="left-heading">
+            {{block.settings.heading_4  }}
+          </div>
+        </div>
         {%- when "rightWrapper" -%}
         <div class="right-wrapper"></div>
       {%- endcase -%}
