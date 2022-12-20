@@ -70,20 +70,20 @@
         "template--15559734788196__23e33d4b-c965-4a93-b39e-5d8d40c2856c-1671500375c4ba8b0c-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
+            "heading": "<p>'A Solar Powered Mobile Showroom'<\/p>",
             "heading_size": "h1"
           }
         },
         "template--15559734788196__23e33d4b-c965-4a93-b39e-5d8d40c2856c-1671500375c4ba8b0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": ""
           }
         },
         "template--15559734788196__23e33d4b-c965-4a93-b39e-5d8d40c2856c-1671500375c4ba8b0c-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -103,7 +103,7 @@
         "image_item_3": "shopify:\/\/shop_images\/Full_size.png",
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
