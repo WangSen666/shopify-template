@@ -84,10 +84,8 @@
             {%- when 'text' -%}
             
             {%- when 'text' -%}
-              <div class="video-with-text__text">
-                <div class="{{ block.settings.text_style }}" {{ block.shopify_attributes }} style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
-                  <span>{{ block.settings.text | escape }}</span>
-                </div>
+              <div class="{{ block.settings.text_style }}" {{ block.shopify_attributes }} style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
+                <span>{{ block.settings.text | escape }}</span>
               </div>
 
 
