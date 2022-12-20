@@ -9,7 +9,9 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+  .image_box{
+    display:flex;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -24,11 +26,36 @@
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-            {% when 'image_item' %}
+           
             <div class="image_box">
-              <div class="image_item">
-                
-              </div>
+               {% when 'image_item_1' %}
+                <div class="image_item">
+                    <img src="{{  block.settings.image_item_1 | image_url: width: 140 }}"
+                      alt="{{ item.image.alt | escape }}"
+                      width="180"
+                      height="50"
+                      loading="lazy" />
+                </div>
+            {% when 'image_item_2' %}
+                <div class="image_item">
+                    <div class="image_item">
+                    <img src="{{  block.settings.image_item_1 | image_url: width: 140 }}"
+                      alt="{{ item.image.alt | escape }}"
+                      width="50"
+                      height="50"
+                      loading="lazy" />
+                </div>
+                </div>
+            {% when 'image_item_3' %}
+                <div class="image_item">
+                    <div class="image_item">
+                    <img src="{{  block.settings.image_item_1 | image_url: width: 140 }}"
+                      alt="{{ item.image.alt | escape }}"
+                      width="180"
+                      height="50"
+                      loading="lazy" />
+                </div>
+                </div>
             </div>
             {%- when 'heading' -%}
               <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
