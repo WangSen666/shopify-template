@@ -22,31 +22,16 @@
     .media--transparent {
       position: relative;
     }
-    .media--transparent img {
-      width: 50px !important;
-      height: 50px !important;
-      top: 50% !important;
-    }
+  
 
   }
   @media screen and (max-width: 1024px) {
 
-    .media--transparent img {
-      width: 100px !important;
-      height: 100px !important;
-      top: 50% !important;
-
-    }
+  
   }
   @media screen and (max-width: 500px) {
 
-    .media--transparent img {
-      width: 60px !important;
-      height: 60px !important;
-      top: 50% !important;
-      transform: translate(-50%, -50%) !important;
-
-    }
+    
   }
 {%- endstyle -%}
 
@@ -106,19 +91,6 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
-                {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
-                {%- if block.settings.link_label != blank -%}
-                  <a class="link animate-arrow" {% if block.settings.link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
-                  </a>
-                {%- endif -%}
-              </div>
-            </div>
           </li>
         {%- endfor -%}
       </ul>
