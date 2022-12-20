@@ -173,11 +173,25 @@
             "text_3": "The chosen idea will be made public, and the winners will be given a reward that includes $500 in cash.",
             "text_4": "Following the announcement, the real product is anticipated to be officially launched months later. Participants will be updated at every stage of the process."
           }
+        },
+        "880973b6-ccab-4019-b30b-cace5caa940d": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "GO FOR IT !",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
         }
       },
       "block_order": [
         "template--15559734788196__91af719e-60f8-48b3-8e5b-db5074a4194d-167152021304819778-0",
-        "template--15559734788196__91af719e-60f8-48b3-8e5b-db5074a4194d-167152021304819778-1"
+        "template--15559734788196__91af719e-60f8-48b3-8e5b-db5074a4194d-167152021304819778-1",
+        "880973b6-ccab-4019-b30b-cace5caa940d"
       ],
       "settings": {
         "heading": "How does 'CO-CREATE' work?",
