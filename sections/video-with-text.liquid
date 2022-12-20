@@ -97,13 +97,18 @@
               </div>
             </div>
             {%- when 'text' -%}
-            <div class="video-with-text__text">
+<!--             <div class="video-with-text__text">
               <div>{{ block.settings.text_1 }}</div>
               <div>{{ block.settings.text_2 }}</div>
               <div>{{ block.settings.text_3 }}</div>
+            </div> -->
+
+            <div class="text-wrapper">
+              <div  style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
+                <span>{{ block.settings.text | escape }}</span>
+              </div>
             </div>
-
-
+  
             {%- when 'video' -%}
             <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}{{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
               <noscript>

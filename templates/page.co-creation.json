@@ -132,7 +132,7 @@
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_color": "#000",
+            "text_color": "#fff",
             "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24
