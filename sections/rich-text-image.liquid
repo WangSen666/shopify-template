@@ -26,9 +26,8 @@
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-           
+           {% when 'image_item' %}
             <div class="image_box">
-               {% when 'image_item_1' %}
                 <div class="image_item">
                     <img src="{{  block.settings.image_item_1 | image_url: width: 140 }}"
                       alt="{{ item.image.alt | escape }}"
@@ -36,7 +35,6 @@
                       height="50"
                       loading="lazy" />
                 </div>
-            {% when 'image_item_2' %}
                 <div class="image_item">
                     <div class="image_item">
                     <img src="{{  block.settings.image_item_1 | image_url: width: 140 }}"
@@ -46,7 +44,6 @@
                       loading="lazy" />
                 </div>
                 </div>
-            {% when 'image_item_3' %}
                 <div class="image_item">
                     <div class="image_item">
                     <img src="{{  block.settings.image_item_1 | image_url: width: 140 }}"
