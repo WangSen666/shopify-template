@@ -121,16 +121,9 @@
         "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-1": {
           "type": "text",
           "settings": {
-          }
-        },
-        "a69a0983-05e1-4a91-b2bc-95a5436f800e": {
-          "type": "text",
-          "settings": {
-          }
-        },
-        "f72c946a-ae43-48d2-87dc-c96005028cff": {
-          "type": "text",
-          "settings": {
+            "text_1": "In 2020 PODX GO and RENOGY partered on a highly original concept involving the use of renewable energy. As we dubbed it: A Solar Powered Mobile Showroom, the objective was made clear: a whole tiny house could be powered by solar energy.",
+            "text_2": "Inspired by energy freedom.",
+            "text_3": "What is the reality of tiny home living? Take a stress off your life is the idea behind this endeavor. Downsizing is an idea to live stress-free with the things that matter most to you, not to have a smaller living space. You may go further and see more with access to green energy."
           }
         },
         "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-0": {
@@ -143,8 +136,6 @@
       },
       "block_order": [
         "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-1",
-        "a69a0983-05e1-4a91-b2bc-95a5436f800e",
-        "f72c946a-ae43-48d2-87dc-c96005028cff",
         "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-0"
       ],
       "settings": {
