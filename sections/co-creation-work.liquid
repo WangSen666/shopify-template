@@ -44,9 +44,7 @@
     color:#fff;
     margin:0 auto 36px;
   }
-  @media screen and (max-width: 1660px) {
-  
-  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -54,6 +52,10 @@
     }
   }
   @media screen and (max-width: 750px) {
+    .leftWrapper{
+      width:90%;
+      margin:0 auto;
+    }
   }
 {%- endstyle -%}
 
