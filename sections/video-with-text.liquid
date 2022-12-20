@@ -32,6 +32,9 @@
   .collage-wrapper-title{
     text-align:center;
   }
+  .text-wrapper{
+    display:block;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -81,6 +84,7 @@
                   {%- endif -%}
                 </div>
               </div>
+            
             <div class="text-wrapper">
             {%- when 'text' -%}
               <div  {{ block.shopify_attributes }} style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
