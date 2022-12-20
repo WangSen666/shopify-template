@@ -131,10 +131,10 @@
         "a69a0983-05e1-4a91-b2bc-95a5436f800e": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Inspired by energy freedom.",
             "text_color": "#fff",
-            "font_size": 24,
-            "margin_top": 24,
+            "font_size": 16,
+            "margin_top": 12,
             "margin_bottom": 24
           }
         },
