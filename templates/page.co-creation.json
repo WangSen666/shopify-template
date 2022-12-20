@@ -115,30 +115,20 @@
         "padding_bottom": 0
       }
     },
-    "de5ad20b-2f42-4e65-97f0-0ba7a33fcc40": {
+    "0dbdf82d-8492-49f0-8c5b-4952a77f9b6e": {
       "type": "video-with-text",
       "blocks": {
-        "template--15559734788196__de5ad20b-2f42-4e65-97f0-0ba7a33fcc40-16715041843ce51fee-1": {
-          "type": "text",
-          "settings": {
-            "text": "In 2020 PODX GO and RENOGY partered on a highly original concept involving the use of renewable energy. As we dubbed it: A Solar Powered Mobile Showroom, the objective was made clear: a whole tiny house could be powered by solar energy.",
-            "text_color": "#fff",
-            "font_size": 12,
-            "margin_top": 24,
-            "margin_bottom": 24
-          }
-        },
-        "e99d3048-3bc3-4955-843a-d055162a70d5": {
+        "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-1": {
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_color": "#fff",
+            "text_color": "#000",
             "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24
           }
         },
-        "template--15559734788196__de5ad20b-2f42-4e65-97f0-0ba7a33fcc40-16715041843ce51fee-0": {
+        "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-0": {
           "type": "video",
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -147,9 +137,8 @@
         }
       },
       "block_order": [
-        "template--15559734788196__de5ad20b-2f42-4e65-97f0-0ba7a33fcc40-16715041843ce51fee-1",
-        "e99d3048-3bc3-4955-843a-d055162a70d5",
-        "template--15559734788196__de5ad20b-2f42-4e65-97f0-0ba7a33fcc40-16715041843ce51fee-0"
+        "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-1",
+        "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-0"
       ],
       "settings": {
         "heading": "",
@@ -167,6 +156,6 @@
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158",
     "23e33d4b-c965-4a93-b39e-5d8d40c2856c",
     "main",
-    "de5ad20b-2f42-4e65-97f0-0ba7a33fcc40"
+    "0dbdf82d-8492-49f0-8c5b-4952a77f9b6e"
   ]
 }
