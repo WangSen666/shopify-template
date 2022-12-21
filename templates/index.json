@@ -90,9 +90,13 @@
         "template--15546009845860__f3b456c7-6f77-4965-ab79-a780c4f04178-1670833943be74c0c3-1": {
           "type": "text",
           "settings": {
-            "text_1": "Unpack in 15 mins..",
-            "text_2": "Up to 3X bigger.",
-            "text_3": "Off-grid supported."
+            "text_color": "#B5EF35",
+            "heading_1": "Unpack in 15 mins..",
+            "text_1": "",
+            "heading_2": "Up to 3X bigger.",
+            "text_2": "",
+            "heading_3": "Off-grid supported.",
+            "text_3": ""
           }
         },
         "template--15546009845860__f3b456c7-6f77-4965-ab79-a780c4f04178-1670833943be74c0c3-0": {
