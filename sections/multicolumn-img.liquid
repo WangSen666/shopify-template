@@ -14,12 +14,7 @@
     color: #fff;
     text-align: left;
   }
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-    .media--transparent {
+  .media--transparent {
       position: relative;
       width:200px;
       height:200px;
@@ -29,6 +24,12 @@
       border-radius:20px;
      
     }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    
   }
   @media screen and (max-width: 1024px) {
 
