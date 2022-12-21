@@ -127,6 +127,7 @@
     },
     "main": {
       "type": "main-blog",
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "show_image": false,
