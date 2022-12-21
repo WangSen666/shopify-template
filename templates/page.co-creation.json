@@ -302,7 +302,7 @@
           "type": "button",
           "settings": {
             "button_label": "CONTACT US",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false,
             "button_background": "#B5EF35",
             "btn_radius": 0
