@@ -86,9 +86,8 @@
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_background": "#B5EF35",
+            "btn_radius": 24
           }
         }
       },
@@ -302,12 +301,11 @@
         "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-3": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "CONTACT US",
             "button_link": "",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_background": "#B5EF35",
+            "btn_radius": 0
           }
         }
       },
