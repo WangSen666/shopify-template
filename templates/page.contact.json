@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-co-creation",
+      "type": "main-page",
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
