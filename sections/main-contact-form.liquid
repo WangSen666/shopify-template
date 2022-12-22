@@ -177,7 +177,7 @@
                 autocomplete="name"
                 type="text"
                 id="first-name"
-                name="customer[FirstName]"
+                name="contact[first_name]"
                 value="{% if form.FirstName %}{{ form.FirstName }}{% elsif customer %}{{ customer.FirstName }}{% endif %}"
                 placeholder="" />
             </div>
@@ -192,7 +192,7 @@
                 autocomplete="name"
                 type="text"
                 id="last-name"
-                name="customer[LastName]"
+                name="contact[last_name]"
                 value="{% if form.LastName %}{{ form.LastName }}{% elsif customer %}{{ customer.LastName }}{% endif %}"
                 placeholder="" />
             </div>
@@ -210,8 +210,8 @@
               autocomplete="name"
               type="text"
               id="business-name"
-              name="customer[businessName]"
-              value="{% if form.businessName %}{{ form.businessName }}{% elsif customer %}{{ customer.businessName }}{% endif %}"
+              name="contact[business_name]"
+              value="{% if form.BusinessName %}{{ form.BusinessName }}{% elsif customer %}{{ customer.BusinessName }}{% endif %}"
               placeholder="" />
           </div>
         </div>
@@ -224,7 +224,7 @@
               type="email"
               id="ContactForm-email"
               class="field__input"
-              name="customer[email]"
+              name="contact[email]"
               spellcheck="false"
               autocapitalize="off"
               value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
@@ -240,7 +240,7 @@
             id="ContactForm-phone"
             class="field__input"
             autocomplete="tel"
-            name="customer[phone]"
+            name="contact[phone]"
             pattern="[0-9\-]*"
             value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
             placeholder="" />
@@ -253,18 +253,15 @@
             rows="10"
             id="ContactForm-body"
             class="text-area field__input"
-            name="customer[body]"
+            name="contact[comment]"
             placeholder="" />
             {{- form.body -}}
           </textarea>
         </div>
         <div class="contact__button" style="text-align:center;">
-<!--           <button type="submit" class="button">
+          <button type="submit" class="button">
             Submit
-          </button> -->
-          <div class="submit">
-            <input type="submit" value="Submit" />
-          </div>
+          </button>
         </div>
       {%- endform -%}
     </div>
