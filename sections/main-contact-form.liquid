@@ -153,7 +153,7 @@
       {%- else -%}
         <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
       {%- endif -%}
-      {%- form 'create_customer', id: 'ContactForm', class: 'isolate' -%}
+      {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
         {%- if form.posted_successfully? -%}
           <h2
             class="form-status form-status-list form__message"
