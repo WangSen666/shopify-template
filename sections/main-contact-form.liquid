@@ -268,15 +268,15 @@
   </div>
 
 </div>
-
-<script>
+{% javascript %}
   onItemClick(event) {
       event.preventDefault();
       const form = this.querySelector('form');
       this.elements.input.value = event.currentTarget.dataset.value;
       if (form) form.submit();
     }
-</script>
+{% endjavascript %}
+
 {% schema %}
   {
     "name": "成为合作伙伴",
