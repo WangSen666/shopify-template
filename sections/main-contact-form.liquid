@@ -147,10 +147,11 @@
       </div>
     </div>
     <div class="contact become-a-partner page-width page-width--narrow section-{{ section.id }}-padding">
-        {% form 'create_customer' %}
+      {% form 'create_customer' %}
         {{ form.errors | default_errors }}
 
-          <div class="first-name"> <label for="first-name">First name</label>
+        <div class="first-name">
+          <label for="first-name">First name</label>
           <input
             id="first-name"
             type="text"
@@ -173,29 +174,6 @@
             name="customer[email]" />
         </div>
 
-        <div class="password">
-          <label for="password">Password</label>
-          <input
-            id="password"
-            type="password"
-            name="customer[password]" />
-        </div>
-
-        <div class="password">
-          <label for="password-confirmation">Password</label>
-          <input
-            id="password-confirmation"
-            type="password"
-            name="customer[password]" />
-        </div>
-
-        <div class="birthday">
-          <label for="birthday">Birthday</label>
-          <input
-            id="birthday"
-            type="date"
-            name="customer[note][Birthday]" />
-        </div>
 
         <div class="allergies">
           <label for="allergies">Allergies</label>
