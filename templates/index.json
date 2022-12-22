@@ -131,7 +131,7 @@
             "text": "Let's go for a",
             "text_style": "body",
             "font_size": 24,
-            "margin_top": 24,
+            "margin_top": 0,
             "margin_bottom": 24
           }
         },
