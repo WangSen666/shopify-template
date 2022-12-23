@@ -315,6 +315,7 @@
           height: 200px;
         }
       }
+      
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
@@ -382,6 +383,10 @@
     </ul>
 
     <script>
+      window.onload=function(){
+        onresize();
+      }
+      window.onresize=onresize();
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
@@ -407,6 +412,16 @@
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`
+      }
+      function onresize(){
+        var windowHeight=window.screen.availHeight;
+        var windowWidth=document.body.clientWidth;
+        var bg_wrapper=document.getElementsByClassName("bg_wrapper")
+        if(windowWidth>=1024){
+          for(let i=0;i<bg_wrapper.length-1;i++){
+           bg_wrapper[i].style.height=windowHeight+'px';
+          }
+        }
       }
     </script>
 

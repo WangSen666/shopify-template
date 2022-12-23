@@ -115,7 +115,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient ">
+<div class="color-{{ section.settings.color_scheme }} gradient " style="padding:24px;">
   <div class="podxgo-partner">
     <div class="why-podxgo">
       <div class="why-podxgo-header">Why PODX GO?</div>
@@ -330,6 +330,16 @@
     "tag": "section",
     "class": "section",
     "settings": [
+       {
+        "type": "range",
+        "id": "font-weight",
+        "min": 0,
+        "max": 900,
+        "step": 100,
+        "unit": "px",
+        "label": "字体加粗",
+        "default": 400
+      },
       {
         "type": "text",
         "id": "heading",

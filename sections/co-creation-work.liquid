@@ -6,14 +6,13 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
   .co-creation-work{
-    padding:14px 0;
   }
   .co-creation-work-h2{
     font-size:48px;
     color:#fff;
     background:#121212;
     height:100px;
-    line-heihgt:100px;
+    line-height:100px;
     text-align:center;
     margin:0 auto;
     
@@ -86,7 +85,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient co-creation-work ">
+<div class="color-{{ section.settings.color_scheme }} gradient co-creation-work " style="padding:24px;">
      <h2 class="co-creation-work-h2"">
       <span>{{ section.settings.heading | escape }}</span>
     </h2>
