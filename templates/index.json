@@ -293,29 +293,18 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ef78f03d-5a22-491c-8553-1c2a8ccae6f2.png",
-            "title": "We give back for every sale.",
-            "text": "<p>We've pledged 1% of sales to help the homeless and natural environment.<br\/><\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "column1",
-        "column2",
-        "column3"
+        "column2"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
