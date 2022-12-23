@@ -86,7 +86,7 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient co-creation-work " style="padding:24px;">
-     <h2 class="co-creation-work-h2"">
+     <h2 class="co-creation-work-h2" style="font-weight:{{ section.settings.font-weight }}">
       <span>{{ section.settings.heading | escape }}</span>
     </h2>
   <div class="co-creation-work-wrapper">
@@ -159,7 +159,16 @@
       "default": "How does 'CO-CREATE' work?",
       "label": "Heading"
     },
-
+     {
+      "type": "range",
+      "id": "font-weight",
+      "min": 0,
+      "max": 900,
+      "step": 100,
+      "unit": "px",
+      "label": "字体加粗",
+      "default": 400
+    },
     {
       "type": "select",
       "id": "heading_size",

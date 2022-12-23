@@ -203,6 +203,7 @@
           "type": "heading",
           "settings": {
             "heading": "Join The Community To Co-create A Unique",
+            "font-weight": 400,
             "heading_color": "#fff",
             "font_size": 28,
             "margin_top": 0,
@@ -213,6 +214,7 @@
           "type": "heading",
           "settings": {
             "heading": "OFF-GRID",
+            "font-weight": 400,
             "heading_color": "#B5EF35",
             "font_size": 52,
             "margin_top": 44,
@@ -223,6 +225,7 @@
           "type": "heading",
           "settings": {
             "heading": "TINY HOUSE",
+            "font-weight": 400,
             "heading_color": "#B5EF35",
             "font_size": 52,
             "margin_top": 0,
@@ -265,7 +268,7 @@
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "top-left",
+        "desktop_content_position": "middle-left",
         "show_text_box": true,
         "desktop_content_alignment": "left",
         "color_scheme": "background-1",
@@ -337,6 +340,7 @@
           "type": "heading",
           "settings": {
             "heading": "PODX GO CO-CREATION LAB",
+            "font-weight": 400,
             "heading_color": "#B5EF35",
             "font_size": 52,
             "margin_top": 0,
@@ -485,6 +489,7 @@
           "type": "heading",
           "settings": {
             "heading": "We are born designer.",
+            "font-weight": 400,
             "heading_color": "#fff",
             "font_size": 52,
             "margin_top": 24,
