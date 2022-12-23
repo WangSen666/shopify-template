@@ -61,13 +61,15 @@
           "type": "heading",
           "settings": {
             "heading": "<p>To power your ideas.<\/p>",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font-weight": 500
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Supporting and inspiring a more creative and sustainable world from the moment we co-create your tiny homes.<\/p>"
+            "text": "<p>Supporting and inspiring a more creative and sustainable world from the moment we co-create your tiny homes.<\/p>",
+            "font-weight": 400
           }
         }
       },
