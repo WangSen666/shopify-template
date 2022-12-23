@@ -280,22 +280,12 @@
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
-            "title": "We reward creative contributors.",
-            "text": "<p>Our accomplishments will be shared with our community builders, and any adopted outstanding idea will be awarded $500 cash back<br\/><\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/d99ea1b1-a84e-4172-9615-84cb16c6c7e2.png",
             "title": "Know how your ideas are made.",
-            "text": "<p>Everything we make will be updated to the contributor, you know how your idea is made and where it is.<br\/><\/p>",
+            "text": "<p>Our accomplishments will be shared with our community builders, and any adopted outstanding idea will be awarded $500 cash back.<br\/><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -312,7 +302,6 @@
         }
       },
       "block_order": [
-        "column1",
         "column2",
         "column3"
       ],
