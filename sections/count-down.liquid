@@ -38,11 +38,11 @@
     }
   }
   @media screen and (max-width: 749px) {
-    .submit-btn{
-      font-size:12px;
+    .submit-btn {
+      font-size: 12px;
     }
-    .count-down .footer-block__newsletter .field label{
-      font-size:12px;
+    .count-down .footer-block__newsletter .field label {
+      font-size: 12px;
     }
   }
 {%- endstyle -%}
@@ -144,7 +144,10 @@
                   autocapitalize="off"
                   autocomplete="email"
                   {% if form.errors %}autofocusaria-invalid="true"aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%}placeholder="Email Address"required>
-                <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                <label
+                  class="field__label"
+                  for="NewsletterForm--{{ section.id }}"
+                  style="width:100%;text-align:center;">
                   ENTER YOUR EMAIL
                 </label>
                 <button
@@ -277,66 +280,22 @@
     margin: 14px auto;
   }
 
-  @media screen and (max-width: 750px){
-    .time-box{
-      line-height:80px;
+  @media screen and (max-width: 750px) {
+    .time-box {
+      line-height: 80px;
     }
     .time-item .time-wrapper {
-        background: #B5EF35;
-        text-align: center;
-        font-size: 38px;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 10px;
-        color: black;
+      background: #B5EF35;
+      text-align: center;
+      font-size: 38px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 10px;
+      color: black;
     }
   }
 {% endstyle %}
-
-
-<script>
-  window.onload = function() {
-
-    var dayDom = document.getElementsByClassName("days-time-wrapper")[0];
-    var HourDom = document.getElementsByClassName("hours-time-wrapper")[0];
-    var minDom = document.getElementsByClassName("mins-time-wrapper")[0];
-    var secDom = document.getElementsByClassName("secs-time-wrapper")[0];
-    setInterval(function() {
-      var nowDate = new Date().getTime();
-      var lastDate = new Date("2023-02-01").getTime();
-      var timeDifference = (lastDate - nowDate) / 1000;
-
-      var days = parseInt(timeDifference / (60 * 60 * 24))
-      dayDom.innerHTML = days < 10
-        ? "0" + days
-        : days;
-
-// 计算小时数 转化为整数
-      var h = parseInt(timeDifference / 60 / 60 % 24);
-
-// 如果小时数小于 10，要变成 0 + 数字的形式 赋值给盒子
-      HourDom.innerHTML = h < 10
-        ? "0" + h
-        : h;
-
-// 计算分钟数 转化为整数
-      var m = parseInt(timeDifference / 60 % 60);
-
-// 如果分钟数小于 10，要变成 0 + 数字的形式 赋值给盒子
-      minDom.innerHTML = m < 10
-        ? "0" + m
-        : m;
-
-// 计算描述 转化为整数
-      var s = parseInt(timeDifference % 60);
-      secDom.innerHTML = s < 10
-        ? "0" + s
-        : s;
-
-    }, 1000)
-  }
-</script>
 
 
 
