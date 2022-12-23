@@ -72,7 +72,8 @@
           "type": "heading",
           "settings": {
             "heading": "<p>'A Solar Powered Mobile Showroom'<\/p>",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font-weight": 400
           }
         },
         "template--15559734788196__23e33d4b-c965-4a93-b39e-5d8d40c2856c-1671500375c4ba8b0c-1": {
@@ -196,6 +197,7 @@
       ],
       "settings": {
         "heading": "How does 'CO-CREATE' work?",
+        "font-weight": 600,
         "heading_size": "h1",
         "color_scheme": "accent-1",
         "padding_top": 36,
@@ -292,7 +294,8 @@
           "type": "heading",
           "settings": {
             "heading": "<p><strong>You have more questions?<\/strong><\/p>",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font-weight": 400
           }
         },
         "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-2": {
