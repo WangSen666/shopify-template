@@ -25,7 +25,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="text-align:{{ section.settings.content_alignment }}">
+              <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }}" >
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
               </h2>
             {%- when 'caption' -%}
@@ -33,7 +33,7 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
-              <div class="rich-text__text rte" {{ block.shopify_attributes }}>
+              <div class="rich-text__text rte" {{ block.shopify_attributes }} style="font-weight:{{ block.settings.font-weight }}">
                 {{ block.settings.text }}
               </div>
             {%- when 'button' -%}
@@ -193,6 +193,16 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "range",
+          "id": "font-weight",
+          "min": 0,
+          "max": 900,
+          "step": 100,
+          "unit": "px",
+          "label": "字体加粗",
+          "default": 400
         }
       ]
     },
@@ -255,6 +265,16 @@
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "range",
+          "id": "font-weight",
+          "min": 0,
+          "max": 900,
+          "step": 100,
+          "unit": "px",
+          "label": "字体加粗",
+          "default": 400
         }
       ]
     },

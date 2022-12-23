@@ -74,9 +74,9 @@
   media="print"
   onload="this.media='all'">
 
-<div class="color-{{ section.settings.color_scheme }}  gradient isolate" >
-  <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding" style="padding:24px;">
-    <h2 class="collage-wrapper-title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
+    <h2 class="collage-wrapper-title {{ section.settings.heading_size }}" style="font-weight:{{ section.settings.font-weight }}">{{ section.settings.heading | escape }}</h2>
     <div class="collage video-with-text {% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -226,6 +226,16 @@
         "id": "heading",
         "default": "Multimedia collage",
         "label": "t:sections.collage.settings.heading.label"
+      },
+      {
+        "type": "range",
+        "id": "font-weight",
+        "min": 0,
+        "max": 900,
+        "step": 100,
+        "unit": "px",
+        "label": "字体加粗",
+        "default": 400
       },
       {
         "type": "select",

@@ -123,7 +123,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;font-weight:bold;">
+            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;font-weight:{{ block.settings.font-weight }}">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
@@ -167,6 +167,7 @@
         "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
         "default": 0
       },
+      
       {
         "type": "select",
         "id": "image_height",
@@ -322,6 +323,16 @@
             "id": "heading",
             "default": "Image banner",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "range",
+            "id": "font-weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "unit": "px",
+            "label": "字体加粗",
+            "default": 400
           },
           {
             "type": "select",
