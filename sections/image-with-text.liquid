@@ -14,15 +14,16 @@
      left: 50% !important;
      transform: translate(-50%,-50%);
     }
+    .image-with-text__text-item{
+      max-width:50% !important;
+    }
   }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-    .image-with-text__text-item{
-      max-width:50% !important;
-    }
+    
   }
   .image-with-text__heading {
     font-weight: bolder;
