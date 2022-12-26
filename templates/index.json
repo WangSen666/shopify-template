@@ -517,7 +517,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/s2_4523d744-ff48-4410-8f61-6230305373c3.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "top-right",
         "show_text_box": true,
