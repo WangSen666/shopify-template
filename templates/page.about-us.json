@@ -1,5 +1,60 @@
 {
   "sections": {
+    "7ebb59ab-64a1-41a3-bb42-479278734551": {
+      "type": "image-banner-text-diy",
+      "blocks": {
+        "template--15563052187748__7ebb59ab-64a1-41a3-bb42-479278734551-167204552336b4ec24-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "BE CREATIVE.",
+            "font-weight": 800,
+            "heading_color": "#fff",
+            "font_size": 48,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "f4c7d3e3-e0c2-4356-94b0-3246202701fe": {
+          "type": "heading",
+          "settings": {
+            "heading": "BE RELIABLE.",
+            "font-weight": 400,
+            "heading_color": "#fff",
+            "font_size": 48,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15563052187748__7ebb59ab-64a1-41a3-bb42-479278734551-167204552336b4ec24-1": {
+          "type": "text",
+          "settings": {
+            "text": "We strive for sustainable solutions, taking into account all people.",
+            "text_color": "#fff",
+            "font_size": 20,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--15563052187748__7ebb59ab-64a1-41a3-bb42-479278734551-167204552336b4ec24-0",
+        "f4c7d3e3-e0c2-4356-94b0-3246202701fe",
+        "template--15563052187748__7ebb59ab-64a1-41a3-bb42-479278734551-167204552336b4ec24-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/s2_2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "522756c7-9015-45db-a1fb-81cff63756e3": {
       "type": "image-banner",
       "blocks": {
@@ -7,14 +62,16 @@
           "type": "heading",
           "settings": {
             "heading": "BE CREATIVE.",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font-weight": 400
           }
         },
         "74add986-2b77-48f9-ade2-a927aeb40756": {
           "type": "heading",
           "settings": {
             "heading": "BE RELIABLE.",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font-weight": 400
           }
         },
         "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1": {
@@ -246,6 +303,7 @@
     }
   },
   "order": [
+    "7ebb59ab-64a1-41a3-bb42-479278734551",
     "522756c7-9015-45db-a1fb-81cff63756e3",
     "015b80b6-20a5-48c4-a1ac-874256d48648",
     "main",
