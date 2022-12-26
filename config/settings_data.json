@@ -158,6 +158,7 @@
         "blocks": {
           "51f9b9e3-ff6c-4caf-82c4-5e5b62745f47": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/logo_c7e02cd3-0bde-4d74-b22a-ee886527563a.png",
               "image_width": 100,
@@ -166,6 +167,7 @@
           },
           "footer-2": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "heading": "Subscribe",
               "subtext": "<p>Sign up for exclusive offers, original stories, activism awareness, events and more.<br\/><br\/><\/p>"
@@ -173,6 +175,7 @@
           },
           "77199c46-4842-4ce5-bd2d-620d5d8ab7f2": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "heading": "Help Center",
               "subtext": "<p>If you are having problem with personal <\/p><p>data or any event please email us at<\/p><p> info@podxgo.com<br\/><br\/><\/p>"
@@ -180,6 +183,7 @@
           },
           "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "More Info",
               "menu": "footer"
