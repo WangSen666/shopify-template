@@ -125,7 +125,7 @@
             "settings": {
               "text": "Design Your Home With PODX GO",
               "text_alignment": "center",
-              "color_scheme": "accent-1",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
