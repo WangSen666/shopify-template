@@ -140,8 +140,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
-          "logo_width": 120,
+          "logo": "shopify:\/\/shop_images\/t_1.png",
+          "logo_width": 140,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
