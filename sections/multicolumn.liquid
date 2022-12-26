@@ -19,13 +19,7 @@
       background:none;
      padding:0 !important;
     }
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-   
-    .media--transparent-with-text img {
+  .media--transparent-with-text img {
       width: 60px !important;
       height: 60px !important;
       top: 25% !important;
@@ -34,6 +28,13 @@
       position:relative !important;
       margin:0 auto !important;
     }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+   
+    
 
   }
   @media screen and (max-width: 1024px) {
