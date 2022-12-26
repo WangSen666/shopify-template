@@ -55,64 +55,6 @@
         "show_text_below": true
       }
     },
-    "522756c7-9015-45db-a1fb-81cff63756e3": {
-      "type": "image-banner",
-      "blocks": {
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "BE CREATIVE.",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "74add986-2b77-48f9-ade2-a927aeb40756": {
-          "type": "heading",
-          "settings": {
-            "heading": "BE RELIABLE.",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1": {
-          "type": "text",
-          "settings": {
-            "text": "We strive for sustainable solutions, taking into account all people.",
-            "text_style": "body"
-          }
-        },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0",
-        "74add986-2b77-48f9-ade2-a927aeb40756",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/s2_2.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "015b80b6-20a5-48c4-a1ac-874256d48648": {
       "type": "podxgo-team-tip",
       "blocks": {
@@ -304,7 +246,6 @@
   },
   "order": [
     "7ebb59ab-64a1-41a3-bb42-479278734551",
-    "522756c7-9015-45db-a1fb-81cff63756e3",
     "015b80b6-20a5-48c4-a1ac-874256d48648",
     "main",
     "e1e03f82-d9be-4520-9cb3-80eb9a3ca35a",
