@@ -196,8 +196,7 @@
   </div>
 </div>
 <script>
-  var count_down_email_err=document.getElementById("count_email_err");
-  var input_item=document.getElementById("NewsletterForm--{{ section.id }}")
+  
   // email输入框聚焦
   function emailFocus(){
      console.log("input_item",input_item)
@@ -208,6 +207,8 @@
     
   }
 window.onload = function() {
+    var count_down_email_err=document.getElementById("count_email_err");
+    var input_item=document.getElementById("NewsletterForm--{{ section.id }}")
     var dayDom = document.getElementsByClassName("days-time-wrapper")[0];
     var HourDom = document.getElementsByClassName("hours-time-wrapper")[0];
     var minDom = document.getElementsByClassName("mins-time-wrapper")[0];
