@@ -139,18 +139,21 @@
                   name="contact[email]"
                   class="field__input"
                   value="{{ form.email }}"
+                  onFocus="emailFocus"
+                  onBlur="emailBlur"
                   aria-required="true"
                   autocorrect="off"
                   autocapitalize="off"
                   autocomplete="email"
-                  {% if form.errors %} autofocusaria-invalid="true" aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %} aria-describedby="ContactFooter-success"{% endif -%} 
-                    placeholder="ENTER YOUR EMAIL" required>
-<!--                 <label
+                  {% if form.errors %} autofocusaria-invalid="true" aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%} 
+                     required>
+                 <label
+                  id="count-down-email-err"
                   class="field__label"
                   for="NewsletterForm--{{ section.id }}"
                   style="width:100%;text-align:center;">
                   ENTER YOUR EMAIL
-                </label> -->
+                </label>
                 <button
                   type="submit"
                   class="newsletter-form__button field__button"
@@ -193,6 +196,17 @@
   </div>
 </div>
 <script>
+  var count_down_email_err=document.getElementById("count_email_err");
+  var input_item=document.getElementById("NewsletterForm--{{ section.id }}")
+  // email输入框聚焦
+  function emailFocus(){
+     console.log("input_item",input_item)
+    console.log("count_down_email_err",count_down_email_err)
+  }
+  // email输入框失去焦点
+  function emailBlur(){
+    
+  }
 window.onload = function() {
     var dayDom = document.getElementsByClassName("days-time-wrapper")[0];
     var HourDom = document.getElementsByClassName("hours-time-wrapper")[0];
