@@ -191,9 +191,9 @@
             style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
-          {%- when 'heading__1' -%}
+          {%- when 'heading_sub' -%}
           <h2 class="banner__heading1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
-            <span>{{ block.settings.heading__1 | escape }}</span>
+            <span>{{ block.settings.heading_sub | escape }}</span>
           </h2>
           {%- when 'text' -%}
           <div
@@ -539,7 +539,7 @@
         ]
       },
       {
-        "type": "heading__1",
+        "type": "heading_sub",
         "name": "副标题",
         "limit": 4,
         "settings": [
@@ -756,7 +756,7 @@
             "type": "heading"
           },
           {
-            "type": "heading__1"
+            "type": "heading_sub"
           },
           {
             "type": "text"
