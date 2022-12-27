@@ -344,7 +344,7 @@
             "font-weight": 700,
             "heading_color": "#fff",
             "font_size": 40,
-            "margin_top": 24,
+            "margin_top": 100,
             "margin_bottom": 24
           }
         },
@@ -356,26 +356,6 @@
             "heading_color": "#fff",
             "font_size": 40,
             "margin_top": 24,
-            "margin_bottom": 24
-          }
-        },
-        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1": {
-          "type": "text",
-          "settings": {
-            "text": "CASH BACK.",
-            "text_color": "#fff",
-            "font_size": 44,
-            "margin_top": 100,
-            "margin_bottom": 4
-          }
-        },
-        "85c9688f-10a1-4976-beba-223aa6afd2d2": {
-          "type": "text",
-          "settings": {
-            "text": "SMART FACTORY.",
-            "text_color": "#fff",
-            "font_size": 40,
-            "margin_top": 8,
             "margin_bottom": 100
           }
         },
@@ -397,8 +377,6 @@
         "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-0",
         "22043f47-7287-4fe5-a17a-e967dac77344",
         "8cf34cfa-bfd9-437c-b5f3-3346c66f3035",
-        "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1",
-        "85c9688f-10a1-4976-beba-223aa6afd2d2",
         "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-2"
       ],
       "settings": {
