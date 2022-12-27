@@ -19,7 +19,7 @@
             "text": "What If An Idea Is More Than An Idea",
             "text_style": "body",
             "font_size": 20,
-            "margin_top": 160,
+            "margin_top": 120,
             "margin_bottom": 0
           }
         },
@@ -267,7 +267,6 @@
         "image": "shopify:\/\/shop_images\/s.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "is_allWindow": "true",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-left",
         "show_text_box": true,
@@ -392,7 +391,6 @@
         "image": "shopify:\/\/shop_images\/s2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "is_allWindow": "true",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-left",
         "show_text_box": true,
@@ -520,7 +518,6 @@
         "image": "shopify:\/\/shop_images\/s2_4523d744-ff48-4410-8f61-6230305373c3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "is_allWindow": "false",
         "adapt_height_first_image": false,
         "desktop_content_position": "top-right",
         "show_text_box": true,
