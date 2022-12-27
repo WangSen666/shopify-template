@@ -332,7 +332,7 @@
             "heading": "PODX GO CO-CREATION LAB",
             "font-weight": 600,
             "heading_color": "#B5EF35",
-            "font_size": 52,
+            "font_size": 80,
             "margin_top": 0,
             "margin_bottom": 100
           }
@@ -342,7 +342,7 @@
           "settings": {
             "text": "CASH BACK.",
             "text_color": "#fff",
-            "font_size": 32,
+            "font_size": 44,
             "margin_top": 100,
             "margin_bottom": 4
           }
@@ -352,7 +352,7 @@
           "settings": {
             "text": "SMART FACTORY.",
             "text_color": "#fff",
-            "font_size": 32,
+            "font_size": 40,
             "margin_top": 8,
             "margin_bottom": 100
           }
