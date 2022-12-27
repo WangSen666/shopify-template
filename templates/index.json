@@ -173,6 +173,17 @@
             "heading_1": "Devices Control\/Enhanced Security",
             "right_icon": "shopify:\/\/shop_images\/8c4ee359-5fb2-44ae-b6da-d71b8ada2ca2.png"
           }
+        },
+        "8d8266d9-881b-4c5e-b715-085b987b7601": {
+          "type": "heading_1",
+          "settings": {
+            "heading": "Image banner",
+            "font-weight": 400,
+            "heading_color": "#000",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
         }
       },
       "block_order": [
@@ -180,7 +191,8 @@
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-1",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2",
-        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3"
+        "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3",
+        "8d8266d9-881b-4c5e-b715-085b987b7601"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/001.jpg",
