@@ -334,7 +334,7 @@
             "heading_color": "#B5EF35",
             "font_size": 52,
             "margin_top": 0,
-            "margin_bottom": 52
+            "margin_bottom": 100
           }
         },
         "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1": {
@@ -342,8 +342,8 @@
           "settings": {
             "text": "CASH BACK.",
             "text_color": "#fff",
-            "font_size": 24,
-            "margin_top": 44,
+            "font_size": 32,
+            "margin_top": 100,
             "margin_bottom": 4
           }
         },
@@ -352,19 +352,9 @@
           "settings": {
             "text": "SMART FACTORY.",
             "text_color": "#fff",
-            "font_size": 24,
+            "font_size": 32,
             "margin_top": 8,
-            "margin_bottom": 24
-          }
-        },
-        "86661cfa-4497-4182-b16b-59a0efceebe6": {
-          "type": "text",
-          "settings": {
-            "text": "1% FOR THE COMMUNITY.",
-            "text_color": "#fff",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "margin_bottom": 100
           }
         },
         "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-2": {
@@ -385,7 +375,6 @@
         "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-0",
         "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-1",
         "85c9688f-10a1-4976-beba-223aa6afd2d2",
-        "86661cfa-4497-4182-b16b-59a0efceebe6",
         "template--15546009845860__87643d95-d0d1-49cc-8af2-0f3d355644cc-16710027769b91df52-2"
       ],
       "settings": {
