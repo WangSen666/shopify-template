@@ -192,8 +192,8 @@
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
           {%- when 'heading_1' -%}
-          <h2 class="banner__heading1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-            <span>{{ block.settings.heading__1 | escape }}</span>
+          <h2 class="banner__heading1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
+            <span>{{ block.settings.heading_1 | escape }}</span>
           </h2>
           {%- when 'text' -%}
           <div
