@@ -120,6 +120,7 @@
   {%- endif -%}
   <div class="banner__content{% if section.settings.is_allWindow==true %} bg_wrapper{% endif %} banner__content--{{ section.settings.desktop_content_position }} page-width" style="padding:24px 0;">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+      {{ section.settings.is_allWindow }}
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
