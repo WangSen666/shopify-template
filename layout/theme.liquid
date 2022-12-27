@@ -408,7 +408,7 @@
     <script>
       
       function onResize() {
-        var windowHeight = window.screen.availHeight;
+        var windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
         var windowWidth = document.documentElement.clientWidth;
         var bg_wrapper = document.getElementsByClassName("bg_wrapper")
         if (windowWidth >= 1024) {
