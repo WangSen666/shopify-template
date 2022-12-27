@@ -143,13 +143,14 @@
                   autocorrect="off"
                   autocapitalize="off"
                   autocomplete="email"
+                  placeholder="ENTER YOUR EMAIL"
                   {% if form.errors %}autofocusaria-invalid="true"aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%}placeholder="Email Address"required>
-                <label
+<!--                 <label
                   class="field__label"
                   for="NewsletterForm--{{ section.id }}"
                   style="width:100%;text-align:center;">
                   ENTER YOUR EMAIL
-                </label>
+                </label> -->
                 <button
                   type="submit"
                   class="newsletter-form__button field__button"
