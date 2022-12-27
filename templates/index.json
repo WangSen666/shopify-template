@@ -128,21 +128,11 @@
     "811262fa-dfb8-4331-95a8-890b40e00fcd": {
       "type": "smart-and-comfortable-home",
       "blocks": {
-        "b025aab7-537d-4243-b2c2-3e732d30ed1f": {
-          "type": "text",
-          "settings": {
-            "text": "Let's go for a",
-            "text_style": "body",
-            "font_size": 36,
-            "margin_top": 0,
-            "margin_bottom": 24
-          }
-        },
         "c0e556cb-8ed5-4013-9717-4d75fbf28e18": {
           "type": "heading_sub",
           "settings": {
             "heading": "Let's go for a",
-            "font-weight": 900,
+            "font-weight": 600,
             "heading_color": "#fff",
             "font_size": 36,
             "margin_top": 0,
@@ -155,6 +145,17 @@
             "heading": "smart and comfortable home",
             "heading_size": "h1",
             "font_size": 52,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "169d4855-0bc4-4d91-af37-3e4e5ba6421a": {
+          "type": "heading_sub",
+          "settings": {
+            "heading": "all the way down.",
+            "font-weight": 400,
+            "heading_color": "#fff",
+            "font_size": 36,
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -187,9 +188,9 @@
         }
       },
       "block_order": [
-        "b025aab7-537d-4243-b2c2-3e732d30ed1f",
         "c0e556cb-8ed5-4013-9717-4d75fbf28e18",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0",
+        "169d4855-0bc4-4d91-af37-3e4e5ba6421a",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-1",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3"
