@@ -143,8 +143,8 @@
                   autocorrect="off"
                   autocapitalize="off"
                   autocomplete="email"
-                  placeholder="ENTER YOUR EMAIL"
-                  {% if form.errors %}autofocusaria-invalid="true"aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %}aria-describedby="ContactFooter-success"{% endif -%}placeholder="Email Address"required>
+                  {% if form.errors %} autofocusaria-invalid="true" aria-describedby="ContactFooter-error"{% elsif form.posted_successfully? %} aria-describedby="ContactFooter-success"{% endif -%} 
+                    placeholder="ENTER YOUR EMAIL" required>
 <!--                 <label
                   class="field__label"
                   for="NewsletterForm--{{ section.id }}"
