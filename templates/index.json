@@ -130,6 +130,7 @@
       "blocks": {
         "b025aab7-537d-4243-b2c2-3e732d30ed1f": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Let's go for a",
             "text_style": "body",
@@ -140,6 +141,7 @@
         },
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "smart and comfortable home",
             "heading_size": "h1",
@@ -174,15 +176,15 @@
             "right_icon": "shopify:\/\/shop_images\/8c4ee359-5fb2-44ae-b6da-d71b8ada2ca2.png"
           }
         },
-        "8d8266d9-881b-4c5e-b715-085b987b7601": {
-          "type": "heading_1",
+        "c0e556cb-8ed5-4013-9717-4d75fbf28e18": {
+          "type": "heading_sub",
           "settings": {
             "heading": "Image banner",
-            "font-weight": 400,
+            "font-weight": 900,
             "heading_color": "#000",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "font_size": 48,
+            "margin_top": 12,
+            "margin_bottom": 12
           }
         }
       },
@@ -192,7 +194,7 @@
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-1",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-2",
         "template--15546009845860__811262fa-dfb8-4331-95a8-890b40e00fcd-1670914060488e58a6-3",
-        "8d8266d9-881b-4c5e-b715-085b987b7601"
+        "c0e556cb-8ed5-4013-9717-4d75fbf28e18"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/001.jpg",
