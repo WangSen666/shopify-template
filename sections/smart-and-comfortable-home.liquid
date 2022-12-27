@@ -192,7 +192,7 @@
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
           {%- when 'heading_sub' -%}
-          <h2 class="banner__heading1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
+          <h2 class="banner__heading1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{  block.settings.heading_color}};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
           {%- when 'text' -%}
