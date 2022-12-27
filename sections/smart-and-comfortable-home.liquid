@@ -192,7 +192,7 @@
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
           {%- when 'heading_1' -%}
-          <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+          <h2 class="banner__heading1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
             <span>{{ block.settings.heading_1 | escape }}</span>
           </h2>
           {%- when 'text' -%}
@@ -532,6 +532,76 @@
             "min": 0,
             "max": 200,
             "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
+          }
+        ]
+      },
+       {
+        "type": "heading__1",
+        "name": "副标题",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "range",
+            "id": "font-weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "unit": "px",
+            "label": "字体加粗",
+            "default": 400
+          },
+          {
+            "type": "select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
             "unit": "px",
             "label": "文本下边距",
             "default": 24
