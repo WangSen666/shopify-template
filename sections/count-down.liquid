@@ -200,14 +200,14 @@
   var input_item=document.getElementById("NewsletterForm--{{ section.id }}")
   // email输入框聚焦
   function emailFocus(){
-     count_down_email_err.style.display="none"
+     count_down_email_err.style.display="none";
   }
   // email输入框失去焦点
   function emailBlur(){
     if({{form.email}}.length<=0){
-       count_down_email_err.style.display="block"
+       count_down_email_err.style.display="block";
      }else{
-       count_down_email_err.style.display="none"
+       count_down_email_err.style.display="none";
       
      }
   }
