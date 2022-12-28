@@ -229,12 +229,12 @@
         "ff20d01c-a1e9-48a7-baf5-39cf138c851c": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>PODX GO Co-Creation Lab will work on your ideas and make it available just in months.<\/p>",
             "text_style": "body",
-            "heading": "Image banner",
-            "font-weight": 400,
-            "text_color": "#000",
-            "font_size": 24,
+            "heading": "",
+            "font-weight": 600,
+            "text_color": "#fff",
+            "font_size": 20,
             "margin_top": 24,
             "margin_bottom": 24
           }
