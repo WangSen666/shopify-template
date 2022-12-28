@@ -204,11 +204,11 @@
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "It's your choice.",
             "heading_size": "h1",
-            "font-weight": 400,
+            "font-weight": 600,
             "heading_color": "#B5EF35",
-            "font_size": 24,
+            "font_size": 44,
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -216,12 +216,12 @@
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Now that we have made significant progress with the engineering challenges, it's your turn to provide your thoughts on this little house.<\/p>",
             "text_style": "body",
             "heading": "Image banner",
             "font-weight": 400,
-            "text_color": "#000",
-            "font_size": 24,
+            "text_color": "#fff",
+            "font_size": 20,
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -251,7 +251,7 @@
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
