@@ -111,8 +111,8 @@
             "font-weight": 400,
             "heading_color": "#000",
             "font_size": 56,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "margin_top": 0,
+            "margin_bottom": 16
           }
         },
         "98f47e55-d404-43c2-912c-5dae2bdd8e58": {
@@ -124,8 +124,8 @@
             "font-weight": 400,
             "text_color": "#000",
             "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 12
+            "margin_top": 0,
+            "margin_bottom": 16
           }
         },
         "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-1": {
@@ -138,7 +138,7 @@
             "text_color": "#000",
             "font_size": 24,
             "margin_top": 0,
-            "margin_bottom": 24
+            "margin_bottom": 16
           }
         },
         "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-2": {
