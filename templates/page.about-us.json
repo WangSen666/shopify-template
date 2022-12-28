@@ -118,14 +118,14 @@
         "98f47e55-d404-43c2-912c-5dae2bdd8e58": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>A World Where Decent Housing Is Affordable, Sustainable, Energy\u0002Efficient, and Accessible to All.<br\/><\/p>",
             "text_style": "body",
             "heading": "Image banner",
             "font-weight": 400,
             "text_color": "#000",
             "font_size": 24,
             "margin_top": 24,
-            "margin_bottom": 24
+            "margin_bottom": 12
           }
         },
         "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-1": {
@@ -137,7 +137,7 @@
             "font-weight": 400,
             "text_color": "#000",
             "font_size": 24,
-            "margin_top": 24,
+            "margin_top": 0,
             "margin_bottom": 24
           }
         },
