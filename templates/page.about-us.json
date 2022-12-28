@@ -206,12 +206,26 @@
             "button_link": "",
             "text_color": "#000"
           }
+        },
+        "cc485179-7f2b-40b4-a5da-b3c0f227d9a3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To offer a housing option with unrivaled experience that unfettered by space, and priced for everyone<\/p>",
+            "text_style": "body",
+            "heading": "Image banner",
+            "font-weight": 400,
+            "text_color": "#000",
+            "font_size": 24,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
         }
       },
       "block_order": [
         "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-0",
         "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-1",
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-2"
+        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-2",
+        "cc485179-7f2b-40b4-a5da-b3c0f227d9a3"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
