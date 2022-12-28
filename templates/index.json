@@ -235,7 +235,7 @@
             "font-weight": 600,
             "text_color": "#fff",
             "font_size": 20,
-            "margin_top": 24,
+            "margin_top": 16,
             "margin_bottom": 24
           }
         },
@@ -243,7 +243,8 @@
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": ""
+            "button_link": "",
+            "text_color": "#fff"
           }
         },
         "3614a3de-7950-4be4-a846-9e9e44625993": {
@@ -530,7 +531,8 @@
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
-            "button_link": ""
+            "button_link": "",
+            "text_color": "#000"
           }
         }
       },
