@@ -205,14 +205,25 @@
           "type": "heading",
           "settings": {
             "heading": "Image with text",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font-weight": 400,
+            "heading_color": "#B5EF35",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-1": {
           "type": "text",
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "text_style": "body",
+            "heading": "Image banner",
+            "font-weight": 400,
+            "text_color": "#000",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-2": {
@@ -472,14 +483,25 @@
           "type": "heading",
           "settings": {
             "heading": "About Us",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font-weight": 400,
+            "heading_color": "#000",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
         "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-1": {
           "type": "text",
           "settings": {
             "text": "<p>The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. Tiny homes, homes on wheels, and even ADU are now more appealing than the traditional cookie-cutter house in the suburbs. Experience the freedom of life and also bring people closer to nature<br\/><\/p>",
-            "text_style": "body"
+            "text_style": "body",
+            "heading": "Image banner",
+            "font-weight": 400,
+            "text_color": "#000",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
         "9596ae6e-0033-4692-8c9d-295d4fe591d5": {
