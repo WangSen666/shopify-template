@@ -17,7 +17,7 @@
           "type": "text",
           "settings": {
             "text": "What If An Idea Is More Than An Idea",
-            "text_style": "body",
+            "text_style": "caption-with-letter-spacing",
             "font_size": 24,
             "margin_top": 110,
             "margin_bottom": 0
