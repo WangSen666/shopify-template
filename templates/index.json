@@ -221,12 +221,21 @@
             "button_label": "Button label",
             "button_link": ""
           }
+        },
+        "3614a3de-7950-4be4-a846-9e9e44625993": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-0",
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-1",
-        "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-2"
+        "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-2",
+        "3614a3de-7950-4be4-a846-9e9e44625993"
       ],
       "settings": {
         "height": "adapt",
