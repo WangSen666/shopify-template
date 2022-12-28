@@ -182,8 +182,8 @@
             "font-weight": 500,
             "heading_color": "#000",
             "font_size": 52,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "margin_top": 0,
+            "margin_bottom": 16
           }
         },
         "cc485179-7f2b-40b4-a5da-b3c0f227d9a3": {
