@@ -218,10 +218,23 @@
           "settings": {
             "text": "<p>Now that we have made significant progress with the engineering challenges, it's your turn to provide your thoughts on this little house.<\/p>",
             "text_style": "body",
-            "heading": "Image banner",
+            "heading": "",
             "font-weight": 400,
             "text_color": "#fff",
             "font_size": 20,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "ff20d01c-a1e9-48a7-baf5-39cf138c851c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body",
+            "heading": "Image banner",
+            "font-weight": 400,
+            "text_color": "#000",
+            "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -245,6 +258,7 @@
       "block_order": [
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-0",
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-1",
+        "ff20d01c-a1e9-48a7-baf5-39cf138c851c",
         "template--15546009845860__f4a689d3-06aa-44f5-af05-30354f1f93d2-1672189412d19e8113-2",
         "3614a3de-7950-4be4-a846-9e9e44625993"
       ],
