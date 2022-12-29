@@ -502,12 +502,17 @@
             "margin_bottom": 24
           }
         },
-        "9596ae6e-0033-4692-8c9d-295d4fe591d5": {
-          "type": "caption",
+        "05243eb7-2a6c-44bf-be97-a4e411c0c9f2": {
+          "type": "text",
           "settings": {
-            "caption": "PODX GO IS CHANGING THAT!",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
+            "text": "<p>PODX GO IS CHANGING THAT!<\/p>",
+            "text_style": "body",
+            "heading": "Image banner",
+            "font-weight": 700,
+            "text_color": "#000",
+            "font_size": 16,
+            "margin_top": 4,
+            "margin_bottom": 0
           }
         },
         "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-2": {
@@ -522,7 +527,7 @@
       "block_order": [
         "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-0",
         "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-1",
-        "9596ae6e-0033-4692-8c9d-295d4fe591d5",
+        "05243eb7-2a6c-44bf-be97-a4e411c0c9f2",
         "template--15546009845860__5e90d13b-23c2-4988-b271-691555503d66-16710895719a5686e0-2"
       ],
       "settings": {
