@@ -147,7 +147,7 @@
       </div>
     </div>
 
-    <div class="contact become-a-partner page-width page-width--narrow section-{{ section.id }}-padding">
+    <div class="contact become-a-partner page-width page-width--narrow section-{{ section.id }}-padding" id="become-a-partner">
       <script src="https://form.jotform.com/223471536193457"></script>
 <!--       {%- if section.settings.heading != blank -%}
         <h2 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
@@ -269,6 +269,11 @@
   </div>
 
 </div>
+  <script>
+    window.onload=function(){
+      document.getElementById("become-a-partner").onload("https://form.jotform.com/223471536193457")
+    }
+  </script>
 {% javascript %}
  class LocalizationForm extends HTMLElement {
     constructor() {
