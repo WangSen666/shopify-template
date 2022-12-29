@@ -335,7 +335,7 @@
         "image_height": "large",
         "is_allWindow": "true",
         "adapt_height_first_image": false,
-        "desktop_content_position": "top-left",
+        "desktop_content_position": "middle-left",
         "show_text_box": true,
         "desktop_content_alignment": "left",
         "color_scheme": "background-1",
