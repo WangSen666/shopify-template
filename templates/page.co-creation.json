@@ -147,6 +147,8 @@
       "settings": {
         "heading": "",
         "font-weight": 400,
+        "is_background": "false",
+        "image_overlay_opacity": 100,
         "heading_size": "h1",
         "desktop_layout": "left",
         "mobile_layout": "collage",
