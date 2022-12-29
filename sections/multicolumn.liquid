@@ -33,7 +33,11 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-   
+    .multicolumn-card__info h3{
+      width:200px;
+      margin:0 auto;
+      border-radius:14px;
+    }
     
 
   }
@@ -97,7 +101,7 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                  <h3 style="background:{{ section.settings.title_bg }};border-radius:10px;width:80%;margin:0 auto;">{{ block.settings.title | escape }}</h3>
+                  <h3 style="background:{{ section.settings.title_bg }};">{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
