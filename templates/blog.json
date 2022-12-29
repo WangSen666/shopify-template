@@ -98,6 +98,7 @@
       "settings": {
         "title": "Who we are looking for?",
         "heading_size": "h1",
+        "title_bg": "#B5EF35",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
@@ -115,6 +116,7 @@
     "787b1960-92d6-4a2a-a7ef-aca334a2d6bd": {
       "type": "main-contact-form",
       "settings": {
+        "font-weight": 400,
         "heading": "Become A Partner",
         "image": "shopify:\/\/shop_images\/t.webp",
         "image_1": "shopify:\/\/shop_images\/t_2.png",
