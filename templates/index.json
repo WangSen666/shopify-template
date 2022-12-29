@@ -282,7 +282,7 @@
             "heading": "TINY HOUSE",
             "font-weight": 800,
             "heading_color": "#B5EF35",
-            "font_size": 100,
+            "font_size": 96,
             "margin_top": 44,
             "margin_bottom": 0
           }
@@ -293,7 +293,7 @@
             "heading": "ON WHEELS",
             "font-weight": 800,
             "heading_color": "#B5EF35",
-            "font_size": 100,
+            "font_size": 96,
             "margin_top": 0,
             "margin_bottom": 0
           }
