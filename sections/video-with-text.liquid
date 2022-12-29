@@ -75,7 +75,7 @@
   media="print"
   onload="this.media='all'">
 
-<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+<div class="color-{{ section.settings.color_scheme }} gradient isolate" style="padding-top: {{ section.settings.padding_top }}px;padding-bottom: {{ section.settings.padding_bottom }}px;">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}" style="z-index:-1;opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};display:{% if section.settings.is_background=='true' %}block;{% else %}none; {% endif %}">
       {%-liquid
