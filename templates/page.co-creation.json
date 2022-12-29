@@ -9,7 +9,7 @@
             "heading": "CO-CREATION LAB",
             "font-weight": 600,
             "heading_color": "#fff",
-            "font_size": 52,
+            "font_size": 88,
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -19,7 +19,7 @@
           "settings": {
             "text": "The Home That Runs Upon Cool Ideas",
             "text_color": "#fff",
-            "font_size": 16,
+            "font_size": 20,
             "margin_top": 24,
             "margin_bottom": 24
           }
