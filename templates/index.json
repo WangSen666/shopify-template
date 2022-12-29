@@ -523,7 +523,7 @@
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/about-podx-go",
             "text_color": "#000"
           }
         }
