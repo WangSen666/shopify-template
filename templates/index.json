@@ -117,6 +117,7 @@
         "heading": "Together we design and build tiny homes for......",
         "font-weight": 600,
         "image": "shopify:\/\/shop_images\/s.webp",
+        "image_overlay_opacity": 30,
         "heading_size": "h1",
         "desktop_layout": "right",
         "mobile_layout": "collage",
