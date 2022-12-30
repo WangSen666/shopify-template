@@ -135,6 +135,7 @@
         "template--15559734788196__0dbdf82d-8492-49f0-8c5b-4952a77f9b6e-1671504671eb20579a-0": {
           "type": "video",
           "settings": {
+            "cover_image": "shopify:\/\/shop_images\/14-3.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "Describe the video"
           }
