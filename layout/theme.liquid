@@ -371,7 +371,9 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
       window.addEventListener('scroll', function() {
-        let header = document.getElementsByClassName("header-wrapper")[0];
+        // let header = document.getElementsByClassName("header-wrapper")[0];
+        let header = document.getElementsByClassName("nav-top")[0];
+        
         let wWidth = document.documentElement.clientWidth;
         let scrollTop = document.documentElement.scrollTop;
         // if (scrollTop >= 10) {
@@ -384,8 +386,8 @@
           // if (scrollTop1 - scrollTop < 0 && scrollTop > 36 && wWidth <= 990) {
            if (scrollTop1 - scrollTop < 0 && wWidth <=750) {
             header.style.display = "block"
-            // header.style.top = 0;
-            // header.style.position = "fixed"
+            header.style.top = 0;
+            header.style.position = "fixed"
             header.style.background = "#fff"
           }
         }, 100)
