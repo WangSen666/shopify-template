@@ -157,8 +157,8 @@
         "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/s21.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/12_1_1.jpg",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
