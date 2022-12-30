@@ -110,7 +110,7 @@
           {%- when 'image' -%}
           <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}>
             <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
-              <div class="media media--transparent ratio" {% if block.settings.image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %}style="--ratio-percent: 100%"{% endif %}>
+              <div class="media media--transparent ratio" {% if block.settings.image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %}style="--ratio-percent: 100%"{% endif %} style="width:100%;">
                 {%- if block.settings.image != blank -%}
                   {%- capture sizes -%}(min-width: {{ settings.page_width }}px)
                     {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px)
