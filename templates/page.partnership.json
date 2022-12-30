@@ -1,30 +1,24 @@
 {
   "sections": {
-    "522756c7-9015-45db-a1fb-81cff63756e3": {
+    "98144780-d1d1-4e28-9b8e-89136382b29e": {
       "type": "image-banner",
       "blocks": {
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0": {
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-0": {
           "type": "heading",
           "settings": {
-            "heading": "BE CREATIVE.",
-            "heading_size": "h1"
+            "heading": "PARTNER WITH THE FUTURE",
+            "heading_size": "h1",
+            "font-weight": 600
           }
         },
-        "74add986-2b77-48f9-ade2-a927aeb40756": {
-          "type": "heading",
-          "settings": {
-            "heading": "BE RELIABLE.",
-            "heading_size": "h1"
-          }
-        },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1": {
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-1": {
           "type": "text",
           "settings": {
-            "text": "We strive for sustainable solutions, taking into account all people.",
+            "text": "We create value for our partners by designing together.",
             "text_style": "body"
           }
         },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2": {
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "",
@@ -37,13 +31,12 @@
         }
       },
       "block_order": [
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0",
-        "74add986-2b77-48f9-ade2-a927aeb40756",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2"
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-0",
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-1",
+        "template--15545807077476__98144780-d1d1-4e28-9b8e-89136382b29e-16702913574cd50ec9-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
+        "image": "shopify:\/\/shop_images\/s2_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -56,201 +49,98 @@
         "show_text_below": true
       }
     },
-    "015b80b6-20a5-48c4-a1ac-874256d48648": {
-      "type": "podxgo-team-tip",
+    "50d87361-44cb-4863-adf4-c03da0e97bdf": {
+      "type": "multicolumn",
       "blocks": {
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-0": {
-          "type": "heading",
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-0": {
+          "type": "column",
           "settings": {
-            "heading": "Hi, we are team PODX GO.",
-            "heading_size": "h1"
+            "title": "Dealer",
+            "text": "<p>PODX GO makes quality products that you can trust to bring to your customers with confidence. Our partners receive great pricing, promotional assets, in-house assistance, and more.  <\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1": {
-          "type": "text",
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-1": {
+          "type": "column",
           "settings": {
-            "text": "A Mobile & Foldable Tiny House.",
-            "text_style": "body"
+            "title": "Affiliate",
+            "text": "<p>PODX GO strongly believes that our success is tied to the success of our affiliate partners. We offer special assiatance to affilate to seek for a long-term collaboration.   <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-2": {
+          "type": "column",
+          "settings": {
+            "title": "Ambassador",
+            "text": "<p>PODX GO Ambassadors are a select group of skilled TINY HOUSE LIVING enthusiasts and content creators who bring to life our ethos of downsized living.  <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "3e1fe6ec-7000-43be-ab8a-e1d96acf64e1": {
+          "type": "column",
+          "settings": {
+            "title": "Referral",
+            "text": "<p>Referral Program is a win-win for tiny house advocates and your friends. Sign up and share the referral link to earn 3% of your friend's first purchase while they save 3%. <\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-0",
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1"
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-0",
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-1",
+        "template--15545807077476__50d87361-44cb-4863-adf4-c03da0e97bdf-16702913570af84cd6-2",
+        "3e1fe6ec-7000-43be-ab8a-e1d96acf64e1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/luxurious-home-in-the-desert.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "top-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "#B5EF35",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "title": "Who we are looking for?",
+        "heading_size": "h1",
+        "title_bg": "#B5EF35",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "787b1960-92d6-4a2a-a7ef-aca334a2d6bd": {
+      "type": "main-contact-form",
+      "settings": {
+        "font-weight": 400,
+        "heading": "Become A Partner",
+        "image": "shopify:\/\/shop_images\/t.webp",
+        "image_1": "shopify:\/\/shop_images\/t_2.png",
+        "image_2": "shopify:\/\/shop_images\/t_1.webp",
+        "image_3": "shopify:\/\/shop_images\/t_2.webp",
+        "heading_size": "h1",
+        "color_scheme": "accent-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
-    "e1e03f82-d9be-4520-9cb3-80eb9a3ca35a": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Vision",
-            "heading_size": "h0"
-          }
-        },
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A World Where Decent Housing Is Affordable, Sustainable, Energy\u0002Efficient, and Accessible to All.<br\/><\/p><p>Powered by hundreds of achitects and thousands of dedicated co-dvelopers, it's the time to change the future.<br\/><\/p><p><\/p><p><\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-0",
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-1",
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/country-house.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "show_social": true
-      }
-    },
-    "c7429989-0c84-4a3a-b6a8-30e910667f5a": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Mission",
-            "heading_size": "h0"
-          }
-        },
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>To offer a housing option with unrivaled experience that unfettered by space, and priced for everyone<br\/><\/p><p>A downsized life does not imply compromising living space; rather, it is a choice of being closer to the nature and freedom.<br\/><\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-0",
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-1",
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "show_social": true
-      }
-    },
-    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33": {
-      "type": "image-with-text",
-      "blocks": {
-        "404d056c-babb-4945-bc41-d45e8f4b6954": {
-          "type": "caption",
-          "settings": {
-            "caption": "ADon't Miss Out.",
-            "text_style": "subtitle",
-            "text_size": "medium"
-          }
-        },
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Join PODX GO Community",
-            "heading_size": "h1"
-          }
-        },
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shared stories and experience about tiny house living<br\/><\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Sign Me Up",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "404d056c-babb-4945-bc41-d45e8f4b6954",
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-0",
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-1",
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/12_9c5c7d11-32eb-44e2-a314-edb137061b86.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "show_social": false
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
-    "522756c7-9015-45db-a1fb-81cff63756e3",
-    "015b80b6-20a5-48c4-a1ac-874256d48648",
-    "main",
-    "e1e03f82-d9be-4520-9cb3-80eb9a3ca35a",
-    "c7429989-0c84-4a3a-b6a8-30e910667f5a",
-    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33"
+    "98144780-d1d1-4e28-9b8e-89136382b29e",
+    "50d87361-44cb-4863-adf4-c03da0e97bdf",
+    "787b1960-92d6-4a2a-a7ef-aca334a2d6bd",
+    "main"
   ]
 }
