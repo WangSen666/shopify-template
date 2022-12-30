@@ -668,11 +668,11 @@
       this.preventReveal = false;
       this.predictiveSearch = this.querySelector('predictive-search');
 
-      this.onScrollHandler = this.onScroll.bind(this);
+      // this.onScrollHandler = this.onScroll.bind(this);
       this.hideHeaderOnScrollUp = () => this.preventReveal = true;
 
       this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
-      window.addEventListener('scroll', this.onScrollHandler, false);
+      // window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
     }
@@ -691,7 +691,7 @@
       observer.observe(this.header);
     }
 
-    onScroll() {
+    // onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
