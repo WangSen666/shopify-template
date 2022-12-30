@@ -176,7 +176,7 @@
                     aria-haspopup="dialog"
                     data-media-id="{{ block.settings.video_url.id }}">
                     <div class="media media--transparent ratio" {% if block.settings.cover_image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%"{% else %}style="--ratio-percent: 100%"{% endif %} style="width:100%;">
-                      <span class="deferred-media__poster-button motion-reduce">
+                      <span class="deferred-media__poster-button motion-reduce" style="display:none;">
                         {%- render 'icon-play' -%}
                       </span>
 
