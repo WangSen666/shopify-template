@@ -320,7 +320,7 @@
             "button_link_2": "",
             "button_style_secondary_2": false,
             "button_background": "#B5EF35",
-            "btn_radius": 24
+            "btn_radius": 44
           }
         }
       },
@@ -432,7 +432,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "LEARN MORE !",
-            "button_link_1": "",
+            "button_link_1": "shopify:\/\/pages\/co-creation",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
