@@ -391,9 +391,11 @@
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
-
-    {% section 'announcement-bar' %}
-    {% section 'header' %}
+    <div class="nav-top">
+      {% section 'announcement-bar' %}
+      {% section 'header' %}
+    </div>
+    
     <main
       id="MainContent"
       class="content-for-layout focus-none"
