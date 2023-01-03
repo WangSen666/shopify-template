@@ -613,24 +613,21 @@
           </div>
         </details>
       </details-modal>
-      
-<!--       {%- if shop.customer_accounts_enabled -%} -->
-        <a href="{{ routes.account_login_url }}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-        
-        {% render 'icon-account' %}
+
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          {% render 'icon-account' %}
           <span class="visually-hidden">
-<!--             {%- liquid
+            {%- liquid
               if customer
                 echo 'customer.account_fallback' | t
               else
                 echo 'customer.log_in' | t
               endif
-            -%} -->
-
-            LOGIN
+            -%}
           </span>
         </a>
-<!--       {%- endif -%} -->
+      {%- endif -%}
 
 <!--       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
