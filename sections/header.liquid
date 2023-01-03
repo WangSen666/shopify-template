@@ -619,13 +619,15 @@
         
         {% render 'icon-account' %}
           <span class="visually-hidden">
-            {%- liquid
+<!--             {%- liquid
               if customer
                 echo 'customer.account_fallback' | t
               else
                 echo 'customer.log_in' | t
               endif
-            -%}
+            -%} -->
+
+            LOGIN
           </span>
         </a>
       {%- endif -%}
