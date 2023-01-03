@@ -171,7 +171,7 @@
               </small>
               {%- endif -%} -->
             </div>
-            {%- if form.posted_successfully? -%}
+{% comment %}             {%- if form.posted_successfully? -%}
               <h3
                 class="newsletter-form__message newsletter-form__message--success form__message"
                 id="ContactFooter-success"
@@ -180,7 +180,7 @@
                 {% render 'icon-success' -%}
                 {{- 'newsletter.success' | t }}
               </h3>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
             <button
               class="submit-btn"
               name="commit"
