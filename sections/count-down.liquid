@@ -217,7 +217,12 @@ window.onload = function() {
     var HourDom = document.getElementsByClassName("hours-time-wrapper")[0];
     var minDom = document.getElementsByClassName("mins-time-wrapper")[0];
     var secDom = document.getElementsByClassName("secs-time-wrapper")[0];
-
+    if(input_item.value.length<=0){
+       count_down_email_err.style.display="block";
+     }else{
+       count_down_email_err.style.display="none";
+      
+     }
   // 倒计时卡片的倒计时函数处理
   setInterval(function() {
     var nowDate = new Date().getTime();
