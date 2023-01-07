@@ -69,8 +69,8 @@
         "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1": {
           "type": "text",
           "settings": {
-            "text": "A Mobile & Foldable Tiny House.",
-            "text_style": "subtitle"
+            "text": "Set up a tiny home in 15 mins.",
+            "text_style": "caption-with-letter-spacing"
           }
         }
       },
@@ -95,37 +95,16 @@
     "8e952b4c-f354-4931-9c06-ef7f871a11fe": {
       "type": "rich-text",
       "blocks": {
-        "template--15563052187748__8e952b4c-f354-4931-9c06-ef7f871a11fe-1673085977a9881c54-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Set up a tiny home in 15 mins.<\/p>",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
         "template--15563052187748__8e952b4c-f354-4931-9c06-ef7f871a11fe-1673085977a9881c54-1": {
           "type": "text",
           "settings": {
             "text": "<p>Housing has been the most challenging essential need to meet, that is why we created PODX GO. We want to present you with a new way of living. A more downsized but equally high-quality life. Imagine a profitable small house, a collapsible home on wheels that can not only shelter you but also allow you to move freely.<\/p><p>As we provide housing solutions for families with various reasons looking to downsize, our customers' stories havedriven us to adopt a more bold designing mind-set, which refers to co-create with our customers. Each tiny home we put on the market is a collaborative effort between our staff and individuals who have contributed original ideas.<\/p>",
             "font-weight": 200
           }
-        },
-        "template--15563052187748__8e952b4c-f354-4931-9c06-ef7f871a11fe-1673085977a9881c54-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "template--15563052187748__8e952b4c-f354-4931-9c06-ef7f871a11fe-1673085977a9881c54-0",
-        "template--15563052187748__8e952b4c-f354-4931-9c06-ef7f871a11fe-1673085977a9881c54-1",
-        "template--15563052187748__8e952b4c-f354-4931-9c06-ef7f871a11fe-1673085977a9881c54-2"
+        "template--15563052187748__8e952b4c-f354-4931-9c06-ef7f871a11fe-1673085977a9881c54-1"
       ],
       "settings": {
         "desktop_content_position": "center",
