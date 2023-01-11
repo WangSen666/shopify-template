@@ -8,7 +8,7 @@
           "settings": {
             "heading": "GATHER TO CREATE",
             "heading_size": "h1",
-            "font_size": 84,
+            "font_size": 68,
             "margin_top": 182,
             "margin_bottom": 0
           }
@@ -18,7 +18,7 @@
           "settings": {
             "text": "What If An Idea Is More Than An Idea",
             "text_style": "caption-with-letter-spacing",
-            "font_size": 24,
+            "font_size": 20,
             "margin_top": 110,
             "margin_bottom": 0
           }
