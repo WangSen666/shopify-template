@@ -176,7 +176,7 @@
                   <video
                     controls=""
                     autoplay="autoplay"
-                    src="../assets/video1.mp4"
+                    src="{{ 'video1.mp4' | asset_url }}"
                     class="deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
                     type="button"
                     aria-label="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
