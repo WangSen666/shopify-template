@@ -4,12 +4,15 @@
 {{ 'component-modal-video.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-   #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
+    ;
   }
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
   }
   .video-with-text .collage__item {
     position: relative
@@ -45,8 +48,10 @@
   }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
   @media screen and (max-width: 750px) {
@@ -56,15 +61,15 @@
     }
     .collage {
       flex-wrap: wrap;
-      padding-bottom:24px;
+      padding-bottom: 24px;
     }
     .collage__item {
       width: 96%;
       margin: 0 auto;
       height: 200px;
     }
-    .text-wrapper-heading{
-      font-size:28px;
+    .text-wrapper-heading {
+      font-size: 28px;
     }
   }
 {%- endstyle -%}
@@ -91,15 +96,14 @@
           assign sizes = "100vw"
         endif
       -%}
-      {{ section.settings.image | image_url: width: 1500 | image_tag:
+      {{ section.settings.image | image_url: width: 1500 | image_tag: 
        loading: 'lazy'
        , width: section.settings.image.width
        , height: image_height
        , class: image_class
        , sizes: sizes
        , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-       , alt: section.settings.image.alt | escape
-       }}
+       , alt: section.settings.image.alt | escape }}
     </div>
   {%- endif -%}
   <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
@@ -110,7 +114,7 @@
           {%- when 'image' -%}
           <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}>
             <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
-              <div class="media media--transparent ratio" {% if block.settings.image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %}style="--ratio-percent: 100%"{% endif %} style="width:100%;">
+              <div class="media media--transparent ratio" {% if block.settings.image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %}style="--ratio-percent: 100%"{% endif %}style="width:100%;">
                 {%- if block.settings.image != blank -%}
                   {%- capture sizes -%}(min-width: {{ settings.page_width }}px)
                     {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px)
@@ -148,7 +152,7 @@
             <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}{{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
               <noscript>
                 <a href="{{ block.settings.video_url }}" class="collage-card__link{% if block.settings.image_padding %} collage-card-spacing{% endif %}">
-                  <div class="media media--transparent ratio" {% if block.settings.cover_image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%"{% else %}style="--ratio-percent: 100%"{% endif %} style="width:100%;">
+                  <div class="media media--transparent ratio" {% if block.settings.cover_image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%"{% else %}style="--ratio-percent: 100%"{% endif %}style="width:100%;">
                     {%- if block.settings.cover_image != blank -%}
                       {%- capture sizes -%}(min-width: {{ settings.page_width }}px)
                         {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px)
@@ -169,13 +173,16 @@
               </noscript>
               <modal-opener class="no-js-hidden" data-modal="#PopupModal-{{ block.id }}">
                 <div class="deferred-media">
-                  <button
+                  <video
+                    controls=""
+                    autoplay="autoplay"
+                    src="../assets/video1.mp4"
                     class="deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
                     type="button"
                     aria-label="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
                     aria-haspopup="dialog"
                     data-media-id="{{ block.settings.video_url.id }}">
-                    <div class="media media--transparent ratio" {% if block.settings.cover_image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;width:100%;"{% else %}style="--ratio-percent: 100%;width:100%;"{% endif %} style="width:100%;">
+                    <div class="media media--transparent ratio" {% if block.settings.cover_image != blank %}style="--ratio-percent: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;width:100%;"{% else %}style="--ratio-percent: 100%;width:100%;"{% endif %}style="width:100%;">
                       <span class="deferred-media__poster-button motion-reduce" style="display:none;">
                         {%- render 'icon-play' -%}
                       </span>
@@ -196,7 +203,7 @@
                         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
-                  </button>
+                  </video>
                 </div>
               </modal-opener>
               <modal-dialog id="PopupModal-{{ block.id }}" class="modal-video media-modal color-background-1">
@@ -270,7 +277,7 @@
         "label": "t:sections.image-banner.settings.image.label"
       },
       {
-        "type":"select",
+        "type": "select",
         "id": "is_background",
         "options": [
           {
@@ -281,10 +288,9 @@
             "label": "否"
           }
         ],
-        "default":"false",
-        "label":"是否显示背景"
-      },
-      {
+        "default": "false",
+        "label": "是否显示背景"
+      }, {
         "type": "range",
         "id": "image_overlay_opacity",
         "min": 0,
@@ -293,8 +299,7 @@
         "unit": "%",
         "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
         "default": 0
-      },
-      {
+      }, {
         "type": "select",
         "id": "heading_size",
         "options": [
@@ -311,8 +316,7 @@
         ],
         "default": "h1",
         "label": "t:sections.all.heading_size.label"
-      },
-      {
+      }, {
         "type": "select",
         "id": "desktop_layout",
         "options": [
@@ -326,8 +330,7 @@
         ],
         "default": "left",
         "label": "t:sections.collage.settings.desktop_layout.label"
-      },
-      {
+      }, {
         "type": "select",
         "id": "mobile_layout",
         "options": [
