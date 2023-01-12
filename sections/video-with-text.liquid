@@ -173,7 +173,7 @@
                     autoplay
                     muted
                     loop
-                      src="blob:https://www.youtube.com/c95369b7-d0a5-4790-a959-2e646c293620"
+                      src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1"
                     class="video-item deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
                     aria-label="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
                     aria-haspopup="dialog"
