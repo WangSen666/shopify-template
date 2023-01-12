@@ -32,7 +32,7 @@
   .collage-card {
     border-radius: 24px;
   }
-  .video-item {
+  .collage__item {
     height: 340px;
     width: 400px;
   }
@@ -170,11 +170,8 @@
               <modal-opener class="no-js-hidden" data-modal="#PopupModal-{{ block.id }}">
                 <div class="deferred-media">
                   <video
-                    autoplay
-                    muted
-                    loop
-                      src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1"
-                    class="video-item deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
+                    class="deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
+                    type="button"
                     aria-label="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
                     aria-haspopup="dialog"
                     data-media-id="{{ block.settings.video_url.id }}">
@@ -199,7 +196,7 @@
                         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
-                  </video>
+                  </button>
                 </div>
               </modal-opener>
               <modal-dialog id="PopupModal-{{ block.id }}" class="modal-video media-modal color-background-1">
