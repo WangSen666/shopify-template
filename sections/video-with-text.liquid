@@ -35,9 +35,9 @@
   .collage-card {
     border-radius: 24px;
   }
-  .collage__item {
-    height: 340px;
-    width: 400px;
+  .video-item {
+    height: 360px;
+    width: 640px;
   }
   .collage-wrapper-title {
     text-align: center;
@@ -66,7 +66,7 @@
     .collage__item {
       width: 96%;
       margin: 0 auto;
-      height: 200px;
+      height: 300px;
     }
     .text-wrapper-heading {
       font-size: 28px;
@@ -177,7 +177,7 @@
                     loop="loop"
                     autoplay="autoplay"
                     src="{{ 'video1.mp4' | asset_url }}"
-                    class="deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
+                    class="deferred-media__poster video-item full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
                     type="button"
                     aria-label="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
                     aria-haspopup="dialog"
