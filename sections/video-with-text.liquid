@@ -32,7 +32,7 @@
   .collage-card {
     border-radius: 24px;
   }
-  .collage__item {
+  .video-item {
     height: 340px;
     width: 400px;
   }
@@ -169,9 +169,12 @@
               </noscript>
               <modal-opener class="no-js-hidden" data-modal="#PopupModal-{{ block.id }}">
                 <div class="deferred-media">
-                  <button
-                    class="deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
-                    type="button"
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}"
+                    class="video-item deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}"
                     aria-label="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
                     aria-haspopup="dialog"
                     data-media-id="{{ block.settings.video_url.id }}">
@@ -196,7 +199,7 @@
                         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
-                  </button>
+                  </video>
                 </div>
               </modal-opener>
               <modal-dialog id="PopupModal-{{ block.id }}" class="modal-video media-modal color-background-1">
@@ -206,7 +209,7 @@
                   aria-label="{{ block.settings.description | escape }}"
                   aria-modal="true"
                   tabindex="-1">
-                  <button
+                  <video
                     id="ModalClose-{{ block.id }}"
                     type="button"
                     class="modal-video__toggle"
