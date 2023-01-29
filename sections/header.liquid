@@ -106,7 +106,7 @@
   }
   .header-wrapper .header__active-menu-item{
     color:#fff;
-    text-decration:none;
+    text-decoration:none;
     border-bottom:4px solid #99CC33;
   }
   .header-wrapper a,
@@ -434,7 +434,7 @@
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
-              <li {%- if link.child_active %} class="header__active-menu-item"{% endif %}>
+              <li {%- if link.current %} class="header__active-menu-item"{% endif %}>
                 {%- if link.links != blank -%}
                   <header-menu>
                     <details id="Details-HeaderMenu-{{ forloop.index }}">
@@ -473,7 +473,7 @@
                   </header-menu>
                 {%- else -%}
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                    <span >{{ link.title | escape }}</span>
                   </a>
                 {%- endif -%}
               </li>
