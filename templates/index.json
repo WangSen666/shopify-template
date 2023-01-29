@@ -1,5 +1,52 @@
 {
   "sections": {
+    "9b38c541-4c8c-4f4c-98cd-e181c95dc8c3": {
+      "type": "banner-component",
+      "blocks": {
+        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font_size": 48,
+            "margin_top": 52,
+            "margin_bottom": 24
+          }
+        },
+        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-3": {
+          "type": "leftBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room"
+          }
+        },
+        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-5": {
+          "type": "rightBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-0",
+        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-3",
+        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-5"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12_1_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "a1deb0dd-d7e5-47fe-936c-93dea8c0b469": {
       "type": "smart-and-comfortable-home",
       "blocks": {
@@ -627,6 +674,7 @@
     }
   },
   "order": [
+    "9b38c541-4c8c-4f4c-98cd-e181c95dc8c3",
     "a1deb0dd-d7e5-47fe-936c-93dea8c0b469",
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
