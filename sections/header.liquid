@@ -94,7 +94,7 @@
   .header-wrapper--border-bottom{border:none}
   .header-wrapper {
 /*     position: fixed; */
-    width: 80%;
+    max-width: 1200px;
 /*     background: rgb(115, 115, 115,0.6); */
     background:none;
     z-index:10;
@@ -104,13 +104,17 @@
   .header-wrapper  .header{
     padding:0 !important;
   }
-  .header-wrapper .header__active-menu-item{
+  .header-wrapper .header__active-menu-item,
+  .header-wrapper li:hover{
     color:#fff;
     text-decoration:none;
     border-bottom:4px solid #99CC33;
   }
-  .header-wrapper a,
-  .header-wrapper a:hover{
+  .header-wrapper a:hover span{
+    text-decoration:none !important;
+    color:#fff;
+  }
+  .header-wrapper a{
     color:#fff;
   }
   .search-icon{
