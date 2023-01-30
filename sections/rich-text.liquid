@@ -24,6 +24,17 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+ @media screen and (max-width: 1080px) {
+    .rich-text .rich-text__heading{font-size:32px !important;}
+    .rich-text-card-group{font-size:18px !important;flex-wrap:wrap;}
+  }
+/* 富文本卡片组 */
+
+.rich-text-card-group{display:flex;justify-content:space-around;font-size:24px;color:#fff;}
+.rich-text-card-item img{vertical-align:middle;margin-right:6px;}
+
+
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %}  page-width{% endunless %}">
@@ -36,7 +47,7 @@
             <h2
               class="rich-text__heading rte {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }}">
+              style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px">
               {{ block.settings.heading | replace: 'p>', 'span>' }}
             </h2>
             {%- when 'caption' -%}
@@ -53,6 +64,32 @@
               style="font-weight:{{ block.settings.font-weight }};">
               {{ block.settings.text }}
             </div>
+
+            {%- when 'cardGroup'  -%}
+            <div class="rich-text-card-group">
+                <div class="rich-text-card-item">
+                  <img src="{{  block.settings.card_image_item_1 | image_url: width: 140 }}"
+                      width="30"
+                      height="30"
+                      loading="lazy">
+                  {{ block.settings.card_text_1 }}
+                </div>
+
+                 <div class="rich-text-card-item">
+                  <img src="{{  block.settings.card_image_item_2 | image_url: width: 140 }}"
+                      width="30"
+                      height="30"
+                      loading="lazy">
+                  {{ block.settings.card_text_2 }}
+                </div>
+                 <div class="rich-text-card-item">
+                  <img src="{{  block.settings.card_image_item_3 | image_url: width: 140 }}"
+                      width="30"
+                      height="30"
+                      loading="lazy">
+                  {{ block.settings.card_text_3 }}
+                </div>
+            </div>
             {%- when 'button' -%}
             <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label != blank -%}
@@ -68,6 +105,7 @@
     </div>
   </div>
 </div>
+
 
 {% schema %}
   {
@@ -207,6 +245,34 @@
             "unit": "px",
             "label": "字体加粗",
             "default": 400
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 48
+          },
+          {
+            "type":"select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
           }
         ]
       }, {
@@ -271,9 +337,69 @@
             "unit": "px",
             "label": "字体加粗",
             "default": 400
+          },
+          {
+            "type":"select",
+            "id": "text_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
           }
         ]
-      }, {
+      },
+      // 富文本卡片内容
+      {
+        "type":"cardGroup",
+        "name":"富文本卡片内容",
+        "limit":3,
+        "settings":[
+          {
+            "type":"text",
+            "id":"card_text_1",
+            "default": "我是卡片文本内容1",
+            "label": "我是卡片文本内容1"
+          },
+          {
+            "type":"image_picker",
+            "id":"card_image_item_1",
+            "label":"卡片图片内容1"
+          },
+          {
+            "type":"text",
+            "id":"card_text_2",
+            "default": "我是卡片文本内容2",
+            "label": "我是卡片文本内容2"
+          },
+          {
+            "type":"image_picker",
+            "id":"card_image_item_2",
+            "label":"卡片图片内容2"
+          },
+          {
+            "type":"text",
+            "id":"card_text_3",
+            "default": "我是卡片文本内容3",
+            "label": "我是卡片文本内容3"
+          },
+          {
+            "type":"image_picker",
+            "id":"card_image_item_3",
+            "label":"卡片图片内容3"
+          }
+        ]
+      },
+      {
         "type": "button",
         "name": "t:sections.rich-text.blocks.buttons.name",
         "limit": 2,
@@ -316,7 +442,7 @@
     ],
     "presets": [
       {
-        "name": "t:sections.rich-text.presets.name",
+        "name": "自定义富文本",
         "blocks": [
           {
             "type": "heading"
@@ -324,6 +450,9 @@
             "type": "text"
           }, {
             "type": "button"
+          },
+          {
+            "type":"cardGroup"
           }
         ]
       }

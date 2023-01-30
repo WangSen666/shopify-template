@@ -4,20 +4,14 @@
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner-component__content::before  {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
-        %;
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
-
-
     }
-
-
     @media screen and (min-width: 750px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
-        %;
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -30,6 +24,7 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+  /* banner 组件 */
    .banner-component{position:relative}
   .banner-component .banner-component__box {
     padding: 0;
@@ -49,6 +44,7 @@
     left:50%;
     top:0;
     transform:translateX(-50%);
+    text-align:left;
    }
   .banner-component .banner-component__media{
     height:100%;
@@ -58,88 +54,62 @@
   .banner__heading {
     font-weight: bold;
   }
-  .banner-component .banner__text {
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .banner-component .heading {
-    color: #B5EF35;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .banner-component .heading_1 {
-    color: #fff;
-    font-size: 20px;
-  }
   .banner-component-bottom-info{
     display:flex;
     justify-content:space-around;
     align-items:center;
+    color:#fff;
   }
   .banner-component-bottom-info .banner__left_bottom_info {
-    /* position: absolute; */
-   
   }
   .banner-component-bottom-info .banner__right_bottom_info {
-   
+   padding:14px;
+   border-radius:40px;
+   border:1px solid #fff;
+   font-size:24px;
   }
- 
-  @media screen and (max-width: 1080px) {
-
-    /* .banner-component-bottom-info .banner__heading {
-      font-size: 42px !important;
-    }
-    .banner-component-bottom-info {
-      position: relative;
-      display: block;
-    }
-    .banner-component-bottom-info .banner-component__box {
-      height: 58rem;
-      width: 100%;
-      position: absolute;
-      top: unset;
-      left: unset;
-      transform: unset;
-    }
-    .banner-component-bottom-info .banner-component__media {
-      position: absolute !important;
-      top: 0;
-      height: 100% !important;
-    }
-    .banner-component-bottom-info .heading {
-      font-size: 20px;
-    }
-    .banner-component-bottom-info .heading_1 {
-      font-size: 14px !important;
-    }
-    .banner-component-bottom-info .banner_text {
-      font-size: 28px;
-    }
-    .banner-component-bottom-info .banner__left_bottom_info {
-      position: static;
-    }
-    .banner-component-bottom-info .banner__right_bottom_info {
-      position: static;
-    }
-    .banner__center_bottom_info {
-      flex-wrap: wrap;
-      text-align: left !important;
-      width: 90%;
-      bottom:0;
-    } */
-    .banner__left_bottom_info img,
-    .banner__right_bottom_info img {
-      width: 34px;
-      height: 34px;
-    }
+  .banner-component-button{
+    font-size:48px;
+    background:none;
+    padding:0 14px;
+    font-weight:bold;
   }
+ .banner-component-bottom-info .price{
+  color:#fff;
+  font-size:48px;
+  font-weight:bold;
+ }
+@media screen and (max-width: 750px) {
+  .banner-component .banner-component__content{
+    width:90%;
+  }
+  .banner-component .banner-component__media{
+    min-height:52rem;
+    width:100%;
+  }
+  .banner-component-bottom-info{flex-wrap:wrap;}
+  .banner-component__box  .banner__heading{
+    font-size:32px !important;
+  }
+  .banner-component-bottom-info .banner__right_bottom_info {
+    padding:10px;
+    font-size:18px;
+  }
+  .banner-component-button{
+    font-size:32px;
+    padding:0 10px;
+  }
+  .banner-component__box img{
+    width:24px;
+    height:24px;
+  }
+  .banner-component-bottom-info .price{
+    font-size:32px;
+  }
+}
 {%- endstyle -%}
 
-<div
-  id="Banner-{{ section.id }}"
-  class="banner-component  bg_wrapper  banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+<div id="Banner-{{ section.id }}" class="bg_wrapper banner-component   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
   {%- if section.settings.image != blank -%}
     <div class="banner-component__media media  {% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -171,18 +141,11 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-          <h2 class="banner__heading {{ block.settings.heading_size }}"
+          <h2 class="banner__heading"
             {{ block.shopify_attributes }}
             style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
-          {%- when 'text' -%}
-          <div
-            class="banner__text {{ block.settings.text_style }}"
-            {{ block.shopify_attributes }}
-            style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.text_color }}">
-            <span>{{ block.settings.text | escape }}</span>
-          </div>
           {%- when 'bannerComponentBottomInfo' -%}  
           <div class="banner-component-bottom-info">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
@@ -191,9 +154,8 @@
             </div>
              {%- if block.settings.banner_button_link != blank -%}
               <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.banner_button_link }}" {% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
-                {% comment %} <img {% endcomment %}
-                <img src="{{ button_logo_1.png | asset_url }}" width="34" height="34"/>
+                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.banner_button_link }}" {% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+                <img src="{{'button_logo_1.png'  | asset_url }}" width="34" height="34" />
               </div>
               {%- endif -%}
            
@@ -451,84 +413,6 @@
         ]
       },
       {
-        "type": "text",
-        "name": "t:sections.image-banner.blocks.text.name",
-        "limit": 3,
-        "settings": [
-          {
-            "type": "text",
-            "id": "text",
-            "default": "Give customers details about the banner image(s) or content on the template.",
-            "label": "t:sections.image-banner.blocks.text.settings.text.label"
-          },
-          {
-            "type": "select",
-            "id": "text_style",
-            "options": [
-              {
-                "value": "body",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
-              }, {
-                "value": "subtitle",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
-              }, {
-                "value": "caption-with-letter-spacing",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
-              }
-            ],
-            "default": "body",
-            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
-          },
-          {
-            "type": "select",
-            "id": "text_color",
-            "options": [
-              {
-                "value": "#B5EF35",
-                "label": "主题色"
-              }, {
-                "value": "#fff",
-                "label": "白色"
-              }, {
-                "value": "#000",
-                "label": "黑色"
-              }
-            ],
-            "default": "#000",
-            "label": "黑色"
-          },
-          {
-            "type": "range",
-            "id": "font_size",
-            "min": 0,
-            "max": 200,
-            "step": 4,
-            "unit": "px",
-            "label": "文本字体大小",
-            "default": 24
-          },
-          {
-            "type": "range",
-            "id": "margin_top",
-            "min": 0,
-            "max": 200,
-            "step": 2,
-            "unit": "px",
-            "label": "文本上边距",
-            "default": 24
-          }, {
-            "type": "range",
-            "id": "margin_bottom",
-            "min": 0,
-            "max": 200,
-            "step": 2,
-            "unit": "px",
-            "label": "文本下边距",
-            "default": 24
-          }
-        ]
-      },
-      {
         "type":"bannerComponentBottomInfo",
         "name":"banner底部内容",
         "settings": [
@@ -567,9 +451,6 @@
         "blocks": [
           {
             "type": "heading"
-          },
-          {
-            "type": "text"
           },
           {
             "type": "bannerComponentBottomInfo"
