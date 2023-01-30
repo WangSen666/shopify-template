@@ -80,33 +80,27 @@
           "settings": {
             "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "template--15597986676836__bfe08703-2924-49e3-8a74-3ae666fda626-16750728866669bef2-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "font-weight": 400,
-            "heading_color": "#000"
+            "heading_color": "#fff"
           }
         },
         "template--15597986676836__bfe08703-2924-49e3-8a74-3ae666fda626-16750728866669bef2-3": {
           "type": "cardGroup",
           "settings": {
-            "card_text": "我是卡片文本内容"
+            "card_text_1": "Free To Move",
+            "card_text_2": "Quick Unpacking",
+            "card_text_3": "Spacious"
           }
         }
       },
       "block_order": [
         "template--15597986676836__bfe08703-2924-49e3-8a74-3ae666fda626-16750728866669bef2-0",
-        "template--15597986676836__bfe08703-2924-49e3-8a74-3ae666fda626-16750728866669bef2-1",
         "template--15597986676836__bfe08703-2924-49e3-8a74-3ae666fda626-16750728866669bef2-3"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
