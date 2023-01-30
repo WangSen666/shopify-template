@@ -62,16 +62,15 @@
             </div>
             {%- when 'cardGroup'  -%}
             <div class="rich-text-card-group">
-              {%  for childBlock in block.settings  %} 
+              {% for childBlock in block.settings %} 
                 <div class="rich-text-card-item">
-                  <img src="{{  block.settings.card_image_item | image_url: width: 140 }}"
-                      
+                  <img src="{{  childBlock.settings.card_image_item | image_url: width: 140 }}"
                       width="30"
                       height="30"
                       loading="lazy">
                   {{ childBlock.settings.card_text }}
                 </div>
-              {% endfor %} %}
+              {% endfor %} 
             </div>
             {%- when 'button' -%}
             <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
