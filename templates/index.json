@@ -631,12 +631,12 @@
         "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Unleashing Our Dreams:",
             "heading_size": "h1",
-            "font_size": 24,
+            "font_size": 48,
             "margin_top": 24,
             "margin_bottom": 24,
-            "heading_color": "#000"
+            "heading_color": "#fff"
           }
         },
         "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-1": {
@@ -644,8 +644,8 @@
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body",
-            "text_color": "#000",
-            "font_size": 24,
+            "text_color": "#fff",
+            "font_size": 48,
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -653,11 +653,11 @@
         "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-2": {
           "type": "bannerComponentBottomInfo",
           "settings": {
-            "heading": "FUll SIZE",
-            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "heading": "Get 2023's Best Deal Now",
+            "heading_1": "for Just",
             "price": "$55559.221",
             "banner_button_link": "shopify:\/\/pages\/go-fot-it",
-            "banner_button_label": "GET wwqeqeewqeqeewqewqewq"
+            "banner_button_label": "CHECK IT OUT"
           }
         }
       },
