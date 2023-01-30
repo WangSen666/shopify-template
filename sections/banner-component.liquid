@@ -77,15 +77,30 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
+    color:#fff;
   }
   .banner-component-bottom-info .banner__left_bottom_info {
     /* position: absolute; */
    
   }
   .banner-component-bottom-info .banner__right_bottom_info {
-   
+   padding:14px;
+   border-radius:40px;
+   border:1px solid #fff;
+   font-size:24px;
   }
- 
+  .banner-component-button{
+    font-size:48px;
+    background:none;
+    padding:0 14px;
+    font-weight:bold;
+
+  }
+ .banner-component-bottom-info .price{
+  color:#fff;
+  font-size:48px;
+  font-weight:bold;
+ }
   @media screen and (max-width: 1080px) {
 
     /* .banner-component-bottom-info .banner__heading {
@@ -191,8 +206,7 @@
             </div>
              {%- if block.settings.banner_button_link != blank -%}
               <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.banner_button_link }}" {% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
-                {% comment %} <img {% endcomment %}
+                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.banner_button_link }}" {% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
                 <img src="{{'button_logo_1.png'  | asset_url }}" width="34" height="34" />
               </div>
               {%- endif -%}
