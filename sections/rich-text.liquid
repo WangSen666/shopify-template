@@ -63,7 +63,6 @@
            
             <div class="rich-text-card-group">
               {%- when 'cardGroup'  -%}
-              {% if block.settings.card_text_1 != blank %} 
                 <div class="rich-text-card-item">
                   <img src="{{  block.settings.card_image_item | image_url: width: 140 }}"
                       width="30"
@@ -72,7 +71,6 @@
                   {{ block.settings.card_text }}
                 </div>
 
-              {% elsif block.settings.card_text_2 != blank %}
                  <div class="rich-text-card-item">
                   <img src="{{  block.settings.card_image_item_2 | image_url: width: 140 }}"
                       width="30"
@@ -80,7 +78,6 @@
                       loading="lazy">
                   {{ block.settings.card_text_2 }}
                 </div>
-              {% elsif block.settings.card_text_3 != blank %}
                  <div class="rich-text-card-item">
                   <img src="{{  block.settings.card_image_item_3 | image_url: width: 140 }}"
                       width="30"
@@ -88,7 +85,6 @@
                       loading="lazy">
                   {{ block.settings.card_text_3 }}
                 </div>
-              {% endif %}
                 
             </div>
             {%- when 'button' -%}
