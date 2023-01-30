@@ -43,7 +43,7 @@
             <h2
               class="rich-text__heading rte {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.heading_color }}">
+              style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px">
               {{ block.settings.heading | replace: 'p>', 'span>' }}
             </h2>
             {%- when 'caption' -%}
@@ -241,6 +241,16 @@
             "unit": "px",
             "label": "字体加粗",
             "default": 400
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 48
           },
           {
             "type":"select",
