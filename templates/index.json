@@ -1,52 +1,5 @@
 {
   "sections": {
-    "9b38c541-4c8c-4f4c-98cd-e181c95dc8c3": {
-      "type": "banner-component",
-      "blocks": {
-        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "font_size": 48,
-            "margin_top": 52,
-            "margin_bottom": 24
-          }
-        },
-        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-3": {
-          "type": "leftBottomInfo",
-          "settings": {
-            "heading": "FUll SIZE",
-            "heading_1": "Kitchen\/Bedroom\/Great Room"
-          }
-        },
-        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-5": {
-          "type": "rightBottomInfo",
-          "settings": {
-            "heading": "FUll SIZE",
-            "heading_1": "Kitchen\/Bedroom\/Great Room"
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-0",
-        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-3",
-        "template--15597986676836__9b38c541-4c8c-4f4c-98cd-e181c95dc8c3-16749854126ce2c91d-5"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/12_1_1.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "a1deb0dd-d7e5-47fe-936c-93dea8c0b469": {
       "type": "smart-and-comfortable-home",
       "blocks": {
@@ -671,10 +624,63 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf": {
+      "type": "banner-component",
+      "blocks": {
+        "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#000"
+          }
+        },
+        "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body",
+            "text_color": "#000",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-2": {
+          "type": "bannerComponentBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "price": "",
+            "banner_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-0",
+        "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-1",
+        "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/untitled.121_2_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "9b38c541-4c8c-4f4c-98cd-e181c95dc8c3",
     "a1deb0dd-d7e5-47fe-936c-93dea8c0b469",
     "rich_text",
     "f3b456c7-6f77-4965-ab79-a780c4f04178",
@@ -686,6 +692,7 @@
     "5b076acf-4c6c-4e33-b22d-f347e15f5967",
     "5e90d13b-23c2-4988-b271-691555503d66",
     "dc319046-72c9-416e-acdf-236f7dee755c",
-    "1672909950d79615a4"
+    "1672909950d79615a4",
+    "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf"
   ]
 }
