@@ -24,6 +24,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+/* 富文本卡片组 */
+
+.rich-text-card-group{display:flex;justify-content:space-around;}
+
+
+
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %}  page-width{% endunless %}">
@@ -36,7 +43,7 @@
             <h2
               class="rich-text__heading rte {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }}">
+              style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.heading_color }}">
               {{ block.settings.heading | replace: 'p>', 'span>' }}
             </h2>
             {%- when 'caption' -%}
@@ -52,6 +59,19 @@
               {{ block.shopify_attributes }}
               style="font-weight:{{ block.settings.font-weight }};">
               {{ block.settings.text }}
+            </div>
+            {%- when 'cardGroup'  -%}
+            <div class="rich-text-card-group">
+              {%  for childBlock in block.settings  %} 
+                <div class="rich-text-card-item">
+                  <img src="{{  block.settings.card_image_item | image_url: width: 140 }}"
+                      
+                      width="30"
+                      height="30"
+                      loading="lazy">
+                  {{ childBlock.settings.card_text }}
+                </div>
+              {% endfor %} %}
             </div>
             {%- when 'button' -%}
             <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -271,9 +291,47 @@
             "unit": "px",
             "label": "字体加粗",
             "default": 400
+          },
+          {
+            "type":"select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
           }
         ]
-      }, {
+      },
+      // 富文本卡片内容
+      {
+        "type":"cardGroup",
+        "name":"富文本卡片内容",
+        "limit":3,
+        "settings":[
+          {
+            "type":"text",
+            "id":"card_text",
+            "default": "我是卡片文本内容",
+            "label": "我是卡片文本内容"
+          },
+          {
+            "type":"image_picker",
+            "id":"card_image_item",
+            "label":"卡片图片内容"
+          }
+        ]
+      },
+      {
         "type": "button",
         "name": "t:sections.rich-text.blocks.buttons.name",
         "limit": 2,
@@ -316,7 +374,7 @@
     ],
     "presets": [
       {
-        "name": "t:sections.rich-text.presets.name",
+        "name": "自定义富文本",
         "blocks": [
           {
             "type": "heading"
@@ -324,6 +382,9 @@
             "type": "text"
           }, {
             "type": "button"
+          },
+          {
+            "type":"cardGroup"
           }
         ]
       }
