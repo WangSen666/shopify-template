@@ -193,7 +193,7 @@
               <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
                 <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.banner_button_link }}" {% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
                 {% comment %} <img {% endcomment %}
-                <img src="{{ button_logo_1.png | asset_url }}" width="34" height="34"/>
+                <img src="{{'button_logo_1.png'  | asset_url }}" width="34" height="34" />
               </div>
               {%- endif -%}
            
