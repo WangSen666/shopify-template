@@ -60,17 +60,16 @@
               style="font-weight:{{ block.settings.font-weight }};">
               {{ block.settings.text }}
             </div>
-            {%- when 'cardGroup'  -%}
+           
             <div class="rich-text-card-group">
-              {% for childBlock in block.settings %} 
+              {%- when 'cardGroup'  -%}
                 <div class="rich-text-card-item">
-                  <img src="{{  childBlock.settings.card_image_item | image_url: width: 140 }}"
+                  <img src="{{  block.settings.card_image_item | image_url: width: 140 }}"
                       width="30"
                       height="30"
                       loading="lazy">
-                  {{ childBlock.settings.card_text }}
+                  {{ block.settings.card_text }}
                 </div>
-              {% endfor %} 
             </div>
             {%- when 'button' -%}
             <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -226,6 +225,24 @@
             "unit": "px",
             "label": "字体加粗",
             "default": 400
+          },
+          {
+            "type":"select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
           }
         ]
       }, {
@@ -293,7 +310,7 @@
           },
           {
             "type":"select",
-            "id": "heading_color",
+            "id": "text_color",
             "options": [
               {
                 "value": "#B5EF35",
