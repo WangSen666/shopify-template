@@ -63,6 +63,7 @@
            
             <div class="rich-text-card-group">
               {%- when 'cardGroup'  -%}
+              {% if block.settings.card_text_1 != blank %} 
                 <div class="rich-text-card-item">
                   <img src="{{  block.settings.card_image_item | image_url: width: 140 }}"
                       width="30"
@@ -70,6 +71,25 @@
                       loading="lazy">
                   {{ block.settings.card_text }}
                 </div>
+
+              {% elsif block.settings.card_text_2 != blank %}
+                 <div class="rich-text-card-item">
+                  <img src="{{  block.settings.card_image_item_2 | image_url: width: 140 }}"
+                      width="30"
+                      height="30"
+                      loading="lazy">
+                  {{ block.settings.card_text_2 }}
+                </div>
+              {% elsif block.settings.card_text_3 != blank %}
+                 <div class="rich-text-card-item">
+                  <img src="{{  block.settings.card_image_item_3 | image_url: width: 140 }}"
+                      width="30"
+                      height="30"
+                      loading="lazy">
+                  {{ block.settings.card_text_3 }}
+                </div>
+              {% endif %}
+                
             </div>
             {%- when 'button' -%}
             <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -86,6 +106,7 @@
     </div>
   </div>
 </div>
+
 
 {% schema %}
   {
@@ -336,14 +357,36 @@
         "settings":[
           {
             "type":"text",
-            "id":"card_text",
-            "default": "我是卡片文本内容",
-            "label": "我是卡片文本内容"
+            "id":"card_text_1",
+            "default": "我是卡片文本内容1",
+            "label": "我是卡片文本内容1"
           },
           {
             "type":"image_picker",
-            "id":"card_image_item",
-            "label":"卡片图片内容"
+            "id":"card_image_item_1",
+            "label":"卡片图片内容1"
+          },
+          {
+            "type":"text",
+            "id":"card_text_2",
+            "default": "我是卡片文本内容2",
+            "label": "我是卡片文本内容2"
+          },
+          {
+            "type":"image_picker",
+            "id":"card_image_item_2",
+            "label":"卡片图片内容2"
+          },
+          {
+            "type":"text",
+            "id":"card_text_3",
+            "default": "我是卡片文本内容3",
+            "label": "我是卡片文本内容3"
+          },
+          {
+            "type":"image_picker",
+            "id":"card_image_item_3",
+            "label":"卡片图片内容3"
           }
         ]
       },
