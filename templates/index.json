@@ -634,8 +634,8 @@
             "heading": "Unleashing Our Dreams:",
             "heading_size": "h1",
             "font_size": 48,
-            "margin_top": 24,
-            "margin_bottom": 24,
+            "margin_top": 0,
+            "margin_bottom": 0,
             "heading_color": "#fff"
           }
         },
@@ -646,8 +646,8 @@
             "text_style": "body",
             "text_color": "#fff",
             "font_size": 48,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "template--15597986676836__13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf-1675043514a49d97b2-2": {
