@@ -80,7 +80,8 @@
           "settings": {
             "heading": "<p>Set up a brand new home in 15mins.<\/p>",
             "heading_size": "h1",
-            "font-weight": 600,
+            "font-weight": 500,
+            "font_size": 48,
             "heading_color": "#fff"
           }
         },
