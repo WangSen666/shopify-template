@@ -88,8 +88,11 @@
           "type": "cardGroup",
           "settings": {
             "card_text_1": "Free To Move",
+            "card_image_item_1": "shopify:\/\/shop_images\/free_to_move.png",
             "card_text_2": "Quick Unpacking",
-            "card_text_3": "Spacious"
+            "card_image_item_2": "shopify:\/\/shop_images\/quick_unpacking_937ff6b7-8e00-49c7-8246-a4b113f98c37.png",
+            "card_text_3": "Spacious",
+            "card_image_item_3": "shopify:\/\/shop_images\/spacious.png"
           }
         }
       },
