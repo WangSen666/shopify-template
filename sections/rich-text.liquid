@@ -28,7 +28,7 @@
 /* 富文本卡片组 */
 
 .rich-text-card-group{display:flex;justify-content:space-around;}
-
+.rich-text-card-item img{vertical-align:middle;}
 
 
 {%- endstyle -%}
@@ -64,11 +64,11 @@
             <div class="rich-text-card-group">
               {%- when 'cardGroup'  -%}
                 <div class="rich-text-card-item">
-                  <img src="{{  block.settings.card_image_item | image_url: width: 140 }}"
+                  <img src="{{  block.settings.card_image_item_1 | image_url: width: 140 }}"
                       width="30"
                       height="30"
                       loading="lazy">
-                  {{ block.settings.card_text }}
+                  {{ block.settings.card_text_1 }}
                 </div>
 
                  <div class="rich-text-card-item">
