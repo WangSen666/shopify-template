@@ -177,12 +177,55 @@
       "settings": {
         "color_scheme": "accent-1"
       }
+    },
+    "303f1a6f-25a1-4eff-ae02-68927bd7e85a": {
+      "type": "content-component",
+      "blocks": {
+        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_left": 0,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#000"
+          }
+        },
+        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-1": {
+          "type": "button",
+          "settings": {
+            "content_button_link": "shopify:\/\/products\/测试产品1",
+            "content_button_label": "2323232",
+            "is_img": "true"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-0",
+        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "1672909950d79615a4",
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
-    "63e7735a-54f4-48ec-aa67-b64c65c99135"
+    "63e7735a-54f4-48ec-aa67-b64c65c99135",
+    "303f1a6f-25a1-4eff-ae02-68927bd7e85a"
   ]
 }
