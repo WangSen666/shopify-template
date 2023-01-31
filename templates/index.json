@@ -140,6 +140,25 @@
         "a6d375f8-f32d-4715-973f-35f90e17d215": {
           "type": "pictureCard",
           "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/Untitled_design_1_1.png"
+          }
+        },
+        "9c253f12-208d-419d-8731-03cab84c9d82": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/Untitled_design_1_1.png"
+          }
+        },
+        "b15d650c-ffcd-4ac8-9aee-4c3c47a1552e": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/Untitled_design_1_1.png"
+          }
+        },
+        "ba7dfc9e-5f7c-44a3-b088-26ed397b96f3": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/Untitled_design_1_1.png"
           }
         }
       },
@@ -150,7 +169,10 @@
         "c79b240f-ad0d-4407-9e0f-116514ebb595",
         "cd743df9-6e3a-4434-952b-f5d242955a0e",
         "30ca5f20-86a6-4860-869a-432a8def43af",
-        "a6d375f8-f32d-4715-973f-35f90e17d215"
+        "a6d375f8-f32d-4715-973f-35f90e17d215",
+        "9c253f12-208d-419d-8731-03cab84c9d82",
+        "b15d650c-ffcd-4ac8-9aee-4c3c47a1552e",
+        "ba7dfc9e-5f7c-44a3-b088-26ed397b96f3"
       ],
       "settings": {
       }
