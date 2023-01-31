@@ -196,10 +196,22 @@
         "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "GRANDE S1",
             "heading_size": "h1",
             "font_size": 48,
-            "margin_left": 0,
+            "margin_left": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "31488838-03f3-493a-860d-b4e92b6a3c34": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tiny Home with Everthing Full-sized.",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_left": 48,
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff"
@@ -225,6 +237,7 @@
       "block_order": [
         "5c5b39a7-4081-4e81-9511-e8429f8317fb",
         "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-0",
+        "31488838-03f3-493a-860d-b4e92b6a3c34",
         "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-1",
         "9bfe53e6-0b77-4973-94c9-d7bd253d9cfb"
       ],
