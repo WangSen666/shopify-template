@@ -186,11 +186,11 @@
           "settings": {
             "heading": "Image banner",
             "heading_size": "h1",
-            "font_size": 24,
+            "font_size": 52,
             "margin_left": 0,
             "margin_top": 24,
             "margin_bottom": 24,
-            "heading_color": "#000"
+            "heading_color": "#fff"
           }
         },
         "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-1": {
