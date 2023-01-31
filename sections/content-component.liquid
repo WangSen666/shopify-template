@@ -3,16 +3,95 @@
 
 
 <style>
-  .content-component-btn {
+  .content-component-btn-group {
     display: flex;
     justify-content: space-between;
+  }
+  .content-component-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+  }
+  .content-component-btn a {
+    background: none;
+    font-size: 24px;
+    padding: 0 10px;
+  }
+  .content-component-btn img {
+    vertical-align: middle;
+  }
+  .content_component {
+    position: relative
+  }
+  .content-component__box {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: left;
+    background: none;
+  }
+  .content_component__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+  .content-component__media {
+    min-height: 52rem;
+    width: 100%;
+    position: static;
+  }
+  .banner__heading {
+    font-weight: bold;
+  }
 
+
+  @media screen and (max-width: 750px) {
+    .content_component__content {
+      width: 90%;
+    }
+    .content-component__media {
+      min-height: 52rem;
+      width: 100%;
+    }
+    .content_component-bottom-info {
+      flex-wrap: wrap;
+    }
+    .banner-component__box .banner__heading {
+      font-size: 32px !important;
+    }
+    .content_component-bottom-info .banner__right_bottom_info {
+      padding: 10px;
+      font-size: 18px;
+    }
+    .content_component-button {
+      font-size: 32px;
+      padding: 0 10px;
+    }
+    .banner-component__box img {
+      width: 24px;
+      height: 24px;
+    }
+    .content_component-bottom-info .price {
+      font-size: 32px;
+    }
   }
 </style>
 
 
 
-<div id="Banner-{{ section.id }}" class="bg_wrapper content-component   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+<div id="Banner-{{ section.id }}" class="bg_wrapper content_component   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
   {%- if section.settings.image != blank -%}
     <div class="content-component__media media  {% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -39,7 +118,7 @@
     </div>
 
   {%- endif -%}
-  <div class="content-component__content content-component__content--{{ section.settings.desktop_content_position }} page-width">
+  <div class="content_component__content content-component__content--{{ section.settings.desktop_content_position }} page-width">
     <div class="content-component__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -51,17 +130,17 @@
       {%- endfor -%}
 
 
-      <div class="content-component-btn">
+      <div class="content-component-btn-group">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'button' -%}
             {%- if block.settings.content_button_link != blank -%}
-              <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-                <a {% if block.settings.content_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.content_button_link }}"{% endif %} class="button content-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+              <div class="content-component-btn" {{ block.shopify_attributes }}>
+                <a {% if block.settings.content_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.content_button_link }}"{% endif %} class="button content-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.content_button_label | escape }}</a>
                 <img
                   src="{{'button_logo_1.png'  | asset_url }}"
-                  width="34"
-                  height="34" />
+                  width="14"
+                  height="18" />
               </div>
             {%- endif -%}
           {%- endcase -%}
