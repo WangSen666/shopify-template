@@ -221,7 +221,7 @@
           "type": "button",
           "settings": {
             "content_button_link": "shopify:\/\/products\/测试产品1",
-            "content_button_label": "2323232",
+            "content_button_label": "Pre-order Now",
             "is_img": "true"
           }
         },
@@ -229,7 +229,7 @@
           "type": "button",
           "settings": {
             "content_button_link": "shopify:\/\/products\/测试产品1",
-            "content_button_label": "dewewq",
+            "content_button_label": "Learn More",
             "is_img": "true"
           }
         }
