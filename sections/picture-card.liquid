@@ -1,7 +1,7 @@
 <style>
   .picture-card-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .picture-card-item {
@@ -12,7 +12,7 @@
   }
 </style>
 
-<div id="picture-{{ section.id }}" class="picture-card  color-{{ section.settings.color_scheme }} ">
+<div id="picture-{{ section.id }}" class="picture-card  color-{{ section.settings.color_scheme }} container-box">
   <div class="picture-card-box page-width">
     <div class="picture-card-content gradient">
       {%- for block in section.blocks -%}

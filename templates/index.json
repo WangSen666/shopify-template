@@ -181,30 +181,210 @@
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a": {
       "type": "content-component",
       "blocks": {
-        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-0": {
+        "5c5b39a7-4081-4e81-9511-e8429f8317fb": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
+            "heading": "PODX GO Signature THOWs",
+            "heading_size": "h2",
             "font_size": 24,
             "margin_left": 0,
             "margin_top": 24,
             "margin_bottom": 24,
-            "heading_color": "#000"
+            "heading_color": "#fff"
+          }
+        },
+        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "GRANDE S1",
+            "heading_size": "h1",
+            "font_size": 48,
+            "margin_left": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "31488838-03f3-493a-860d-b4e92b6a3c34": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tiny Home with Everthing Full-sized.",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_left": 48,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
           }
         },
         "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-1": {
           "type": "button",
           "settings": {
             "content_button_link": "shopify:\/\/products\/测试产品1",
-            "content_button_label": "2323232",
+            "content_button_label": "Pre-order Now",
+            "is_img": "true"
+          }
+        },
+        "9bfe53e6-0b77-4973-94c9-d7bd253d9cfb": {
+          "type": "button",
+          "settings": {
+            "content_button_link": "shopify:\/\/products\/测试产品1",
+            "content_button_label": "Learn More",
             "is_img": "true"
           }
         }
       },
       "block_order": [
+        "5c5b39a7-4081-4e81-9511-e8429f8317fb",
         "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-0",
-        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-1"
+        "31488838-03f3-493a-860d-b4e92b6a3c34",
+        "template--15597986676836__303f1a6f-25a1-4eff-ae02-68927bd7e85a-1675147510519cf2df-1",
+        "9bfe53e6-0b77-4973-94c9-d7bd253d9cfb"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "66b613d2-a9a2-40e6-ac77-3fc5a370ad71": {
+      "type": "content-component",
+      "blocks": {
+        "template--15597986676836__66b613d2-a9a2-40e6-ac77-3fc5a370ad71-1675151186e399d2e7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "THOWs with Off-the-Grid Supported",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_left": 0,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "d741a3e8-522d-41d2-8440-a493bdb3cbf5": {
+          "type": "heading",
+          "settings": {
+            "heading": "LIBRE S1",
+            "heading_size": "h1",
+            "font_size": 48,
+            "margin_left": 0,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "b74fda80-1163-4f9c-9781-fe3281bc2ff1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Take Your Home on an Unforgettable Journey!",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_left": 0,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "template--15597986676836__66b613d2-a9a2-40e6-ac77-3fc5a370ad71-1675151186e399d2e7-1": {
+          "type": "button",
+          "settings": {
+            "content_button_link": "shopify:\/\/products\/测试产品1",
+            "content_button_label": "Coming soon",
+            "is_img": "true"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__66b613d2-a9a2-40e6-ac77-3fc5a370ad71-1675151186e399d2e7-0",
+        "d741a3e8-522d-41d2-8440-a493bdb3cbf5",
+        "b74fda80-1163-4f9c-9781-fe3281bc2ff1",
+        "template--15597986676836__66b613d2-a9a2-40e6-ac77-3fc5a370ad71-1675151186e399d2e7-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1": {
+      "type": "content-component",
+      "blocks": {
+        "template--15597986676836__d7aae7dc-c796-47b0-bb6d-7d9776df39e1-1675151186e399d2e7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Extraodinary Granny Flat",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_left": 0,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "template--15597986676836__d7aae7dc-c796-47b0-bb6d-7d9776df39e1-1675151186e399d2e7-1": {
+          "type": "button",
+          "settings": {
+            "content_button_link": "",
+            "content_button_label": "",
+            "is_img": "true"
+          }
+        },
+        "abae38d9-e674-4dad-94f1-358874ef4713": {
+          "type": "heading",
+          "settings": {
+            "heading": "LAVIDA S1",
+            "heading_size": "h1",
+            "font_size": 48,
+            "margin_left": 0,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "d05f1d02-3878-4d10-96fb-44f007189910": {
+          "type": "heading",
+          "settings": {
+            "heading": "Take Your Home on an Unforgettable Journey!",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_left": 0,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "3fe7cfbd-a45b-4228-8d01-b7b5f1b6ae24": {
+          "type": "button",
+          "settings": {
+            "content_button_link": "shopify:\/\/products\/测试产品1",
+            "content_button_label": "Coming soon",
+            "is_img": "true"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__d7aae7dc-c796-47b0-bb6d-7d9776df39e1-1675151186e399d2e7-0",
+        "template--15597986676836__d7aae7dc-c796-47b0-bb6d-7d9776df39e1-1675151186e399d2e7-1",
+        "abae38d9-e674-4dad-94f1-358874ef4713",
+        "d05f1d02-3878-4d10-96fb-44f007189910",
+        "3fe7cfbd-a45b-4228-8d01-b7b5f1b6ae24"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
@@ -226,6 +406,12 @@
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
+<<<<<<< HEAD
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a"
+=======
+    "303f1a6f-25a1-4eff-ae02-68927bd7e85a",
+    "66b613d2-a9a2-40e6-ac77-3fc5a370ad71",
+    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1"
+>>>>>>> c05fb39ce10bc80e717d240c18277373c328a0f1
   ]
 }
