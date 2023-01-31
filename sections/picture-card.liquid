@@ -1,0 +1,91 @@
+<style>
+  .picture-card-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .picture-card-item {
+    margin: 14px;
+  }
+  .picture-card-item img {
+    border-radius: 14px;
+  }
+</style>
+
+<div id="picture-{{ section.id }}" class="picture-card  color-{{ section.settings.color_scheme }} ">
+  <div class="picture-card-box page-width">
+    <div class="picture-card-content gradient">
+      {%- for block in section.blocks -%}
+        <div class="picture-card-item">
+          <img
+            src="{{ block.settings.picture-card-item  | image_url }}"
+            width="156"
+            height="80"
+            loading="lazy" />
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "图片卡片",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "pictureCard",
+        "name": "图片卡片",
+        "limit": 10,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "picture-card-item",
+            "label": "图片卡片"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "图片卡片",
+        "blocks": [
+          {
+            "type": "pictureCard"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

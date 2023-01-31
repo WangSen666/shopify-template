@@ -1,0 +1,450 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+
+
+<style>
+  .content-component-btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-component-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+  }
+  .content-component-btn a {
+    background: none;
+    font-size: 24px;
+    padding: 0 10px;
+  }
+  .content-component-btn img {
+    vertical-align: middle;
+  }
+  .content_component {
+    position: relative
+  }
+  .content-component__box {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: left;
+    background: none;
+  }
+  .content_component__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+  .content-component__media {
+    min-height: 52rem;
+    width: 100%;
+    position: static;
+  }
+  .banner__heading {
+    font-weight: bold;
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .content_component__content {
+      width: 90%;
+    }
+    .content-component__media {
+      min-height: 52rem;
+      width: 100%;
+    }
+    .content_component-bottom-info {
+      flex-wrap: wrap;
+    }
+    .banner-component__box .banner__heading {
+      font-size: 32px !important;
+    }
+    .content_component-bottom-info .banner__right_bottom_info {
+      padding: 10px;
+      font-size: 18px;
+    }
+    .banner-component__box img {
+      width: 24px;
+      height: 24px;
+    }
+    .content_component-bottom-info .price {
+      font-size: 32px;
+    }
+  }
+</style>
+
+
+
+<div id="Banner-{{ section.id }}" class="bg_wrapper content_component   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+  {%- if section.settings.image != blank -%}
+    <div class="content-component__media media  {% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+      {%-liquid
+        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+        if section.settings.image_2 != blank
+          assign image_class = "banner__media-image-half"
+        endif
+        if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
+          assign sizes = "(min-width: 750px) 50vw, 100vw"
+        elsif section.settings.image_2 != blank
+          assign sizes = "50vw"
+        else
+          assign sizes = "100vw"
+        endif
+      -%}
+      {{ section.settings.image | image_url: width: 1500 | image_tag: 
+       loading: 'lazy'
+       , width: section.settings.image.width
+       , height: image_height
+       , class: image_class
+       , sizes: sizes
+       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+       , alt: section.settings.image.alt | escape }}
+    </div>
+
+  {%- endif -%}
+  <div class="content_component__content content-component__content--{{ section.settings.desktop_content_position }} page-width">
+    <div class="content-component__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+          <h2
+            class="content-heading"
+            {{ block.shopify_attributes }}
+            style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}">
+            <span>{{ block.settings.heading | escape }}</span>
+          </h2>
+        {%- endcase -%}
+      {%- endfor -%}
+
+
+      <div class="content-component-btn-group">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'button' -%}
+            {%- if block.settings.content_button_link != blank -%}
+              <div class="content-component-btn" {{ block.shopify_attributes }}>
+                <a {% if block.settings.content_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.content_button_link }}"{% endif %} class="button content-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.content_button_label | escape }}</a>
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="14"
+                  height="18" />
+              </div>
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Banner Compoent",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "背景图"
+      },
+
+      {
+        "type": "range",
+        "id": "image_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
+        "default": 0
+      },
+      {
+        "type": "select",
+        "id": "image_height",
+        "options": [
+          {
+            "value": "small",
+            "label": "t:sections.image-banner.settings.image_height.options__1.label"
+          }, {
+            "value": "medium",
+            "label": "t:sections.image-banner.settings.image_height.options__2.label"
+          }, {
+            "value": "large",
+            "label": "t:sections.image-banner.settings.image_height.options__3.label"
+          }
+        ],
+        "default": "medium",
+        "label": "t:sections.image-banner.settings.image_height.label",
+        "info": "t:sections.image-banner.settings.image_height.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "adapt_height_first_image",
+        "default": false,
+        "label": "t:sections.image-banner.settings.adapt_height_first_image.label",
+        "info": "t:sections.image-banner.settings.adapt_height_first_image.info"
+      }, {
+        "type": "select",
+        "id": "desktop_content_position",
+        "options": [
+          {
+            "value": "top-left",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__1.label"
+          },
+          {
+            "value": "top-center",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__2.label"
+          },
+          {
+            "value": "top-right",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__3.label"
+          },
+          {
+            "value": "middle-left",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__4.label"
+          }, {
+            "value": "middle-center",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__5.label"
+          }, {
+            "value": "middle-right",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__6.label"
+          }, {
+            "value": "bottom-left",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__7.label"
+          }, {
+            "value": "bottom-center",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__8.label"
+          }, {
+            "value": "bottom-right",
+            "label": "t:sections.image-banner.settings.desktop_content_position.options__9.label"
+          }
+        ],
+        "default": "middle-center",
+        "label": "t:sections.image-banner.settings.desktop_content_position.label"
+      }, {
+        "type": "checkbox",
+        "id": "show_text_box",
+        "default": true,
+        "label": "t:sections.image-banner.settings.show_text_box.label"
+      }, {
+        "type": "select",
+        "id": "desktop_content_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__1.label"
+          }, {
+            "value": "center",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__2.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__3.label"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label",
+        "info": "t:sections.image-banner.settings.color_scheme.info"
+      }, {
+        "type": "header",
+        "content": "t:sections.image-banner.settings.header.content"
+      }, {
+        "type": "select",
+        "id": "mobile_content_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__1.label"
+          }, {
+            "value": "center",
+            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__2.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__3.label"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.image-banner.settings.mobile_content_alignment.label"
+      }, {
+        "type": "checkbox",
+        "id": "stack_images_on_mobile",
+        "default": true,
+        "label": "t:sections.image-banner.settings.stack_images_on_mobile.label"
+      }, {
+        "type": "checkbox",
+        "id": "show_text_below",
+        "default": true,
+        "label": "t:sections.image-banner.settings.show_text_below.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "主标题",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              }, {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              }, {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_left",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本左边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          }
+        ]
+      }, {
+        "type": "button",
+        "name": "按钮",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "url",
+            "label": "按钮",
+            "id": "content_button_link"
+          }, {
+            "type": "text",
+            "label": "按钮文案",
+            "id": "content_button_label"
+          }, {
+            "type": "select",
+            "id": "is_img",
+            "options": [
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+            "default": "true",
+            "label": "是否显示图标"
+          }
+        ]
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "content Component",
+        "blocks": [
+          {
+            "type": "heading"
+          }, {
+            "type": "button"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
