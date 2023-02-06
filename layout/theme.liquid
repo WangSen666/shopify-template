@@ -428,7 +428,8 @@
 
       })
     </script>
-  </head>
+  {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+</head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NQWX9ZDY7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
