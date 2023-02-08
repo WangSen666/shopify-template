@@ -181,23 +181,20 @@
               {% comment %} <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span>
               </p> {% endcomment %}
             </div>
-            {%- if block.settings.banner_button_link != blank -%}
-              <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
-                <img
-                  src="{{'button_logo_1.png'  | asset_url }}"
-                  width="20"
-                  height="20" />
-              </div>
-            {%- elsif block.settings.banner_button_link_1 != blank -%}
-              <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-                <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
-                <img
-                  src="{{'button_logo_1.png'  | asset_url }}"
-                  width="20"
-                  height="20" />
-              </div>
-            {%- endif -%}
+            <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
+              <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+              <img
+                src="{{'button_logo_1.png'  | asset_url }}"
+                width="20"
+                height="20" />
+            </div>
+            <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
+              <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
+              <img
+                src="{{'button_logo_1.png'  | asset_url }}"
+                width="20"
+                height="20" />
+            </div>
 
           </div>
         {%- endcase -%}
@@ -356,7 +353,7 @@
       {
         "type": "heading",
         "name": "t:sections.image-banner.blocks.heading.name",
-        "limit": 2,
+        "limit": 6,
         "settings": [
           {
             "type": "text",
@@ -433,7 +430,6 @@
             "min": 400,
             "max": 900,
             "step": 100,
-            "unit": "px",
             "label": "字体加粗",
             "default": 400
           }
