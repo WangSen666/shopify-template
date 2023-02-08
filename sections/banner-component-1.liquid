@@ -81,6 +81,7 @@
   }
   .banner__heading {
     ;
+
     /* font-weight: bold; */
   }
   .banner-component-bottom-info {
@@ -119,7 +120,8 @@
     flex-wrap: wrap;
   }
   .banner-component__box .banner__heading {
-    font-size: 32px !important;
+    ;
+    /* font-size: 32px !important; */
   }
   .banner-component-bottom-info .banner__right_bottom_info {
     padding: 10px;
@@ -171,7 +173,10 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-          <h2 class="banner__heading"{{ block.shopify_attributes }}style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }};font-weight:{{font_weight}}">
+          <h2
+            class=""
+            {{ block.shopify_attributes }}
+            style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
           {%- when 'bannerComponentBottomInfo' -%}
