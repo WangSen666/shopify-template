@@ -24,6 +24,18 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+  .banner-component:after,
+  .banner-component__media:after
+  {
+        content: "";
+    position: absolute;
+    top: 0;
+    background: #000000;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
   /* banner 组件 */
    .banner-component{position:relative}
   .banner-component .banner-component__box {
