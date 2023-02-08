@@ -25,11 +25,22 @@
             "heading_color": "#fff"
           }
         },
+        "9c34708f-d8ff-401c-94b2-4acd4397dd82": {
+          "type": "heading",
+          "settings": {
+            "heading": "The world's first tiny house on crowdfunding platform. Get your exclusive early bird rewards now!",
+            "heading_size": "h2",
+            "font_size": 12,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
         "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1": {
           "type": "bannerComponentBottomInfo",
           "settings": {
-            "heading": "The world's first tiny house on crowdfunding platform. Get your exclusive early bird rewards now!",
-            "heading_1": "The world's first tiny house on crowdfunding platform. Get your exclusive early bird rewards now!",
+            "heading": "Your New Life from Here",
+            "heading_1": "",
             "price": "",
             "banner_button_link": "shopify:\/\/pages\/about-podx-go",
             "banner_button_label": "ddsdsd",
@@ -41,6 +52,7 @@
       "block_order": [
         "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-0",
         "d55ce47c-cb3a-418b-a3be-2742aabc1300",
+        "9c34708f-d8ff-401c-94b2-4acd4397dd82",
         "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1"
       ],
       "settings": {
