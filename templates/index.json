@@ -8,7 +8,7 @@
           "settings": {
             "heading": "PODX GO Grande S1",
             "heading_size": "h1",
-            "font_size": 48,
+            "font_size": 40,
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff",
@@ -20,7 +20,7 @@
           "settings": {
             "heading": "Crowdfunding Ongoing!",
             "heading_size": "h1",
-            "font_size": 48,
+            "font_size": 40,
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff",
