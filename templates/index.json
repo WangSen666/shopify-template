@@ -8,7 +8,11 @@
           "settings": {
             "heading": "PODX GO Grande S1",
             "heading_size": "h1",
+<<<<<<< HEAD
             "font_size": 24,
+=======
+            "font_size": 40,
+>>>>>>> 849c0081bc8a2cc645d5510a5e3b6a7587acb958
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff",
@@ -20,7 +24,11 @@
           "settings": {
             "heading": "Crowdfunding Ongoing!",
             "heading_size": "h1",
+<<<<<<< HEAD
             "font_size": 24,
+=======
+            "font_size": 40,
+>>>>>>> 849c0081bc8a2cc645d5510a5e3b6a7587acb958
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff",
@@ -34,7 +42,11 @@
             "heading_size": "h2",
             "font_size": 16,
             "margin_top": 24,
+<<<<<<< HEAD
             "margin_bottom": 24,
+=======
+            "margin_bottom": 30,
+>>>>>>> 849c0081bc8a2cc645d5510a5e3b6a7587acb958
             "heading_color": "#fff",
             "font_weight": 400
           }
@@ -47,7 +59,11 @@
             "price": "",
             "banner_button_link": "shopify:\/\/pages\/about-podx-go",
             "banner_button_label": "Back us on Indiegogo",
+<<<<<<< HEAD
             "banner_button_link_1": "shopify:\/\/products\/测试产品1",
+=======
+            "banner_button_link_1": "shopify:\/\/pages\/contact",
+>>>>>>> 849c0081bc8a2cc645d5510a5e3b6a7587acb958
             "banner_button_label_1": "Download Floorplan"
           }
         }
