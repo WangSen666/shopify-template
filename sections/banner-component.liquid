@@ -4,14 +4,16 @@
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner-component__content::before  {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
         content: '';
         display: block;
       }
     }
     @media screen and (min-width: 750px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
         content: '';
         display: block;
       }
@@ -22,10 +24,24 @@
 
 {%- style -%}
   #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
+    ;
+  }
+  .banner-component:after,
+  .banner-component__media:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: #000000;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
   }
   /* banner 组件 */
-   .banner-component{position:relative}
+  .banner-component {
+    position: relative
+  }
   .banner-component .banner-component__box {
     padding: 0;
     width: 80%;
@@ -33,80 +49,81 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background:none;
-    text-align:left;
+    background: none;
+    text-align: left;
   }
   .banner-component .banner-component__content {
     display: block;
     width: 100%;
-    height:100%;
-    position:absolute;
-    left:50%;
-    top:0;
-    transform:translateX(-50%);
-    text-align:left;
-   }
-  .banner-component .banner-component__media{
-    height:100%;
-    width:100%;
-    position:static;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+  .banner-component .banner-component__media {
+    height: 100%;
+    width: 100%;
+    position: static;
   }
   .banner__heading {
     font-weight: bold;
   }
-  .banner-component-bottom-info{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    color:#fff;
+  .banner-component-bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
   }
-  .banner-component-bottom-info .banner__left_bottom_info {
-  }
+  .banner-component-bottom-info .banner__left_bottom_info {}
   .banner-component-bottom-info .banner__right_bottom_info {
-   padding:14px;
-   border-radius:40px;
-   border:1px solid #fff;
-   font-size:24px;
+    padding: 14px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    font-size: 24px;
   }
-  .banner-component-button{
-    font-size:48px;
-    background:none;
-    padding:0 14px;
-    font-weight:bold;
+  .banner-component-button {
+    font-size: 48px;
+    background: none;
+    padding: 0 14px;
+    font-weight: bold;
   }
- .banner-component-bottom-info .price{
-  color:#fff;
-  font-size:48px;
-  font-weight:bold;
- }
-@media screen and (max-width: 750px) {
-  .banner-component .banner-component__content{
-    width:90%;
+  .banner-component-bottom-info .price {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
   }
-  .banner-component .banner-component__media{
-    min-height:52rem;
-    width:100%;
+  @media screen and (max-width: 750px) {
+    .banner-component .banner-component__content {
+      width: 90%;
+    }
+    .banner-component .banner-component__media {
+      min-height: 52rem;
+      width: 100%;
+    }
+    .banner-component-bottom-info {
+      flex-wrap: wrap;
+    }
+    .banner-component__box .banner__heading {
+      font-size: 32px !important;
+    }
+    .banner-component-bottom-info .banner__right_bottom_info {
+      padding: 10px;
+      font-size: 18px;
+    }
+    .banner-component-button {
+      font-size: 32px;
+      padding: 0 10px;
+    }
+    .banner-component__box img {
+      width: 24px;
+      height: 24px;
+    }
+    .banner-component-bottom-info .price {
+      font-size: 32px;
+    }
   }
-  .banner-component-bottom-info{flex-wrap:wrap;}
-  .banner-component__box  .banner__heading{
-    font-size:32px !important;
-  }
-  .banner-component-bottom-info .banner__right_bottom_info {
-    padding:10px;
-    font-size:18px;
-  }
-  .banner-component-button{
-    font-size:32px;
-    padding:0 10px;
-  }
-  .banner-component__box img{
-    width:24px;
-    height:24px;
-  }
-  .banner-component-bottom-info .price{
-    font-size:32px;
-  }
-}
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner-component   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -141,24 +158,26 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-          <h2 class="banner__heading"
-            {{ block.shopify_attributes }}
-            style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}">
+          <h2 class="banner__heading"{{ block.shopify_attributes }}style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
-          {%- when 'bannerComponentBottomInfo' -%}  
+          {%- when 'bannerComponentBottomInfo' -%}
           <div class="banner-component-bottom-info">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
               <p>{{ block.settings.heading | escape }}</p>
-              <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span></p>
+              <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span>
+              </p>
             </div>
-             {%- if block.settings.banner_button_link != blank -%}
+            {%- if block.settings.banner_button_link != blank -%}
               <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ block.settings.banner_button_link }}" {% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
-                <img src="{{'button_logo_1.png'  | asset_url }}" width="34" height="34" />
+                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="34"
+                  height="34" />
               </div>
-              {%- endif -%}
-           
+            {%- endif -%}
+
           </div>
         {%- endcase -%}
       {%- endfor -%}
@@ -391,8 +410,7 @@
             "unit": "px",
             "label": "文本下边距",
             "default": 24
-          },
-          {
+          }, {
             "type": "select",
             "id": "heading_color",
             "options": [
@@ -411,23 +429,23 @@
             "label": "黑色"
           }
         ]
-      },
-      {
-        "type":"bannerComponentBottomInfo",
-        "name":"banner底部内容",
+      }, {
+        "type": "bannerComponentBottomInfo",
+        "name": "banner底部内容",
         "settings": [
           {
             "type": "text",
             "id": "heading",
             "default": "FUll SIZE",
             "label": "标题1"
-          }, {
+          },
+          {
             "type": "text",
             "id": "heading_1",
             "default": "Kitchen/Bedroom/Great Room",
             "label": "副标题"
-          }, 
-           {
+          },
+          {
             "type": "text",
             "label": "价格",
             "id": "price"
@@ -436,8 +454,7 @@
             "type": "url",
             "label": "按钮",
             "id": "banner_button_link"
-          },
-          {
+          }, {
             "type": "text",
             "label": "按钮文案",
             "id": "banner_button_label"
@@ -451,8 +468,7 @@
         "blocks": [
           {
             "type": "heading"
-          },
-          {
+          }, {
             "type": "bannerComponentBottomInfo"
           }
         ]
