@@ -31,9 +31,6 @@
   .banner-component-1 {
     position: relative
   }
-
-
-
   .banner-component-1 .banner-component__content {
     display: block;
     width: 100%;
@@ -79,18 +76,14 @@
     width: 100%;
     position: static;
   }
-  .banner__heading {
-    ;
 
-    /* font-weight: bold; */
-  }
   .banner-component-1-bottom-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    padding: 14px;
-    border-bottom: 2px solid #fff;
+    padding: 0 14px;
+    border-bottom: 1px solid #fff;
   }
   .banner-component-1-bottom-info .banner__right_bottom_info {
     display: flex;
@@ -106,12 +99,15 @@
     font-size: 18px;
     background: none;
     padding: 0 14px;
-    /* font-weight: bold; */
   };
 
   @media screen and (max-width: 750px) {
     .banner-component-1 .banner-component__content {
       width: 90%;
+    }
+    .banner-component-1-bottom-info {
+      border: none;
+      flex-wrap: wrap;
     }
     .banner-component-1 .banner-component__media {
       min-height: 52rem;
@@ -131,13 +127,6 @@
     .banner-component-1-button {
       font-size: 16px;
       padding: 0 10px;
-    }
-    .banner-component__box img {
-      width: 24px;
-      height: 24px;
-    }
-    .banner-component-1-bottom-info .price {
-      font-size: 32px;
     }
   }
 {%- endstyle -%}
