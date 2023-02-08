@@ -27,6 +27,38 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
     ;
   }
+
+  @media screen and (max-width: 750px) {
+
+    .banner-component-1 .banner-component__content {
+      width: 90%;
+    }
+    .banner-component-1-bottom-info {
+      border: none !important;
+      flex-wrap: wrap;
+    }
+    .banner-component-1 .banner-component__media {
+      min-height: 80rem;
+      width: 100%;
+    }
+    .banner-component-1-bottom-info {
+      flex-wrap: wrap;
+    }
+    .banner__right_bottom_info {
+      flex-wrap: wrap;
+    }
+    .banner-component-1-bottom-info .banner__right_bottom_info_btn {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .banner-component-1-button {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+
+
+
   /* banner 组件 */
   .banner-component-1 {
     position: relative
@@ -41,7 +73,7 @@
     transform: translateX(-50%);
     text-align: left;
   }
-  .banner-component-1 .banner-component__content .banner-component__box {
+  .banner-component-1 .banner-component__content .banner-component_1__box {
     padding: 0;
     width: 80%;
     position: absolute;
@@ -51,7 +83,7 @@
     background: none;
     text-align: left;
   }
-  .banner-component-1 .banner-component__content .banner-component__box--left {
+  .banner-component-1 .banner-component__content .banner-component_1__box--left {
     padding: 0;
     width: 80%;
     position: absolute;
@@ -61,7 +93,7 @@
     background: none;
     text-align: left;
   }
-  .banner-component-1 .banner-component__content .banner-component__box--right {
+  .banner-component-1 .banner-component__content .banner-component_1__box--right {
     padding: 0;
     width: 80%;
     position: absolute;
@@ -89,7 +121,7 @@
     display: flex;
     justify-content: space-around;
   }
-  .banner-component-1-bottom-info .banner__right_bottom_info_btn {
+  .banner__right_bottom_info .banner__right_bottom_info_btn {
     padding: 0 14px;
     border-radius: 40px;
     border: 1px solid #fff;
@@ -100,35 +132,6 @@
     background: none;
     padding: 0 14px;
   };
-
-  @media screen and (max-width: 750px) {
-    .banner-component-1 .banner-component__content {
-      width: 90%;
-    }
-    .banner-component-1-bottom-info {
-      border: none;
-      flex-wrap: wrap;
-    }
-    .banner-component-1 .banner-component__media {
-      min-height: 52rem;
-      width: 100%;
-    }
-    .banner-component-1-bottom-info {
-      flex-wrap: wrap;
-    }
-    .banner-component__box .banner__heading {
-      ;
-      /* font-size: 32px !important; */
-    }
-    .banner-component-1-bottom-info .banner__right_bottom_info_btn {
-      padding: 10px;
-      font-size: 16px;
-    }
-    .banner-component-1-button {
-      font-size: 16px;
-      padding: 0 10px;
-    }
-  }
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner-component-1   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -159,7 +162,7 @@
 
   {%- endif -%}
   <div class="banner-component__content  page-width">
-    <div class="banner-component__box banner-component__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div class="banner-component_1__box banner-component_1__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
