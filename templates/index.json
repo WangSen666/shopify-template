@@ -11,7 +11,8 @@
             "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24,
-            "heading_color": "#fff"
+            "heading_color": "#fff",
+            "font_weight": 400
           }
         },
         "d55ce47c-cb3a-418b-a3be-2742aabc1300": {
@@ -22,7 +23,8 @@
             "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24,
-            "heading_color": "#fff"
+            "heading_color": "#fff",
+            "font_weight": 400
           }
         },
         "9c34708f-d8ff-401c-94b2-4acd4397dd82": {
@@ -30,10 +32,11 @@
           "settings": {
             "heading": "The world's first tiny house on crowdfunding platform. Get your exclusive early bird rewards now!",
             "heading_size": "h2",
-            "font_size": 12,
+            "font_size": 16,
             "margin_top": 24,
             "margin_bottom": 24,
-            "heading_color": "#fff"
+            "heading_color": "#fff",
+            "font_weight": 400
           }
         },
         "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1": {
