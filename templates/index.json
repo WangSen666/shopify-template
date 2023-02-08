@@ -17,6 +17,51 @@
         "include_margins": true
       }
     },
+    "c5eaed5f-15ac-4792-8196-d6bc57339809": {
+      "type": "banner-component-1",
+      "blocks": {
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff"
+          }
+        },
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1": {
+          "type": "bannerComponentBottomInfo",
+          "settings": {
+            "heading": "FUll SIZE",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "price": "",
+            "banner_button_link": "",
+            "banner_button_label": "",
+            "banner_button_link_1": "",
+            "banner_button_label_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-0",
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/untitled.121_2_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf": {
       "type": "banner-component",
       "blocks": {
@@ -403,6 +448,7 @@
   },
   "order": [
     "1672909950d79615a4",
+    "c5eaed5f-15ac-4792-8196-d6bc57339809",
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
