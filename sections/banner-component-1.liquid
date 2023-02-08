@@ -89,17 +89,18 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    padding: 14px;
+    border-bottom: 2px solid #fff;
   }
   .banner-component-1-bottom-info .banner__right_bottom_info {
     display: flex;
     justify-content: space-around;
-    padding: 14px;
-    border-bottom: 2px solid #fff;
   }
   .banner-component-1-bottom-info .banner__right_bottom_info-btn {
     padding: 0 14px;
     border-radius: 40px;
     border: 1px solid #fff;
+    margin: 14px;
   }
   .banner-component-1-button {
     font-size: 18px;
@@ -107,42 +108,38 @@
     padding: 0 14px;
     /* font-weight: bold; */
   };
-  /* .banner-component-1-bottom-info .price {
-    color: #fff;
-    font-size: 48px;
-    font-weight: bold; */
-}
-@media screen and (max-width: 750px) {
-  .banner-component-1 .banner-component__content {
-    width: 90%;
+
+  @media screen and (max-width: 750px) {
+    .banner-component-1 .banner-component__content {
+      width: 90%;
+    }
+    .banner-component-1 .banner-component__media {
+      min-height: 52rem;
+      width: 100%;
+    }
+    .banner-component-1-bottom-info {
+      flex-wrap: wrap;
+    }
+    .banner-component__box .banner__heading {
+      ;
+      /* font-size: 32px !important; */
+    }
+    .banner-component-1-bottom-info .banner__right_bottom_info_btn {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .banner-component-1-button {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+    .banner-component__box img {
+      width: 24px;
+      height: 24px;
+    }
+    .banner-component-1-bottom-info .price {
+      font-size: 32px;
+    }
   }
-  .banner-component-1 .banner-component__media {
-    min-height: 52rem;
-    width: 100%;
-  }
-  .banner-component-1-bottom-info {
-    flex-wrap: wrap;
-  }
-  .banner-component__box .banner__heading {
-    ;
-    /* font-size: 32px !important; */
-  }
-  .banner-component-1-bottom-info .banner__right_bottom_info_btn {
-    padding: 10px;
-    font-size: 16px;
-  }
-  .banner-component-1-button {
-    font-size: 16px;
-    padding: 0 10px;
-  }
-  .banner-component__box img {
-    width: 24px;
-    height: 24px;
-  }
-  .banner-component-1-bottom-info .price {
-    font-size: 32px;
-  }
-}
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner-component-1   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
