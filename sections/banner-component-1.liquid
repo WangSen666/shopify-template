@@ -80,7 +80,8 @@
     position: static;
   }
   .banner__heading {
-    font-weight: bold;
+    ;
+    /* font-weight: bold; */
   }
   .banner-component-bottom-info {
     display: flex;
@@ -96,46 +97,46 @@
     font-size: 24px;
   }
   .banner-component-button {
-    font-size: 48px;
+    font-size: 18px;
     background: none;
     padding: 0 14px;
-    font-weight: bold;
-  }
-  .banner-component-bottom-info .price {
+    /* font-weight: bold; */
+  };
+  /* .banner-component-bottom-info .price {
     color: #fff;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: bold; */
+}
+@media screen and (max-width: 750px) {
+  .banner-component .banner-component__content {
+    width: 90%;
   }
-  @media screen and (max-width: 750px) {
-    .banner-component .banner-component__content {
-      width: 90%;
-    }
-    .banner-component .banner-component__media {
-      min-height: 52rem;
-      width: 100%;
-    }
-    .banner-component-bottom-info {
-      flex-wrap: wrap;
-    }
-    .banner-component__box .banner__heading {
-      font-size: 32px !important;
-    }
-    .banner-component-bottom-info .banner__right_bottom_info {
-      padding: 10px;
-      font-size: 18px;
-    }
-    .banner-component-button {
-      font-size: 32px;
-      padding: 0 10px;
-    }
-    .banner-component__box img {
-      width: 24px;
-      height: 24px;
-    }
-    .banner-component-bottom-info .price {
-      font-size: 32px;
-    }
+  .banner-component .banner-component__media {
+    min-height: 52rem;
+    width: 100%;
   }
+  .banner-component-bottom-info {
+    flex-wrap: wrap;
+  }
+  .banner-component__box .banner__heading {
+    font-size: 32px !important;
+  }
+  .banner-component-bottom-info .banner__right_bottom_info {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .banner-component-button {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .banner-component__box img {
+    width: 24px;
+    height: 24px;
+  }
+  .banner-component-bottom-info .price {
+    font-size: 32px;
+  }
+}
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner-component   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -170,7 +171,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-          <h2 class="banner__heading"{{ block.shopify_attributes }}style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}">
+          <h2 class="banner__heading"{{ block.shopify_attributes }}style="font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }};font-weight:{{font_weight}}">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
           {%- when 'bannerComponentBottomInfo' -%}
@@ -180,6 +181,7 @@
               {% comment %} <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span>
               </p> {% endcomment %}
             </div>
+            {%- if block.settings.banner_button_link != blank -%}
               <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
                 <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
                 <img
@@ -187,6 +189,7 @@
                   width="20"
                   height="20" />
               </div>
+            {%- elsif block.settings.banner_button_link_1 != blank -%}
               <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
                 <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %} class="button banner-component-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
                 <img
@@ -194,6 +197,8 @@
                   width="20"
                   height="20" />
               </div>
+            {%- endif -%}
+
           </div>
         {%- endcase -%}
       {%- endfor -%}
@@ -351,7 +356,7 @@
       {
         "type": "heading",
         "name": "t:sections.image-banner.blocks.heading.name",
-        "limit": 4,
+        "limit": 2,
         "settings": [
           {
             "type": "text",
@@ -422,6 +427,15 @@
             ],
             "default": "#000",
             "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 400,
+            "max": 900,
+            "step": 100,
+            "unit": "px",
+            "label": "字体加粗",
+            "default": 400
           }
         ]
       }, {
@@ -467,7 +481,7 @@
     ],
     "presets": [
       {
-        "name": "banner Component1",
+        "name": "banner Component",
         "blocks": [
           {
             "type": "heading"
