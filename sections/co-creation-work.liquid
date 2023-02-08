@@ -141,7 +141,7 @@
   </div>
   <div class="banner__buttons{% if section.blocks[2].settings.button_label_1 != blank and section.blocks[2].settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ section.blocks[2].shopify_attributes }} style="background:{{ section.blocks[2].settings.button_background }};border-radius:{{ section.blocks[2].settings.btn_radius }}px;margin:14px auto;display:block;width:180px;text-align:center;">
     {%- if section.blocks[2].settings.button_label_1 != blank -%}
-      <a {% if section.blocks[2].settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %} href="{{ section.blocks[2].settings.button_link_1 }}" {% endif %} class="button{% if section.blocks[2].settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.blocks[2].settings.button_label_1 | escape }}</a>
+      <a target="_blank" {% if section.blocks[2].settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %} href="{{ section.blocks[2].settings.button_link_1 }}" {% endif %} class="button{% if section.blocks[2].settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.blocks[2].settings.button_label_1 | escape }}</a>
     {%- endif -%}
   </div>
 </div>
