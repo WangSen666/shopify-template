@@ -91,6 +91,12 @@
     color: #fff;
   }
   .banner-component-1-bottom-info .banner__right_bottom_info {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px;
+    border-bottom: 2px solid #fff;
+  }
+  .banner-component-1-bottom-info .banner__right_bottom_info-btn {
     padding: 0 14px;
     border-radius: 40px;
     border: 1px solid #fff;
@@ -121,7 +127,7 @@
     ;
     /* font-size: 32px !important; */
   }
-  .banner-component-1-bottom-info .banner__right_bottom_info {
+  .banner-component-1-bottom-info .banner__right_bottom_info_btn {
     padding: 10px;
     font-size: 16px;
   }
@@ -184,20 +190,23 @@
               {% comment %} <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span>
               </p> {% endcomment %}
             </div>
-            <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-              <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %} class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
-              <img
-                src="{{'button_logo_1.png'  | asset_url }}"
-                width="12"
-                height="12" />
+            <div class="banner__right_bottom_info">
+              <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %} class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </div>
+              <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+                <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %} class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </div>
             </div>
-            <div class="banner__right_bottom_info" {{ block.shopify_attributes }}>
-              <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %} class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
-              <img
-                src="{{'button_logo_1.png'  | asset_url }}"
-                width="12"
-                height="12" />
-            </div>
+
 
           </div>
         {%- endcase -%}
