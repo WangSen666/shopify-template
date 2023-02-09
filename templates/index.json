@@ -102,12 +102,21 @@
             "font_size": 24,
             "image": "shopify:\/\/shop_images\/podxgo_-___-14.png"
           }
+        },
+        "44c85d5d-2941-4841-9d0a-47d291b0a05d": {
+          "type": "buttomItem",
+          "settings": {
+            "heading": "Showroom in California",
+            "font_size": 24,
+            "image": "shopify:\/\/shop_images\/podxgo_-___-15.png"
+          }
         }
       },
       "block_order": [
         "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-0",
         "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-1",
-        "a6d48897-bf40-4031-95f1-1adb451d9565"
+        "a6d48897-bf40-4031-95f1-1adb451d9565",
+        "44c85d5d-2941-4841-9d0a-47d291b0a05d"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg"
