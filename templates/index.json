@@ -100,7 +100,7 @@
           "type": "buttomItem",
           "settings": {
             "heading": "Delivery within 90 days",
-            "font_size": 48,
+            "font_size": 20,
             "image": "shopify:\/\/shop_images\/podxgo_-___-14.png",
             "font_color": "#fff"
           }
@@ -109,9 +109,9 @@
           "type": "buttomItem",
           "settings": {
             "heading": "Showroom in California",
-            "font_size": 24,
+            "font_size": 20,
             "image": "shopify:\/\/shop_images\/podxgo_-___-15.png",
-            "font_color": "#000"
+            "font_color": "#fff"
           }
         }
       },
