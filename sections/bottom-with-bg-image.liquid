@@ -113,7 +113,7 @@
                 src="{{ block.settings.image | image_url }}"
                 width="60"
                 height="60" />
-              <p>{{ block.settings.heading }}</p>
+              <p style="font-size:{{block.font_size}}px;color:{{block.font_color}}">{{ block.settings.heading }}</p>
             </div>
           {%- endcase -%}
         {% endfor %}
@@ -244,6 +244,23 @@
             "type": "image_picker",
             "id": "image",
             "label": "背景图"
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
           }
         ]
       }
