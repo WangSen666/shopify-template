@@ -91,9 +91,9 @@
           "type": "buttomItem",
           "settings": {
             "heading": "Set up in 15mins all by yourself",
-            "font_size": 24,
+            "font_size": 20,
             "image": "shopify:\/\/shop_images\/podxgo_-___-16.png",
-            "font_color": "#000"
+            "font_color": "#fff"
           }
         },
         "a6d48897-bf40-4031-95f1-1adb451d9565": {
