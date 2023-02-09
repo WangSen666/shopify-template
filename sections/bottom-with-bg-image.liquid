@@ -29,111 +29,37 @@
   }
 
   @media screen and (max-width: 750px) {
+    .banner-bottom-info img {
+      width: 20px;
+      height: 20px;
+    }
 
-
-    .banner-component-1-bottom-info {
-      border: none !important;
-      flex-wrap: wrap;
-    }
-    .banner-component-1 .banner-component__media {
-      min-height: 80rem;
-      width: 100%;
-    }
-    .banner-component-1-bottom-info {
-      flex-wrap: wrap;
-    }
-    .banner__right_bottom_info {
-      flex-wrap: wrap;
-    }
-    .banner-component-1-bottom-info .banner__right_bottom_info_btn {
-      padding: 10px;
-      font-size: 16px;
-    }
-    .banner-component-1-button {
-      font-size: 16px;
-      padding: 0 10px;
-    }
-    .banner-component__content h2 {
-      width: 100% !important;
+    .bottom-with-bg-image-content .banner__box {
+      min-height: 62rem;
+      position: relative;
     }
   }
-
-
-
-  /* banner 组件 */
-  .banner-component-1 {
-    position: relative
+  .bottom-with-bg-image-content {
+    height: 100% !important;
+    position: relative;
+    padding: 0 !important;
   }
-  .banner-component-1 .banner-component__content {
-    display: block;
+  .bottom-with-bg-image-content .banner__box {
+    height: 100% !important;
+    position: relative;
+  }
+
+  .banner-bottom-info {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    text-align: left;
-  }
-
-  .banner-component-1 .banner-component__content .banner-component_1__box {
-    padding: 0;
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: none;
-    text-align: left;
-  }
-  .banner-component-1 .banner-component__content .banner-component_1__box--left {
-    padding: 0;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background: none;
-    text-align: left;
-  }
-  .banner-component-1 .banner-component__content .banner-component_1__box--right {
-    padding: 0;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: right;
-    transform: translateY(-50%);
-    background: none;
-    text-align: right;
-  }
-  .banner-component-1 .banner-component__media {
-    height: 100%;
-    width: 100%;
-    position: static;
-  }
-
-  .banner-component-1-bottom-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 0 14px;
-    border-bottom: 1px solid #fff;
-  }
-  .banner-component-1-bottom-info .banner__right_bottom_info {
+    background: #B5EF35;
     display: flex;
     justify-content: space-around;
+    padding: 14px 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .banner__right_bottom_info .banner__right_bottom_info_btn {
-    padding: 0 14px;
-    border-radius: 40px;
-    border: 1px solid #fff;
-    margin: 14px;
-  }
-  .banner-component-1-button {
-    font-size: 18px;
-    background: none;
-    padding: 0 14px;
-  };
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -163,7 +89,7 @@
     </div>
 
   {%- endif -%}
-  <div class="banner__content  page-width">
+  <div class="banner__content bottom-with-bg-image-content  page-width">
     <div class="banner__box banner__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -180,11 +106,11 @@
       <div class="banner-bottom-info">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-            {%- when 'bottomInfo' -%}
+            {%- when 'buttomItem' -%}
 
             <div class="banner-bottom-info-item" {{ block.shopify_attributes }}>
               <img
-                src="{{ section.settings.image | image_url }}"
+                src="{{ block.settings.image | image_url }}"
                 width="60"
                 height="60" />
               <p>{{ block.settings.heading }}</p>
@@ -284,11 +210,11 @@
               }
             ],
             "default": "#000",
-            "label": "黑色"
+            "label": "字体颜色"
           }, {
             "type": "range",
             "id": "font_weight",
-            "min": 400,
+            "min": 100,
             "max": 900,
             "step": 100,
             "label": "字体加粗",
