@@ -1,12 +1,339 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner-component__content::before  {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
+        content: '';
+        display: block;
+      }
+
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
+    ;
+  }
+
+  @media screen and (max-width: 750px) {
+
+
+    .banner-component-1-bottom-info {
+      border: none !important;
+      flex-wrap: wrap;
+    }
+    .banner-component-1 .banner-component__media {
+      min-height: 80rem;
+      width: 100%;
+    }
+    .banner-component-1-bottom-info {
+      flex-wrap: wrap;
+    }
+    .banner__right_bottom_info {
+      flex-wrap: wrap;
+    }
+    .banner-component-1-bottom-info .banner__right_bottom_info_btn {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .banner-component-1-button {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+    .banner-component__content h2 {
+      width: 100% !important;
+    }
+  }
+
+
+
+  /* banner 组件 */
+  .banner-component-1 {
+    position: relative
+  }
+  .banner-component-1 .banner-component__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+
+  .banner-component-1 .banner-component__content .banner-component_1__box {
+    padding: 0;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: left;
+  }
+  .banner-component-1 .banner-component__content .banner-component_1__box--left {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: none;
+    text-align: left;
+  }
+  .banner-component-1 .banner-component__content .banner-component_1__box--right {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: right;
+    transform: translateY(-50%);
+    background: none;
+    text-align: right;
+  }
+  .banner-component-1 .banner-component__media {
+    height: 100%;
+    width: 100%;
+    position: static;
+  }
+
+  .banner-component-1-bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 14px;
+    border-bottom: 1px solid #fff;
+  }
+  .banner-component-1-bottom-info .banner__right_bottom_info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner__right_bottom_info .banner__right_bottom_info_btn {
+    padding: 0 14px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    margin: 14px;
+  }
+  .banner-component-1-button {
+    font-size: 18px;
+    background: none;
+    padding: 0 14px;
+  };
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="bg_wrapper banner    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+  {%- if section.settings.image != blank -%}
+    <div class="banner__media media  {% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+      {%-liquid
+        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+        if section.settings.image_2 != blank
+          assign image_class = "banner__media-image-half"
+        endif
+        if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
+          assign sizes = "(min-width: 750px) 50vw, 100vw"
+        elsif section.settings.image_2 != blank
+          assign sizes = "50vw"
+        else
+          assign sizes = "100vw"
+        endif
+      -%}
+      {{ section.settings.image | image_url: width: 1500 | image_tag: 
+       loading: 'lazy'
+       , width: section.settings.image.width
+       , height: image_height
+       , class: image_class
+       , sizes: sizes
+       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+       , alt: section.settings.image.alt | escape }}
+    </div>
+
+  {%- endif -%}
+  <div class="banner__content  page-width">
+    <div class="banner__box banner__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+          <h2
+            class=""
+            {{ block.shopify_attributes }}
+            style="text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span>{{ block.settings.heading | escape }}</span>
+          </h2>
+
+        {%- endcase -%}
+      {%- endfor -%}
+      <div class="banner-bottom-info">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'bottomInfo' -%}
+
+            <div class="banner-bottom-info-item" {{ block.shopify_attributes }}>
+              <img
+                src="{{ section.settings.image | image_url }}"
+                width="60"
+                height="60" />
+              <p>{{ block.settings.heading }}</p>
+            </div>
+          {%- endcase -%}
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "底部部分带有背景的图片元素",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "背景图"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.image-banner.blocks.heading.name",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              }, {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              }, {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 400,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      }, {
+        "type": "buttomItem",
+        "name": "底部元素",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "底部元素图片"
+          }
+        ]
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "底部部分带有背景的图片元素",
+        "blocks": [
+          {
+            "type": "heading"
+          }, {
+            "type": "buttomItem"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
