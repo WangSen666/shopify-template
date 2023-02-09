@@ -29,14 +29,27 @@
   }
 
   @media screen and (max-width: 750px) {
-    .banner-bottom-info img {
-      width: 20px;
-      height: 20px;
-    }
-
     .bottom-with-bg-image-content .banner__box {
-      min-height: 62rem;
+      min-height: 42rem;
       position: relative;
+    }
+    .banner-bottom-info{
+      transform:skew(0) !important;
+    }
+     .banner-bottom-info-item-box{
+      padding:0px !important;
+      border:none !important;
+      transform:skew(0) !important;
+    }
+    .banner-bottom-info-item-box img{
+      transform:skew(0) !important;
+      width: 24px;
+      height: 24px;
+    }
+    .banner-bottom-info-item-box p{
+      font-size:14px !important;
+      transform:skew(0) !important;
+      margin:0 auto;
     }
   }
   .bottom-with-bg-image-content {
@@ -52,14 +65,27 @@
   .banner-bottom-info {
     width: 100%;
     background: #B5EF35;
+    /* transform: skew(-20deg); */
     display: flex;
     justify-content: space-around;
     padding: 14px 0;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    border-radius:40px;
+    transform: skew(-10deg);
   }
+  .banner-bottom-info-item{
+    display:flex;
+    align-items:center;
+  }
+  .banner-bottom-info-item-box{
+    transform:skew(-10deg);
+     border-right:4px solid #fff;
+     padding:0 44px;
+  }
+   .banner-bottom-info-item:nth-child(3) .banner-bottom-info-item-box{
+      border-right:none;
+    }
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -109,11 +135,15 @@
             {%- when 'buttomItem' -%}
 
             <div class="banner-bottom-info-item" {{ block.shopify_attributes }}>
-              <img
+    
+              <div class="banner-bottom-info-item-box" style="">
+                <img
+                style="transform:skew(20deg);"
                 src="{{ block.settings.image | image_url }}"
                 width="60"
                 height="60" />
-              <p style="font-size:{{block.font_size}}px;color:{{block.font_color}}">{{ block.settings.heading }}</p>
+                <p style="font-size:{{block.settings.font_size}}px;color:{{block.settings.font_color}};transform:skew(20deg);">{{ block.settings.heading }}</p>
+              </div>
             </div>
           {%- endcase -%}
         {% endfor %}
