@@ -72,6 +72,38 @@
         "show_text_below": true
       }
     },
+    "033b3367-c7f0-4783-b027-9f0f99922544": {
+      "type": "bottom-with-bg-image",
+      "blocks": {
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-1": {
+          "type": "buttomItem",
+          "settings": {
+            "heading": "Image banner",
+            "font_size": 24,
+            "image": "shopify:\/\/shop_images\/podxgo_-___-14.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-0",
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg"
+      }
+    },
     "1672909950d79615a4": {
       "type": "apps",
       "blocks": {
@@ -475,6 +507,7 @@
   },
   "order": [
     "c5eaed5f-15ac-4792-8196-d6bc57339809",
+    "033b3367-c7f0-4783-b027-9f0f99922544",
     "1672909950d79615a4",
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
