@@ -305,7 +305,7 @@
 }
 
 .banner__box {
-  padding: 4rem 3.5rem;
+  padding: 4rem 0;
   position: relative;
   height: fit-content;
   align-items: center;
