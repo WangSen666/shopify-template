@@ -524,6 +524,54 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "bcf97fa0-3879-4231-9ecd-4b23386ae4ee": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font-weight": 400
+          }
+        },
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-3": {
+          "type": "image_picker",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-0",
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-1",
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-2",
+        "template--15597986676836__bcf97fa0-3879-4231-9ecd-4b23386ae4ee-1676031859748f0b29-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12_1_1.jpg",
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true
+      }
     }
   },
   "order": [
@@ -535,6 +583,7 @@
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a",
     "66b613d2-a9a2-40e6-ac77-3fc5a370ad71",
-    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1"
+    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1",
+    "bcf97fa0-3879-4231-9ecd-4b23386ae4ee"
   ]
 }
