@@ -40,8 +40,25 @@
     .banner__content.banner__content--bottom-center {
       align-items: center !important;
     }
+    .lr-blocks-banner__box {
+      display: flex;
+      justify-content: space-around;
+      min-width: var(--page-width);
+    };
+    /* .lr-blocks-banner__box .benner__box-item {
+      text-align: left !important;
+    } */
   }
-  @media screen and (max-width: 749px) {}
+  @media screen and (max-width: 749px) {
+    .lr-blocks-banner__box {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      min-width: unset !important;
+    };
+    .lr-blocks-banner__box .benner__box-item {
+      width: 94% !important;
+    }
+  }
 {%- endstyle -%}
 
 <div
@@ -102,8 +119,8 @@
        , alt: section.settings.image_2.alt | escape }}
     </div>
   {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+  <div class="banner__content lr-blocks-banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+    <div class="banner__box lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       <div class="banner__box-item">
 
         {%- for block in section.blocks -%}
@@ -136,11 +153,11 @@
           {%- endcase -%}
         {%- endfor -%}
       </div>
-      {%- if section.setting.is_lr == true -%}
+      {%- if section.settings.is_lr == 'true' -%}
         <div class="benner__box-item">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when 'image_picker' -%}
+              {%- when 'image_wrapper' -%}
               <img
                 witdh="408"
                 height="408"
@@ -310,11 +327,15 @@
           }
         ]
       }, {
-        "type": "image_picker",
-        "limit":1,
+        "type": "image_wrapper",
+        "limit": 1,
         "name": "图片内容",
-        "settings":[
-          {"type":"image_picker","id":"image_1","label":"第一张图片"}
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "第一张图片"
+          }
         ]
       }
 
@@ -330,9 +351,8 @@
             "type": "text"
           }, {
             "type": "buttons"
-          },
-          {
-            "type":"image_picker"
+          }, {
+            "type": "image_wrapper"
           }
 
         ]
