@@ -389,11 +389,11 @@
   }
 }
 
-/* @media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .banner__box {
-    max-width: 90rem;
+    max-width: var(--page-width);
   }
-} */
+}
 
 .banner__heading {
   margin-bottom: 0;
