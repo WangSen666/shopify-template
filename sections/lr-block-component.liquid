@@ -140,11 +140,11 @@
         <div class="benner__box-item">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when 'image' -%}
+              {%- when 'image_picker' -%}
               <img
                 witdh="408"
                 height="408"
-                src={{ block.settings.image | image_url }} />
+                src={{ block.settings.image_1 | image_url }} />
             {%- endcase -%}
           {%- endfor -%}
         </div>
@@ -314,7 +314,7 @@
         "limit":1,
         "name": "图片内容",
         "settings":[
-          {"type":"image_picker","id":"image","label":"第一张图片"}
+          {"type":"image_picker","id":"image_1","label":"第一张图片"}
         ]
       }
 
