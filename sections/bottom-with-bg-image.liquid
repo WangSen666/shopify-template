@@ -88,6 +88,13 @@
    .banner-bottom-info-item:nth-child(3) .banner-bottom-info-item-box{
       border-right:none;
     }
+  .yello-text{
+    position:absolute;
+    top:0;
+    font-size:40px;
+    color:#E8F9C3;
+    
+  }
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -125,8 +132,8 @@
           <h2
             class=""
             {{ block.shopify_attributes }}
-            style="text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
-            <span>{{ block.settings.heading | escape }}</span>
+            style="position:relative;text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span class="yello-bg-text" style="position:absolute;left:0;top:0;">We</span><span>We Made the Foldable and Moveable Tiny Home a Reality</span><span class="yello-bg-text">Reality</span>
           </h2>
 
         {%- endcase -%}
