@@ -149,12 +149,6 @@
             "margin-bottom": 32
           }
         },
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-3": {
-          "type": "image_wrapper",
-          "settings": {
-            "image_1": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process.png"
-          }
-        },
         "fb46235e-7d6d-4fdd-8ba6-91abf3a27505": {
           "type": "heading",
           "settings": {
@@ -233,7 +227,6 @@
       "block_order": [
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0",
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1",
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-3",
         "fb46235e-7d6d-4fdd-8ba6-91abf3a27505",
         "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2",
         "1f23f78d-d888-436a-89e9-19ea472b54b3",
@@ -255,9 +248,31 @@
         "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Edge ONE",
+            "heading_size": "h1",
+            "font-weight": 700,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        },
+        "12ac83e8-097f-48c1-90f5-cff436c9f23c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Connected Your Feelings and Actives with PODX GO Home",
             "heading_size": "h1",
             "font-weight": 400,
+            "font_size": 20,
+            "margin-top": 12,
+            "margin-bottom": 32
+          }
+        },
+        "c2aa4090-6618-4f4a-9ad1-768e37e30b41": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Security Guard",
+            "heading_size": "h1",
+            "font-weight": 800,
             "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0
@@ -266,22 +281,32 @@
         "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Hazard detectors to guard against fire, smoke,  floods, and break-ins.",
             "text_style": "body",
+            "font_size": 18,
+            "margin-top": 12,
+            "margin-bottom": 32
+          }
+        },
+        "c770a36b-7001-4dd5-9e66-50a0526a1f45": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Smart Housekeeper",
+            "heading_size": "h1",
+            "font-weight": 800,
             "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0
           }
         },
-        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2": {
-          "type": "buttons",
+        "cb89656f-eec3-445c-bf61-c44c232fa839": {
+          "type": "text",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "Creating various experiences throughout the days-wake up, relax, work, movie night, and goodnight.",
+            "text_style": "body",
+            "font_size": 18,
+            "margin-top": 12,
+            "margin-bottom": 32
           }
         },
         "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-3": {
@@ -289,13 +314,51 @@
           "settings": {
             "image_1": "shopify:\/\/shop_images\/s21.jpg"
           }
+        },
+        "3e9a1f26-6b7c-485e-b279-d1aabcb8075c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Choice to be Offline to Protect Your Privacy",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        },
+        "9c7d6088-9196-43b0-a971-3dfeb44678a2": {
+          "type": "text",
+          "settings": {
+            "text": "All PODX GO pre-equipped smart devices and plugs are only connected to you. NOT us.",
+            "text_style": "body",
+            "font_size": 18,
+            "margin-top": 12,
+            "margin-bottom": 32
+          }
+        },
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "shopify:\/\/products\/测试产品1",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-0",
+        "12ac83e8-097f-48c1-90f5-cff436c9f23c",
+        "c2aa4090-6618-4f4a-9ad1-768e37e30b41",
         "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-1",
-        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2",
-        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-3"
+        "c770a36b-7001-4dd5-9e66-50a0526a1f45",
+        "cb89656f-eec3-445c-bf61-c44c232fa839",
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-3",
+        "3e9a1f26-6b7c-485e-b279-d1aabcb8075c",
+        "9c7d6088-9196-43b0-a971-3dfeb44678a2",
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/s2_bc41ac16-e01f-4292-a846-7f8155d677d7.jpg",
