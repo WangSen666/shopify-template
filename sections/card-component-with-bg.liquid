@@ -58,7 +58,7 @@
         <div class="with_bg_card-img">
           <img src="{{ block.settings.picture-card-item|image_url }}" />
         </div>
-        <div class="with_bg_card-item">
+        <div class="with_bg_card-item" style="background:rgba(0,0,0,{{block.settings.bg_opcity}})">
           <div class="with_bg_card-item-wrapper">
             <h2 style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;">{{ block.settings.heading }}</h2>
             <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
@@ -127,11 +127,6 @@
             "label": "文字内容"
           },
           {
-            "type": "text",
-            "id": "text",
-            "label": "文字内容"
-          },
-          {
             "type": "range",
             "id": "font_size",
             "label": "字体大小",
@@ -139,7 +134,8 @@
             "max": 60,
             "step": 2,
             "default": 20
-          }, {
+          },
+          {
             "type": "select",
             "id": "font_color",
             "options": [
