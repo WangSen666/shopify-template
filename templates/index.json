@@ -789,21 +789,10 @@
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle",
             "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 24,
-            "margin-top": 0,
-            "margin-bottom": 0,
-            "font_color": "#000"
-          }
-        },
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body",
-            "font_size": 24,
+            "font-weight": 800,
+            "font_size": 36,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -820,11 +809,6 @@
             "button_style_secondary_2": false
           }
         },
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-3": {
-          "type": "image_wrapper",
-          "settings": {
-          }
-        },
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4": {
           "type": "pictureCard",
           "settings": {
@@ -834,17 +818,15 @@
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5": {
           "type": "right_text_wrapper",
           "settings": {
-            "right_text": "",
-            "font_size": 24,
-            "is_border": "false"
+            "right_text": "Whether you're a first-time homeowner, looking to travel and take your home with you,  or just want to downsize and have an extra home in the backyard",
+            "font_size": 20,
+            "is_border": "true"
           }
         }
       },
       "block_order": [
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0",
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-1",
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-2",
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-3",
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4",
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5"
       ],
