@@ -45,9 +45,20 @@
       justify-content: space-around;
       min-width: var(--page-width);
     };
-    /* .lr-blocks-banner__box .benner__box-item {
-      text-align: left !important;
-    } */
+
+  }
+  .lr-blocks-banner__box .banner__box-item {
+    width: 50% !important;
+  }
+  .lr-blocks-banner__box .banner__box-item:first-child {
+    text-align: left;
+  }
+  .lr-blocks-banner__box .banner__buttons .button {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 6px 14px;
   }
   @media screen and (max-width: 749px) {
     .lr-blocks-banner__box {
@@ -58,6 +69,7 @@
     .lr-blocks-banner__box .benner__box-item {
       width: 94% !important;
     }
+
   }
 {%- endstyle -%}
 
@@ -129,15 +141,14 @@
             <h2
               class="banner__heading {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="font-weight:{{ block.settings.font-weight }}">
+              style="font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-top}}px;">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
-            {%- when 'heading_1' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading_1 | escape }}</span>
-            </h2>
             {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div
+              class="banner__text {{ block.settings.text_style }}"
+              {{ block.shopify_attributes }}
+              style="font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-top}}px;">
               <span>{{ block.settings.text | escape }}</span>
             </div>
             {%- when 'buttons' -%}
@@ -154,7 +165,7 @@
         {%- endfor -%}
       </div>
       {%- if section.settings.is_lr == 'true' -%}
-        <div class="benner__box-item">
+        <div class="banner__box-item">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'image_wrapper' -%}
@@ -229,7 +240,8 @@
             "id": "heading",
             "default": "Image banner",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
-          }, {
+          },
+          {
             "type": "select",
             "id": "heading_size",
             "options": [
@@ -246,7 +258,8 @@
             ],
             "default": "h1",
             "label": "t:sections.all.heading_size.label"
-          }, {
+          },
+          {
             "type": "range",
             "id": "font-weight",
             "min": 0,
@@ -255,6 +268,34 @@
             "unit": "px",
             "label": "字体加粗",
             "default": 400
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 24,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin-top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin-bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
           }
         ]
       }, {
@@ -267,7 +308,8 @@
             "id": "text",
             "default": "Give customers details about the banner image(s) or content on the template.",
             "label": "t:sections.image-banner.blocks.text.settings.text.label"
-          }, {
+          },
+          {
             "type": "select",
             "id": "text_style",
             "options": [
@@ -284,6 +326,35 @@
             ],
             "default": "body",
             "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 24,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin-top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin-bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
           }
         ]
       }, {
