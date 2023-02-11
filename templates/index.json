@@ -410,12 +410,6 @@
             "font_color": "#000"
           }
         },
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4": {
-          "type": "pictureCard",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
-          }
-        },
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5": {
           "type": "right_text_wrapper",
           "settings": {
@@ -427,13 +421,64 @@
       },
       "block_order": [
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0",
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4",
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5"
       ],
       "settings": {
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true
+      }
+    },
+    "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
+      "type": "card-component-with-bg",
+      "blocks": {
+        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process_2.png",
+            "heading": "GRANDE SI",
+            "text": "",
+            "font_size": 36,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Available Now",
+            "button_link_1": ""
+          }
+        },
+        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/12_1_1.jpg",
+            "heading": "LIBRE SI",
+            "text": "",
+            "font_size": 36,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "41d3954f-97fc-4a32-bb41-1c9d35c2f473": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
+            "heading": "LAVIDA SI",
+            "text": "",
+            "font_size": 36,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0",
+        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631",
+        "41d3954f-97fc-4a32-bb41-1c9d35c2f473"
+      ],
+      "settings": {
+        "color_scheme": "background-1"
       }
     },
     "8bd58e50-4c4c-4374-9837-2903a599cddb": {
@@ -545,58 +590,6 @@
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true
-      }
-    },
-    "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
-      "type": "card-component-with-bg",
-      "blocks": {
-        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0": {
-          "type": "with_bg_card",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process_2.png",
-            "heading": "GRANDE SI",
-            "text": "",
-            "font_size": 36,
-            "font_color": "#fff",
-            "bg_opcity": 0,
-            "button_label_1": "Available Now",
-            "button_link_1": ""
-          }
-        },
-        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
-          "type": "with_bg_card",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/12_1_1.jpg",
-            "heading": "LIBRE SI",
-            "text": "",
-            "font_size": 36,
-            "font_color": "#fff",
-            "bg_opcity": 0,
-            "button_label_1": "Learn More",
-            "button_link_1": ""
-          }
-        },
-        "41d3954f-97fc-4a32-bb41-1c9d35c2f473": {
-          "type": "with_bg_card",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
-            "heading": "LAVIDA SI",
-            "text": "",
-            "font_size": 36,
-            "font_color": "#fff",
-            "bg_opcity": 0,
-            "button_label_1": "Learn More",
-            "button_link_1": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0",
-        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631",
-        "41d3954f-97fc-4a32-bb41-1c9d35c2f473"
-      ],
-      "settings": {
-        "color_scheme": "background-1"
       }
     },
     "1672909950d79615a4": {
@@ -1006,8 +999,8 @@
     "6f0f9185-0ff7-4717-acde-1ce2378221cc",
     "abef059e-668c-4e67-9c88-66335cba3a1e",
     "e19af359-5cf5-4a9e-9337-1640a8b0c1a2",
-    "8bd58e50-4c4c-4374-9837-2903a599cddb",
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
+    "8bd58e50-4c4c-4374-9837-2903a599cddb",
     "1672909950d79615a4",
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
