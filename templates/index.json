@@ -782,6 +782,77 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body",
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-3": {
+          "type": "image_wrapper",
+          "settings": {
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5": {
+          "type": "right_text_wrapper",
+          "settings": {
+            "right_text": "",
+            "font_size": 24,
+            "is_border": "false"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-1",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-2",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-3",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true
+      }
     }
   },
   "order": [
@@ -795,6 +866,7 @@
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a",
     "66b613d2-a9a2-40e6-ac77-3fc5a370ad71",
-    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1"
+    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1",
+    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2"
   ]
 }
