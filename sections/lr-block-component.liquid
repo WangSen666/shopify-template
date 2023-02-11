@@ -207,7 +207,7 @@
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
 
               <img
-                style="{% if block.settings.is_imgFixed == 'true' %} width:100%;{% endif %}{% if block.settings.is_imgFixed == 'false' %}  width:408px;height:408px;{% endif %}"
+                style="{% if block.settings.is_imgFixed == 'true' %} width:100%;height:100%;{% endif %}{% if block.settings.is_imgFixed == 'false' %}  width:408px;height:408px;{% endif %}"
                 class="image-wrapper"
                 src={{ block.settings.image_1 | image_url }} />
 
