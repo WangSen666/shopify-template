@@ -51,6 +51,9 @@
     .lr-blocks-banner__box .banner__box-item:first-child {
       text-align: left;
     }
+    .lr-blocks-banner__box .banner__box-item:first-child {
+      float: left;
+    }
   }
   .lr-blocks-banner__box .banner__buttons .button {
     background: none;
@@ -190,7 +193,7 @@
         {%- endfor -%}
       </div>
       {%- if section.settings.is_lr == 'true' -%}
-        <div class="banner__box-item">
+        <div class="banner__box-item" style="dieplay:block;">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'image_wrapper' -%}
