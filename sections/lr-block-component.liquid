@@ -130,14 +130,14 @@
             <h2
               class="banner__heading {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
+              style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
             {%- when 'text' -%}
             <div
               class="banner__text {{ block.settings.text_style }}"
               {{ block.shopify_attributes }}
-              style="font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
+              style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
               <span>{{ block.settings.text | escape }}</span>
             </div>
             {%- when 'buttons' -%}
@@ -162,17 +162,42 @@
             </div>
           {%- endcase -%}
         {%- endfor -%}
+
+
+        <div class="card-flex">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when pictureCard -%}
+                <div class="picture-card-item">
+                  <img
+                  src="{{ block.settings.picture-card-item  | image_url }}"
+                  width="156"
+                  height="80"
+                  loading="lazy" />
+                </div>
+              
+            {%- endcase -%}
+
+          {%- endfor -%}
+        </div>
       </div>
       {%- if section.settings.is_lr == 'true' -%}
         <div class="banner__box-item" style="display:block;">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when 'image_wrapper' -%}
+              {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
+                
               <img
                 class="image-wrapper"
                 width="408"
                 height="408"
                 src={{ block.settings.image_1 | image_url }} />
+
+              {%- when 'right_text_wrapper' -%}
+              <div class="right-text-wrapper" style="font-size:{{block.settings.font_size}}px;{%- if block.settings.is_border=='true' -%}border-bottom:1px solid #B1EB35;{%-endif-%}">
+                {{ block.settings.right_text }}
+              </div>
+
             {%- endcase -%}
           {%- endfor -%}
         </div>
@@ -287,9 +312,27 @@
             "unit": "px",
             "label": "下边距",
             "default": 0
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
           }
         ]
-      }, {
+      },
+      {
         "type": "text",
         "name": "t:sections.image-banner.blocks.text.name",
         "limit": 5,
@@ -346,9 +389,27 @@
             "unit": "px",
             "label": "下边距",
             "default": 0
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
           }
         ]
-      }, {
+      },
+      {
         "type": "buttons",
         "name": "t:sections.image-banner.blocks.buttons.name",
         "limit": 1,
@@ -388,7 +449,8 @@
             "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
           }
         ]
-      }, {
+      },
+      {
         "type": "image_wrapper",
         "limit": 1,
         "name": "图片内容",
@@ -399,7 +461,53 @@
             "label": "第一张图片"
           }
         ]
+      }, {
+        "type": "pictureCard",
+        "name": "图片卡片",
+        "limit": 10,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "picture-card-item",
+            "label": "图片卡片"
+          }
+        ]
+      }, {
+        "type": "right_text_wrapper",
+        "name": "右边文案内容",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "right_text",
+            "label":"文案内容"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "is_border",
+            "options": [
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+            "default": "false",
+            "label": "是否有下边框"
+          }
+        ]
       }
+
 
 
     ],
@@ -409,12 +517,19 @@
         "blocks": [
           {
             "type": "heading"
-          }, {
+          },
+          {
             "type": "text"
-          }, {
+          },
+          {
             "type": "buttons"
-          }, {
+          },
+          {
             "type": "image_wrapper"
+          }, {
+            "type": "pictureCard"
+          }, {
+            "type": "right_text_wrapper"
           }
 
         ]
