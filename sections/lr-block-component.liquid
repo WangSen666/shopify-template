@@ -141,14 +141,14 @@
             <h2
               class="banner__heading {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-top}}px;">
+              style="font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
             {%- when 'text' -%}
             <div
               class="banner__text {{ block.settings.text_style }}"
               {{ block.shopify_attributes }}
-              style="font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-top}}px;">
+              style="font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
               <span>{{ block.settings.text | escape }}</span>
             </div>
             {%- when 'buttons' -%}
@@ -265,14 +265,13 @@
             "min": 0,
             "max": 900,
             "step": 100,
-            "unit": "px",
             "label": "字体加粗",
             "default": 400
           },
           {
             "type": "range",
             "id": "font_size",
-            "min": 12,
+            "min": 24,
             "max": 100,
             "step": 2,
             "unit": "px",
@@ -330,7 +329,7 @@
           {
             "type": "range",
             "id": "font_size",
-            "min": 12,
+            "min": 24,
             "max": 100,
             "step": 2,
             "unit": "px",
