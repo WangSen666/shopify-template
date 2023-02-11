@@ -125,6 +125,89 @@
         "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg"
       }
     },
+    "6f0f9185-0ff7-4717-acde-1ce2378221cc": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font-weight": 400
+          }
+        },
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-3": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process.png"
+          }
+        },
+        "fb46235e-7d6d-4fdd-8ba6-91abf3a27505": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font-weight": 400
+          }
+        },
+        "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "1f23f78d-d888-436a-89e9-19ea472b54b3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font-weight": 400
+          }
+        },
+        "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0",
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1",
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-3",
+        "fb46235e-7d6d-4fdd-8ba6-91abf3a27505",
+        "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2",
+        "1f23f78d-d888-436a-89e9-19ea472b54b3",
+        "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc",
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12_1_1.jpg",
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true
+      }
+    },
     "1672909950d79615a4": {
       "type": "apps",
       "blocks": {
@@ -524,101 +607,18 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "6f0f9185-0ff7-4717-acde-1ce2378221cc": {
-      "type": "lr-block-component",
-      "blocks": {
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-3": {
-          "type": "image_wrapper",
-          "settings": {
-            "image_1": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process.png"
-          }
-        },
-        "fb46235e-7d6d-4fdd-8ba6-91abf3a27505": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "1f23f78d-d888-436a-89e9-19ea472b54b3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0",
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1",
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-3",
-        "fb46235e-7d6d-4fdd-8ba6-91abf3a27505",
-        "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2",
-        "1f23f78d-d888-436a-89e9-19ea472b54b3",
-        "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc",
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/12_1_1.jpg",
-        "image_overlay_opacity": 0,
-        "is_lr": "true",
-        "show_text_box": true
-      }
     }
   },
   "order": [
     "c5eaed5f-15ac-4792-8196-d6bc57339809",
     "033b3367-c7f0-4783-b027-9f0f99922544",
+    "6f0f9185-0ff7-4717-acde-1ce2378221cc",
     "1672909950d79615a4",
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a",
     "66b613d2-a9a2-40e6-ac77-3fc5a370ad71",
-    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1",
-    "6f0f9185-0ff7-4717-acde-1ce2378221cc"
+    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1"
   ]
 }
