@@ -516,7 +516,7 @@
       ],
       "settings": {
         "image_overlay_opacity": 0,
-        "is_lr": "false",
+        "is_lr": "true",
         "show_text_box": true
       }
     },
