@@ -42,7 +42,7 @@
     }
     .lr-blocks-banner__box {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between !important;
       min-width: var(--page-width);
     };
 
@@ -65,18 +65,26 @@
     margin-left: 14px;
     vertical-align: middle;
   }
-
+  .lr-blocks-banner__content {
+    paddin: 0 !important;
+  }
+  .right-text-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 14px 0;
+  }
   @media screen and (max-width:1280px) {
     .image-wrapper {
       width: 300px;
       height: 300px;
     }
     .lr-blocks-banner__box {
-      justify-content: space-between;
+      justify-content: space-between !important;
       flex-wrap: wrap;
       min-width: unset !important;
     };
   }
+
   @media screen and (max-width: 750px) {
     .lr-blocks-banner__box .banner__box-item {
       width: 94% !important;
@@ -168,14 +176,14 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when pictureCard -%}
-                <div class="picture-card-item">
-                  <img
+              <div class="picture-card-item">
+                <img
                   src="{{ block.settings.picture-card-item  | image_url }}"
                   width="156"
                   height="80"
                   loading="lazy" />
-                </div>
-              
+              </div>
+
             {%- endcase -%}
 
           {%- endfor -%}
@@ -186,7 +194,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
-                
+
               <img
                 class="image-wrapper"
                 width="408"
