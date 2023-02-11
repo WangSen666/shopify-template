@@ -440,7 +440,7 @@
             "text": "",
             "font_size": 36,
             "font_color": "#fff",
-            "bg_opcity": 0,
+            "bg_opcity": 0.4,
             "button_label_1": "Available Now",
             "button_link_1": ""
           }
@@ -453,7 +453,7 @@
             "text": "",
             "font_size": 36,
             "font_color": "#fff",
-            "bg_opcity": 0,
+            "bg_opcity": 0.4,
             "button_label_1": "Learn More",
             "button_link_1": ""
           }
@@ -466,7 +466,7 @@
             "text": "",
             "font_size": 36,
             "font_color": "#fff",
-            "bg_opcity": 0,
+            "bg_opcity": 0.4,
             "button_label_1": "Learn More",
             "button_link_1": ""
           }
