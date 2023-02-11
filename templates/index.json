@@ -547,6 +547,58 @@
         "show_text_box": true
       }
     },
+    "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
+      "type": "card-component-with-bg",
+      "blocks": {
+        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process_2.png",
+            "heading": "GRANDE SI",
+            "text": "",
+            "font_size": 36,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Available Now",
+            "button_link_1": ""
+          }
+        },
+        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/12_1_1.jpg",
+            "heading": "LIBRE SI",
+            "text": "",
+            "font_size": 36,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "41d3954f-97fc-4a32-bb41-1c9d35c2f473": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
+            "heading": "LAVIDA SI",
+            "text": "",
+            "font_size": 36,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0",
+        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631",
+        "41d3954f-97fc-4a32-bb41-1c9d35c2f473"
+      ],
+      "settings": {
+        "color_scheme": "background-1"
+      }
+    },
     "1672909950d79615a4": {
       "type": "apps",
       "blocks": {
@@ -802,55 +854,6 @@
         "show_text_below": true
       }
     },
-    "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
-      "type": "card-component-with-bg",
-      "blocks": {
-        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0": {
-          "type": "with_bg_card",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process_2.png",
-            "heading": "weqwe",
-            "text": "23132123",
-            "font_size": 20,
-            "bg_opcity": 0.1,
-            "button_label_1": "Button label",
-            "button_link_1": ""
-          }
-        },
-        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
-          "type": "with_bg_card",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/12_1_1.jpg",
-            "heading": "王企鹅群二",
-            "text": "厄齐尔",
-            "font_size": 20,
-            "bg_opcity": 0,
-            "button_label_1": "Button label",
-            "button_link_1": ""
-          }
-        },
-        "41d3954f-97fc-4a32-bb41-1c9d35c2f473": {
-          "type": "with_bg_card",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
-            "heading": "厄齐尔",
-            "text": "厄齐尔翁",
-            "font_size": 20,
-            "bg_opcity": 0,
-            "button_label_1": "Button label",
-            "button_link_1": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0",
-        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631",
-        "41d3954f-97fc-4a32-bb41-1c9d35c2f473"
-      ],
-      "settings": {
-        "color_scheme": "background-1"
-      }
-    },
     "66b613d2-a9a2-40e6-ac77-3fc5a370ad71": {
       "type": "content-component",
       "blocks": {
@@ -1004,12 +1007,12 @@
     "abef059e-668c-4e67-9c88-66335cba3a1e",
     "e19af359-5cf5-4a9e-9337-1640a8b0c1a2",
     "8bd58e50-4c4c-4374-9837-2903a599cddb",
+    "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "1672909950d79615a4",
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a",
-    "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "66b613d2-a9a2-40e6-ac77-3fc5a370ad71",
     "d7aae7dc-c796-47b0-bb6d-7d9776df39e1"
   ]
