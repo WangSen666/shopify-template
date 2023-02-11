@@ -513,6 +513,18 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
           }
+        },
+        "45e6768c-14cb-4922-b671-55636001640a": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+          }
+        },
+        "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+          }
         }
       },
       "block_order": [
@@ -523,7 +535,9 @@
         "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b",
         "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-4",
         "7a10bc36-f177-48f5-a62e-42f4f9502449",
-        "5b7c54e2-a9d8-4f54-9b32-e1808bfe7ee0"
+        "5b7c54e2-a9d8-4f54-9b32-e1808bfe7ee0",
+        "45e6768c-14cb-4922-b671-55636001640a",
+        "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e"
       ],
       "settings": {
         "image_overlay_opacity": 0,
