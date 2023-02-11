@@ -392,6 +392,134 @@
         "show_text_box": true
       }
     },
+    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle",
+            "heading_size": "h1",
+            "font-weight": 800,
+            "font_size": 36,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5": {
+          "type": "right_text_wrapper",
+          "settings": {
+            "right_text": "Whether you're a first-time homeowner, looking to travel and take your home with you,  or just want to downsize and have an extra home in the backyard",
+            "font_size": 20,
+            "is_border": "true"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true
+      }
+    },
+    "8bd58e50-4c4c-4374-9837-2903a599cddb": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why PODX GO?",
+            "heading_size": "h1",
+            "font-weight": 800,
+            "font_size": 36,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-1": {
+          "type": "text",
+          "settings": {
+            "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
+            "text_style": "body",
+            "font_size": 20,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "b455aa90-8c8e-4419-bd53-1855e2b3826d": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX  is changing that.",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 20,
+            "margin-top": 22,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Meet Our Team",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b": {
+          "type": "text",
+          "settings": {
+            "text": "Thank You for Your Support on the Tiny Home's Big Dreams!",
+            "text_style": "body",
+            "font_size": 20,
+            "margin-top": 22,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-4": {
+          "type": "pictureCard",
+          "settings": {
+          }
+        },
+        "7a10bc36-f177-48f5-a62e-42f4f9502449": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/12_1_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-0",
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-1",
+        "b455aa90-8c8e-4419-bd53-1855e2b3826d",
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2",
+        "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b",
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-4",
+        "7a10bc36-f177-48f5-a62e-42f4f9502449"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "false",
+        "show_text_box": true
+      }
+    },
     "1672909950d79615a4": {
       "type": "apps",
       "blocks": {
@@ -791,47 +919,6 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2": {
-      "type": "lr-block-component",
-      "blocks": {
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle",
-            "heading_size": "h1",
-            "font-weight": 800,
-            "font_size": 36,
-            "margin-top": 0,
-            "margin-bottom": 0,
-            "font_color": "#000"
-          }
-        },
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4": {
-          "type": "pictureCard",
-          "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
-          }
-        },
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5": {
-          "type": "right_text_wrapper",
-          "settings": {
-            "right_text": "Whether you're a first-time homeowner, looking to travel and take your home with you,  or just want to downsize and have an extra home in the backyard",
-            "font_size": 20,
-            "is_border": "true"
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0",
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-4",
-        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "is_lr": "true",
-        "show_text_box": true
-      }
     }
   },
   "order": [
@@ -839,13 +926,14 @@
     "033b3367-c7f0-4783-b027-9f0f99922544",
     "6f0f9185-0ff7-4717-acde-1ce2378221cc",
     "abef059e-668c-4e67-9c88-66335cba3a1e",
+    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2",
+    "8bd58e50-4c4c-4374-9837-2903a599cddb",
     "1672909950d79615a4",
     "13adeb9b-2cca-4cc6-9d3d-84ff49d2dddf",
     "bfe08703-2924-49e3-8a74-3ae666fda626",
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a",
     "66b613d2-a9a2-40e6-ac77-3fc5a370ad71",
-    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1",
-    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2"
+    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1"
   ]
 }
