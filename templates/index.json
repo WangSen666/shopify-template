@@ -228,7 +228,8 @@
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_color": "#fff"
           }
         },
         "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961": {
@@ -369,7 +370,8 @@
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_color": "#fff"
           }
         }
       },
@@ -479,7 +481,8 @@
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_color": "#000"
           }
         },
         "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b": {
