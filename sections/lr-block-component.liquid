@@ -56,8 +56,8 @@
   }
   .lr-blocks-banner__box .banner__buttons .button {
     background: none;
-    color: #fff;
-    border: 1px solid #fff;
+    /* color: #fff; */
+    /* border: 1px solid #fff; */
     border-radius: 20px;
     padding: 6px 14px;
   }
@@ -73,6 +73,15 @@
     width: 80%;
     margin: 0 auto;
     padding: 14px 0;
+  }
+
+  .card-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card-flex-box img {
+    margin: 14px;
   }
   @media screen and (max-width:1280px) {
     .image-wrapper {
@@ -152,7 +161,7 @@
             {%- when 'buttons' -%}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
-                <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
                   <img
                     src="{{'button_logo_1.png'  | asset_url }}"
                     width="12"
@@ -173,15 +182,16 @@
         {%- endfor -%}
 
 
-        <div class="card-flex">
+        <div class="card-flex-box">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when pictureCard -%}
-              <div class="picture-card-item">
+
+              {%- when 'pictureCard' -%}
+              <div class="m">
                 <img
                   src="{{ block.settings.picture-card-item  | image_url }}"
-                  width="156"
-                  height="80"
+                  width="110"
+                  height="46"
                   loading="lazy" />
               </div>
 
@@ -456,6 +466,23 @@
             "id": "button_style_secondary_2",
             "default": false,
             "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+          }, {
+            "type": "select",
+            "id": "button_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "按钮颜色"
           }
         ]
       },
@@ -473,7 +500,7 @@
       }, {
         "type": "pictureCard",
         "name": "图片卡片",
-        "limit": 10,
+        "limit": 5,
         "settings": [
           {
             "type": "image_picker",
