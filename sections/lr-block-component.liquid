@@ -101,7 +101,7 @@
 <div
   id="Banner-{{ section.id }}"
   style="padding:24px 0;"
-  class="banner bg_wrapper banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+  class="banner {% if section.settings.image != blank %} bg_wrapper {% endif %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -202,7 +202,7 @@
                 src={{ block.settings.image_1 | image_url }} />
 
               {%- when 'right_text_wrapper' -%}
-              <div class="right-text-wrapper" style="font-size:{{block.settings.font_size}}px;{%- if block.settings.is_border=='true' -%}border-bottom:1px solid #B1EB35;{%-endif-%}">
+              <div class="right-text-wrapper" style="font-size:{{block.settings.font_size}}px;{%- if block.settings.is_border=='true' -%}border-bottom:2px solid #B1EB35;{%-endif-%}">
                 {{ block.settings.right_text }}
               </div>
 
@@ -488,7 +488,7 @@
           {
             "type": "text",
             "id": "right_text",
-            "label":"文案内容"
+            "label": "文案内容"
           }, {
             "type": "range",
             "id": "font_size",
