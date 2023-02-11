@@ -131,16 +131,22 @@
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "GRANDE S1",
             "heading_size": "h1",
-            "font-weight": 400
+            "font-weight": 500,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
           }
         },
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Order Your Home Online and DIY in 15Mins",
+            "text_style": "body",
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
           }
         },
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-3": {
@@ -154,14 +160,20 @@
           "settings": {
             "heading": "Image banner",
             "heading_size": "h1",
-            "font-weight": 400
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
           }
         },
         "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2": {
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text_style": "body",
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
           }
         },
         "1f23f78d-d888-436a-89e9-19ea472b54b3": {
@@ -169,14 +181,20 @@
           "settings": {
             "heading": "Image banner",
             "heading_size": "h1",
-            "font-weight": 400
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
           }
         },
         "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc": {
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text_style": "body",
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
           }
         },
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2": {
