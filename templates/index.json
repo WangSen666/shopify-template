@@ -133,7 +133,7 @@
           "settings": {
             "heading": "GRANDE S1",
             "heading_size": "h1",
-            "font-weight": 500,
+            "font-weight": 900,
             "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0
@@ -144,7 +144,7 @@
           "settings": {
             "text": "Order Your Home Online and DIY in 15Mins",
             "text_style": "body",
-            "font_size": 24,
+            "font_size": 18,
             "margin-top": 0,
             "margin-bottom": 0
           }
@@ -158,20 +158,20 @@
         "fb46235e-7d6d-4fdd-8ba6-91abf3a27505": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "340 sq.ft",
             "heading_size": "h1",
-            "font-weight": 400,
+            "font-weight": 900,
             "font_size": 24,
-            "margin-top": 0,
+            "margin-top": 22,
             "margin-bottom": 0
           }
         },
         "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Complete interior design with healthy and eco-friendly materials",
             "text_style": "body",
-            "font_size": 24,
+            "font_size": 18,
             "margin-top": 0,
             "margin-bottom": 0
           }
@@ -179,9 +179,9 @@
         "1f23f78d-d888-436a-89e9-19ea472b54b3": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Spaces to Live, Work and Relax",
             "heading_size": "h1",
-            "font-weight": 400,
+            "font-weight": 900,
             "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0
@@ -190,18 +190,39 @@
         "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body",
+            "text": "Fully fitted bedroom, bathroom, kitchen and living room.",
+            "text_style": "subtitle",
             "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0
           }
         },
+        "c057506a-1e86-427c-a8df-53a01fc2ea1d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Moveable with Ease",
+            "heading_size": "h1",
+            "font-weight": 900,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        },
+        "88fcdd67-8a3e-4c28-b8e7-008aa23f1dc4": {
+          "type": "text",
+          "settings": {
+            "text": "Allow you to move virtually anywhere that's permissible by zoning regulations.",
+            "text_style": "body",
+            "font_size": 18,
+            "margin-top": 0,
+            "margin-bottom": 36
+          }
+        },
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/测试产品1",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -217,6 +238,8 @@
         "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2",
         "1f23f78d-d888-436a-89e9-19ea472b54b3",
         "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc",
+        "c057506a-1e86-427c-a8df-53a01fc2ea1d",
+        "88fcdd67-8a3e-4c28-b8e7-008aa23f1dc4",
         "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2"
       ],
       "settings": {
