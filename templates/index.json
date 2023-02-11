@@ -230,6 +230,14 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961": {
+          "type": "right_text_wrapper",
+          "settings": {
+            "right_text": "",
+            "font_size": 24,
+            "is_border": "false"
+          }
         }
       },
       "block_order": [
@@ -241,7 +249,8 @@
         "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc",
         "c057506a-1e86-427c-a8df-53a01fc2ea1d",
         "88fcdd67-8a3e-4c28-b8e7-008aa23f1dc4",
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2"
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2",
+        "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/12_1_1.jpg",
