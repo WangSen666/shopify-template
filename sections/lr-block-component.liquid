@@ -45,14 +45,14 @@
       justify-content: space-around;
       min-width: var(--page-width);
     };
+    .lr-blocks-banner__box .banner__box-item {
+      width: 50% !important;
+    }
+    .lr-blocks-banner__box .banner__box-item:first-child {
+      text-align: left;
+    }
+  }
 
-  }
-  .lr-blocks-banner__box .banner__box-item {
-    width: 50% !important;
-  }
-  .lr-blocks-banner__box .banner__box-item:first-child {
-    text-align: left;
-  }
   .lr-blocks-banner__box .banner__buttons .button {
     background: none;
     color: #fff;
@@ -60,16 +60,25 @@
     border-radius: 20px;
     padding: 6px 14px;
   }
+  .lr-blocks-banner__box .banner__buttons .button img {
+    margin-left: 14px;
+    vertical-align: middle;
+  }
   @media screen and (max-width: 749px) {
     .lr-blocks-banner__box {
       justify-content: space-around;
       flex-wrap: wrap;
       min-width: unset !important;
     };
-    .lr-blocks-banner__box .benner__box-item {
+    .lr-blocks-banner__box .banner__box-item {
       width: 94% !important;
+      margin: 0 auto;
+      text-align: center !important;
     }
-
+    .image-wrapper {
+      width: 300px;
+      height: 200px;
+    }
   }
 {%- endstyle -%}
 
@@ -154,10 +163,20 @@
             {%- when 'buttons' -%}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
-                <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
+                <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                  <img
+                    src="{{'button_logo_1.png'  | asset_url }}"
+                    width="12"
+                    height="12" />
+                </a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
-                <a {% if block.settings.button_link_2 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+                <a {% if block.settings.button_link_2 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}
+                  <img
+                    src="{{'button_logo_1.png'  | asset_url }}"
+                    width="12"
+                    height="12" />
+                </a>
               {%- endif -%}
 
             </div>
@@ -170,6 +189,7 @@
             {%- case block.type -%}
               {%- when 'image_wrapper' -%}
               <img
+                class="image-wrapper"
                 width="408"
                 height="408"
                 src={{ block.settings.image_1 | image_url }} />
