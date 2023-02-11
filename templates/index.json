@@ -222,11 +222,6 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "0b1847d9-23bf-4600-83f5-0772525f541f": {
-          "type": "image_wrapper",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -238,8 +233,7 @@
         "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc",
         "c057506a-1e86-427c-a8df-53a01fc2ea1d",
         "88fcdd67-8a3e-4c28-b8e7-008aa23f1dc4",
-        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2",
-        "0b1847d9-23bf-4600-83f5-0772525f541f"
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/12_1_1.jpg",
