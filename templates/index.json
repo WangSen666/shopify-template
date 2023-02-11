@@ -492,7 +492,7 @@
             "text_style": "body",
             "font_size": 20,
             "margin-top": 22,
-            "margin-bottom": 0,
+            "margin-bottom": 50,
             "font_color": "#000"
           }
         },
