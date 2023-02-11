@@ -207,13 +207,12 @@
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
 
               <img
+                style="{% if block.settings.is_imgFixed == 'true' %} width:100%;{% endif %}"
                 class="image-wrapper"
-                width="408"
-                height="408"
                 src={{ block.settings.image_1 | image_url }} />
 
               {%- when 'right_text_wrapper' -%}
-              <div class="right-text-wrapper" style="font-size:{{block.settings.font_size}}px;{%- if block.settings.is_border=='true' -%}border-bottom:2px solid #B1EB35;{%-endif-%}">
+              <div class="right-text-wrapper" style="font-size:{{block.settings.font_size}}px;{%- if block.settings.is_border == 'true' -%}border-bottom:2px solid #B1EB35;{%- endif -%}">
                 {{ block.settings.right_text }}
               </div>
 
@@ -495,6 +494,20 @@
             "type": "image_picker",
             "id": "image_1",
             "label": "第一张图片"
+          }, {
+            "type": "select",
+            "id": "is_imgFixed",
+            "options": [
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+            "default": "false",
+            "label": "图片是否占满容器"
           }
         ]
       }, {
