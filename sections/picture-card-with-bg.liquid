@@ -99,12 +99,21 @@
     height: 100%;
   }
   @media screen and (max-width: 750px) {
+    .picture-card-box {
+      margin-bottom: 10px;
+    }
     .picture-card-item-box {
       width: 100%;
       margin: 0 auto;
     }
     .picture-card-box {
       flex-wrap: wrap;
+    }
+    .picture-card-head .picture-card-head-item {
+      width: 100%
+    }
+    .picture-card-head .picture-card-head-item:last-child {
+      display: none;
     }
     .picture-card-bg {
       height: 334px !important;
@@ -123,7 +132,7 @@ onload="this.media='all'"> {% endcomment %}
 <div id="{{ section.settings.id }}-card" class="page-width picture-card-with-bg">
   {% if section.settings.is_showTitle == 'true' %}
     <div class="picture-card-head">
-      <div class="picture-card-head-item" style="z-index:5;">
+      <div class="picture-card-head-item">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
