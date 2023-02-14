@@ -48,6 +48,9 @@
 
   .picture-card-item-box {
     width: 49%;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
   .picture-card-item-box .picture-card-bg {
@@ -84,6 +87,7 @@
 
   .picture-card-item-small {
     height: 49%;
+
   }
   .picture-card-item-small-img {
     height: 100%;
@@ -144,7 +148,7 @@ onload="this.media='all'"> {% endcomment %}
           {% case block.type %}
             {% when "picture_card_big" %}
             <img
-              style="height:768px;"
+              style="height:768px;display:block;"
               class="picture-card-bg"
               src="{{ block.settings.picture_item | image_url }}" />
             <div class="picture-card-item-bottom">
