@@ -26,10 +26,10 @@
   @media screen and (max-width: 750px) {}
 {%- endstyle -%}
 
-<link rel="stylesheet"
-  href="{{ 'component-deferred-media.css' | asset_url }}"
-  media="print"
-  onload="this.media='all'">
+{% comment %} <link rel="stylesheet"
+href="{{ 'component-deferred-media.css' | asset_url }}"
+media="print"
+onload="this.media='all'"> {% endcomment %}
 
 {% comment %} <div class="color-{{ section.settings.color_scheme }} gradient isolate" style="padding-top: {{ section.settings.padding_top }}px;padding-bottom: {{ section.settings.padding_bottom }}px;"></div> {% endcomment %}
 
@@ -38,22 +38,22 @@
   {% if section.settings.is_showTitle == 'true' %}
     <div class="picture-card-head">
       <div class="picture-card-head-item">
-        {%- for block in sections.blocks -%}
+        {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-            <p>
-              {{ block.settins.heading }}
+            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }}px;font-weight:{{ block.settings.font_weight }}">
+              {{ block.settings.heading }}
             </p>
 
           {%- endcase -%}
         {%- endfor -%}
       </div>
       <div class="picture-card-head-item">
-        {%- for block in sections.blocks -%}
+        {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading_1' -%}
             <p>
-              {{ block.settins.heading_1 }}
+              {{ block.settings.heading_1 }}
             </p>
 
           {%- endcase -%}
@@ -101,6 +101,7 @@
   </div>
 
 </div>
+
 {% schema %}
   {
     "name": "带有文本按钮的图片卡片",
@@ -173,6 +174,14 @@
             "unit": "px",
             "label": "字体大小",
             "default": 24
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
           }
         ]
       }, {
@@ -274,8 +283,6 @@
             "id": "button_link_1",
             "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
           }
-
-
         ]
       }
     ],
