@@ -31,25 +31,29 @@
   @media screen and (max-width: 750px) {
     .bottom-with-bg-image-content .banner__box {
       min-height: 42rem;
+      width: 90% !important;
       position: relative;
     }
-    .banner-bottom-info{
-      transform:skew(0) !important;
+    .banner-bottom-info {
+      transform: skew(0) !important;
     }
-     .banner-bottom-info-item-box{
-      padding:0px !important;
-      border:none !important;
-      transform:skew(0) !important;
+    .banner-bottom-info-item-box {
+      padding: 0 !important;
+      border: none !important;
+      transform: skew(0) !important;
     }
-    .banner-bottom-info-item-box img{
-      transform:skew(0) !important;
+    .banner-bottom-info-item-box img {
+      transform: skew(0) !important;
       width: 24px;
       height: 24px;
     }
-    .banner-bottom-info-item-box p{
-      font-size:14px !important;
-      transform:skew(0) !important;
-      margin:0 auto;
+    .banner-bottom-info-item-box p {
+      font-size: 14px !important;
+      transform: skew(0) !important;
+      margin: 0 auto;
+    }
+    .yello-text {
+      display: none;
     }
   }
   .bottom-with-bg-image-content {
@@ -60,6 +64,7 @@
   .bottom-with-bg-image-content .banner__box {
     height: 100% !important;
     position: relative;
+    width: 100%;
   }
 
   .banner-bottom-info {
@@ -71,21 +76,28 @@
     padding: 14px 0;
     position: absolute;
     bottom: 0;
-    border-radius:40px;
+    border-radius: 40px;
     transform: skew(-10deg);
   }
-  .banner-bottom-info-item{
-    display:flex;
-    align-items:center;
+  .banner-bottom-info-item {
+    display: flex;
+    align-items: center;
   }
-  .banner-bottom-info-item-box{
-    transform:skew(-10deg);
-     border-right:4px solid #fff;
-     padding:0 44px;
+  .banner-bottom-info-item-box {
+    transform: skew(-10deg);
+    border-right: 4px solid #fff;
+    padding: 0 44px;
   }
-   .banner-bottom-info-item:nth-child(3) .banner-bottom-info-item-box{
-      border-right:none;
-    }
+  .banner-bottom-info-item:nth-child(3) .banner-bottom-info-item-box {
+    border-right: none;
+  }
+  .yello-text {
+    position: absolute;
+    top: -30px;
+    font-size: 80px;
+    color: #E8F9C3;
+
+  }
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -123,31 +135,36 @@
           <h2
             class=""
             {{ block.shopify_attributes }}
-            style="text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
-            <span>{{ block.settings.heading | escape }}</span>
+            style="position:relative;text-align:center;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span class="yello-text" style="left:10px;">{{ block.settings.first_words }}</span>
+            <span id="test-span" style="z-index:10;position:relative;">{{ block.settings.heading }}</span>
+            <span class="yello-text" style="right:0">{{ block.settings.last_words }}</span>
           </h2>
 
         {%- endcase -%}
       {%- endfor -%}
-      <div class="banner-bottom-info">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'buttomItem' -%}
+      {% if section.settings.is_show_select == "true" %}
+        <div class="banner-bottom-info">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'buttomItem' -%}
 
-            <div class="banner-bottom-info-item" {{ block.shopify_attributes }}>
-    
-              <div class="banner-bottom-info-item-box" style="">
-                <img
-                style="transform:skew(20deg);"
-                src="{{ block.settings.image | image_url }}"
-                width="60"
-                height="60" />
-                <p style="font-size:{{block.settings.font_size}}px;color:{{block.settings.font_color}};transform:skew(20deg);">{{ block.settings.heading }}</p>
+              <div class="banner-bottom-info-item" {{ block.shopify_attributes }}>
+
+                <div class="banner-bottom-info-item-box" style="">
+                  <img
+                    style="transform:skew(20deg);"
+                    src="{{ block.settings.image | image_url }}"
+                    width="60"
+                    height="60" />
+                  <p id="test-p" style="font-size:{{block.settings.font_size}}px;color:{{block.settings.font_color}};transform:skew(20deg);">{{ block.settings.heading }}</p>
+                </div>
               </div>
-            </div>
-          {%- endcase -%}
-        {% endfor %}
-      </div>
+            {%- endcase -%}
+          {% endfor %}
+        </div>
+
+      {% endif %}
 
     </div>
   </div>
@@ -164,6 +181,20 @@
         "type": "image_picker",
         "id": "image",
         "label": "背景图"
+      }, {
+        "type": "select",
+        "id": "is_show_select",
+        "options": [
+          {
+            "value": "true",
+            "label": "是"
+          }, {
+            "value": "false",
+            "label": "否"
+          }
+        ],
+        "default": "false",
+        "label": "是否显示底部黄色背景部分"
       }
     ],
     "blocks": [
@@ -177,6 +208,18 @@
             "id": "heading",
             "default": "Image banner",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "text",
+            "id": "first_words",
+            "default": "Image",
+            "label": "文本第一个单词"
+          },
+          {
+            "type": "text",
+            "id": "last_words",
+            "default": "banner",
+            "label": "文本最后一个单词"
           },
           {
             "type": "select",
@@ -195,8 +238,7 @@
             ],
             "default": "h1",
             "label": "t:sections.all.heading_size.label"
-          },
-          {
+          }, {
             "type": "range",
             "id": "font_size",
             "min": 0,
@@ -205,8 +247,7 @@
             "unit": "px",
             "label": "文本字体大小",
             "default": 24
-          },
-          {
+          }, {
             "type": "range",
             "id": "margin_top",
             "min": 0,

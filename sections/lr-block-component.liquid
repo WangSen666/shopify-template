@@ -52,7 +52,7 @@
     text-align: left;
   }
   .lr-blocks-banner__box .banner__box-item {
-    width: 50% !important;
+    width: 49% !important;
   }
   .lr-blocks-banner__box .banner__buttons .button {
     background: none;
@@ -139,7 +139,7 @@
 
   {%- endif -%}
   <div class="banner__content lr-blocks-banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div class="banner__box lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
       <div class="banner__box-item">
 
         {%- for block in section.blocks -%}
@@ -207,7 +207,7 @@
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
 
               <img
-                style="{% if block.settings.is_imgFixed == 'true' %} width:100%;height:100%;{% endif %}{% if block.settings.is_imgFixed == 'false' %}  width:408px;height:408px;{% endif %}"
+                style="{% if block.settings.is_imgFixed == 'true' %} width:100%;height:600px;{% endif %}{% if block.settings.is_imgFixed == 'false' %}  width:408px;height:408px;{% endif %}"
                 class="image-wrapper"
                 src={{ block.settings.image_1 | image_url }} />
 
@@ -234,7 +234,8 @@
         "type": "image_picker",
         "id": "image",
         "label": "t:sections.image-banner.settings.image.label"
-      }, {
+      },
+      {
         "type": "range",
         "id": "image_overlay_opacity",
         "min": 0,
@@ -243,7 +244,8 @@
         "unit": "%",
         "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
         "default": 0
-      }, {
+      },
+      {
         "type": "select",
         "id": "is_lr",
         "options": [
@@ -257,11 +259,27 @@
         ],
         "default": "false",
         "label": "是否左右分块"
-      }, {
+      },
+      {
         "type": "checkbox",
         "id": "show_text_box",
         "default": true,
         "label": "t:sections.image-banner.settings.show_text_box.label"
+      }, {
+        "type": "select",
+        "id": "layout",
+        "options": [
+          {
+            "value": "image_first",
+            "label": "t:sections.image-with-text.settings.layout.options__1.label"
+          }, {
+            "value": "text_first",
+            "label": "t:sections.image-with-text.settings.layout.options__2.label"
+          }
+        ],
+        "default": "image_first",
+        "label": "t:sections.image-with-text.settings.layout.label",
+        "info": "t:sections.image-with-text.settings.layout.info"
       }
     ],
     "blocks": [
