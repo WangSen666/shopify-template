@@ -148,12 +148,26 @@
             "button_label_1": "Button label",
             "button_link_1": ""
           }
+        },
+        "2772c150-98d0-4684-832e-97ce36684814": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo.png",
+            "heading": "Bathroom",
+            "heading_1": "Full Sized Shower",
+            "font_size": 44,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
         }
       },
       "block_order": [
         "template--15597986709604__3ff863fe-33c0-4765-9287-c87e262a93d2-167637755714220c70-0",
         "aa752092-400f-471a-85e9-62f3f1793da9",
-        "945aad5c-611a-4c75-8b41-394724e9e2f5"
+        "945aad5c-611a-4c75-8b41-394724e9e2f5",
+        "2772c150-98d0-4684-832e-97ce36684814"
       ],
       "settings": {
         "color_scheme": "background-1"
