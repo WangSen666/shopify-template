@@ -107,6 +107,58 @@
         "is_show_select": "false"
       }
     },
+    "3ff863fe-33c0-4765-9287-c87e262a93d2": {
+      "type": "card-component-with-bg",
+      "blocks": {
+        "template--15597986709604__3ff863fe-33c0-4765-9287-c87e262a93d2-167637755714220c70-0": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo.png",
+            "heading": "Living Room",
+            "heading_1": "120 sq.ft Relax Space",
+            "font_size": 44,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        },
+        "aa752092-400f-471a-85e9-62f3f1793da9": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo.png",
+            "heading": "Bedroom",
+            "heading_1": "Sleeps of 2",
+            "font_size": 44,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "",
+            "button_link_1": ""
+          }
+        },
+        "945aad5c-611a-4c75-8b41-394724e9e2f5": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/20230206105704.jpg",
+            "heading": "Kitchen",
+            "heading_1": "Full Fitted Kitchen",
+            "font_size": 42,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__3ff863fe-33c0-4765-9287-c87e262a93d2-167637755714220c70-0",
+        "aa752092-400f-471a-85e9-62f3f1793da9",
+        "945aad5c-611a-4c75-8b41-394724e9e2f5"
+      ],
+      "settings": {
+        "color_scheme": "background-1"
+      }
+    },
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158": {
       "type": "image-banner-text-diy",
       "blocks": {
@@ -480,6 +532,7 @@
   "order": [
     "45cbd826-d11e-470e-ad3e-aff37d062584",
     "c379e254-4479-46c4-a625-84e43bf0d895",
+    "3ff863fe-33c0-4765-9287-c87e262a93d2",
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158",
     "23e33d4b-c965-4a93-b39e-5d8d40c2856c",
     "main",
