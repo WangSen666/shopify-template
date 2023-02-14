@@ -45,17 +45,11 @@
     margin-left: 6px;
   }
   @media screen and (max-width: 750px) {
-    .with_bg_card-img {
-      height: 42rem;
-    }
     .with_bg_card-img img {
       max-height: 42rem;
     }
-    .with_bg_card-item-wrapper h2 {
-      font-size: 20px !important;
-    }
-    .with_bg_card .button {
-      padding: 0 6px !important;
+    .with_bg_card-item-wrapper h2{
+      font-size:20px !important;
     }
   }
 </style>
@@ -70,12 +64,20 @@
         <div class="with_bg_card-item" style="background:rgba(0,0,0,{{block.settings.bg_opcity}})">
           <div class="with_bg_card-item-wrapper">
             <h2 style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;">{{ block.settings.heading }}</h2>
-            <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
-              <img
-                src="{{'button_logo_1.png'  | asset_url }}"
-                width="12"
-                height="12" />
-            </a>
+            {%  if block.settings.button_link_1!=blank %}
+              <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </a>
+            {% endif %}
+            {%  if block.settings.text_1!=blank %}
+              <div>
+                {{ block.settings.text_1 }}
+              </div>
+            {% endif %}
+            
           </div>
         </div>
       </div>
