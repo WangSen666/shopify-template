@@ -52,7 +52,7 @@ onload="this.media='all'"> {% endcomment %}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading_1' -%}
-            <p>
+            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }}px;font-weight:{{ block.settings.font_weight }}">
               {{ block.settings.heading_1 }}
             </p>
 
@@ -218,6 +218,14 @@ onload="this.media='all'"> {% endcomment %}
             "unit": "px",
             "label": "字体大小",
             "default": 24
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
           }
         ]
       }, {
