@@ -1,5 +1,77 @@
 {
   "sections": {
+    "45cbd826-d11e-470e-ad3e-aff37d062584": {
+      "type": "banner-component-1",
+      "blocks": {
+        "template--15597986709604__45cbd826-d11e-470e-ad3e-aff37d062584-1676376200535a7b69-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "GRANDE S1",
+            "heading_size": "h1",
+            "font_size": 36,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 700
+          }
+        },
+        "template--15597986709604__45cbd826-d11e-470e-ad3e-aff37d062584-1676376200535a7b69-1": {
+          "type": "bannerComponentBottomInfo",
+          "settings": {
+            "heading": "Build Your Tiny Home with PODX GO Now",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "price": "",
+            "banner_button_link": "shopify:\/\/products\/测试产品1",
+            "banner_button_label": "Back us on Indiegogo",
+            "banner_button_link_1": "shopify:\/\/products\/测试产品1",
+            "banner_button_label_1": "Download Floorplan"
+          }
+        },
+        "ecf6c800-10dc-491e-b295-bffde7267997": {
+          "type": "heading",
+          "settings": {
+            "heading": "15 mins from 120 sq.ft to 364 sq.ft",
+            "heading_size": "h1",
+            "font_size": 32,
+            "margin_top": 16,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 600
+          }
+        },
+        "973a8934-6673-447b-92a0-eaab5e37586e": {
+          "type": "heading",
+          "settings": {
+            "heading": "The world's first tiny house on crowdfunding platform.Get your exclusive early bird rewards now!",
+            "heading_size": "h1",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__45cbd826-d11e-470e-ad3e-aff37d062584-1676376200535a7b69-0",
+        "template--15597986709604__45cbd826-d11e-470e-ad3e-aff37d062584-1676376200535a7b69-1",
+        "ecf6c800-10dc-491e-b295-bffde7267997",
+        "973a8934-6673-447b-92a0-eaab5e37586e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158": {
       "type": "image-banner-text-diy",
       "blocks": {
@@ -371,6 +443,7 @@
     }
   },
   "order": [
+    "45cbd826-d11e-470e-ad3e-aff37d062584",
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158",
     "23e33d4b-c965-4a93-b39e-5d8d40c2856c",
     "main",
