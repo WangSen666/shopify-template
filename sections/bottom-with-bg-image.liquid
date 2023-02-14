@@ -137,7 +137,7 @@
             class=""
             {{ block.shopify_attributes }}
             style="position:relative;text-align:center;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
-            <span class="yello-text" style="left:10px;">We</span><span id="test-span" style="z-index:10;position:relative;">We Made the Foldable and Moveable Tiny Home a Reality</span><span class="yello-text" style="right:0">Reality</span>
+            <span class="yello-text" style="left:10px;">{{  }}</span><span id="test-span" style="z-index:10;position:relative;">{{  block.settings.heading }}</span><span class="yello-text" style="right:0">{{  }}</span>
           </h2>
 
         {%- endcase -%}
@@ -169,14 +169,6 @@
   </div>
 
 </div>
-
-<script>
-  window.onload=function(){
-    var testSpan=document.getElementById("test-span").innerHTML;
-    
-    console.log("block.settings.heading",testSpan)
-  }
-</script>
 
 
 {% schema %}
@@ -217,6 +209,18 @@
             "id": "heading",
             "default": "Image banner",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type":"text",
+            "id":"first_words",
+            "default":"Image",
+            "label":"文本第一个单词"
+          },
+          {
+            "type":"text",
+            "id":"last_words",
+            "default":"banner",
+            "label":"文本最后一个单词"
           },
           {
             "type": "select",
