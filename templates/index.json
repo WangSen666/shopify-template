@@ -489,9 +489,9 @@
           "type": "picture_card",
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
-            "heading_1": "",
-            "heading_2": "",
-            "button_label_1": "Button label",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
             "button_link_1": ""
           }
         }
