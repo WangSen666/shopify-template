@@ -79,6 +79,8 @@
           "type": "heading",
           "settings": {
             "heading": "We Made the Foldable and Moveable Tiny Home a Reality",
+            "first_words": "We",
+            "last_words": "Reality",
             "heading_size": "h1",
             "font_size": 40,
             "margin_top": 0,
