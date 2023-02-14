@@ -450,18 +450,18 @@
         "5ed01a38-46c3-443e-a8f6-6ab70911b0fe": {
           "type": "heading",
           "settings": {
-            "heading": "213133213",
+            "heading": "Having questions about start your tiny home journey? No worries. We are here to help.",
             "text_color": "#000",
-            "font_size": 42,
-            "font_weight": 1000
+            "font_size": 20,
+            "font_weight": 100
           }
         },
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1": {
           "type": "heading_1",
           "settings": {
-            "heading_1": "eqeqewqeqe1231231321",
+            "heading_1": "We are here to help",
             "text_color": "#B5EF35",
-            "font_size": 44,
+            "font_size": 78,
             "font_weight": 1000
           }
         },
