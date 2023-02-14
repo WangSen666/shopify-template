@@ -300,6 +300,92 @@
         "layout": "text_first"
       }
     },
+    "16661c52-f36f-4518-afb5-1fed2485d653": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "EDGE ONE(LOGO)",
+            "heading_size": "h1",
+            "font-weight": 900,
+            "font_size": 44,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "912f0829-dc7e-4773-906b-17a3ae39eebc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Smart Housekeeper",
+            "heading_size": "h1",
+            "font-weight": 800,
+            "font_size": 44,
+            "margin-top": 0,
+            "margin-bottom": 40,
+            "font_color": "#000"
+          }
+        },
+        "34f590a4-bf87-4d6c-aba3-de1a8c686eea": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your PODX GO is not just a house with pre-equipped furniture. It is connected with your feelings and activities.",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 30,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "c2f55ae3-1954-4308-b7d6-5fdb5d8ab399": {
+          "type": "heading",
+          "settings": {
+            "heading": "Thanks to Edge ONE, the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 32,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000"
+          }
+        },
+        "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-3": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/12_1_1.jpg",
+            "is_imgFixed": "false"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-0",
+        "912f0829-dc7e-4773-906b-17a3ae39eebc",
+        "34f590a4-bf87-4d6c-aba3-de1a8c686eea",
+        "c2f55ae3-1954-4308-b7d6-5fdb5d8ab399",
+        "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-2",
+        "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-3"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true,
+        "layout": "image_first"
+      }
+    },
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158": {
       "type": "image-banner-text-diy",
       "blocks": {
@@ -676,6 +762,7 @@
     "3ff863fe-33c0-4765-9287-c87e262a93d2",
     "3a7ceead-5109-443a-8288-e7d3be855076",
     "88d3df49-d732-44f6-ae60-87564fc3b463",
+    "16661c52-f36f-4518-afb5-1fed2485d653",
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158",
     "23e33d4b-c965-4a93-b39e-5d8d40c2856c",
     "main",
