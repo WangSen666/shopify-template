@@ -24,9 +24,6 @@
     }
   }
 
-  /* .picture-card-head .picture-card-head-item:first-child {
-    float: left
-  } */
   .picture-card-head .picture-card-head-item {
     padding: 14px 0;
     width: 60%;
@@ -48,7 +45,6 @@
 
   .picture-card-item-box {
     width: 49%;
-    width: 48%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -88,6 +84,14 @@
 
   .picture-card-item-small-img {
     height: 100%;
+  }
+  @media screen and (max-width:1280px) {
+    .picture-card-head .picture-card-head-item:last-child {
+      right: 0 !important;
+    }
+    .picture-card-head .picture-card-head-item:last-child div {
+      font-size: 60px !important;
+    }
   }
   @media screen and (max-width: 750px) {
     .picture-card-box {
@@ -147,7 +151,7 @@ onload="this.media='all'"> {% endcomment %}
       </div>
     </div>
   {% endif %}
-  <div class="picture-card-box">
+  <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reserve;{%endif%}">
     <div class="picture-card-item-box">
       <div class="picture-card-item ">
         {% for block in section.blocks %}
