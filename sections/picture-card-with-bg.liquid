@@ -151,7 +151,7 @@ onload="this.media='all'"> {% endcomment %}
       </div>
     </div>
   {% endif %}
-  <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reserve;{%endif%}">
+  <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reverse;{%endif%}">
     <div class="picture-card-item-box">
       <div class="picture-card-item ">
         {% for block in section.blocks %}
