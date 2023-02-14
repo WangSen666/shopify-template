@@ -173,6 +173,58 @@
         "color_scheme": "background-1"
       }
     },
+    "3a7ceead-5109-443a-8288-e7d3be855076": {
+      "type": "card-component-with-bg",
+      "blocks": {
+        "template--15597986709604__3a7ceead-5109-443a-8288-e7d3be855076-1676377983e42ecbe5-0": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/99E8E4CD-50A1-44c9-A234-44CFE6132DFC.png",
+            "heading": "Folded",
+            "heading_1": "120 square footageL x  W x  H Travel TrailerWith NOAH Seal",
+            "font_size": 44,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        },
+        "b6e26731-8bc6-4317-8b04-839bf798ad16": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/8_2f43902e-8942-4751-842c-ef58c315d3ed.jpg",
+            "heading": "On the Road",
+            "heading_1": "Towable with F350 or equivalentEasier titling and registration with proper certification",
+            "font_size": 44,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        },
+        "381530d5-626c-4c7f-9656-ec696f970451": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading": "Unfold",
+            "heading_1": "364 square footageL x  W x  H Travel TrailerWith NOAH Seal",
+            "font_size": 42,
+            "font_color": "#fff",
+            "bg_opcity": 0,
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__3a7ceead-5109-443a-8288-e7d3be855076-1676377983e42ecbe5-0",
+        "b6e26731-8bc6-4317-8b04-839bf798ad16",
+        "381530d5-626c-4c7f-9656-ec696f970451"
+      ],
+      "settings": {
+        "color_scheme": "background-1"
+      }
+    },
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158": {
       "type": "image-banner-text-diy",
       "blocks": {
@@ -547,6 +599,7 @@
     "45cbd826-d11e-470e-ad3e-aff37d062584",
     "c379e254-4479-46c4-a625-84e43bf0d895",
     "3ff863fe-33c0-4765-9287-c87e262a93d2",
+    "3a7ceead-5109-443a-8288-e7d3be855076",
     "bf9e9c41-bb5e-4714-bbf4-891dc5356158",
     "23e33d4b-c965-4a93-b39e-5d8d40c2856c",
     "main",
