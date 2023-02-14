@@ -85,16 +85,7 @@
     margin-left: 6px;
   }
 
-  .picture-card-item-small {
 
-
-    ;
-
-    /* flex-grow: 1; */
-    /* height: 49%; */
-
-
-  }
   .picture-card-item-small-img {
     height: 100%;
   }
@@ -132,7 +123,7 @@ onload="this.media='all'"> {% endcomment %}
 <div id="{{ section.settings.id }}-card" class="page-width picture-card-with-bg">
   {% if section.settings.is_showTitle == 'true' %}
     <div class="picture-card-head">
-      <div class="picture-card-head-item">
+      <div class="picture-card-head-item" style="z-index:5">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
