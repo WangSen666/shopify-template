@@ -261,7 +261,7 @@
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true,
-        "layout": "image_first"
+        "layout": "text_first"
       }
     },
     "abef059e-668c-4e67-9c88-66335cba3a1e": {
@@ -432,7 +432,7 @@
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true,
-        "layout": "image_first"
+        "layout": "text_first"
       }
     },
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
