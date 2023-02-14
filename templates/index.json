@@ -995,6 +995,57 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "817a5069-6e91-49ec-aff0-da615eb133ea": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "weeee eqeqeew",
+            "text_color": "#000",
+            "font_size": 24
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1": {
+          "type": "heading_1",
+          "settings": {
+            "heading_1": "eqeqewqeqe",
+            "text_color": "#000",
+            "font_size": 24
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "eqeqewqweqe",
+            "heading_2": "eqewqeqe",
+            "button_label_1": "122122",
+            "button_link_1": "shopify:\/\/products\/测试产品1"
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "1213132123",
+            "heading_2": "1231313123",
+            "button_label_1": "Button label1",
+            "button_link_1": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3"
+      ],
+      "settings": {
+        "is_showTitle": "true",
+        "layout": "big_image_first"
+      }
     }
   },
   "order": [
@@ -1011,6 +1062,7 @@
     "63e7735a-54f4-48ec-aa67-b64c65c99135",
     "303f1a6f-25a1-4eff-ae02-68927bd7e85a",
     "66b613d2-a9a2-40e6-ac77-3fc5a370ad71",
-    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1"
+    "d7aae7dc-c796-47b0-bb6d-7d9776df39e1",
+    "817a5069-6e91-49ec-aff0-da615eb133ea"
   ]
 }
