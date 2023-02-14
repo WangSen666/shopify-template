@@ -23,7 +23,75 @@
       px;
     }
   }
-  @media screen and (max-width: 750px) {}
+
+  /* .picture-card-head .picture-card-head-item:first-child {
+    float: left
+  } */
+  .picture-card-head .picture-card-head-item {
+    padding: 14px 0;
+    width: 60%;
+  }
+
+  .picture-card-head .picture-card-head-item:last-child {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .picture-card-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .picture-card-item-box {
+    width: 49%;
+    flex-direction: column;
+  }
+  .picture-card-item-box .picture-card-bg {
+    width: 100%;
+  }
+  .picture-card-head-item {
+    position: relative;
+
+  }
+  .picture-card-item {
+    position: relative;
+  }
+  .picture-card-item-bottom {
+    position: absolute;
+    color: #fff;
+    bottom: 18px;
+    left: 3%;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .picture-card-item-button {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0 24px;
+    height: 44px;
+  }
+  .picture-card-item-button img {
+    margin-left: 6px;
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .picture-card-item-box {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .picture-card-box {
+      flex-wrap: wrap;
+    }
+    .picture-card-bg {
+      height: 334px !important;
+    }
+  }
 {%- endstyle -%}
 
 {% comment %} <link rel="stylesheet"
@@ -41,9 +109,9 @@ onload="this.media='all'"> {% endcomment %}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
+            <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
               {{ block.settings.heading }}
-            </p>
+            </div>
 
           {%- endcase -%}
         {%- endfor -%}
@@ -52,9 +120,9 @@ onload="this.media='all'"> {% endcomment %}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading_1' -%}
-            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
+            <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
               {{ block.settings.heading_1 }}
-            </p>
+            </div>
 
           {%- endcase -%}
         {%- endfor -%}
@@ -62,33 +130,45 @@ onload="this.media='all'"> {% endcomment %}
     </div>
   {% endif %}
   <div class="picture-card-box">
-    <div class="picture-card-item">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when "picture_card_big" %}
-          <img src="{{ block.settings.picture_item | image_url }}" />
-          <div class="picture-card-item-bottom">
-            <div class="picture-card-item-text">
-              <p>{{ block.settings.heading_1 }}</p>
-              <p>{{ block.settings.heading_2 }}</p>
-            </div>
-            <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
-            </a>
-          </div>
-        {%- endcase -%}
-      {%- endfor -%}
+    <div class="picture-card-item-box">
+      <div class="picture-card-item ">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when "picture_card_big" %}
+            <img
+              style="height:768px;"
+              class="picture-card-bg"
+              src="{{ block.settings.picture_item | image_url }}" />
+            <div class="picture-card-item-bottom">
+              <div class="picture-card-item-text">
+                <div>{{ block.settings.heading_1 }}</div>
+                <div>{{ block.settings.heading_2 }}</div>
+              </div>
+              <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </a>
 
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
     <div class="picture-card-item-box">
       <div class="picture-card-item">
         {% for block in section.blocks %}
           {% case block.type %}
             {% when "picture_card" %}
-            <img src="{{ block.settings.picture_item | image_url }}" />
+            <img
+              class=""
+              src="{{ block.settings.picture_item | image_url }}"
+              style="width:100%;" />
             <div class="picture-card-item-bottom">
               <div class="picture-card-item-text">
-                <p>{{ block.settings.heading_1 }}</p>
-                <p>{{ block.settings.heading_2 }}</p>
+                <div>{{ block.settings.heading_1 }}</div>
+                <div>{{ block.settings.heading_2 }}</div>
               </div>
               <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
               </a>
