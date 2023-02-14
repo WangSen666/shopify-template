@@ -1,0 +1,426 @@
+{{ 'collage.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-modal-video.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
+    ;
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
+    }
+  }
+
+  /* .picture-card-head .picture-card-head-item:first-child {
+    float: left
+  } */
+  .picture-card-head .picture-card-head-item {
+    padding: 14px 0;
+    width: 60%;
+  }
+
+  .picture-card-head {
+    position: relative;
+  }
+  .picture-card-head .picture-card-head-item:last-child {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .picture-card-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .picture-card-item-box {
+    width: 49%;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .picture-card-item-box .picture-card-bg {
+    width: 100%;
+  }
+  .picture-card-head-item {
+    position: relative;
+
+  }
+  .picture-card-item {
+    position: relative;
+  }
+  .picture-card-item-bottom {
+    position: absolute;
+    color: #fff;
+    bottom: 18px;
+    left: 3%;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .picture-card-item-button {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0 24px;
+    height: 34px;
+  }
+  .picture-card-item-button img {
+    margin-left: 6px;
+  }
+
+  .picture-card-item-small {
+
+
+    ;
+
+    /* flex-grow: 1; */
+    /* height: 49%; */
+
+
+  }
+  .picture-card-item-small-img {
+    height: 100%;
+  }
+  @media screen and (max-width: 750px) {
+    .picture-card-box {
+      margin-bottom: 10px;
+    }
+    .picture-card-item-box {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .picture-card-box {
+      flex-wrap: wrap;
+    }
+    .picture-card-head .picture-card-head-item {
+      width: 100%
+    }
+    .picture-card-head .picture-card-head-item:last-child {
+      display: none;
+    }
+    .picture-card-bg {
+      height: 334px !important;
+    }
+  }
+{%- endstyle -%}
+
+{% comment %} <link rel="stylesheet"
+href="{{ 'component-deferred-media.css' | asset_url }}"
+media="print"
+onload="this.media='all'"> {% endcomment %}
+
+{% comment %} <div class="color-{{ section.settings.color_scheme }} gradient isolate" style="padding-top: {{ section.settings.padding_top }}px;padding-bottom: {{ section.settings.padding_bottom }}px;"></div> {% endcomment %}
+
+
+<div id="{{ section.settings.id }}-card" class="page-width picture-card-with-bg">
+  {% if section.settings.is_showTitle == 'true' %}
+    <div class="picture-card-head">
+      <div class="picture-card-head-item">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+            <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
+              {{ block.settings.heading }}
+            </div>
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      <div class="picture-card-head-item">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading_1' -%}
+            <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
+              {{ block.settings.heading_1 }}
+            </div>
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  {% endif %}
+  <div class="picture-card-box">
+    <div class="picture-card-item-box">
+      <div class="picture-card-item ">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when "picture_card_big" %}
+            <img
+              style="max-height:768px;display:block;"
+              class="picture-card-bg"
+              src="{{ block.settings.picture_item | image_url }}" />
+            <div class="picture-card-item-bottom">
+              <div class="picture-card-item-text">
+                <div>{{ block.settings.heading_1 }}</div>
+                <div>{{ block.settings.heading_2 }}</div>
+              </div>
+              <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </a>
+
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="picture-card-item-box" style="max-height:768px;">
+
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when "picture_card" %}
+          <div class="picture-card-item picture-card-item-small" style="height:{{ 100 | divided_by: section.settings.card_num }}%;">
+            <img
+              class="picture-card-item-small-img"
+              src="{{ block.settings.picture_item | image_url }}"
+              style="width:100%;" />
+            <div class="picture-card-item-bottom">
+              <div class="picture-card-item-text">
+                <div>{{ block.settings.heading_1 }}</div>
+                <div>{{ block.settings.heading_2 }}</div>
+              </div>
+              <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+              </a>
+            </div>
+          </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "带有文本按钮的图片卡片",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "select",
+        "id": "is_showTitle",
+        "options": [
+          {
+            "value": "true",
+            "label": "是"
+          }, {
+            "value": "false",
+            "label": "否"
+          }
+        ],
+        "default": "false",
+        "label": "是否显示标题部分"
+      }, {
+        "type": "select",
+        "id": "layout",
+        "options": [
+          {
+            "value": "big_image_first",
+            "label": "大图在左"
+          }, {
+            "value": "big_image_last",
+            "label": "大图在右"
+          }
+        ],
+        "default": "big_image_first",
+        "label": "t:sections.image-with-text.settings.layout.label",
+        "info": "t:sections.image-with-text.settings.layout.info"
+      }, {
+        "type": "text",
+        "id": "card_num",
+        "label": "卡片内容数量"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "头部标题1",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "标题"
+          }, {
+            "type": "select",
+            "id": "text_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      }, {
+        "type": "heading_1",
+        "name": "小图头顶标题",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading_1",
+            "label": "小图头顶标题"
+          }, {
+            "type": "select",
+            "id": "text_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      }, {
+        "type": "picture_card_big",
+        "name": "大卡片内容",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "picture_item",
+            "label": "图片内容"
+          },
+          {
+            "type": "text",
+            "id": "heading_1",
+            "label": "文案内容1"
+          },
+          {
+            "type": "text",
+            "id": "heading_2",
+            "label": "文案内容2"
+          },
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          }, {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          }
+        ]
+      }, {
+        "type": "picture_card",
+        "name": "卡片内容",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "picture_item",
+            "label": "图片内容"
+          },
+          {
+            "type": "text",
+            "id": "heading_1",
+            "label": "文案内容1"
+          },
+          {
+            "type": "text",
+            "id": "heading_2",
+            "label": "文案内容2"
+          },
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          }, {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "带有文本按钮的图片卡片",
+        "blocks": [
+          {
+            "type": "heading"
+          }, {
+            "type": "heading_1"
+          }, {
+            "type": "picture_card_big"
+          }, {
+            "type": "picture_card"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
