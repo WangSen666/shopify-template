@@ -160,11 +160,11 @@ onload="this.media='all'"> {% endcomment %}
       </div>
     </div>
     <div class="picture-card-item-box">
-      
-        {% for block in section.blocks %}
-          {% case block.type %}
-            {% when "picture_card" %}
-          <div class="picture-card-item"></div>
+
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when "picture_card" %}
+          <div class="picture-card-item">
             <img
               class=""
               src="{{ block.settings.picture_item | image_url }}"
@@ -178,9 +178,8 @@ onload="this.media='all'"> {% endcomment %}
               </a>
             </div>
           </div>
-          
-          {%- endcase -%}
-        {%- endfor -%}
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
 
   </div>
