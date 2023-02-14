@@ -87,7 +87,10 @@
 
   .picture-card-item-small {
 
-    flex-grow:1;
+
+    ;
+
+    /* flex-grow: 1; */
     /* height: 49%; */
 
 
@@ -176,7 +179,7 @@ onload="this.media='all'"> {% endcomment %}
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "picture_card" %}
-          <div class="picture-card-item picture-card-item-small">
+          <div class="picture-card-item picture-card-item-small" style="height:{{ 100 | divided_by: section.settings.card_num }}%;">
             <img
               class="picture-card-item-small-img"
               src="{{ block.settings.picture_item | image_url }}"
@@ -233,6 +236,10 @@ onload="this.media='all'"> {% endcomment %}
         "default": "big_image_first",
         "label": "t:sections.image-with-text.settings.layout.label",
         "info": "t:sections.image-with-text.settings.layout.info"
+      }, {
+        "type": "text",
+        "id": "card_num",
+        "label": "卡片内容数量"
       }
     ],
     "blocks": [
