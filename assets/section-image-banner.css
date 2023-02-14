@@ -383,7 +383,7 @@
 
 @media screen and (min-width: 750px) {
   .banner__box {
-    width: auto;
+    width: 100%;
 /*     max-width: 71rem;
     min-width: 45rem; */
   }
