@@ -41,7 +41,7 @@ onload="this.media='all'"> {% endcomment %}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }}px;font-weight:{{ block.settings.font_weight }}">
+            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
               {{ block.settings.heading }}
             </p>
 
@@ -52,7 +52,7 @@ onload="this.media='all'"> {% endcomment %}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading_1' -%}
-            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }}px;font-weight:{{ block.settings.font_weight }}">
+            <p style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
               {{ block.settings.heading_1 }}
             </p>
 
