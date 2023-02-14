@@ -86,7 +86,10 @@
   }
 
   .picture-card-item-small {
-    height: 49%;
+
+    flex-grow:1;
+    /* height: 49%; */
+
 
   }
   .picture-card-item-small-img {
@@ -148,7 +151,7 @@ onload="this.media='all'"> {% endcomment %}
           {% case block.type %}
             {% when "picture_card_big" %}
             <img
-              style="height:768px;display:block;"
+              style="max-height:768px;display:block;"
               class="picture-card-bg"
               src="{{ block.settings.picture_item | image_url }}" />
             <div class="picture-card-item-bottom">
