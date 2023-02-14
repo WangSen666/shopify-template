@@ -517,7 +517,8 @@
       ],
       "settings": {
         "is_showTitle": "true",
-        "layout": "big_image_first"
+        "layout": "big_image_first",
+        "card_num": "3"
       }
     },
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
