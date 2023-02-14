@@ -72,9 +72,9 @@
                   height="12" />
               </a>
             {% endif %}
-            {%  if block.settings.text_1!=blank %}
+            {%  if block.settings.heading_1!=blank %}
               <div>
-                {{ block.settings.text_1 }}
+                {{ block.settings.heading_1 }}
               </div>
             {% endif %}
             
@@ -135,7 +135,12 @@
           {
             "type": "text",
             "id": "heading",
-            "label": "文字内容"
+            "label": "标题内容"
+          },
+          {
+            "type": "text",
+            "id": "heading_1",
+            "label": "副标题内容"
           },
           {
             "type": "range",
