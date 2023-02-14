@@ -139,7 +139,7 @@
 
   {%- endif -%}
   <div class="banner__content lr-blocks-banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient " style="{% if section.settings.layout=='text_first' %} flex-direction:row-reverse !important;{% endif %}">
+    <div class="banner__box lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
       <div class="banner__box-item">
 
         {%- for block in section.blocks -%}
