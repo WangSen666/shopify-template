@@ -59,9 +59,9 @@
         "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/untitled.121_2_1.jpg",
+        "image": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "center",
         "show_text_box": true,
@@ -518,6 +518,7 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process_2.png",
             "heading": "GRANDE SI",
+            "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -530,6 +531,7 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/12_1_1.jpg",
             "heading": "LIBRE SI",
+            "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -542,6 +544,7 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
             "heading": "LAVIDA SI",
+            "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
