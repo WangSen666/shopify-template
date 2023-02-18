@@ -1,12 +1,83 @@
+{% stylesheet %}
+@media screen and (max-width:750px){
+  .freedom-in-podxgo{
+    padding:24px;
+    margin:0 auto;
+    width:98%;
+    text-align:center
+    font-size:16px !important;
+  }
+}
+
+@media screen and (min-width:750px){
+  .freedom-in-podxgo{
+    padding:24px;
+    margin:0 auto;
+    width:100%;
+    text-align:center
+  }
+  .freedom-in-podxgo img{
+    170px;
+    vertical-align:middle;
+  }
+}
+  
+{% endstylesheet %}
+
+
+
+
+
+<div class="freedom-in-podxgo">
+    <div style="font-size:{{ section.settings.font_size }}px;">
+      {{ section.settings.freedom_text }}
+      <img src={{ section.settings.image | image_url }}
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "freedom-in-podxgo",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"图片元素"
+      },
+      {
+        "type":"text",
+        "id":"freedom_text",
+        "label":"freedom文案"
+      },
+      {
+        "type":"range",
+        "id": "font_size",
+        "min": 12,
+        "max": 100,
+        "step": 2,
+        "label":"字体大小",
+        "default":24
+      }
+    ],
+     "presets":[
+       {
+         "name":"freedom-in-podxgo"
+       }
+     ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+
 
 {% javascript %}
 {% endjavascript %}
