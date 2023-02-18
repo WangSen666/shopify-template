@@ -262,8 +262,8 @@
             "button_link_2": "",
             "button_style_secondary_2": false,
             "button_color": "#000",
-            "margin-top": 0,
-            "margin-bottom": 56
+            "margin_top": 26,
+            "margin_bottom": 52
           }
         },
         "template--15597986709604__88d3df49-d732-44f6-ae60-87564fc3b463-1676378176d94c79b5-3": {
@@ -381,8 +381,8 @@
             "button_link_2": "",
             "button_style_secondary_2": false,
             "button_color": "#000",
-            "margin-top": 0,
-            "margin-bottom": 0
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-3": {
@@ -456,8 +456,8 @@
             "button_link_2": "",
             "button_style_secondary_2": false,
             "button_color": "#000",
-            "margin-top": 0,
-            "margin-bottom": 0
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "template--15597986709604__1993a033-3558-4c3f-b88e-839572631560-1676378176d94c79b5-3": {
