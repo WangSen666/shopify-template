@@ -55,13 +55,20 @@
       font-size:16px !important;
       font-weight:normal !important;
     }
+    .width_bg_card-two{
+      flex-wrap:wrap;
+    }
+      <div class="with_bg_card-box  >
+    .width_bg_card-box-two .{
+      width:50% !important;
+    }
   }
 </style>
 
 <div id="with_bg_card-{{ section.id }}" class="with_bg_card color-{{ section.settings.color_scheme }} ">
-  <div class="with_bg_card page-width">
+  <div class="with_bg_card page-width {% if  section.settings.modile_num=='three' %}width_bg_card-three{% endif %} {% if  section.settings.modile_num=='two' %}width_bg_card-two{% endif %}"">
     {%- for block in section.blocks -%}
-      <div class="with_bg_card-box">
+      <div class="with_bg_card-box  >
         <div class="with_bg_card-img">
           <img src="{{ block.settings.picture-card-item|image_url }}" />
         </div>
@@ -123,6 +130,16 @@
         ],
         "default": "background-1",
         "label": "t:sections.all.colors.label"
+      },
+      {
+        "type":"select",
+        "id":"modile_num",
+        "options":[
+          {"value":"two","label":"两列"},
+          {"value":"three","label":"三列"}
+        ],
+        "default":"three",
+        "label":"在移动设备上显示的列数"
       }
     ],
     "blocks": [
