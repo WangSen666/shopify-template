@@ -608,40 +608,6 @@
         "card_num": "2"
       }
     },
-    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6": {
-      "type": "newsletter",
-      "blocks": {
-        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe for more home ideas",
-            "heading_size": "h1"
-          }
-        },
-        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-0",
-        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-1",
-        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "b231cb1b-3200-4748-a578-3b75a4137632": {
       "type": "lr-block-component",
       "blocks": {
@@ -768,6 +734,40 @@
         "show_text_box": true,
         "layout": "text_first"
       }
+    },
+    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Stay Tuned",
+            "heading_size": "h1"
+          }
+        },
+        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
+          }
+        },
+        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-0",
+        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-1",
+        "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -782,7 +782,7 @@
     "main",
     "4a6aed55-5b72-479d-aa4f-cf8629c1247a",
     "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1",
-    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6",
-    "b231cb1b-3200-4748-a578-3b75a4137632"
+    "b231cb1b-3200-4748-a578-3b75a4137632",
+    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6"
   ]
 }
