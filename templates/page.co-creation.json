@@ -637,9 +637,9 @@
       ],
       "settings": {
         "is_titleBlock": "false",
-        "is_showTitle": "false",
+        "is_showTitle": "true",
         "layout": "big_image_first",
-        "card_num": ""
+        "card_num": "2"
       }
     }
   },
