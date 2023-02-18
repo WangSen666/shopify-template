@@ -576,6 +576,71 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Having questions about start your tiny home journey?  No worries. We are here to help.",
+            "text_color": "#000",
+            "font_size": 24,
+            "font_weight": 400
+          }
+        },
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-2": {
+          "type": "head_button",
+          "settings": {
+            "button_label_1": "Schedule a Call with us",
+            "button_url_1": "",
+            "button_color": "#000"
+          }
+        },
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
+            "heading_1": "",
+            "heading_2": "",
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        },
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "Zoning,",
+            "heading_2": "Insurances, Loan...……",
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        },
+        "7fe64ae1-f6ba-4465-ada8-2843b3183ae5": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-0",
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-2",
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-3",
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-4",
+        "7fe64ae1-f6ba-4465-ada8-2843b3183ae5"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "is_showTitle": "false",
+        "layout": "big_image_first",
+        "card_num": ""
+      }
     }
   },
   "order": [
@@ -589,6 +654,7 @@
     "1993a033-3558-4c3f-b88e-839572631560",
     "main",
     "4a6aed55-5b72-479d-aa4f-cf8629c1247a",
-    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6"
+    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6",
+    "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1"
   ]
 }
