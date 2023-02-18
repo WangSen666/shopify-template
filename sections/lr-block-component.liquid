@@ -195,8 +195,7 @@
               <div class="m">
                 <img
                   src="{{ block.settings.picture-card-item  | image_url }}"
-                  width="110"
-                  height="46"
+                  width="{{block.settings.image_width }}"
                   loading="lazy" />
               </div>
 
@@ -542,6 +541,15 @@
             "type": "image_picker",
             "id": "picture-card-item",
             "label": "图片卡片"
+          },
+          {
+            "type":"range",
+            "id":"image_width",
+            "min": 10,
+            "max": 150,
+            "step":4,
+            "label":"图片宽度",
+            "default":10
           }
         ]
       }, {
