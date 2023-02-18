@@ -170,7 +170,8 @@
         "2772c150-98d0-4684-832e-97ce36684814"
       ],
       "settings": {
-        "color_scheme": "background-1"
+        "color_scheme": "background-1",
+        "modile_num": "two"
       }
     },
     "77daf41e-76e1-4cb4-8aee-322818d4ffcc": {
@@ -230,7 +231,8 @@
         "381530d5-626c-4c7f-9656-ec696f970451"
       ],
       "settings": {
-        "color_scheme": "background-1"
+        "color_scheme": "background-1",
+        "modile_num": "three"
       }
     },
     "88d3df49-d732-44f6-ae60-87564fc3b463": {
