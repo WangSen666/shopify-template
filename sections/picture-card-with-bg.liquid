@@ -127,6 +127,7 @@ onload="this.media='all'"> {% endcomment %}
 <div id="{{ section.settings.id }}-card" class="page-width picture-card-with-bg">
   {% if section.settings.is_showTitle == 'true' %}
     <div class="picture-card-head">
+      {%if section.settings.is_titleBlock=='true'%}
       <div class="picture-card-head-item" style="z-index:5">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -150,9 +151,27 @@ onload="this.media='all'"> {% endcomment %}
         {%- endfor -%}
       </div>
     </div>
+    {% endif %}
+    {% if section.settings.is_titleBlock=='false'%}
+      <div class="picture-card-item-no-block ">
+      {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+            <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
+              {{ block.settings.heading }}
+            </div>
+
+          
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+    {% endif %}
   {% endif %}
   <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reverse;{%endif%}">
     <div class="picture-card-item-box">
+      
       <div class="picture-card-item ">
         {% for block in section.blocks %}
           {% case block.type %}
@@ -177,6 +196,7 @@ onload="this.media='all'"> {% endcomment %}
           {%- endcase -%}
         {%- endfor -%}
       </div>
+   
     </div>
     <div class="picture-card-item-box" style="max-height:768px;">
 
@@ -213,6 +233,21 @@ onload="this.media='all'"> {% endcomment %}
     "settings": [
       {
         "type": "select",
+        "id": "is_titleBlock",
+        "options": [
+          {
+            "value": "true",
+            "label": "是"
+          }, {
+            "value": "false",
+            "label": "否"
+          }
+        ],
+        "default": "false",
+        "label": "标题头部是否左右分块"
+      }, 
+      {
+        "type": "select",
         "id": "is_showTitle",
         "options": [
           {
@@ -225,7 +260,8 @@ onload="this.media='all'"> {% endcomment %}
         ],
         "default": "false",
         "label": "是否显示标题部分"
-      }, {
+      },
+      {
         "type": "select",
         "id": "layout",
         "options": [
@@ -335,7 +371,43 @@ onload="this.media='all'"> {% endcomment %}
             "default": 400
           }
         ]
-      }, {
+      }, 
+      {
+        "type":"head_button",
+        "name":"头部标题部分的按钮",
+        "settings":[
+          {
+            "type":"text",
+            "id":"button_label_1",
+            "default": "Button label",
+            "label":"按钮文案"
+          },
+          {
+            "type": "url",
+            "id": "button_url_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          }, {
+            "type": "select",
+            "id": "button_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "按钮颜色"
+          }
+        ]
+      },
+      
+      {
         "type": "picture_card_big",
         "name": "大卡片内容",
         "limit": 1,
@@ -409,7 +481,9 @@ onload="this.media='all'"> {% endcomment %}
             "type": "heading"
           }, {
             "type": "heading_1"
-          }, {
+          },
+          {"type":"head_button"},
+          {
             "type": "picture_card_big"
           }, {
             "type": "picture_card"
