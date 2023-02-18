@@ -641,6 +641,133 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "b231cb1b-3200-4748-a578-3b75a4137632": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why PODX GO?",
+            "heading_size": "h1",
+            "font-weight": 700,
+            "font_size": 36,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-1": {
+          "type": "text",
+          "settings": {
+            "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
+            "text_style": "body",
+            "font_size": 20,
+            "margin-top": 20,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "cebac261-7251-45f2-9f9d-54b6c181008c": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX  is changing that.",
+            "heading_size": "h1",
+            "font-weight": 700,
+            "font_size": 20,
+            "margin-top": 12,
+            "margin-bottom": 36,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Meet Our Team",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 30
+          }
+        },
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-3": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/12_1_1.jpg",
+            "is_imgFixed": "false"
+          }
+        },
+        "e03d0742-2329-4bbe-9546-2096e4ebb912": {
+          "type": "text",
+          "settings": {
+            "text": "Thank You for Your Support on the Tiny Home's Big Dreams!",
+            "text_style": "body",
+            "font_size": 20,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-4": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 110
+          }
+        },
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-5": {
+          "type": "right_text_wrapper",
+          "settings": {
+            "right_text": "",
+            "font_size": 24,
+            "is_border": "false"
+          }
+        },
+        "dd36985b-fc93-473c-b376-ac90226c34fb": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 110
+          }
+        },
+        "cd865e26-f90a-4b81-a383-f4d4dea59f94": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 110
+          }
+        },
+        "3e9ffd86-2f1e-4645-86a6-a04603665363": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 110
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-0",
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-1",
+        "cebac261-7251-45f2-9f9d-54b6c181008c",
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-2",
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-3",
+        "e03d0742-2329-4bbe-9546-2096e4ebb912",
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-4",
+        "template--15597986709604__b231cb1b-3200-4748-a578-3b75a4137632-1676705392cabfd7a3-5",
+        "dd36985b-fc93-473c-b376-ac90226c34fb",
+        "cd865e26-f90a-4b81-a383-f4d4dea59f94",
+        "3e9ffd86-2f1e-4645-86a6-a04603665363"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true,
+        "layout": "text_first"
+      }
     }
   },
   "order": [
@@ -655,6 +782,7 @@
     "main",
     "4a6aed55-5b72-479d-aa4f-cf8629c1247a",
     "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1",
-    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6"
+    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6",
+    "b231cb1b-3200-4748-a578-3b75a4137632"
   ]
 }
