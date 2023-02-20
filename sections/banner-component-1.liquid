@@ -199,7 +199,22 @@
           {%- when 'bannerComponentBottomInfo' -%}
           <div class="banner-component-1-bottom-info">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
+            {% if block.settings.heading!=blank %}
               <p>{{ block.settings.heading | escape }}</p>
+            {% endif %}
+            {% if block.settings.heading==blank %}
+              <div class="banner-href-icon">
+                  {%- for block_child in section.blocks -%}
+                  {%- case block_child.type -%}
+                    {%- when 'banner_href_icon' -%}
+                      <a class="banner-href-icon-item" href="#{{ block_child.settings.href_id }}">
+                          <img src="{{ block_child.settings.icon_item | image_url }}" width="{{ block_child.settings.icon_width }}" />
+                      </a>
+                  {%- endcase -%}
+                {%- endfor -%}
+              </div>
+            {% endif %}
+            
               {% comment %} <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span>
               </p> {% endcomment %}
             </div>
@@ -529,7 +544,34 @@
             "default": 24
           }
         ]
+      },
+      {
+        "type":"banner_href_icon",
+        "name":"banner超链接图标",
+        "limit":3,
+        "settings":[
+          {
+            "type":"range",
+            "id":"icon_width",
+            "min":10,
+            "max":110,
+            "step":10,
+            "default":40,
+            "label":"超链接图标宽度"
+          },
+          {
+            "type":"image_picker",
+            "id":"icon_item",
+            "label":"选择超链接图标"
+          },
+          {
+            "type":"text",
+            "id":"href_id",
+            "label":"超链接模块id名称"
+          }
+        ]
       }
+      
     ],
     "presets": [
       {
@@ -540,7 +582,9 @@
           }, {
             "type": "bannerComponentBottomInfo"
           },
-          {"type":"buttons"}
+          {"type":"buttons"},
+          {"type":"banner_href_icon"}
+          
         ]
       }
     ]
