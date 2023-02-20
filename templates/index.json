@@ -54,10 +54,9 @@
         "aef85398-5a17-4d10-8f9e-16bb9d094e34": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "3",
+            "banner_button_label": "",
             "banner_button_link": "",
-            "button_background": "#B5EF35",
-            "btn_radius": 24
+            "font_size": 24
           }
         }
       },
