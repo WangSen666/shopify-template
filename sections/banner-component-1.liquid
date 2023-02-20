@@ -145,13 +145,13 @@
     font-size: 18px;
     background: none;
     padding: 0 14px;
-  };
-
-  .banner-href-icon{
+  }
+ .banner-href-icon{
     display:flex;
     justify-content:space-between;
     max-width:50%;
   }
+ 
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner-component-1   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
