@@ -46,7 +46,7 @@
     .banner__right_bottom_info {
       flex-wrap: wrap;
     }
-    .banner-component-1-bottom-info .banner__right_bottom_info_btn {
+    .banner__right_bottom_info_btn {
       padding: 10px;
       font-size: 16px;
     }
@@ -185,6 +185,14 @@
             style="width:430px;text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
+          {%  when 'buttons' %}
+          <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+            <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+            <img
+              src="{{'button_logo_1.png'  | asset_url }}"
+              width="12"
+              height="12" />
+          </div>
           {%- when 'bannerComponentBottomInfo' -%}
           <div class="banner-component-1-bottom-info">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
