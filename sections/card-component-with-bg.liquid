@@ -46,36 +46,48 @@
   }
   @media screen and (max-width: 750px) {
     .with_bg_card-img {
-      height: 42rem;
+      max-height: 42rem !important;
     }
-    .with_bg_card-img img {
-      max-height: 42rem;
+    .with_bg_card-item-wrapper h2{
+      font-size:20px !important;
     }
-    .with_bg_card-item-wrapper h2 {
-      font-size: 20px !important;
+    .with_bg_card-item-wrapper div{
+      font-size:16px !important;
+      font-weight:normal !important;
     }
-    .with_bg_card .button {
-      padding: 0 6px !important;
+    .width_bg_card-two{
+      flex-wrap:wrap;
+    }
+    .width_bg_card-two .with_bg_card-box{
+      width:50% !important;
     }
   }
 </style>
 
 <div id="with_bg_card-{{ section.id }}" class="with_bg_card color-{{ section.settings.color_scheme }} ">
-  <div class="with_bg_card page-width">
+  <div class="with_bg_card page-width {% if  section.settings.modile_num=='three' %}width_bg_card-three{% endif %} {% if  section.settings.modile_num=='two' %}width_bg_card-two{% endif %}">
     {%- for block in section.blocks -%}
-      <div class="with_bg_card-box">
+      <div class="with_bg_card-box" >
         <div class="with_bg_card-img">
           <img src="{{ block.settings.picture-card-item|image_url }}" />
         </div>
         <div class="with_bg_card-item" style="background:rgba(0,0,0,{{block.settings.bg_opcity}})">
           <div class="with_bg_card-item-wrapper">
             <h2 style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;">{{ block.settings.heading }}</h2>
-            <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
-              <img
-                src="{{'button_logo_1.png'  | asset_url }}"
-                width="12"
-                height="12" />
-            </a>
+            {%  if block.settings.button_link_1!=blank %}
+              <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </a>
+            {% endif %}
+            {%  if block.settings.heading_1!=blank %}
+              <div style="color:#fff;font-size:24px;font-weight:bold;">
+                {{ block.settings.heading_1 }}
+              </div>
+            {% endif %}
+            
           </div>
         </div>
       </div>
@@ -87,7 +99,7 @@
 
 {% schema %}
   {
-    "name": "图片卡片",
+    "name": "带图片背景的卡片内容",
     "tag": "section",
     "class": "section",
     "settings": [
@@ -117,13 +129,23 @@
         ],
         "default": "background-1",
         "label": "t:sections.all.colors.label"
+      },
+      {
+        "type":"select",
+        "id":"modile_num",
+        "options":[
+          {"value":"two","label":"两列"},
+          {"value":"three","label":"三列"}
+        ],
+        "default":"three",
+        "label":"在移动设备上显示的列数"
       }
     ],
     "blocks": [
       {
         "type": "with_bg_card",
         "name": "图片卡片",
-        "limit": 3,
+        "limit": 4,
         "settings": [
           {
             "type": "image_picker",
@@ -133,7 +155,12 @@
           {
             "type": "text",
             "id": "heading",
-            "label": "文字内容"
+            "label": "标题内容"
+          },
+          {
+            "type": "text",
+            "id": "heading_1",
+            "label": "副标题内容"
           },
           {
             "type": "range",

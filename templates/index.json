@@ -59,9 +59,9 @@
         "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/untitled.121_2_1.jpg",
+        "image": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "center",
         "show_text_box": true,
@@ -232,7 +232,9 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "button_color": "#fff"
+            "button_color": "#fff",
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961": {
@@ -376,7 +378,9 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "button_color": "#fff"
+            "button_color": "#fff",
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         }
       },
@@ -489,19 +493,9 @@
           "type": "picture_card",
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
-            "heading_1": "",
-            "heading_2": "",
-            "button_label_1": "Button label",
-            "button_link_1": ""
-          }
-        },
-        "b7c6bfcb-b046-4243-854e-4d1382035e00": {
-          "type": "picture_card",
-          "settings": {
-            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
-            "heading_1": "",
-            "heading_2": "",
-            "button_label_1": "Button label",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
             "button_link_1": ""
           }
         }
@@ -512,13 +506,13 @@
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1",
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2",
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3",
-        "c9f46c3c-d9e5-4e1d-9806-02dafdb10b29",
-        "b7c6bfcb-b046-4243-854e-4d1382035e00"
+        "c9f46c3c-d9e5-4e1d-9806-02dafdb10b29"
       ],
       "settings": {
+        "is_titleBlock": "true",
         "is_showTitle": "true",
         "layout": "big_image_first",
-        "card_num": "3"
+        "card_num": "2"
       }
     },
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
@@ -529,6 +523,7 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/PODX_GO_BLOG_Purchasing_Process_2.png",
             "heading": "GRANDE SI",
+            "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -541,6 +536,7 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/12_1_1.jpg",
             "heading": "LIBRE SI",
+            "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -553,6 +549,7 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
             "heading": "LAVIDA SI",
+            "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -567,7 +564,8 @@
         "41d3954f-97fc-4a32-bb41-1c9d35c2f473"
       ],
       "settings": {
-        "color_scheme": "background-1"
+        "color_scheme": "background-1",
+        "modile_num": "three"
       }
     },
     "8bd58e50-4c4c-4374-9837-2903a599cddb": {
@@ -617,7 +615,9 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "button_color": "#000"
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b": {
@@ -634,7 +634,8 @@
         "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-4": {
           "type": "pictureCard",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 10
           }
         },
         "7a10bc36-f177-48f5-a62e-42f4f9502449": {
@@ -647,19 +648,22 @@
         "5b7c54e2-a9d8-4f54-9b32-e1808bfe7ee0": {
           "type": "pictureCard",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 10
           }
         },
         "45e6768c-14cb-4922-b671-55636001640a": {
           "type": "pictureCard",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 10
           }
         },
         "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e": {
           "type": "pictureCard",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "image_width": 10
           }
         }
       },
