@@ -38,7 +38,7 @@
         "4991807a-719b-461d-89ed-cf1f6fa593b9": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 52,
+            "icon_width": 70,
             "icon_item": "shopify:\/\/shop_images\/know-How.png",
             "href_id": ""
           }
@@ -46,7 +46,7 @@
         "6442020b-68cd-47b0-8735-c33a3267a7f1": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 78,
+            "icon_width": 100,
             "icon_item": "shopify:\/\/shop_images\/co-creation-lab.png",
             "href_id": ""
           }
@@ -54,7 +54,7 @@
         "ffecce46-5f20-46fa-8f36-ed34bb92ef26": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 74,
+            "icon_width": 92,
             "icon_item": "shopify:\/\/shop_images\/reseller-program.png",
             "href_id": ""
           }
