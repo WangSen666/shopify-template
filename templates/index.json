@@ -50,13 +50,23 @@
             "banner_button_link_1": "shopify:\/\/pages\/contact",
             "banner_button_label_1": "Download Floorplan"
           }
+        },
+        "aef85398-5a17-4d10-8f9e-16bb9d094e34": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "3",
+            "banner_button_link": "",
+            "button_background": "#B5EF35",
+            "btn_radius": 24
+          }
         }
       },
       "block_order": [
         "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-0",
         "d55ce47c-cb3a-418b-a3be-2742aabc1300",
         "9c34708f-d8ff-401c-94b2-4acd4397dd82",
-        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1"
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1",
+        "aef85398-5a17-4d10-8f9e-16bb9d094e34"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
