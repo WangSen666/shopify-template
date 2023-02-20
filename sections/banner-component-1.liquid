@@ -187,14 +187,14 @@
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
           {%  when 'buttons' %}
-          {% if block.settings.banner_button_link != blank %}
-          <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
-            <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
-            <img
-              src="{{'button_logo_1.png'  | asset_url }}"
-              width="12"
-              height="12" />
-          </div>
+          {% if block.settings.banner_button_label != blank %}
+            <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+              <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+              <img
+                src="{{'button_logo_1.png'  | asset_url }}"
+                width="12"
+                height="12" />
+            </div>
             {% endif %}
           {%- when 'bannerComponentBottomInfo' -%}
           <div class="banner-component-1-bottom-info">
@@ -204,7 +204,7 @@
               </p> {% endcomment %}
             </div>
             <div class="banner__right_bottom_info">
-          {% if block.settings.banner_button_link != blank %}
+          {% if block.settings.banner_button_label != blank %}
               <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
                 <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
                 <img
@@ -213,7 +213,7 @@
                   height="12" />
               </div>
               {% endif %}
-              {% if block.settings.banner_button_link_1 != blank %}
+              {% if block.settings.banner_button_label_1 != blank %}
                 <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
                   <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
                   <img
