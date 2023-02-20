@@ -18,7 +18,7 @@
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1": {
           "type": "bannerComponentBottomInfo",
           "settings": {
-            "heading": "FUll SIZE",
+            "heading": "",
             "heading_1": "Kitchen\/Bedroom\/Great Room",
             "price": "",
             "banner_button_link": "",
@@ -34,12 +34,39 @@
             "banner_button_link": "",
             "font_size": 18
           }
+        },
+        "4991807a-719b-461d-89ed-cf1f6fa593b9": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 50,
+            "icon_item": "shopify:\/\/shop_images\/know-How.png",
+            "href_id": ""
+          }
+        },
+        "6442020b-68cd-47b0-8735-c33a3267a7f1": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 70,
+            "icon_item": "shopify:\/\/shop_images\/co-creation-lab.png",
+            "href_id": ""
+          }
+        },
+        "ffecce46-5f20-46fa-8f36-ed34bb92ef26": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 70,
+            "icon_item": "shopify:\/\/shop_images\/reseller-program.png",
+            "href_id": ""
+          }
         }
       },
       "block_order": [
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0",
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1",
-        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2"
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2",
+        "4991807a-719b-461d-89ed-cf1f6fa593b9",
+        "6442020b-68cd-47b0-8735-c33a3267a7f1",
+        "ffecce46-5f20-46fa-8f36-ed34bb92ef26"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/21.jpg",
