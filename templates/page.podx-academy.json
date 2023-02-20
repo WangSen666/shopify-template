@@ -32,8 +32,7 @@
           "settings": {
             "banner_button_label": "Download Floorplan",
             "banner_button_link": "",
-            "button_background": "#B5EF35",
-            "btn_radius": 16
+            "font_size": 18
           }
         }
       },
