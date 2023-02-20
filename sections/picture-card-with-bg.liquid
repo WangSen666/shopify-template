@@ -85,12 +85,13 @@
   .picture-card-item-small-img {
     height: 100%;
   }
-  <<<<<<< HEAD ======= .picture-card-item-no-block {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 0;
+  .picture-card-item-no-block{
+    display:flex;
+    justify-content:space-between;
+    padding:14px 0;
   }
-  >  >  >  >  >  >  > 16738202426bb6dd93838ed4e81d91edc4199ad0 @media screen and (max-width:1280px) {
+  
+  @media screen and (max-width:1280px) {
     .picture-card-head .picture-card-head-item:last-child {
       right: 0 !important;
     }
@@ -98,6 +99,7 @@
       font-size: 60px !important;
     }
   }
+  
   @media screen and (max-width: 750px) {
     .picture-card-box {
       margin-bottom: 10px;
@@ -118,9 +120,9 @@
     .picture-card-bg {
       height: 334px !important;
     }
-    .picture-card-item-no-block {
-      flex-wrap: wrap;
-    }
+     .picture-card-item-no-block{
+       flex-wrap:wrap;
+     }
   }
 {%- endstyle -%}
 
@@ -135,46 +137,46 @@ onload="this.media='all'"> {% endcomment %}
 <div id="{{ section.settings.id }}-card" class="page-width picture-card-with-bg">
   {% if section.settings.is_showTitle == 'true' %}
     <div class="picture-card-head">
-      {% if section.settings.is_titleBlock == 'true' %}
-        <div class="picture-card-head-item" style="z-index:5">
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'heading' -%}
-              <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
-                {{ block.settings.heading }}
-              </div>
-
-            {%- endcase -%}
-          {%- endfor -%}
-        </div>
-        <div class="picture-card-head-item">
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'heading_1' -%}
-              <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
-                {{ block.settings.heading_1 }}
-              </div>
-
-            {%- endcase -%}
-          {%- endfor -%}
-        </div>
-      </div>
-    {% endif %}
-    {% if section.settings.is_titleBlock == 'false' %}
-      <div class="picture-card-item-no-block ">
+      {%if section.settings.is_titleBlock=='true'%}
+      <div class="picture-card-head-item" style="z-index:5">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
             <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
               {{ block.settings.heading }}
             </div>
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      <div class="picture-card-head-item">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading_1' -%}
+            <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
+              {{ block.settings.heading_1 }}
+            </div>
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    {% endif %}
+    {% if section.settings.is_titleBlock=='false'%}
+      <div class="picture-card-item-no-block ">
+      {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+            <div style="font-size:{{ block.settings.font_size }}px;color:{{ block.settings.text_color }};font-weight:{{ block.settings.font_weight }}">
+              {{ block.settings.heading }}
+            </div>
             {% when 'head_button' %}
-            <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="picture-card-item-button button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
-              <!--                   <img
-              src="{{'button_logo_1.png'  | asset_url }}"
-              width="12"
-              height="12" /> -->
-            </a>
+              <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="picture-card-item-button button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+<!--                   <img
+                    src="{{'button_logo_2.png'  | asset_url }}"
+                    width="12"
+                    height="12" /> -->
+                </a>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -183,7 +185,7 @@ onload="this.media='all'"> {% endcomment %}
   {% endif %}
   <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reverse;{%endif%}">
     <div class="picture-card-item-box">
-
+      
       <div class="picture-card-item ">
         {% for block in section.blocks %}
           {% case block.type %}
@@ -208,7 +210,7 @@ onload="this.media='all'"> {% endcomment %}
           {%- endcase -%}
         {%- endfor -%}
       </div>
-
+   
     </div>
     <div class="picture-card-item-box" style="max-height:768px;">
 
@@ -257,7 +259,8 @@ onload="this.media='all'"> {% endcomment %}
         ],
         "default": "false",
         "label": "标题头部是否左右分块"
-      }, {
+      }, 
+      {
         "type": "select",
         "id": "is_showTitle",
         "options": [
@@ -271,7 +274,8 @@ onload="this.media='all'"> {% endcomment %}
         ],
         "default": "false",
         "label": "是否显示标题部分"
-      }, {
+      },
+      {
         "type": "select",
         "id": "layout",
         "options": [
@@ -337,8 +341,7 @@ onload="this.media='all'"> {% endcomment %}
             "default": 400
           }
         ]
-      },
-      {
+      }, {
         "type": "heading_1",
         "name": "小图头顶标题",
         "settings": [
@@ -382,17 +385,18 @@ onload="this.media='all'"> {% endcomment %}
             "default": 400
           }
         ]
-      },
+      }, 
       {
-        "type": "head_button",
-        "name": "头部标题部分的按钮",
-        "settings": [
+        "type":"head_button",
+        "name":"头部标题部分的按钮",
+        "settings":[
           {
-            "type": "text",
-            "id": "button_label_1",
+            "type":"text",
+            "id":"button_label_1",
             "default": "Button label",
-            "label": "按钮文案"
-          }, {
+            "label":"按钮文案"
+          },
+          {
             "type": "url",
             "id": "button_url_1",
             "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
@@ -416,7 +420,7 @@ onload="this.media='all'"> {% endcomment %}
           }
         ]
       },
-
+      
       {
         "type": "picture_card_big",
         "name": "大卡片内容",
@@ -489,13 +493,10 @@ onload="this.media='all'"> {% endcomment %}
         "blocks": [
           {
             "type": "heading"
-          },
-          {
+          }, {
             "type": "heading_1"
           },
-          {
-            "type": "head_button"
-          },
+          {"type":"head_button"},
           {
             "type": "picture_card_big"
           }, {

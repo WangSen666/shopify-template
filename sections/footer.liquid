@@ -56,12 +56,19 @@
   .footer-block__newsletter .newsletter-form__button {
     display: none;
   }
+/*   底部组件菜单列表 */
+  .footer-block--menu{
+    text-align:right;
+  }
+   .footer-block__details-content>li{
+     margin-right:0 !important;
+   }
   /* 底部组件更多菜单 */
   .more-menu {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-item: center;
+    flex-direction:row-reverse;
     margin: 20px auto;
   }
   .more-menu div {
@@ -111,6 +118,17 @@
       font-weight: bolder;
     }
   }
+
+
+  @media screen and (max-width:750px){
+    /*   底部组件菜单列表 */
+    .footer-block--menu{
+      text-align:left;
+    }
+     .more-menu {
+      flex-direction:row;
+    }
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -126,7 +144,7 @@
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div class="company-logo">
+<!--         <div class="company-logo">
           {%- for block in section.blocks offset: 0 limit: 1 -%}
             {%- case block.type -%}
               {%- when 'image' -%}
@@ -140,10 +158,28 @@
                 </div>
             {%- endcase -%}
           {% endfor %}
-        </div>
+        </div> -->
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks offset: 1 -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            {%if block.type != 'link_list' %}
+               <div class="company-logo">
+                {%- for block in section.blocks offset: 0 limit: 1 -%}
+                  {%- case block.type -%}
+                    {%- when 'image' -%}
+                      <div class="footer-block__details-content footer-block-image">
+                        {%- if block.settings.image != blank -%}
+                          {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                          <img srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x" src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" style="max-width: min(100%, 130px);">
+                        {%- else -%}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                        {%- endif -%}
+                      </div>
+                  {%- endcase -%}
+                {% endfor %}
+              </div>
+            {% endif %}
+           
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}

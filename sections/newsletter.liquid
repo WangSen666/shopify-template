@@ -31,7 +31,7 @@
     height: 44px !important;
     color: #fff;
     font-size: 24px;
-    box-shadow: 0 0 14px #C8C8C6 !important;
+    box-shadow: 0 0 24px #C8C8C6 !important;
   }
   .newsletter-form__field-wrapper {
     width: unset !important;
@@ -42,6 +42,21 @@
       px;
       padding-bottom: {{ section.settings.padding_bottom }}
       px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .newsletter-form__field-wrapper {
+      flex-wrap: wrap;
+      flex-direction: row;
+      display: flex;
+    }
+    .bottom-filed {
+      width: 240px;
+    }
+
+    .bottom-filed-button {
+      width: 100px !important;
+      font-size: 18px !important;
     }
   }
   @media screen and (max-width: 750px) {

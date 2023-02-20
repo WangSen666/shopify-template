@@ -46,7 +46,7 @@
     .banner__right_bottom_info {
       flex-wrap: wrap;
     }
-    .banner-component-1-bottom-info .banner__right_bottom_info_btn {
+    .banner__right_bottom_info_btn {
       padding: 10px;
       font-size: 16px;
     }
@@ -64,7 +64,12 @@
       width:90% !important;
     }
  }
-  
+   @media screen and (max-width: 750px) {
+   .banner__left_bottom_info{
+     width:98% !important;
+   }
+    
+   }
 
   /* banner 组件 */
   .banner-component-1 {
@@ -125,26 +130,36 @@
     align-items: center;
     color: #fff;
     padding: 0 14px;
-    border-bottom: 1px solid #fff;
+    
     position:absolute;
     bottom:0;
+  }
+  .banner__left_bottom_info {
+    width:50%;
   }
   .banner-component-1-bottom-info .banner__right_bottom_info {
     display: flex;
     justify-content: space-around;
    
   }
-  .banner__right_bottom_info .banner__right_bottom_info_btn {
+ .banner__right_bottom_info_btn {
     padding: 0 14px;
     border-radius: 30px;
     border: 1px solid #fff;
     margin: 14px;
+   display:inline-block;
   }
   .banner-component-1-button {
     font-size: 18px;
     background: none;
     padding: 0 14px;
-  };
+  }
+ .banner-href-icon{
+    display:flex;
+    justify-content:space-between;
+    max-width:100%;
+  }
+ 
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner-component-1   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
@@ -185,14 +200,40 @@
             style="width:430px;text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
+          {%  when 'buttons' %}
+          {% if block.settings.banner_button_label != blank %}
+            <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+              <a style="font-size:{{ block.settings.font_size }}px;" {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+              <img
+                src="{{'button_logo_1.png'  | asset_url }}"
+                width="12"
+                height="12" />
+            </div>
+            {% endif %}
           {%- when 'bannerComponentBottomInfo' -%}
-          <div class="banner-component-1-bottom-info">
+          <div class="banner-component-1-bottom-info" style="border-bottom:{% if block.settings.is_border == 'true' %} 1px solid #fff;{% endif %}">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
+            {% if block.settings.heading!=blank %}
               <p>{{ block.settings.heading | escape }}</p>
+            {% endif %}
+            {% if block.settings.heading==blank %}
+              <div class="banner-href-icon">
+                  {%- for block_child in section.blocks -%}
+                  {%- case block_child.type -%}
+                    {%- when 'banner_href_icon' -%}
+                      <a class="banner-href-icon-item" href="#{{ block_child.settings.href_id }}">
+                          <img src="{{ block_child.settings.icon_item | image_url }}" width="{{ block_child.settings.icon_width }}" />
+                      </a>
+                  {%- endcase -%}
+                {%- endfor -%}
+              </div>
+            {% endif %}
+            
               {% comment %} <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span>
               </p> {% endcomment %}
             </div>
             <div class="banner__right_bottom_info">
+          {% if block.settings.banner_button_label != blank %}
               <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
                 <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
                 <img
@@ -200,16 +241,17 @@
                   width="12"
                   height="12" />
               </div>
-              <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
-                <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
-                <img
-                  src="{{'button_logo_1.png'  | asset_url }}"
-                  width="12"
-                  height="12" />
-              </div>
+              {% endif %}
+              {% if block.settings.banner_button_label_1 != blank %}
+                <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+                  <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %}class="button banner-component-1-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
+                  <img
+                    src="{{'button_logo_1.png'  | asset_url }}"
+                    width="12"
+                    height="12" />
+                </div>
+              {% endif %}
             </div>
-
-
           </div>
         {%- endcase -%}
       {%- endfor -%}
@@ -448,7 +490,8 @@
             "default": 400
           }
         ]
-      }, {
+      },
+      {
         "type": "bannerComponentBottomInfo",
         "name": "banner底部内容",
         "settings": [
@@ -485,9 +528,79 @@
             "type": "text",
             "label": "按钮文案",
             "id": "banner_button_label_1"
+          },
+          {
+            "type":"select",
+            "id":"is_border",
+            "options":[
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+           "default":"true",
+            "label":"是否展示底部边框"
+          }
+        ]
+      },
+      {
+        "type": "buttons",
+        "name": "t:sections.image-banner.blocks.buttons.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "banner_button_label",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          },
+          {
+            "type": "url",
+            "id": "banner_button_link",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 36,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }
+        ]
+      },
+      {
+        "type":"banner_href_icon",
+        "name":"banner超链接图标",
+        "limit":3,
+        "settings":[
+          {
+            "type":"range",
+            "id":"icon_width",
+            "min":10,
+            "max":110,
+            "step":2,
+            "default":40,
+            "label":"超链接图标宽度"
+          },
+          {
+            "type":"image_picker",
+            "id":"icon_item",
+            "label":"选择超链接图标"
+          },
+          {
+            "type":"text",
+            "id":"href_id",
+            "label":"超链接模块id名称"
           }
         ]
       }
+      
     ],
     "presets": [
       {
@@ -497,7 +610,10 @@
             "type": "heading"
           }, {
             "type": "bannerComponentBottomInfo"
-          }
+          },
+          {"type":"buttons"},
+          {"type":"banner_href_icon"}
+          
         ]
       }
     ]
