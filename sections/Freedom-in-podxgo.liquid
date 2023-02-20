@@ -35,7 +35,7 @@
 
 
 
-<div class="freedom-in-podxgo">
+<div class="freedom-in-podxgo" >
     <div style="font-size:{{ section.settings.font_size }}px;font-weight:bold;">
       {{ section.settings.freedom_text }}
       <img src={{ section.settings.image | image_url }}
@@ -47,6 +47,8 @@
 {% schema %}
   {
     "name": "freedom-in-podxgo",
+    "tag":"section",
+    "class":"setion",
     "settings": [
       {
         "type":"image_picker",
