@@ -118,6 +118,17 @@
       font-weight: bolder;
     }
   }
+
+
+  @media screen and (max-width:750px){
+    /*   底部组件菜单列表 */
+    .footer-block--menu{
+      text-align:left;
+    }
+     .more-menu {
+      flex-direction:row;
+    }
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
