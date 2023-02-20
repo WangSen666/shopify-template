@@ -130,7 +130,7 @@
     align-items: center;
     color: #fff;
     padding: 0 14px;
-    border-bottom: 1px solid #fff;
+    
     position:absolute;
     bottom:0;
   }
@@ -211,7 +211,7 @@
             </div>
             {% endif %}
           {%- when 'bannerComponentBottomInfo' -%}
-          <div class="banner-component-1-bottom-info">
+          <div class="banner-component-1-bottom-info" style="border-bottom:{% if block.settings.is_border=='true' %}border-bottom: 1px solid #fff;{% endif %}">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
             {% if block.settings.heading!=blank %}
               <p>{{ block.settings.heading | escape }}</p>
@@ -528,6 +528,21 @@
             "type": "text",
             "label": "按钮文案",
             "id": "banner_button_label_1"
+          },
+          {
+            "type":"select",
+            "id":"is_border",
+            "options":[
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+           "default":"true",
+            "label":"是否展示底部边框"
           }
         ]
       },
