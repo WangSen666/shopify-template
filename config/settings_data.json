@@ -169,15 +169,8 @@
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Subscribe",
-              "subtext": "<p>Sign up for exclusive offers, original stories, activism awareness, events and more.<br\/><br\/><\/p>"
-            }
-          },
-          "77199c46-4842-4ce5-bd2d-620d5d8ab7f2": {
-            "type": "text",
-            "settings": {
-              "heading": "Help Center",
-              "subtext": "<p>If you are having problem with personal <\/p><p>data or any event please email us at<\/p><p> info@podxgo.com<br\/><br\/><\/p>"
+              "heading": "Showroom",
+              "subtext": "<p>5050 S Archibald Ave<br\/>Ontario, CA 91762<\/p><p><\/p><p><\/p><p>Book a 30 min meeting with us to go over your tiny house questions<br\/><br\/><\/p>"
             }
           },
           "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c": {
@@ -191,7 +184,6 @@
         "block_order": [
           "51f9b9e3-ff6c-4caf-82c4-5e5b62745f47",
           "footer-2",
-          "77199c46-4842-4ce5-bd2d-620d5d8ab7f2",
           "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c"
         ],
         "settings": {
