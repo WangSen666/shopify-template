@@ -174,6 +174,14 @@
         "modile_num": "two"
       }
     },
+    "16120155-bf92-4303-8a4b-19304e4d01f5": {
+      "type": "Freedom-in-podxgo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/podxgo_logo1.png",
+        "freedom_text": "Freedom in",
+        "font_size": 36
+      }
+    },
     "3a7ceead-5109-443a-8288-e7d3be855076": {
       "type": "card-component-with-bg",
       "blocks": {
@@ -760,20 +768,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "16120155-bf92-4303-8a4b-19304e4d01f5": {
-      "type": "Freedom-in-podxgo",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/podxgo_logo1.png",
-        "freedom_text": "Freedom in",
-        "font_size": 36
-      }
     }
   },
   "order": [
     "45cbd826-d11e-470e-ad3e-aff37d062584",
     "c379e254-4479-46c4-a625-84e43bf0d895",
     "3ff863fe-33c0-4765-9287-c87e262a93d2",
+    "16120155-bf92-4303-8a4b-19304e4d01f5",
     "3a7ceead-5109-443a-8288-e7d3be855076",
     "88d3df49-d732-44f6-ae60-87564fc3b463",
     "16661c52-f36f-4518-afb5-1fed2485d653",
@@ -782,7 +783,6 @@
     "4a6aed55-5b72-479d-aa4f-cf8629c1247a",
     "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1",
     "b231cb1b-3200-4748-a578-3b75a4137632",
-    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6",
-    "16120155-bf92-4303-8a4b-19304e4d01f5"
+    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6"
   ]
 }
