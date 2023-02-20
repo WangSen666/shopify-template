@@ -11,7 +11,7 @@
   .newsletter-form {
     align-items: flex-start;
     /* margin: 0 auto; */
-    max-width: 36rem;
+    max-width: 46rem;
   }
 }
 
@@ -52,12 +52,12 @@
 }
 
 .newsletter-form__button:focus-visible {
-  box-shadow: 0 0 0 .3rem rgb(var(--color-background)),0 0 0 .4rem rgba(var(--color-foreground));
+  box-shadow: 0 0 0 .3rem rgb(var(--color-background)), 0 0 0 .4rem rgba(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
 
 .newsletter-form__button:focus {
-  box-shadow: 0 0 0 .3rem rgb(var(--color-background)),0 0 0 .4rem rgba(var(--color-foreground));
+  box-shadow: 0 0 0 .3rem rgb(var(--color-background)), 0 0 0 .4rem rgba(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
 
