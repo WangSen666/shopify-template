@@ -760,6 +760,14 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "16120155-bf92-4303-8a4b-19304e4d01f5": {
+      "type": "Freedom-in-podxgo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/t_1.png",
+        "freedom_text": "Freedom in",
+        "font_size": 36
+      }
     }
   },
   "order": [
@@ -774,6 +782,7 @@
     "4a6aed55-5b72-479d-aa4f-cf8629c1247a",
     "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1",
     "b231cb1b-3200-4748-a578-3b75a4137632",
-    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6"
+    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6",
+    "16120155-bf92-4303-8a4b-19304e4d01f5"
   ]
 }
