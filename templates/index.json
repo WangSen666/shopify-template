@@ -372,7 +372,7 @@
         "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/products\/测试产品1",
             "button_style_secondary_1": false,
             "button_label_2": "",
