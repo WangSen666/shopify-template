@@ -164,11 +164,14 @@
               <span>{{ block.settings.text | escape }}</span>
             </div>
             {%- when 'buttons' -%}
-            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }} style="margin-top:{{  block.settings.margin_top }}px;margin-bottom:{{  block.settings.margin_bottom }}px;">
+            <div
+              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              {{ block.shopify_attributes }}
+              style="margin-top:{{  block.settings.margin_top }}px;margin-bottom:{{  block.settings.margin_bottom }}px;">
               {%- if block.settings.button_label_1 != blank -%}
                 <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
                   <img
-                    src="{{'button_logo_1.png'  | asset_url }}"
+                    src="{{'button_logo_2.png'  | asset_url }}"
                     width="12"
                     height="12" />
                 </a>
@@ -504,8 +507,7 @@
             ],
             "default": "#000",
             "label": "按钮颜色"
-          },
-          {
+          }, {
             "type": "range",
             "id": "margin_top",
             "min": 0,
@@ -560,15 +562,14 @@
             "type": "image_picker",
             "id": "picture-card-item",
             "label": "图片卡片"
-          },
-          {
-            "type":"range",
-            "id":"image_width",
+          }, {
+            "type": "range",
+            "id": "image_width",
             "min": 10,
             "max": 150,
-            "step":4,
-            "label":"图片宽度",
-            "default":10
+            "step": 4,
+            "label": "图片宽度",
+            "default": 10
           }
         ]
       }, {
