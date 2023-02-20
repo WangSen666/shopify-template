@@ -427,7 +427,7 @@ noscript .localization-selector.link {
     color: rgb(var(--color-foreground));
     text-decoration: underline;
     text-underline-offset: 0.3rem;
-    text-decoration-color: 1px solid #B1EB35;
+    text-decoration-color:#B1EB35;
   }
 
   .footer-block__details-content .list-menu__item--active:hover {
