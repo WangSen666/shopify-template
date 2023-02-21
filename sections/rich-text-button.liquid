@@ -282,6 +282,42 @@
             "unit": "px",
             "label": "字体大小",
             "default": 24
+          },
+          {
+            "type": "select",
+            "id": "button_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "按钮颜色"
+          }, {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
           }
         ]
       },
@@ -290,8 +326,6 @@
         "name":"图片内容",
         "limit":3,
         "settings":[
-          
-          
           {
             "type": "range",
             "id": "font_size",
