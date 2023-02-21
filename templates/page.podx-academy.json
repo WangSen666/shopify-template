@@ -49,20 +49,20 @@
         "6442020b-68cd-47b0-8735-c33a3267a7f1": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 100,
-            "banner_href_text": "",
-            "font_size": 24,
-            "icon_item": "shopify:\/\/shop_images\/co-creation-lab.png",
+            "icon_width": 60,
+            "banner_href_text": "Co-Creation Lab",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-44.png",
             "href_id": ""
           }
         },
         "ffecce46-5f20-46fa-8f36-ed34bb92ef26": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 92,
-            "banner_href_text": "",
-            "font_size": 24,
-            "icon_item": "shopify:\/\/shop_images\/reseller-program.png",
+            "icon_width": 60,
+            "banner_href_text": "Reseller Program",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-45.png",
             "href_id": ""
           }
         }
