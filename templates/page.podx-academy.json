@@ -96,10 +96,57 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "Join in Co-Creation Lab.",
+            "heading_2": "Find out how we create safer,smarter, more beautiful, and affordable tiny homes.",
+            "button_label_1": "Design Your PODX GO Home",
+            "button_link_1": ""
+          }
+        },
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "How will you",
+            "heading_2": "get your PODX GO home?",
+            "button_label_1": "Reseller  Application",
+            "button_link_1": ""
+          }
+        },
+        "2eeede2b-68e0-4778-bd5d-b1ef7d6a6ea3": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-3",
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-4",
+        "2eeede2b-68e0-4778-bd5d-b1ef7d6a6ea3"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "is_showTitle": "false",
+        "layout": "big_image_first",
+        "card_num": "2"
+      }
     }
   },
   "order": [
     "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
-    "main"
+    "main",
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24"
   ]
 }
