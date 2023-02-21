@@ -322,7 +322,10 @@
           "settings": {
             "banner_button_label": "Button label",
             "banner_button_link": "",
-            "font_size": 24
+            "font_size": 14,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-3": {
