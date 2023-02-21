@@ -39,8 +39,10 @@
         "4991807a-719b-461d-89ed-cf1f6fa593b9": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 70,
-            "icon_item": "shopify:\/\/shop_images\/know-How.png",
+            "icon_width": 60,
+            "banner_href_text": "know-How",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-42.png",
             "href_id": ""
           }
         },
@@ -48,6 +50,8 @@
           "type": "banner_href_icon",
           "settings": {
             "icon_width": 100,
+            "banner_href_text": "",
+            "font_size": 24,
             "icon_item": "shopify:\/\/shop_images\/co-creation-lab.png",
             "href_id": ""
           }
@@ -56,6 +60,8 @@
           "type": "banner_href_icon",
           "settings": {
             "icon_width": 92,
+            "banner_href_text": "",
+            "font_size": 24,
             "icon_item": "shopify:\/\/shop_images\/reseller-program.png",
             "href_id": ""
           }
