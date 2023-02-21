@@ -216,22 +216,68 @@
         "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4": {
           "type": "picture_card",
           "settings": {
-            "heading_1": "",
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "What type of vehicle do I need",
+            "heading_2": "to move with my PODX GO home?",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "a09c0897-4858-4678-82ab-aff29a6d8c86": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "ow are water, seewage and power handled?",
             "heading_2": "",
-            "button_label_1": "Button label",
+            "button_label_1": "Learn More",
             "button_link_1": ""
           }
         }
       },
       "block_order": [
         "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3",
-        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4"
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4",
+        "a09c0897-4858-4678-82ab-aff29a6d8c86"
       ],
       "settings": {
         "is_titleBlock": "false",
         "is_showTitle": "false",
         "layout": "big_image_first",
-        "card_num": ""
+        "card_num": "2"
+      }
+    },
+    "cacc527b-9b28-426c-b16e-1ee06493a8be": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Stay Tuned",
+            "heading_size": "h1"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -240,6 +286,7 @@
     "main",
     "3d5e40ee-235a-4ef0-860b-16a231f89f24",
     "4ed248af-9dc2-4718-99ad-42f0ae5c736e",
-    "7e29cb9e-96fa-4ebd-b240-abe0de88455f"
+    "7e29cb9e-96fa-4ebd-b240-abe0de88455f",
+    "cacc527b-9b28-426c-b16e-1ee06493a8be"
   ]
 }
