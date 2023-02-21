@@ -167,11 +167,16 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;font-weight:{{ block.settings.font-weight }}">
+            <h2 class="rich-text-heading" {{ block.shopify_attributes }} style="color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;font-weight:{{ block.settings.font-weight }}">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
-
+          <div class="text-wrapper" style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;font-weight:{{ block.settings.font-weight }}">
+              <span>
+                {{ block.settings.text }}
+              </span>
+            
+          </div>
 
 
       {% endcase %}
