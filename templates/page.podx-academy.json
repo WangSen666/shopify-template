@@ -142,11 +142,69 @@
         "layout": "big_image_first",
         "card_num": "2"
       }
+    },
+    "4ed248af-9dc2-4718-99ad-42f0ae5c736e": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "PODX GO Quality Testing Report",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/4_06c2cb2e-e827-4b8f-aecd-290857b6e9d0.jpg",
+            "heading_1": "Download Grande S1 Floorplan",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "febfefa3-18eb-4429-ae90-2b32d8723f67": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/20230206105704.jpg",
+            "heading_1": "Upgrade Off-Grid Kit and Home Appliances Kit",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "29ed5737-8bdb-4580-8079-c54a58e571ac": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
+            "heading_1": "Zoning, Insurances, Loan...",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-3",
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-4",
+        "febfefa3-18eb-4429-ae90-2b32d8723f67",
+        "29ed5737-8bdb-4580-8079-c54a58e571ac"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "is_showTitle": "false",
+        "layout": "big_image_last",
+        "card_num": "3"
+      }
     }
   },
   "order": [
     "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
     "main",
-    "3d5e40ee-235a-4ef0-860b-16a231f89f24"
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24",
+    "4ed248af-9dc2-4718-99ad-42f0ae5c736e"
   ]
 }
