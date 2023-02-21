@@ -31,32 +31,7 @@
   @media screen and (max-width: 750px) {
 
 
-    .banner-component-1-bottom-info {
-      border: none !important;
-      flex-wrap: wrap;
-    }
-    .banner-component-1 .banner-component__media {
-      min-height: 80rem;
-      width: 100%;
-    }
-    .banner-component-1-bottom-info {
-      flex-wrap: wrap;
-      position:relative;
-    }
-    .banner__right_bottom_info {
-      flex-wrap: wrap;
-    }
-    .banner__right_bottom_info_btn {
-      padding: 10px;
-      font-size: 16px;
-    }
-    .banner-component-1-button {
-      font-size: 16px;
-      padding: 0 10px;
-    }
-    .banner-component__content h2 {
-      width: 100% !important;
-    }
+   
   }
   
  @media screen and (max-width: 1080px) {
@@ -70,95 +45,18 @@
    }
     
    }
-
-  /* banner 组件 */
-  .banner-component-1 {
-    position: relative
-  }
-  .banner-component-1 .banner-component__content {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    text-align: left;
-  }
-
-  .banner-component-1 .banner-component__content .banner-component_1__box {
-    padding: 0;
-    width: 100%;
-    position: absolute;
-    height:70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.rich-text-button_button {
     background: none;
-    text-align: left;
+    /* color: #fff; */
+    /* border: 1px solid #fff; */
+    border-radius: 20px;
+    padding: 6px 14px;
   }
-  .banner-component-1 .banner-component__content .banner-component_1__box--left {
-    padding: 0;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background: none;
-    text-align: left;
+  .rich-text-button_buttonimg {
+    margin-left: 14px;
+    vertical-align: middle;
   }
-  .banner-component-1 .banner-component__content .banner-component_1__box--right {
-    padding: 0;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: right;
-    transform: translateY(-50%);
-    background: none;
-    text-align: right;
-  }
-  .banner-component-1 .banner-component__media {
-    height: 100%;
-    width: 100%;
-    position: static;
-  }
-
-  .banner-component-1-bottom-info {
-    display: flex;
-    width:100%;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 0 14px;
-    
-    position:absolute;
-    bottom:0;
-  }
-  .banner__left_bottom_info {
-    width:50%;
-  }
-  .banner-component-1-bottom-info .banner__right_bottom_info {
-    display: flex;
-    justify-content: space-around;
-   
-  }
- .banner__right_bottom_info_btn {
-    padding: 0 14px;
-    border-radius: 30px;
-    border: 1px solid #fff;
-    margin: 14px;
-   display:inline-block;
-  }
-  .banner-component-1-button {
-    font-size: 18px;
-    background: none;
-    padding: 0 14px;
-  }
- .banner-href-icon{
-    display:flex;
-    justify-content:space-between;
-    max-width:100%;
-  }
+  
  
 {%- endstyle -%}
 
@@ -175,161 +73,36 @@
               <span>
                 {{ block.settings.text }}
               </span>
-            
           </div>
-
+          {% when button %}
+           <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="rich-text-button_button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+              <img
+                src="{{   'button_logo_1.png' | asset_url }}"
+                width="12"
+                height="12" />
+          </a>
+          
 
       {% endcase %}
     {% endfor %}
+    <div class="rich-text-img">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {% when 'rich_text_img' %}
+          <img height="26" src="{{ block.settings.rich_text_img | image_url }}" />
+      {% endcase %}
+    {% endfor %}
+    </div>
   </div>
 
 </div>
 
 {% schema %}
   {
-    "name": "Banner Compoent1",
+    "name": "无背景图的富文本",
     "tag": "section",
     "class": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "背景图"
-      },
-
-      {
-        "type": "range",
-        "id": "image_overlay_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 10,
-        "unit": "%",
-        "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
-        "default": 0
-      },
-      {
-        "type": "select",
-        "id": "image_height",
-        "options": [
-          {
-            "value": "small",
-            "label": "t:sections.image-banner.settings.image_height.options__1.label"
-          }, {
-            "value": "medium",
-            "label": "t:sections.image-banner.settings.image_height.options__2.label"
-          }, {
-            "value": "large",
-            "label": "t:sections.image-banner.settings.image_height.options__3.label"
-          }
-        ],
-        "default": "medium",
-        "label": "t:sections.image-banner.settings.image_height.label",
-        "info": "t:sections.image-banner.settings.image_height.info"
-      },
-      {
-        "type": "checkbox",
-        "id": "adapt_height_first_image",
-        "default": false,
-        "label": "t:sections.image-banner.settings.adapt_height_first_image.label",
-        "info": "t:sections.image-banner.settings.adapt_height_first_image.info"
-      }, {
-        "type": "select",
-        "id": "desktop_content_position",
-        "options": [
-          {
-            "value": "left",
-            "label": "居左"
-          }, {
-            "value": "center",
-            "label": "居中"
-          }, {
-            "value": "right",
-            "label": "居右"
-          }
-        ],
-        "default": "center",
-        "label": "t:sections.image-banner.settings.desktop_content_position.label"
-      }, {
-        "type": "checkbox",
-        "id": "show_text_box",
-        "default": true,
-        "label": "t:sections.image-banner.settings.show_text_box.label"
-      }, {
-        "type": "select",
-        "id": "desktop_content_alignment",
-        "options": [
-          {
-            "value": "left",
-            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__1.label"
-          }, {
-            "value": "center",
-            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__2.label"
-          }, {
-            "value": "right",
-            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__3.label"
-          }
-        ],
-        "default": "center",
-        "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
-      }, {
-        "type": "select",
-        "id": "color_scheme",
-        "options": [
-          {
-            "value": "accent-1",
-            "label": "t:sections.all.colors.accent_1.label"
-          },
-          {
-            "value": "accent-2",
-            "label": "t:sections.all.colors.accent_2.label"
-          },
-          {
-            "value": "background-1",
-            "label": "t:sections.all.colors.background_1.label"
-          },
-          {
-            "value": "background-2",
-            "label": "t:sections.all.colors.background_2.label"
-          }, {
-            "value": "inverse",
-            "label": "t:sections.all.colors.inverse.label"
-          }
-        ],
-        "default": "background-1",
-        "label": "t:sections.all.colors.label",
-        "info": "t:sections.image-banner.settings.color_scheme.info"
-      }, {
-        "type": "header",
-        "content": "t:sections.image-banner.settings.header.content"
-      }, {
-        "type": "select",
-        "id": "mobile_content_alignment",
-        "options": [
-          {
-            "value": "left",
-            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__1.label"
-          }, {
-            "value": "center",
-            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__2.label"
-          }, {
-            "value": "right",
-            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__3.label"
-          }
-        ],
-        "default": "center",
-        "label": "t:sections.image-banner.settings.mobile_content_alignment.label"
-      }, {
-        "type": "checkbox",
-        "id": "stack_images_on_mobile",
-        "default": true,
-        "label": "t:sections.image-banner.settings.stack_images_on_mobile.label"
-      }, {
-        "type": "checkbox",
-        "id": "show_text_below",
-        "default": true,
-        "label": "t:sections.image-banner.settings.show_text_below.label"
-      }
-    ],
+    "settings": [],
     "blocks": [
       {
         "type": "heading",
@@ -416,63 +189,76 @@
           }
         ]
       },
-      {
-        "type": "bannerComponentBottomInfo",
-        "name": "banner底部内容",
+       {
+        "type": "text",
+        "name": "文本内容",
+        "limit": 6,
         "settings": [
           {
             "type": "text",
-            "id": "heading",
-            "default": "FUll SIZE",
-            "label": "标题1"
+            "id": "text",
+            "default": "rich text",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
           },
           {
-            "type": "text",
-            "id": "heading_1",
-            "default": "Kitchen/Bedroom/Great Room",
-            "label": "副标题"
-          },
-          {
-            "type": "text",
-            "label": "价格",
-            "id": "price"
-          },
-          {
-            "type": "url",
-            "label": "按钮",
-            "id": "banner_button_link"
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
           }, {
-            "type": "text",
-            "label": "按钮文案",
-            "id": "banner_button_label"
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
           }, {
-            "type": "url",
-            "label": "按钮",
-            "id": "banner_button_link_1"
-          }, {
-            "type": "text",
-            "label": "按钮文案",
-            "id": "banner_button_label_1"
-          },
-          {
-            "type":"select",
-            "id":"is_border",
-            "options":[
+            "type": "select",
+            "id": "text_color",
+            "options": [
               {
-                "value": "true",
-                "label": "是"
+                "value": "#B5EF35",
+                "label": "主题色"
               }, {
-                "value": "false",
-                "label": "否"
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
               }
             ],
-           "default":"true",
-            "label":"是否展示底部边框"
+            "default": "#000",
+            "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 400,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
           }
         ]
       },
       {
-        "type": "buttons",
+        "type": "button",
         "name": "t:sections.image-banner.blocks.buttons.name",
         "limit": 1,
         "settings": [
@@ -500,24 +286,12 @@
         ]
       },
       {
-        "type":"banner_href_icon",
-        "name":"banner超链接图标",
+        "type":"rich_text_img",
+        "name":"图片内容",
         "limit":3,
         "settings":[
-          {
-            "type":"range",
-            "id":"icon_width",
-            "min":10,
-            "max":110,
-            "step":2,
-            "default":40,
-            "label":"超链接图标宽度"
-          },
-          {
-            "type":"text",
-            "id":"banner_href_text",
-            "label":"图标下面的文字"
-          },
+          
+          
           {
             "type": "range",
             "id": "font_size",
@@ -530,13 +304,8 @@
           },
           {
             "type":"image_picker",
-            "id":"icon_item",
+            "id":"rich_text_img",
             "label":"选择超链接图标"
-          },
-          {
-            "type":"text",
-            "id":"href_id",
-            "label":"超链接模块id名称"
           }
         ]
       }
@@ -549,10 +318,10 @@
           {
             "type": "heading"
           }, {
-            "type": "bannerComponentBottomInfo"
+            "type": "text"
           },
-          {"type":"buttons"},
-          {"type":"banner_href_icon"}
+          {"type":"button"},
+          {"type":"rich_text_img"}
           
         ]
       }
