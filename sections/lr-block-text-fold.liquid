@@ -80,11 +80,11 @@
         {% case block.type %}
             {% when "fold_wrapper" %}
              <div class="fold-wrapper">
-                <div class="fold-wrapper-head" @click="clickFoldItem">
+                <div class="fold-wrapper-head" onclick="clickFoldItem" style="font-size:{{ block.settings.heading_size }}px;">
                   {{block.settings.heading  }}
                   <img src="" />
                 </div> 
-                <div class="fold-wrapper-text">
+                <div class="fold-wrapper-text" style="font-size:{{ block.settings.text_size }}px;">
                   {{block.settings.text  }}
                 </div> 
              </div>
