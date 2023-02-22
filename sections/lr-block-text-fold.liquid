@@ -116,14 +116,14 @@
   var clickFoldItem=function(event){
       var fold_text=event.target.nextElementSibling;
     
-    if(fold_text.style.display="none"){
+    if(event.target.style.borderBottom!="none"){
        event.target.style.borderBottom="none";
       fold_text.style.display="block"
     }else{
        event.target.style.borderBottom="1px solid black;";
       fold_text.style.display="none"
     }
-    }
+  }
   </script>
 
 
