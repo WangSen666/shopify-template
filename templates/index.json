@@ -851,16 +851,53 @@
         "template--15597986676836__b9c886e0-f5f5-461e-becd-4322246c159c-167707289373c1ccbf-0": {
           "type": "column_item",
           "settings": {
-            "heading_1": "",
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-46.png",
+            "heading_1": "Address",
             "heading_size": 14,
-            "text_1": "",
-            "text_2": "",
+            "text_1": "5050 S Archibald Ave",
+            "text_2": "Ontario, CA 91762",
+            "text_size": 14
+          }
+        },
+        "765cd0f2-0913-40e3-9aae-ae8b2c35fff9": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-48.png",
+            "heading_1": "Business Hours",
+            "heading_size": 18,
+            "text_1": "Monday to Friday",
+            "text_2": "8:30am to 5:00pm PST",
+            "text_size": 18
+          }
+        },
+        "414c3c36-73fa-468a-80fd-78a4767a6da1": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-49.png",
+            "heading_1": "Chat Online",
+            "heading_size": 14,
+            "text_1": "Monday to Friday",
+            "text_2": "8:00am to 3:00pm PST",
+            "text_size": 14
+          }
+        },
+        "69725290-bf6e-4b82-a86a-34cd62b081a8": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-50.png",
+            "heading_1": "Email",
+            "heading_size": 14,
+            "text_1": "support@podxgo.com",
+            "text_2": "dealer@podxgo.com",
             "text_size": 14
           }
         }
       },
       "block_order": [
-        "template--15597986676836__b9c886e0-f5f5-461e-becd-4322246c159c-167707289373c1ccbf-0"
+        "template--15597986676836__b9c886e0-f5f5-461e-becd-4322246c159c-167707289373c1ccbf-0",
+        "765cd0f2-0913-40e3-9aae-ae8b2c35fff9",
+        "414c3c36-73fa-468a-80fd-78a4767a6da1",
+        "69725290-bf6e-4b82-a86a-34cd62b081a8"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/podxgo_logo1.png",
