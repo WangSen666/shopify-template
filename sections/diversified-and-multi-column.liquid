@@ -1,12 +1,83 @@
+{% stylesheet %}
+@media screen and (max-width:750px){
+  .freedom-in-podxgo{
+    padding:14px;
+    margin:0 auto;
+    width:98%;
+    text-align:center
+  }
+  .freedom-in-podxgo img{
+    width:170px !important;
+  }
+   .freedom-in-podxgo div{
+    font-size:30px !important;
+    margin:0 auto;
+    text-align:center
+   }
+}
+
+@media screen and (min-width:750px){
+  .freedom-in-podxgo{
+    padding:14px;
+    margin:0 auto;
+    width:100%;
+    text-align:center
+  }
+  .freedom-in-podxgo img{
+    width:170px;
+    vertical-align:middle;
+  }
+}
+  
+{% endstylesheet %}
+
+
+
+
+
+<div class="diversified-and-multi-column page-width" >
+    <div style="font-size:{{ section.settings.font_size }}px;font-weight:bold;color:black;">
+      {{ section.settings.freedom_text }}
+      <img src={{ section.settings.image | image_url }}
+    </div>
+  
+</div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "多样化多列",
+    "tag":"section",
+    "class":"setion",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"图片元素"
+      },
+      {
+        "type":"text",
+        "id":"freedom_text",
+        "label":"freedom文案"
+      },
+      {
+        "type":"range",
+        "id": "font_size",
+        "min": 12,
+        "max": 100,
+        "step": 2,
+        "label":"字体大小",
+        "default":24
+      }
+    ],
+    "blocks":[],
+     "presets":[
+       {
+         "name":"freedom-in-podxgo",
+         "blocks":[]
+       }
+     ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
