@@ -792,7 +792,25 @@
           "settings": {
             "heading": "A growing market with opportunities",
             "heading_size": 24,
-            "text": "erqwerwqrwqrw",
+            "text": "PODX GO homes are designed for possibilities and freedom. Whether your business is in RV dealership or Tiny Home Builders, or own an RV park, or vacation resort, or just having an idea about Airbnb, PODX GO will help you build and sell.",
+            "text_size": 18
+          }
+        },
+        "5a11d6f0-6b4a-46ff-bc43-5c5e4d941c60": {
+          "type": "fold_wrapper",
+          "settings": {
+            "heading": "We bring the customers to you",
+            "heading_size": 20,
+            "text": "PODX GO homes are designed for possibilities and freedom. Whether your business is in RV dealership or Tiny Home Builders, or own an RV park, or vacation resort, or just having an idea about Airbnb, PODX GO will help you build and sell.",
+            "text_size": 18
+          }
+        },
+        "7c457d5b-e595-4774-b8fa-06b2a5813d79": {
+          "type": "fold_wrapper",
+          "settings": {
+            "heading": "We make it easier for everyone",
+            "heading_size": 20,
+            "text": "PODX GO homes are designed for possibilities and freedom. Whether your business is in RV dealership or Tiny Home Builders, or own an RV park, or vacation resort, or just having an idea about Airbnb, PODX GO will help you build and sell.",
             "text_size": 18
           }
         }
@@ -802,7 +820,9 @@
         "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-2",
         "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-3",
         "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-1",
-        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-4"
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-4",
+        "5a11d6f0-6b4a-46ff-bc43-5c5e4d941c60",
+        "7c457d5b-e595-4774-b8fa-06b2a5813d79"
       ],
       "settings": {
         "layout": "image_first"
