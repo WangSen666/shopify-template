@@ -66,7 +66,7 @@
               {{ block.settings.heading }}
             </h2>
             {% when "image_1" %}
-            <img src="{{ block.settings.image_1 | image_url }}" />
+            <img class="image_1" src="{{ block.settings.image_1 | image_url }}" />
 
             {% when 'text' %}
               <div  style="font-size:{{ block.settings.font_size }}px;font-weight:{{ block.settings.font_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.sttings.margin_bottom }}px;">
