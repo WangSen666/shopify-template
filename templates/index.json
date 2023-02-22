@@ -844,6 +844,29 @@
         "font_size": 18,
         "font_weight": 400
       }
+    },
+    "b9c886e0-f5f5-461e-becd-4322246c159c": {
+      "type": "diversified-and-multi-column",
+      "blocks": {
+        "template--15597986676836__b9c886e0-f5f5-461e-becd-4322246c159c-167707289373c1ccbf-0": {
+          "type": "column_item",
+          "settings": {
+            "heading_1": "",
+            "heading_size": 14,
+            "text_1": "",
+            "text_2": "",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__b9c886e0-f5f5-461e-becd-4322246c159c-167707289373c1ccbf-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/podxgo_logo1.png",
+        "heading": "loves to hear from and support our customers and partners",
+        "font_size": 36
+      }
     }
   },
   "order": [
@@ -858,6 +881,7 @@
     "1672909950d79615a4",
     "2fc4a141-20b7-4e60-a81a-cb54d29e005b",
     "0232a74e-b05c-4e04-be55-cd41d2abb18c",
-    "6b9a5d6d-51af-44a3-b84b-1c9841721fe3"
+    "6b9a5d6d-51af-44a3-b84b-1c9841721fe3",
+    "b9c886e0-f5f5-461e-becd-4322246c159c"
   ]
 }
