@@ -126,7 +126,12 @@
      
    };
   var clickFoldItem=function(event){
-    event.preventDefault()
+    var event=event||window.event;
+    if(event.preventDefault){
+      event.preventDefault();
+    }else{
+      event.returnValue = false;
+    }
     var fold_text=event.target.nextElementSibling;
     console.log("event.target.children[1]",event.target.getElementsByTagName('img')[0])
     if(event.target.style.borderBottom!="none"){
