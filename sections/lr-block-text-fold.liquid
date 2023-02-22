@@ -88,10 +88,13 @@
             {% when "fold_wrapper" %}
              <div class="fold-wrapper" onclick="clickFoldItem(event)">
                <script>
-                  clickFoldItem=function(event){
+                 window.onload=function(){
+                   var clickFoldItem=function(event){
                       console.log("item",event)
                       console.log("parent" event.parentElement)
                     }
+                 };
+                  
                   </script>
                 <div class="fold-wrapper-head"  style="font-size:{{ block.settings.heading_size }}px;">
                   {{block.settings.heading  }}
