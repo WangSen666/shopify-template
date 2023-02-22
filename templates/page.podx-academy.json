@@ -39,24 +39,30 @@
         "4991807a-719b-461d-89ed-cf1f6fa593b9": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 70,
-            "icon_item": "shopify:\/\/shop_images\/know-How.png",
+            "icon_width": 60,
+            "banner_href_text": "know-How",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-42.png",
             "href_id": ""
           }
         },
         "6442020b-68cd-47b0-8735-c33a3267a7f1": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 100,
-            "icon_item": "shopify:\/\/shop_images\/co-creation-lab.png",
+            "icon_width": 60,
+            "banner_href_text": "Co-Creation Lab",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-44.png",
             "href_id": ""
           }
         },
         "ffecce46-5f20-46fa-8f36-ed34bb92ef26": {
           "type": "banner_href_icon",
           "settings": {
-            "icon_width": 92,
-            "icon_item": "shopify:\/\/shop_images\/reseller-program.png",
+            "icon_width": 60,
+            "banner_href_text": "Reseller Program",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-45.png",
             "href_id": ""
           }
         }
@@ -83,100 +89,6 @@
         "show_text_below": true
       }
     },
-    "522756c7-9015-45db-a1fb-81cff63756e3": {
-      "type": "image-banner",
-      "blocks": {
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "BE CREATIVE.",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "74add986-2b77-48f9-ade2-a927aeb40756": {
-          "type": "heading",
-          "settings": {
-            "heading": "BE RELIABLE.",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1": {
-          "type": "text",
-          "settings": {
-            "text": "We strive for sustainable solutions, taking into account all people.",
-            "text_style": "body"
-          }
-        },
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-0",
-        "74add986-2b77-48f9-ade2-a927aeb40756",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-1",
-        "template--15546009780324__522756c7-9015-45db-a1fb-81cff63756e3-1670383453702abb2e-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "015b80b6-20a5-48c4-a1ac-874256d48648": {
-      "type": "podxgo-team-tip",
-      "blocks": {
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hi, we are team PODX GO.",
-            "heading_size": "h1"
-          }
-        },
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1": {
-          "type": "text",
-          "settings": {
-            "text": "A Mobile & Foldable Tiny House.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-0",
-        "template--15546009780324__015b80b6-20a5-48c4-a1ac-874256d48648-1670407776288ce19f-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/luxurious-home-in-the-desert.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "top-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "#B5EF35",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -185,194 +97,279 @@
         "padding_bottom": 28
       }
     },
-    "e1e03f82-d9be-4520-9cb3-80eb9a3ca35a": {
-      "type": "image-with-text",
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24": {
+      "type": "picture-card-with-bg",
       "blocks": {
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-0": {
-          "type": "heading",
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-3": {
+          "type": "picture_card_big",
           "settings": {
-            "heading": "Our Vision",
-            "heading_size": "h0",
-            "font-weight": 400,
-            "heading_color": "#000",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "Join in Co-Creation Lab.",
+            "heading_2": "Find out how we create safer,smarter, more beautiful, and affordable tiny homes.",
+            "button_label_1": "Design Your PODX GO Home",
+            "button_link_1": ""
           }
         },
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-1": {
-          "type": "text",
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-4": {
+          "type": "picture_card",
           "settings": {
-            "text": "<p>A World Where Decent Housing Is Affordable, Sustainable, Energy\u0002Efficient, and Accessible to All.<br\/><\/p><p>Powered by hundreds of achitects and thousands of dedicated co-dvelopers, it's the time to change the future.<br\/><\/p><p><\/p><p><\/p>",
-            "text_style": "body",
-            "heading": "Image banner",
-            "font-weight": 400,
-            "text_color": "#000",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "How will you",
+            "heading_2": "get your PODX GO home?",
+            "button_label_1": "Reseller  Application",
+            "button_link_1": ""
           }
         },
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-2": {
-          "type": "button",
+        "2eeede2b-68e0-4778-bd5d-b1ef7d6a6ea3": {
+          "type": "picture_card",
           "settings": {
-            "button_label": "",
-            "button_link": "",
-            "text_color": "#000"
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
           }
         }
       },
       "block_order": [
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-0",
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-1",
-        "template--15546009780324__e1e03f82-d9be-4520-9cb3-80eb9a3ca35a-1670483439d5fea5d5-2"
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-3",
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-4",
+        "2eeede2b-68e0-4778-bd5d-b1ef7d6a6ea3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/country-house.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "show_social": true
+        "is_titleBlock": "false",
+        "is_showTitle": "false",
+        "layout": "big_image_first",
+        "card_num": "2"
       }
     },
-    "c7429989-0c84-4a3a-b6a8-30e910667f5a": {
-      "type": "image-with-text",
+    "4ed248af-9dc2-4718-99ad-42f0ae5c736e": {
+      "type": "picture-card-with-bg",
       "blocks": {
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-0": {
-          "type": "heading",
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-3": {
+          "type": "picture_card_big",
           "settings": {
-            "heading": "Our Mission",
-            "heading_size": "h0",
-            "font-weight": 400,
-            "heading_color": "#000",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "PODX GO Quality Testing Report",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
           }
         },
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-1": {
-          "type": "text",
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-4": {
+          "type": "picture_card",
           "settings": {
-            "text": "<p>To offer a housing option with unrivaled experience that unfettered by space, and priced for everyone<br\/><\/p><p>A downsized life does not imply compromising living space; rather, it is a choice of being closer to the nature and freedom.<br\/><\/p>",
-            "text_style": "body",
-            "heading": "Image banner",
-            "font-weight": 400,
-            "text_color": "#000",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24
+            "picture_item": "shopify:\/\/shop_images\/4_06c2cb2e-e827-4b8f-aecd-290857b6e9d0.jpg",
+            "heading_1": "Download Grande S1 Floorplan",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
           }
         },
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-2": {
-          "type": "button",
+        "febfefa3-18eb-4429-ae90-2b32d8723f67": {
+          "type": "picture_card",
           "settings": {
-            "button_label": "",
-            "button_link": "",
-            "text_color": "#000"
+            "picture_item": "shopify:\/\/shop_images\/20230206105704.jpg",
+            "heading_1": "Upgrade Off-Grid Kit and Home Appliances Kit",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "29ed5737-8bdb-4580-8079-c54a58e571ac": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
+            "heading_1": "Zoning, Insurances, Loan...",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
           }
         }
       },
       "block_order": [
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-0",
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-1",
-        "template--15546009780324__c7429989-0c84-4a3a-b6a8-30e910667f5a-1670483439d5fea5d5-2"
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-3",
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-4",
+        "febfefa3-18eb-4429-ae90-2b32d8723f67",
+        "29ed5737-8bdb-4580-8079-c54a58e571ac"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "show_social": true
+        "is_titleBlock": "false",
+        "is_showTitle": "false",
+        "layout": "big_image_last",
+        "card_num": "3"
       }
     },
-    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33": {
-      "type": "image-with-text",
+    "7e29cb9e-96fa-4ebd-b240-abe0de88455f": {
+      "type": "picture-card-with-bg",
       "blocks": {
-        "404d056c-babb-4945-bc41-d45e8f4b6954": {
-          "type": "caption",
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3": {
+          "type": "picture_card_big",
           "settings": {
-            "caption": "ADon't Miss Out.",
-            "text_style": "subtitle",
-            "text_size": "medium"
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "What's Edge ONE?",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
           }
         },
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-0": {
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "What type of vehicle do I need",
+            "heading_2": "to move with my PODX GO home?",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "a09c0897-4858-4678-82ab-aff29a6d8c86": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "ow are water, seewage and power handled?",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3",
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4",
+        "a09c0897-4858-4678-82ab-aff29a6d8c86"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "is_showTitle": "false",
+        "layout": "big_image_first",
+        "card_num": "2"
+      }
+    },
+    "cacc527b-9b28-426c-b16e-1ee06493a8be": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0": {
           "type": "heading",
           "settings": {
-            "heading": "Join PODX GO Community",
+            "heading": "Sign Up and Stay Tuned",
+            "heading_size": "h1"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "23de8b24-9276-477b-978a-ca61883420d8": {
+      "type": "rich-text-button",
+      "blocks": {
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Co-Creation Lab",
             "heading_size": "h1",
-            "font-weight": 400,
-            "heading_color": "#000",
-            "font_size": 24,
+            "font_size": 36,
             "margin_top": 24,
-            "margin_bottom": 24
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 400
           }
         },
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-1": {
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Shared stories and experience about tiny house living<br\/><\/p>",
-            "text_style": "body",
-            "heading": "Image banner",
-            "font-weight": 400,
-            "text_color": "#000",
-            "font_size": 24,
+            "text": "Individuals and cooperations who with passion and belief can affect the world's future and people's life are welcome to be part of PODX GO!  The PODX GO home Grande S1 is supported by individuals who shared their dream home ideas with us, and companies in off-grid solar solutions, creative furniture, smart home applications, and NOAH.",
+            "font_size": 16,
             "margin_top": 24,
-            "margin_bottom": 24
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
           }
         },
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-2": {
+        "091a569b-5462-4f83-b44a-b45e74eb4887": {
+          "type": "text",
+          "settings": {
+            "text": "They are in the life-changing squad.",
+            "font_size": 20,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-2": {
           "type": "button",
           "settings": {
-            "button_label": "Sign Me Up",
-            "button_link": "",
-            "text_color": "#000"
+            "banner_button_label": "Button label",
+            "banner_button_link": "",
+            "font_size": 14,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-3": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/1-11.png"
+          }
+        },
+        "45859504-6639-45cb-aa4d-d1e9c99dba24": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/1-10.png"
+          }
+        },
+        "81ec5f5a-cc4a-482e-a25e-31cddd9ab08c": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/1-09.png"
           }
         }
       },
       "block_order": [
-        "404d056c-babb-4945-bc41-d45e8f4b6954",
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-0",
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-1",
-        "template--15546009780324__a09cadf6-52ac-4e0d-9f3d-0b82100a3d33-1670483439d5fea5d5-2"
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-0",
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-1",
+        "091a569b-5462-4f83-b44a-b45e74eb4887",
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-2",
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-3",
+        "45859504-6639-45cb-aa4d-d1e9c99dba24",
+        "81ec5f5a-cc4a-482e-a25e-31cddd9ab08c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/12_9c5c7d11-32eb-44e2-a314-edb137061b86.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "show_social": false
       }
     }
   },
   "order": [
     "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
-    "522756c7-9015-45db-a1fb-81cff63756e3",
-    "015b80b6-20a5-48c4-a1ac-874256d48648",
     "main",
-    "e1e03f82-d9be-4520-9cb3-80eb9a3ca35a",
-    "c7429989-0c84-4a3a-b6a8-30e910667f5a",
-    "a09cadf6-52ac-4e0d-9f3d-0b82100a3d33"
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24",
+    "4ed248af-9dc2-4718-99ad-42f0ae5c736e",
+    "7e29cb9e-96fa-4ebd-b240-abe0de88455f",
+    "cacc527b-9b28-426c-b16e-1ee06493a8be",
+    "23de8b24-9276-477b-978a-ca61883420d8"
   ]
 }

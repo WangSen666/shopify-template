@@ -222,7 +222,13 @@
                   {%- case block_child.type -%}
                     {%- when 'banner_href_icon' -%}
                       <a class="banner-href-icon-item" href="#{{ block_child.settings.href_id }}">
-                          <img src="{{ block_child.settings.icon_item | image_url }}" width="{{ block_child.settings.icon_width }}" />
+                          <div class="" style="text-align:center;">
+                            <img src="{{ block_child.settings.icon_item | image_url }}" width="{{ block_child.settings.icon_width }}" />
+                            <div class="" style="font-size:{{ block_child.settings.font_size }}px;color:#fff;">
+                              {{ block_child.settings.banner_href_text}}
+                            </div>
+                          </div>
+                          
                       </a>
                   {%- endcase -%}
                 {%- endfor -%}
@@ -587,6 +593,21 @@
             "step":2,
             "default":40,
             "label":"超链接图标宽度"
+          },
+          {
+            "type":"text",
+            "id":"banner_href_text",
+            "label":"图标下面的文字"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 36,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
           },
           {
             "type":"image_picker",

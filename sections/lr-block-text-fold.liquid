@@ -1,0 +1,427 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before  {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
+        content: '';
+        display: block;
+      }
+      #Banner-template--15563052187748__015b80b6-20a5-48c4-a1ac-874256d48648 {
+        height: 360px;
+      }
+
+    }
+
+
+    @media screen and (min-width: 750px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
+        content: '';
+        display: block;
+      }
+      .banner__content.banner__content--bottom-center {
+        align-items: center !important;
+      }
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
+    ;
+  }
+  @media screen and (min-width: 750px) {
+    .lr-block-text-fold__content{
+      display:flex;
+      justify-content:space-between;
+    }
+    .lr-block-text-fold__item{
+      width:49%;
+    }
+   .lr-block-text-fold__item .image_1{
+      width:100%;
+    }
+  }
+  @media screen and (max-width:1280px) {
+    
+  }
+
+  @media screen and (max-width: 750px) {
+    
+  }
+{%- endstyle -%}
+
+<div
+  id="lr-block-text-fold-{{ section.id }}"
+  style="padding:24px 0;"
+  class="lr-block-text-fold">
+  <div class="lr-block-text-fold__content page-width">
+    <div class="lr-block-text-fold__item">
+      {% for block in section.blocks %}
+        {% case block.type %}
+            {% when "heading" %}
+            <h2 style="font-size:{{ block.settings.font_size }}px;font-weight:{{ block.settings.font_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.sttings.margin_bottom }}px;">
+              {{ block.settings.heading }}
+            </h2>
+            {% when "image_1" %}
+            <img class="image_1" src="{{ block.settings.image_1 | image_url }}" />
+
+            {% when 'text' %}
+              <div  style="font-size:{{ block.settings.font_size }}px;font-weight:{{ block.settings.font_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.sttings.margin_bottom }}px;">
+                {{ block.settings.text }}
+              </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    <div class="lr-block-text-fold__item">
+      {% for block in section.blocks %}
+        {% case block.type %}
+            {% when "fold_wrapper" %}
+             <div class="fold-wrapper">
+                <div class="fold-wrapper-head" onclick="clickFoldItem" style="font-size:{{ block.settings.heading_size }}px;">
+                  {{block.settings.heading  }}
+                  <img src="" />
+                </div> 
+                <div class="fold-wrapper-text" style="font-size:{{ block.settings.text_size }}px;">
+                  {{block.settings.text  }}
+                </div> 
+             </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    
+  </div>
+</div>
+
+<script>
+window.onload=function(){};
+var clickFoldItem=function(item){
+  console.log("item",item)
+}
+
+  
+</script>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "左右分块内容可折叠",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+     {
+        "type": "select",
+        "id": "layout",
+        "options": [
+          {
+            "value": "image_first",
+            "label": "t:sections.image-with-text.settings.layout.options__1.label"
+          }, {
+            "value": "text_first",
+            "label": "t:sections.image-with-text.settings.layout.options__2.label"
+          }
+        ],
+        "default": "image_first",
+        "label": "t:sections.image-with-text.settings.layout.label",
+        "info": "t:sections.image-with-text.settings.layout.info"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.image-banner.blocks.heading.name",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "As a PODX GO Dealer Partner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "range",
+            "id": "font-weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "t:sections.image-banner.blocks.text.name",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Give customers details about the banner image(s) or content on the template.",
+            "label": "t:sections.image-banner.blocks.text.settings.text.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin-top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin-bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "t:sections.image-banner.blocks.buttons.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          },
+          {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          },
+         {
+            "type": "select",
+            "id": "button_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "按钮颜色"
+          }, {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          }
+        ]
+      },
+      {
+        "type": "image_1",
+        "limit": 1,
+        "name": "图片内容",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "图片内容"
+          }
+        ]
+      }, {
+        "type": "fold_wrapper",
+        "name": "可折叠的内容部分",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "标题"
+          }, {
+            "type": "range",
+            "id": "heading_size",
+            "min": 12,
+            "max": 150,
+            "step": 2,
+            "label": "标题大小",
+            "default": 20
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "文案"
+          },
+          {
+             "type": "range",
+            "id": "text_size",
+            "min": 12,
+            "max": 150,
+            "step": 2,
+            "label": "标题大小",
+            "default": 20
+          }
+          
+        ]
+      }, {
+        "type": "right_text_wrapper",
+        "name": "右边文案内容",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "right_text",
+            "label": "文案内容"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "is_border",
+            "options": [
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+            "default": "false",
+            "label": "是否有下边框"
+          }
+        ]
+      }
+
+
+
+    ],
+    "presets": [
+      {
+        "name": "左右分块内容可折叠",
+        "blocks": [
+          {
+            "type": "heading"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "button"
+          },
+          {
+            "type": "image_1"
+          }, {
+            "type": "fold_wrapper"
+          }
+
+        ]
+      }
+    ]
+  }
+{% endschema %}

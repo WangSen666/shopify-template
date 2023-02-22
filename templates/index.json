@@ -746,6 +746,67 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "0232a74e-b05c-4e04-be55-cd41d2abb18c": {
+      "type": "lr-block-text-fold",
+      "blocks": {
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "As a PODX GO Dealer Partner",
+            "font-weight": 500,
+            "font_size": 38,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-3": {
+          "type": "image_1",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/16_1.png"
+          }
+        },
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-4": {
+          "type": "fold_wrapper",
+          "settings": {
+            "heading": "A growing market with opportunities",
+            "heading_size": 24,
+            "text": "erqwerwqrwqrw",
+            "text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-0",
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-2",
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-3",
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-1",
+        "template--15597986676836__0232a74e-b05c-4e04-be55-cd41d2abb18c-16770336723b77e850-4"
+      ],
+      "settings": {
+        "layout": "image_first"
+      }
     }
   },
   "order": [
@@ -758,6 +819,7 @@
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "8bd58e50-4c4c-4374-9837-2903a599cddb",
     "1672909950d79615a4",
-    "2fc4a141-20b7-4e60-a81a-cb54d29e005b"
+    "2fc4a141-20b7-4e60-a81a-cb54d29e005b",
+    "0232a74e-b05c-4e04-be55-cd41d2abb18c"
   ]
 }
