@@ -33,7 +33,6 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
     ;
   }
-  @media screen and (min-width: 750px) {
     .lr-block-text-fold__content{
       display:flex;
       justify-content:space-between;
@@ -68,7 +67,6 @@
       top:30%;
       transform:rotate(180deg);
     }
-  }
   @media screen and (max-width:1280px) {
     
   }
@@ -77,24 +75,7 @@
     .lr-block-text-fold__item{
       width:98%;
     }
-    .lr-block-text-fold__item .image_1{
-      width:100%;
-    }
-    .fold-wrapper-head{
-      display:flex;
-      justify-content:space-between;
-      border-bottom:1px solid black;
-      position:relative;
-    }
-    .fold-wrapper-text{
-      display:none;
-    }
-    .fold-wrapper-head img{
-      position:absolute;
-      right:0;
-      top:50%;
-      transform:translateY(-50%);
-    }
+   
   }
 {%- endstyle -%}
 
