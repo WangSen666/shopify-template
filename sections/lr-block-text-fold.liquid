@@ -111,8 +111,9 @@
      
    };
   var clickFoldItem=function(event){
-      // var foldItemList=document.getElementsByClassName('fold-wrapper');
+    event.target.style.border-bottom="none;"
       var fold_text=event.target.nextElementSibling;
+      fold_text.style.display="block"
     console.log(fold_text)
       console.log("parent",event.target)
     }
