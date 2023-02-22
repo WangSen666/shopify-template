@@ -76,11 +76,38 @@
       {% endfor %}
     </div>
     <div class="lr-block-text-fold__item">
-      
+      {% for block in section.blocks %}
+        {% case block.type %}
+            {% when "fold_wrapper" %}
+             <div class="fold-wrapper">
+                <div class="fold-wrapper-head" @click="clickFoldItem">
+                  {{block.settings.heading  }}
+                  <img src="" />
+                </div> 
+                <div class="fold-wrapper-text">
+                  {{block.settings.text  }}
+                </div> 
+             </div>
+        {% endcase %}
+      {% endfor %}
     </div>
     
   </div>
 </div>
+
+<script>
+window.onload=function(){};
+var clickFoldItem=function(item){
+  console.log("item",item)
+}
+
+  
+</script>
+
+
+
+
+
 
 {% schema %}
   {
