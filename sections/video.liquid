@@ -6,7 +6,16 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+  .video-button{
+    border:1px solid #fff;
+    padding:4px 14px;
+    font-size:18px;
+  }
+  .video-button img{
+    width:12px;
+    height:12px;
+    vertical-align:middle;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
