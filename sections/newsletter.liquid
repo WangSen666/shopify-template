@@ -94,7 +94,7 @@
               value="newsletter">
             <div class="newsletter-form__field-wrapper">
               <div class="field bottom-filed">
-                <input id="NewsletterForm--{{ section.id }}"type="email"name="contact[email]"class="field__input"value="{{ form.email }}"aria-required="true"autocorrect="off"autocapitalize="off"autocomplete="email"{% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
+                <input style="border-radius:14px;" id="NewsletterForm--{{ section.id }}"type="email"name="contact[email]"class="field__input"value="{{ form.email }}"aria-required="true"autocorrect="off"autocapitalize="off"autocomplete="email"{% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
               {% comment %} <label class="field__label" for="NewsletterForm--{{ section.id }}">
               {{ 'newsletter.label' | t }}
               </label> {% endcomment %}
