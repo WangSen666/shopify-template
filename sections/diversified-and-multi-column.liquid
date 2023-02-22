@@ -41,7 +41,26 @@
       {{ section.settings.heading }}
       
     </div>
+
   
+    <div class="diversified-and-multi-column-list">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {%  when 'column_item' %}
+          <div class="diversified-and-multi-column-item">
+            <img src="{{ block.settings.image_1|image_url }}" />
+            <h2 style="font-size:{{ block.settings.heading_size }}px;">{{ block.settings.heading_1 }}</h2>
+            <div style="font-size:{{ block.settings.text_size }}px;">
+              {{ block.settings.text_1 }}
+            </div>
+            <div style="font-size:{{ block.settings.text_size }}px;">
+              {{ block.settings.text_2 }}
+            </div>
+            
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>  
   
 </div>
 
