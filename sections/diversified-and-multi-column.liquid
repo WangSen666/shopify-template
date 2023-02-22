@@ -36,10 +36,12 @@
 
 
 <div class="diversified-and-multi-column page-width" >
-    <div style="font-size:{{ section.settings.font_size }}px;font-weight:bold;color:black;">
-      {{ section.settings.freedom_text }}
+    <div style="font-size:{{ section.settings.font_size }}px;font-weight:bold;color:black;" class="diversified-and-multi-column-heading">
       <img src={{ section.settings.image | image_url }}
+      {{ section.settings.heading }}
+      
     </div>
+  
   
 </div>
 
@@ -57,8 +59,8 @@
       },
       {
         "type":"text",
-        "id":"freedom_text",
-        "label":"freedom文案"
+        "id":"heading",
+        "label":"标题"
       },
       {
         "type":"range",
@@ -66,15 +68,63 @@
         "min": 12,
         "max": 100,
         "step": 2,
-        "label":"字体大小",
+        "label":"标题字体大小",
         "default":24
       }
     ],
-    "blocks":[],
+    "blocks":[
+      {
+        "type":"column_item",
+        "name":"多列元素",
+        "limit":4,
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image_1",
+            "label":"多列中的图片元素"
+          },
+          {
+            "type":"text",
+            "id":"heading_1",
+            "label":"多列头部标题"
+          },
+          {
+             "type":"range",
+            "id":"heading_size",
+            "min":10,
+            "max":100,
+            "step":2,
+            "default":14,
+            "label":"多列头部标题字体大小"
+          },
+          {
+            "type":"text",
+            "id":"text_1",
+            "label":"多列文案1"
+          },
+          {
+            "type":"text",
+            "id":"text_2",
+            "label":"多列文案2"
+          },
+          {
+             "type":"range",
+            "id":"text_size",
+            "min":10,
+            "max":100,
+            "step":2,
+            "default":14,
+            "label":"多列文案字体大小"
+          }
+        ]
+      }
+    ],
      "presets":[
        {
          "name":"freedom-in-podxgo",
-         "blocks":[]
+         "blocks":[
+           {"type":"column_item"}
+         ]
        }
      ]
   }
