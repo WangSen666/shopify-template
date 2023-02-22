@@ -128,6 +128,7 @@
   var clickFoldItem=function(event){
     var event=event||window.event;
     event.stopPropagation();
+    debugger;
     var fold_text=event.target.nextElementSibling;
     console.log("event.target.children[1]",event.target.getElementsByTagName('img')[0])
     if(event.target.style.borderBottom!="none"){
