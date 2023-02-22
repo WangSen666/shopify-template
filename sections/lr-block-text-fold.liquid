@@ -128,7 +128,7 @@
   var clickFoldItem=function(event){
     var event=event||window.event;
     if(event.target.className!='fold-wrapper-head'){
-      event.stopPropagation();
+      // event.stopPropagation();
     }else{
       var fold_text=event.target.nextElementSibling;
       console.log("event.target.children[1]",event.target.getElementsByTagName('img')[0])
