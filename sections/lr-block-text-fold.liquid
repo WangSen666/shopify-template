@@ -111,46 +111,11 @@ var clickFoldItem=function(item){
 
 {% schema %}
   {
-    "name": "左右分块内容",
+    "name": "左右分块内容可折叠",
     "tag": "section",
     "class": "section",
     "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "t:sections.image-banner.settings.image.label"
-      },
-      {
-        "type": "range",
-        "id": "image_overlay_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 10,
-        "unit": "%",
-        "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
-        "default": 0
-      },
-      {
-        "type": "select",
-        "id": "is_lr",
-        "options": [
-          {
-            "value": "true",
-            "label": "是"
-          }, {
-            "value": "false",
-            "label": "否"
-          }
-        ],
-        "default": "false",
-        "label": "是否左右分块"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_text_box",
-        "default": true,
-        "label": "t:sections.image-banner.settings.show_text_box.label"
-      }, {
+     {
         "type": "select",
         "id": "layout",
         "options": [
@@ -176,26 +141,8 @@ var clickFoldItem=function(item){
           {
             "type": "text",
             "id": "heading",
-            "default": "Image banner",
+            "default": "As a PODX GO Dealer Partner",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
-          },
-          {
-            "type": "select",
-            "id": "heading_size",
-            "options": [
-              {
-                "value": "h2",
-                "label": "t:sections.all.heading_size.options__1.label"
-              }, {
-                "value": "h1",
-                "label": "t:sections.all.heading_size.options__2.label"
-              }, {
-                "value": "h0",
-                "label": "t:sections.all.heading_size.options__3.label"
-              }
-            ],
-            "default": "h1",
-            "label": "t:sections.all.heading_size.label"
           },
           {
             "type": "range",
@@ -265,24 +212,6 @@ var clickFoldItem=function(item){
             "label": "t:sections.image-banner.blocks.text.settings.text.label"
           },
           {
-            "type": "select",
-            "id": "text_style",
-            "options": [
-              {
-                "value": "body",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
-              }, {
-                "value": "subtitle",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
-              }, {
-                "value": "caption-with-letter-spacing",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
-              }
-            ],
-            "default": "body",
-            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
-          },
-          {
             "type": "range",
             "id": "font_size",
             "min": 12,
@@ -331,7 +260,7 @@ var clickFoldItem=function(item){
         ]
       },
       {
-        "type": "buttons",
+        "type": "button",
         "name": "t:sections.image-banner.blocks.buttons.name",
         "limit": 1,
         "settings": [
@@ -347,28 +276,7 @@ var clickFoldItem=function(item){
             "id": "button_link_1",
             "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
           },
-          {
-            "type": "checkbox",
-            "id": "button_style_secondary_1",
-            "default": false,
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
-          },
-          {
-            "type": "text",
-            "id": "button_label_2",
-            "default": "Button label",
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
-            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
-          }, {
-            "type": "url",
-            "id": "button_link_2",
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
-          }, {
-            "type": "checkbox",
-            "id": "button_style_secondary_2",
-            "default": false,
-            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
-          }, {
+         {
             "type": "select",
             "id": "button_color",
             "options": [
@@ -407,48 +315,49 @@ var clickFoldItem=function(item){
         ]
       },
       {
-        "type": "image_wrapper",
+        "type": "image_1",
         "limit": 1,
         "name": "图片内容",
         "settings": [
           {
             "type": "image_picker",
             "id": "image_1",
-            "label": "第一张图片"
-          }, {
-            "type": "select",
-            "id": "is_imgFixed",
-            "options": [
-              {
-                "value": "true",
-                "label": "是"
-              }, {
-                "value": "false",
-                "label": "否"
-              }
-            ],
-            "default": "false",
-            "label": "图片是否占满容器"
+            "label": "图片内容"
           }
         ]
       }, {
-        "type": "pictureCard",
-        "name": "图片卡片",
+        "type": "fold_wrapper",
+        "name": "可折叠的内容部分",
         "limit": 5,
         "settings": [
           {
-            "type": "image_picker",
-            "id": "picture-card-item",
-            "label": "图片卡片"
+            "type": "text",
+            "id": "heading",
+            "label": "标题"
           }, {
             "type": "range",
-            "id": "image_width",
-            "min": 10,
+            "id": "heading_size",
+            "min": 12,
             "max": 150,
-            "step": 4,
-            "label": "图片宽度",
-            "default": 10
+            "step": 2,
+            "label": "标题大小",
+            "default": 20
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "文案"
+          },
+          {
+             "type": "range",
+            "id": "text_size",
+            "min": 12,
+            "max": 150,
+            "step": 2,
+            "label": "标题大小",
+            "default": 20
           }
+          
         ]
       }, {
         "type": "right_text_wrapper",
@@ -500,14 +409,12 @@ var clickFoldItem=function(item){
             "type": "text"
           },
           {
-            "type": "buttons"
+            "type": "button"
           },
           {
-            "type": "image_wrapper"
+            "type": "image_1"
           }, {
-            "type": "pictureCard"
-          }, {
-            "type": "right_text_wrapper"
+            "type": "fold_wrapper"
           }
 
         ]
