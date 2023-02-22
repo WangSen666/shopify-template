@@ -119,6 +119,7 @@
    };
   var clickFoldItem=function(event){
     var fold_text=event.target.nextElementSibling;
+    console.log("event.target.children[1]",event.target.children[1])
     if(event.target.style.borderBottom!="none"){
        event.target.style.borderBottom="none";
       fold_text.style.display="block";
