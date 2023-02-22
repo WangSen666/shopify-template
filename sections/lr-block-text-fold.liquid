@@ -41,6 +41,9 @@
     .lr-block-text-fold__item{
       width:49%;
     }
+    .lr-block-text-fold_item_text{
+      
+    }
    .lr-block-text-fold__item .image_1{
       width:100%;
     }
@@ -51,6 +54,9 @@
     }
     .fold-wrapper-text{
       display:none;
+    }
+    img.folded-img{
+      transform:roate(90deg);
     }
   }
   @media screen and (max-width:1280px) {
@@ -84,15 +90,14 @@
         {% endcase %}
       {% endfor %}
     </div>
-    <div class="lr-block-text-fold__item">
+    <div class="lr-block-text-fold__item lr-block-text-fold_item_text">
       {% for block in section.blocks %}
         {% case block.type %}
             {% when "fold_wrapper" %}
-             <div class="fold-wrapper" >
-               
+             <div class="fold-wrapper">
                 <div class="fold-wrapper-head" onclick="clickFoldItem(event)"  style="font-size:{{ block.settings.heading_size }}px;">
-                  {{block.settings.heading  }}
-                  <img src="{{ 'fold.png'|asset_url }}" />
+                  <h2>{{block.settings.heading }}</h2>
+                  <img class="" src="{{ 'fold.png'|asset_url }}" />
                 </div> 
                 <div class="fold-wrapper-text" style="font-size:{{ block.settings.text_size }}px;">
                   {{block.settings.text  }}
@@ -117,9 +122,13 @@
     if(event.target.style.borderBottom!="none"){
        event.target.style.borderBottom="none";
       fold_text.style.display="block";
+      event.target.children[1].className="folded-img";
+      
     }else{
        event.target.style.borderBottom="1px solid black";
       fold_text.style.display="none";
+      event.target.children[1].className="";
+      
     }
   }
   </script>
