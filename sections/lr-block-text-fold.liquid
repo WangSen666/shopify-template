@@ -127,7 +127,7 @@
    };
   var clickFoldItem=function(event){
     var event=event||window.event;
-    if(event.target.clawsName!='fold-wrapper-head'){
+    if(event.target.className!='fold-wrapper-head'){
       event.stopPropagation();
     }else{
       var fold_text=event.target.nextElementSibling;
