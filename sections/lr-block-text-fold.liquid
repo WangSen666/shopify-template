@@ -111,10 +111,9 @@
      
    };
   var clickFoldItem=function(event){
-      event.stopPropagation();
-      var foldItemList=document.getElementsByClassName('fold-wrapper');
-    console.log("foldItemList",foldItemList)
-      console.log("item",event)
+      // var foldItemList=document.getElementsByClassName('fold-wrapper');
+      var fold_text=event.target.nextElementSibling;
+    console.log(fold_text)
       console.log("parent",event.target)
     }
   </script>
