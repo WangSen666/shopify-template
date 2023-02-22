@@ -68,6 +68,10 @@
       top:30%;
       transform:rotate(180deg);
     }
+  .fold-wrapper_button{
+    position:absolute;
+    right:0;bottom:24px;
+  }
   @media screen and (max-width:1280px) {
     
   }
@@ -122,7 +126,18 @@
         {% endcase %}
       {% endfor %}
     </div>
-    
+
+     {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'button' %}
+               <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="fold-wrapper_button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}
+                  <img
+                    src="{{   'button_logo_2.png' | asset_url }}"
+                    width="12"
+                    height="12" />
+              </a>
+        {% endcase %}
+      {% endfor %}
   </div>
 </div>
 
