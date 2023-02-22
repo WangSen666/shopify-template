@@ -50,6 +50,9 @@
       justify-content:space-between;
       border-bottom:1px solid black;
     }
+    .fold-wrapper-text{
+      display:none;
+    }
   }
   @media screen and (max-width:1280px) {
     
@@ -111,7 +114,7 @@
      
    };
   var clickFoldItem=function(event){
-    event.target.style.border="none;"
+    event.target.style.border="none";
       var fold_text=event.target.nextElementSibling;
       fold_text.style.display="block"
     console.log(fold_text)
