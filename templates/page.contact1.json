@@ -10,7 +10,7 @@
             "heading_size": "h1",
             "font_size": 36,
             "margin_top": 122,
-            "margin_bottom": 24,
+            "margin_bottom": 12,
             "heading_color": "#fff",
             "font_weight": 400
           }
@@ -34,7 +34,7 @@
             "heading_size": "h1",
             "font_size": 16,
             "margin_top": 24,
-            "margin_bottom": 24,
+            "margin_bottom": 78,
             "heading_color": "#fff",
             "font_weight": 400
           }
