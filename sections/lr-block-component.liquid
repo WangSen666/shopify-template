@@ -218,7 +218,7 @@
         </div>
       </div>
       {%- if section.settings.is_lr == 'true' -%}
-        <div class="banner__box-item" style="display:block; {% if block.settings.is_imgBg == 'true' %} width:100%;height:100%;background：#5F6061;{% endif %}">
+        <div class="banner__box-item" style="display:block; {% if section.settings.is_imgBg == 'true' %} width:100%;height:100%;background：#5F6061;{% endif %}">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
