@@ -228,6 +228,10 @@ onload="this.media='all'"> {% endcomment %}
                 <div>{{ block.settings.heading_2 }}</div>
               </div>
               <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                 <img
+                  src="{{'button_logo_2.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
               </a>
             </div>
           </div>
