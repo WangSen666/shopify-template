@@ -224,7 +224,7 @@
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
 
               <img
-                style="{% if block.settings.is_imgFixed == 'true' %} width:100%;height:600px;{% endif %}{% if block.settings.is_imgFixed == 'false' %} width:100%;height:520px; {% endif %}"
+                style="{% if block.settings.is_imgBg == 'true' %} width:100%;height:600px;{% endif %}{% if block.settings.is_imgBg == 'false' %} width:100%;height:520px; {% endif %}"
                 class="image-wrapper"
                 src={{ block.settings.image_1 | image_url }} />
 
@@ -297,7 +297,22 @@
         "default": "image_first",
         "label": "t:sections.image-with-text.settings.layout.label",
         "info": "t:sections.image-with-text.settings.layout.info"
-      }
+      },
+       {
+            "type": "select",
+            "id": "is_imgBg",
+            "options": [
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+            "default": "false",
+            "label": "分块图片是否有背景色"
+          }
     ],
     "blocks": [
       {
@@ -547,20 +562,6 @@
             "type": "image_picker",
             "id": "image_1",
             "label": "第一张图片"
-          }, {
-            "type": "select",
-            "id": "is_imgFixed",
-            "options": [
-              {
-                "value": "true",
-                "label": "是"
-              }, {
-                "value": "false",
-                "label": "否"
-              }
-            ],
-            "default": "false",
-            "label": "图片是否占满容器"
           }
         ]
       }, {
