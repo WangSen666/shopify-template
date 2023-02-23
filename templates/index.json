@@ -731,8 +731,7 @@
         },
         "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-2": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [

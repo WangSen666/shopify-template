@@ -36,29 +36,25 @@
     ;
   }
   @media screen and (min-width: 750px) {
-    .lr-block-text-fold__content{
-      display:flex;
-      justify-content:space-between;
+    .lr-block-text-fold__content {
+      display: flex;
+      justify-content: space-between;
     }
-    .lr-block-text-fold__item{
-      width:49%;
+    .lr-block-text-fold__item {
+      width: 49%;
     }
-   .lr-block-text-fold__item .image_1{
-      width:100%;
+    .lr-block-text-fold__item .image_1 {
+      width: 100%;
     }
-    .fold-wrapper-head{
-      display:flex;
-      justify-content:space-between;
-      border-bottom:1px solid black;
+    .fold-wrapper-head {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid black;
     }
   }
-  @media screen and (max-width:1280px) {
-    
-  }
+  @media screen and (max-width:1280px) {}
 
-  @media screen and (max-width: 750px) {
-    
-  }
+  @media screen and (max-width: 750px) {}
 {%- endstyle -%}
 
 <div
@@ -69,51 +65,49 @@
     <div class="lr-block-text-fold__item">
       {% for block in section.blocks %}
         {% case block.type %}
-            {% when "heading" %}
-            <h2 style="font-size:{{ block.settings.font_size }}px;font-weight:{{ block.settings.font_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.sttings.margin_bottom }}px;">
-              {{ block.settings.heading }}
-            </h2>
-            {% when "image_1" %}
-            <img class="image_1" src="{{ block.settings.image_1 | image_url }}" />
+          {% when "heading" %}
+          <h2 style="font-size:{{ block.settings.font_size }}px;font-weight:{{ block.settings.font_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.sttings.margin_bottom }}px;">
+            {{ block.settings.heading }}
+          </h2>
+          {% when "image_1" %}
+          <img class="image_1" src="{{ block.settings.image_1 | image_url }}" />
 
-            {% when 'text' %}
-              <div  style="font-size:{{ block.settings.font_size }}px;font-weight:{{ block.settings.font_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.sttings.margin_bottom }}px;">
-                {{ block.settings.text }}
-              </div>
+          {% when 'text' %}
+          <div style="font-size:{{ block.settings.font_size }}px;font-weight:{{ block.settings.font_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.sttings.margin_bottom }}px;">
+            {{ block.settings.text }}
+          </div>
         {% endcase %}
       {% endfor %}
     </div>
     <div class="lr-block-text-fold__item">
       {% for block in section.blocks %}
         {% case block.type %}
-            {% when "fold_wrapper" %}
-             <div class="fold-wrapper">
-                <div class="fold-wrapper-head" onclick="clickFoldItem" style="font-size:{{ block.settings.heading_size }}px;">
-                  {{block.settings.heading  }}
-                  <img src="{{ 'fold.png'|asset_url }}" />
-                </div> 
-                <div class="fold-wrapper-text" style="font-size:{{ block.settings.text_size }}px;">
-                  {{block.settings.text  }}
-                </div> 
-             </div>
+          {% when "fold_wrapper" %}
+          <div class="fold-wrapper">
+            <div
+              class="fold-wrapper-head"
+              onclick="clickFoldItem(event)"
+              style="font-size:{{ block.settings.heading_size }}px;">
+              {{ block.settings.heading }}
+              <img src="{{ 'fold.png'|asset_url }}" />
+            </div>
+            <div class="fold-wrapper-text" style="font-size:{{ block.settings.text_size }}px;">
+              {{ block.settings.text }}
+            </div>
+          </div>
         {% endcase %}
       {% endfor %}
     </div>
-    
+
   </div>
 </div>
 
 <script>
-window.onload=function(){};
-var clickFoldItem=function(item){
-  console.log("item",item)
-}
-
-  
+  window.onload = function() {};
+  var clickFoldItem = function(event) {
+    console.log("item", event)
+  }
 </script>
-
-
-
 
 
 
@@ -123,7 +117,7 @@ var clickFoldItem=function(item){
     "tag": "section",
     "class": "section",
     "settings": [
-     {
+      {
         "type": "select",
         "id": "layout",
         "options": [
@@ -170,7 +164,8 @@ var clickFoldItem=function(item){
             "unit": "px",
             "label": "字体大小",
             "default": 24
-          }, {
+          },
+          {
             "type": "range",
             "id": "margin_top",
             "min": 0,
@@ -238,7 +233,8 @@ var clickFoldItem=function(item){
             "unit": "px",
             "label": "上边距",
             "default": 0
-          }, {
+          },
+          {
             "type": "range",
             "id": "margin-bottom",
             "min": 0,
@@ -284,7 +280,7 @@ var clickFoldItem=function(item){
             "id": "button_link_1",
             "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
           },
-         {
+          {
             "type": "select",
             "id": "button_color",
             "options": [
@@ -301,7 +297,8 @@ var clickFoldItem=function(item){
             ],
             "default": "#000",
             "label": "按钮颜色"
-          }, {
+          },
+          {
             "type": "range",
             "id": "margin_top",
             "min": 0,
@@ -350,14 +347,12 @@ var clickFoldItem=function(item){
             "step": 2,
             "label": "标题大小",
             "default": 20
-          },
-          {
+          }, {
             "type": "text",
             "id": "text",
             "label": "文案"
-          },
-          {
-             "type": "range",
+          }, {
+            "type": "range",
             "id": "text_size",
             "min": 12,
             "max": 150,
@@ -365,7 +360,7 @@ var clickFoldItem=function(item){
             "label": "标题大小",
             "default": 20
           }
-          
+
         ]
       }, {
         "type": "right_text_wrapper",

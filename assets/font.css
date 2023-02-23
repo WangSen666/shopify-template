@@ -83,3 +83,8 @@
   font-family: 'Poppins-ThinItalic';
   src: url('Poppins-ThinItalic.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'SegoeUIVF';
+  src: url('SegoeUIVF.ttf') format('truetype')
+}
