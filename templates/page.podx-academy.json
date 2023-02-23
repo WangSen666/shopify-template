@@ -19,6 +19,7 @@
           "type": "bannerComponentBottomInfo",
           "settings": {
             "heading": "",
+            "banner_button_place": "right",
             "heading_1": "Kitchen\/Bedroom\/Great Room",
             "price": "",
             "banner_button_link": "",
@@ -62,7 +63,7 @@
             "icon_width": 60,
             "banner_href_text": "Reseller Program",
             "font_size": 18,
-            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-45.png",
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2_2d1037dc-ceab-4419-9ab7-77206d182a72.png",
             "href_id": ""
           }
         }
