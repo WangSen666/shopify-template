@@ -43,7 +43,7 @@
           "type": "bannerComponentBottomInfo",
           "settings": {
             "heading": "Your New Life from Here",
-            "banner_button_place": "left",
+            "banner_button_place": "right",
             "heading_1": "",
             "price": "",
             "banner_button_link": "shopify:\/\/pages\/about-podx-go",
