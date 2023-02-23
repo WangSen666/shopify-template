@@ -193,10 +193,10 @@
             "picture-card-item": "shopify:\/\/shop_images\/99E8E4CD-50A1-44c9-A234-44CFE6132DFC.png",
             "heading": "Folded",
             "heading_1": "120 square footageL x  W x  H Travel TrailerWith NOAH Seal",
-            "font_size": 44,
+            "font_size": 48,
             "font_color": "#fff",
             "bg_opcity": 0,
-            "button_label_1": "Button label",
+            "button_label_1": "",
             "button_link_1": ""
           }
         },
@@ -209,7 +209,7 @@
             "font_size": 44,
             "font_color": "#fff",
             "bg_opcity": 0,
-            "button_label_1": "Button label",
+            "button_label_1": "",
             "button_link_1": ""
           }
         },
@@ -222,7 +222,7 @@
             "font_size": 42,
             "font_color": "#fff",
             "bg_opcity": 0,
-            "button_label_1": "Button label",
+            "button_label_1": "",
             "button_link_1": ""
           }
         }
