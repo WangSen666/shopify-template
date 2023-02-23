@@ -6,10 +6,34 @@
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0": {
           "type": "heading",
           "settings": {
-            "heading": "PODX GO Academy",
+            "heading": "To Access Living Freedom in your",
             "heading_size": "h1",
-            "font_size": 48,
+            "font_size": 36,
             "margin_top": 122,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "76bb0fb9-1e34-4eb4-9ca1-7df63a073c7e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Backyard \/ On the Road \/ Campground \/ Tiny Home Community",
+            "heading_size": "h1",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "e14c4803-65c5-4dd4-a185-59ae7dbe3a2a": {
+          "type": "heading",
+          "settings": {
+            "heading": "We are a visionary tech leader on a mission to solve global housing affordability and create a comfortable home full of possibilities and freedom to dwell in.",
+            "heading_size": "h1",
+            "font_size": 16,
+            "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff",
             "font_weight": 400
@@ -19,64 +43,25 @@
           "type": "bannerComponentBottomInfo",
           "settings": {
             "heading": "",
+            "banner_button_place": "left",
             "heading_1": "Kitchen\/Bedroom\/Great Room",
             "price": "",
             "banner_button_link": "",
-            "banner_button_label": "",
+            "banner_button_label": "Design Your Tiny Home Now",
             "banner_button_link_1": "",
             "banner_button_label_1": "",
-            "is_border": "false"
-          }
-        },
-        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2": {
-          "type": "buttons",
-          "settings": {
-            "banner_button_label": "Download Floorplan",
-            "banner_button_link": "",
-            "font_size": 18
-          }
-        },
-        "4991807a-719b-461d-89ed-cf1f6fa593b9": {
-          "type": "banner_href_icon",
-          "settings": {
-            "icon_width": 60,
-            "banner_href_text": "know-How",
-            "font_size": 18,
-            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-42.png",
-            "href_id": ""
-          }
-        },
-        "6442020b-68cd-47b0-8735-c33a3267a7f1": {
-          "type": "banner_href_icon",
-          "settings": {
-            "icon_width": 60,
-            "banner_href_text": "Co-Creation Lab",
-            "font_size": 18,
-            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-44.png",
-            "href_id": ""
-          }
-        },
-        "ffecce46-5f20-46fa-8f36-ed34bb92ef26": {
-          "type": "banner_href_icon",
-          "settings": {
-            "icon_width": 60,
-            "banner_href_text": "Reseller Program",
-            "font_size": 18,
-            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-45.png",
-            "href_id": ""
+            "is_border": "true"
           }
         }
       },
       "block_order": [
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0",
-        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1",
-        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2",
-        "4991807a-719b-461d-89ed-cf1f6fa593b9",
-        "6442020b-68cd-47b0-8735-c33a3267a7f1",
-        "ffecce46-5f20-46fa-8f36-ed34bb92ef26"
+        "76bb0fb9-1e34-4eb4-9ca1-7df63a073c7e",
+        "e14c4803-65c5-4dd4-a185-59ae7dbe3a2a",
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/21.jpg",
+        "image": "shopify:\/\/shop_images\/16_1.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
