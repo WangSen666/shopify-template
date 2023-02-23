@@ -277,6 +277,40 @@
         "heading": "loves to hear from and support our customers and partners",
         "font_size": 24
       }
+    },
+    "5c57af59-058a-4c4c-90ed-26b075562c84": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don’t Miss Out",
+            "heading_size": "h1"
+          }
+        },
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Shared info about products developing, interior design, and speical discounts.<\/p>"
+          }
+        },
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-0",
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-1",
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -285,6 +319,7 @@
     "cacc527b-9b28-426c-b16e-1ee06493a8be",
     "c17fce45-651b-48b6-8d30-5140858d7f13",
     "d99f99d1-4c3c-4dc6-9751-f49fabb2e28a",
-    "ae5562b8-bef6-4424-a0a5-78ca060d5999"
+    "ae5562b8-bef6-4424-a0a5-78ca060d5999",
+    "5c57af59-058a-4c4c-90ed-26b075562c84"
   ]
 }
