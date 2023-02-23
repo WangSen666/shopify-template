@@ -69,14 +69,14 @@
       
     };
   }
- .lr-blocks-banner__box .banner__buttons .button {
+ .lr-blocks-banner__box  .lr-blockcomponent__button .button {
     background: none;
     /* color: #fff; */
     /* border: 1px solid #fff; */
     border-radius: 20px;
     padding: 6px 14px;
   }
-  .lr-blocks-banner__box .banner__buttons .button img {
+  .lr-blocks-banner__box  .lr-blockcomponent__button .button img {
     margin-left: 14px;
     vertical-align: middle;
   }
@@ -89,7 +89,7 @@
     margin: 0 auto;
     padding: 14px 0;
   }
-
+ 
   .card-flex-box {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +169,7 @@
             </div>
             {%- when 'buttons' -%}
             <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              class="banner__buttons lr-blockcomponent__button {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }}
               style="margin-top:{{  block.settings.margin_top }}px;margin-bottom:{{  block.settings.margin_bottom }}px;">
               {%- if block.settings.button_label_1 != blank -%}
