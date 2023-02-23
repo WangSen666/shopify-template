@@ -6,10 +6,22 @@
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0": {
           "type": "heading",
           "settings": {
-            "heading": "PODX GO Academy",
+            "heading": "Become PODX GO Partner",
             "heading_size": "h1",
-            "font_size": 48,
+            "font_size": 36,
             "margin_top": 122,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "abfec780-7548-4c36-a213-d8f2bf643fb9": {
+          "type": "heading",
+          "settings": {
+            "heading": "We know it takes more than a great product to satisfy customers and broaden the accessibility of affordable dream homes.  That's why we are actively looking for reselling, media communication, and home design partners globally.",
+            "heading_size": "h1",
+            "font_size": 16,
+            "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff",
             "font_weight": 400
@@ -19,6 +31,7 @@
           "type": "bannerComponentBottomInfo",
           "settings": {
             "heading": "",
+            "banner_button_place": "right",
             "heading_1": "Kitchen\/Bedroom\/Great Room",
             "price": "",
             "banner_button_link": "",
@@ -69,6 +82,7 @@
       },
       "block_order": [
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0",
+        "abfec780-7548-4c36-a213-d8f2bf643fb9",
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1",
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2",
         "4991807a-719b-461d-89ed-cf1f6fa593b9",
