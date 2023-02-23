@@ -44,7 +44,7 @@
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "Download Floorplan",
+            "banner_button_label": "Download Brochure",
             "banner_button_link": "",
             "font_size": 18
           }
@@ -53,9 +53,9 @@
           "type": "banner_href_icon",
           "settings": {
             "icon_width": 60,
-            "banner_href_text": "know-How",
+            "banner_href_text": "Dealer Program",
             "font_size": 18,
-            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-42.png",
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-45.png",
             "href_id": ""
           }
         },
