@@ -270,8 +270,8 @@
         "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/12_1_1.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify:\/\/shop_images\/20230206105704.jpg",
+        "image_overlay_opacity": 30,
         "is_lr": "true",
         "show_text_box": true,
         "layout": "text_first",
