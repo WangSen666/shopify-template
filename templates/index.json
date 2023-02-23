@@ -458,7 +458,7 @@
         "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
+            "picture-card-item": "shopify:\/\/shop_images\/3_840c3c7a-a9e4-452a-9b21-0222ac00d593.jpg",
             "heading": "GRANDE SI",
             "heading_1": "",
             "font_size": 36,
@@ -471,7 +471,7 @@
         "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/12_1_1.jpg",
+            "picture-card-item": "shopify:\/\/shop_images\/4_06c2cb2e-e827-4b8f-aecd-290857b6e9d0.jpg",
             "heading": "LIBRE SI",
             "heading_1": "",
             "font_size": 36,
@@ -484,7 +484,7 @@
         "41d3954f-97fc-4a32-bb41-1c9d35c2f473": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/4_06c2cb2e-e827-4b8f-aecd-290857b6e9d0.jpg",
+            "picture-card-item": "shopify:\/\/shop_images\/1_7b2678d9-6165-4e85-99ff-0d3c6ebeb3ac.jpg",
             "heading": "LAVIDA SI",
             "heading_1": "",
             "font_size": 36,
@@ -640,6 +640,82 @@
         "include_margins": true
       }
     },
+    "817a5069-6e91-49ec-aff0-da615eb133ea": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO Academy",
+            "text_color": "#000",
+            "font_size": 40,
+            "font_weight": 1000
+          }
+        },
+        "5ed01a38-46c3-443e-a8f6-6ab70911b0fe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Having questions about start your tiny home journey? No worries. We are here to help.",
+            "text_color": "#000",
+            "font_size": 20,
+            "font_weight": 100
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1": {
+          "type": "heading_1",
+          "settings": {
+            "heading_1": "We are here to help",
+            "text_color": "#B5EF35",
+            "font_size": 78,
+            "font_weight": 1000
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "How will",
+            "heading_2": "you get your PODX GO home?",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/测试产品1"
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "Zoning,",
+            "heading_2": "Insurances, Loan...……",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/collections"
+          }
+        },
+        "c9f46c3c-d9e5-4e1d-9806-02dafdb10b29": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/1-banner_d43f8ff7-c61f-47c9-81ba-cfc6031c8eda.jpg",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0",
+        "5ed01a38-46c3-443e-a8f6-6ab70911b0fe",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3",
+        "c9f46c3c-d9e5-4e1d-9806-02dafdb10b29"
+      ],
+      "settings": {
+        "is_titleBlock": "true",
+        "is_showTitle": "true",
+        "layout": "big_image_first",
+        "card_num": "2"
+      }
+    },
     "2fc4a141-20b7-4e60-a81a-cb54d29e005b": {
       "type": "newsletter",
       "blocks": {
@@ -684,6 +760,7 @@
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "8bd58e50-4c4c-4374-9837-2903a599cddb",
     "1672909950d79615a4",
+    "817a5069-6e91-49ec-aff0-da615eb133ea",
     "2fc4a141-20b7-4e60-a81a-cb54d29e005b"
   ]
 }
