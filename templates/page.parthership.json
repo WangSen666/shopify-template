@@ -421,10 +421,11 @@
         "padding_bottom": 52
       }
     },
-    "15b836c3-e052-4ee3-aa87-97e68f8d766f": {
-      "type": "page",
+    "29ebf23e-ce95-43ac-961b-af70545a457e": {
+      "type": "main-contact-form",
       "settings": {
-        "page": "become-a-partner",
+        "font-weight": 400,
+        "heading": "Become A Partner",
         "heading_size": "h1",
         "color_scheme": "background-1",
         "padding_top": 36,
@@ -440,6 +441,6 @@
     "7720d25f-feb7-4006-ac60-42f1440e0fe2",
     "4495e877-7877-4943-a731-1b9420bee3fa",
     "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea",
-    "15b836c3-e052-4ee3-aa87-97e68f8d766f"
+    "29ebf23e-ce95-43ac-961b-af70545a457e"
   ]
 }
