@@ -296,6 +296,72 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "7720d25f-feb7-4006-ac60-42f1440e0fe2": {
+      "type": "rich-text-button",
+      "blocks": {
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Co-Creation Lab",
+            "heading_size": "h1",
+            "font_size": 36,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-1": {
+          "type": "text",
+          "settings": {
+            "text": "Individuals and cooperations who with passion and belief can affect the world's future and people's life are welcome to be part of PODX GO!  The PODX GO home Grande S1 is supported by individuals who shared their dream home ideas with us, and companies in off-grid solar solutions, creative furniture, smart home applications, and NOAH.",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-2": {
+          "type": "button",
+          "settings": {
+            "banner_button_label": "Learn More",
+            "banner_button_link": "",
+            "font_size": 24,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-3": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+          }
+        },
+        "d3b74d28-cf94-4ff0-8fa2-59fef60eb7a6": {
+          "type": "text",
+          "settings": {
+            "text": "They are in the life-changing squad.",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-0",
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-1",
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-2",
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-3",
+        "d3b74d28-cf94-4ff0-8fa2-59fef60eb7a6"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -303,6 +369,7 @@
     "main",
     "23de8b24-9276-477b-978a-ca61883420d8",
     "6fe9ba78-fca2-42c9-ab07-e0c3473a95ae",
-    "cacc527b-9b28-426c-b16e-1ee06493a8be"
+    "cacc527b-9b28-426c-b16e-1ee06493a8be",
+    "7720d25f-feb7-4006-ac60-42f1440e0fe2"
   ]
 }
