@@ -211,7 +211,7 @@
             </div>
             {% endif %}
           {%- when 'bannerComponentBottomInfo' -%}
-          <div class="banner-component-1-bottom-info" style="border-bottom:{% if block.settings.is_border == 'true' %} 1px solid #fff;{% endif %}">
+          <div class="banner-component-1-bottom-info" style="border-bottom:{% if block.settings.is_border == 'true' %} 1px solid #fff;{% endif %} flex-direction:{% if block.settings.banner_button_place=="left" %} row-reserve{% endif %};">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
             {% if block.settings.heading!=blank %}
               <p>{{ block.settings.heading | escape }}</p>
@@ -506,6 +506,16 @@
             "id": "heading",
             "default": "FUll SIZE",
             "label": "标题1"
+          },
+          {
+            "type":"select",
+            "id":"banner_button_place",
+            "options":[
+              {"value":"left","label":"左边"},
+              {"value":"right","label":"右边"}
+            ],
+            "default":"right",
+            "label":"按钮所在位置"
           },
           {
             "type": "text",
