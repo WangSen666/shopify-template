@@ -82,40 +82,6 @@
         "padding_bottom": 28
       }
     },
-    "cacc527b-9b28-426c-b16e-1ee06493a8be": {
-      "type": "newsletter",
-      "blocks": {
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sign Up and Stay Tuned",
-            "heading_size": "h1"
-          }
-        },
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
-          }
-        },
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0",
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1",
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "c17fce45-651b-48b6-8d30-5140858d7f13": {
       "type": "lr-block-component",
       "blocks": {
@@ -316,7 +282,6 @@
   "order": [
     "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
     "main",
-    "cacc527b-9b28-426c-b16e-1ee06493a8be",
     "c17fce45-651b-48b6-8d30-5140858d7f13",
     "d99f99d1-4c3c-4dc6-9751-f49fabb2e28a",
     "ae5562b8-bef6-4424-a0a5-78ca060d5999",
