@@ -54,7 +54,21 @@
   .lr-blocks-banner__box .banner__box-item {
     width: 46% !important;
   }
-  .lr-blocks-banner__box .banner__buttons .button {
+ 
+  }
+    @media screen and (max-width:1280px) {
+    .image-wrapper {
+      width: 400px !important;
+      height: 400px !important;
+    }
+    .lr-blocks-banner__box {
+      justify-content: space-between !important;
+      flex-wrap: wrap;
+      min-width: unset !important;
+      
+    };
+  }
+ .lr-blocks-banner__box .banner__buttons .button {
     background: none;
     /* color: #fff; */
     /* border: 1px solid #fff; */
@@ -83,20 +97,6 @@
   .card-flex-box img {
     margin: 14px;
   }
-  }
-    @media screen and (max-width:1280px) {
-    .image-wrapper {
-      width: 400px !important;
-      height: 400px !important;
-    }
-    .lr-blocks-banner__box {
-      justify-content: space-between !important;
-      flex-wrap: wrap;
-      min-width: unset !important;
-      
-    };
-  }
-
   @media screen and (max-width: 750px) {
     .lr-blocks-banner__box {
       padding:14px !important;
