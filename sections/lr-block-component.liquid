@@ -113,6 +113,9 @@
       text-align: center !important;
       background:none !important;
     }
+    .lr-blocks-banner__box .banner__heading{
+      text-align:center !important;
+    }
     .image-wrapper {
       width: 300px !important;
       height: 200px !important;
@@ -162,7 +165,7 @@
             <h2
               class="banner__heading {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
+              style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;{% if section.settings.layout=='image_first' %} text-align:right;{% endif %}{% if section.settings.layout=='text_first' %} text-align:left !important;{% endif %}">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
             {%- when 'text' -%}
