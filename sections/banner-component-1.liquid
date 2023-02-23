@@ -211,7 +211,7 @@
             </div>
             {% endif %}
           {%- when 'bannerComponentBottomInfo' -%}
-          <div class="banner-component-1-bottom-info" style="border-bottom:{% if block.settings.is_border == 'true' %} 1px solid #fff;{% endif %} flex-direction:{% if block.settings.banner_button_place=="left" %} row-reverse{% endif %};">
+          <div class="banner-component-1-bottom-info" style="{% if block.settings.is_border == 'true' %}border-bottom: 1px solid #fff;{% endif %} {% if block.settings.banner_button_place=="left" %}flex-direction: row-reverse{% endif %};">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
             {% if block.settings.heading!=blank %}
               <p>{{ block.settings.heading | escape }}</p>
