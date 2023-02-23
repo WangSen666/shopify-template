@@ -4,16 +4,14 @@
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner-component__content::before  {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
-        %;
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
     }
     @media screen and (min-width: 750px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
-        %;
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -24,8 +22,7 @@
 
 {%- style -%}
   #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
-    ;
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
   @media screen and (max-width: 750px) {
@@ -149,6 +146,10 @@
     margin: 14px;
    display:inline-block;
   }
+  .banner-href-icon-item{
+    text-decoration:none;
+  }
+  
   .banner-component-1-button {
     font-size: 18px;
     background: none;
@@ -211,7 +212,7 @@
             </div>
             {% endif %}
           {%- when 'bannerComponentBottomInfo' -%}
-          <div class="banner-component-1-bottom-info" style="border-bottom:{% if block.settings.is_border == 'true' %} 1px solid #fff;{% endif %}">
+          <div class="banner-component-1-bottom-info" style="{% if block.settings.is_border == 'true' %}border-bottom: 1px solid #fff;{% endif %} {% if block.settings.banner_button_place=="left" %}flex-direction: row-reverse{% endif %};">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
             {% if block.settings.heading!=blank %}
               <p>{{ block.settings.heading | escape }}</p>
@@ -506,6 +507,16 @@
             "id": "heading",
             "default": "FUll SIZE",
             "label": "标题1"
+          },
+          {
+            "type":"select",
+            "id":"banner_button_place",
+            "options":[
+              {"value":"left","label":"左边"},
+              {"value":"right","label":"右边"}
+            ],
+            "default":"right",
+            "label":"按钮所在位置"
           },
           {
             "type": "text",

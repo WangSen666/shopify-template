@@ -3,10 +3,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
-    px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
-    px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
 
@@ -33,15 +31,18 @@
     font-size: 24px;
     box-shadow: 0 0 24px #C8C8C6 !important;
   }
+  .newsletter{
+    background:rgb(247,247,245) !important;
+    border-top:2px solid #606060;
+  }
+  
   .newsletter-form__field-wrapper {
     width: unset !important;
   }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
   @media screen and (max-width: 750px) {
@@ -60,6 +61,9 @@
     }
   }
   @media screen and (max-width: 750px) {
+    .newsletter-form{
+      align-items:unset !important;
+    }
     .newsletter-form__field-wrapper {
       flex-wrap: wrap;
       flex-direction: row;
@@ -77,7 +81,7 @@
 {%- endstyle -%}
 
 <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div style="--color-foreground:none;" class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div style="--color-foreground:none;background:rgb(247,247,245) !important;" class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -95,7 +99,7 @@
               value="newsletter">
             <div class="newsletter-form__field-wrapper">
               <div class="field bottom-filed">
-                <input id="NewsletterForm--{{ section.id }}"type="email"name="contact[email]"class="field__input"value="{{ form.email }}"aria-required="true"autocorrect="off"autocapitalize="off"autocomplete="email"{% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
+                <input style="border-radius:14px;" id="NewsletterForm--{{ section.id }}"type="email"name="contact[email]"class="field__input"value="{{ form.email }}"aria-required="true"autocorrect="off"autocapitalize="off"autocomplete="email"{% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
               {% comment %} <label class="field__label" for="NewsletterForm--{{ section.id }}">
               {{ 'newsletter.label' | t }}
               </label> {% endcomment %}

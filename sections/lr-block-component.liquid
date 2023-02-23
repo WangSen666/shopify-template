@@ -44,17 +44,32 @@
       display: flex;
       justify-content: space-between !important;
       min-width: var(--page-width);
+      height:100%;
+      padding:0 !important;
     };
 
-
-  }
-  .lr-blocks-banner__box .banner__box-item:first-child {
+    .lr-blocks-banner__box .banner__box-item:first-child {
     text-align: left;
   }
   .lr-blocks-banner__box .banner__box-item {
     width: 46% !important;
+    text-align:left !important;
   }
-  .lr-blocks-banner__box .banner__buttons .button {
+ 
+  }
+    @media screen and (max-width:1280px) {
+    .image-wrapper {
+      width: 400px !important;
+      height: 400px !important;
+    }
+    .lr-blocks-banner__box {
+      justify-content: space-between !important;
+      flex-wrap: wrap;
+      min-width: unset !important;
+      
+    };
+  }
+ .lr-blocks-banner__box .banner__buttons .button {
     background: none;
     /* color: #fff; */
     /* border: 1px solid #fff; */
@@ -83,39 +98,28 @@
   .card-flex-box img {
     margin: 14px;
   }
-  @media screen and (max-width:1280px) {
-    .image-wrapper {
-      width: 400px !important;
-      height: 400px !important;
-    }
+  @media screen and (max-width: 749px) {
     .lr-blocks-banner__box {
-      justify-content: space-between !important;
-      flex-wrap: wrap;
-      min-width: unset !important;
-    };
-  }
-
-  @media screen and (max-width: 750px) {
-    /* .lr-blocks-banner__box {
-      justify-content: space-between !important;
-      flex-wrap: wrap;
-      min-width: unset !important;
-    }; */
+      padding:14px !important;
+    }
     .lr-blocks-banner__box .banner__box-item {
       width: 94% !important;
-      margin: 24px auto;
+      margin: 24px auto !important;;
       text-align: center !important;
+      background:none !important;
     }
     .image-wrapper {
       width: 300px !important;
       height: 200px !important;
     }
   }
+  
+
 {%- endstyle -%}
 
 <div
   id="Banner-{{ section.id }}"
-  style="padding:24px 0;"
+  style=""
   class="banner {% if section.settings.image != blank %} bg_wrapper {% endif %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
@@ -143,7 +147,7 @@
     </div>
 
   {%- endif -%}
-  <div class="banner__content lr-blocks-banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+  <div class="banner__content lr-blocks-banner__content banner__content--{{ section.settings.desktop_content_position }} page-width" style="{% if section.settings.is_imgBg == 'false' %} padding:24px 0 !important;{% endif %}">
     <div class="banner__box lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
       <div class="banner__box-item">
 
@@ -218,13 +222,13 @@
         </div>
       </div>
       {%- if section.settings.is_lr == 'true' -%}
-        <div class="banner__box-item" style="display:block;">
+        <div class="banner__box-item" style="{% if section.settings.is_imgBg == 'true' %} width:100%;height:100%;background:#5F6061;display: flex;justify-content: center;align-items: center;margin-top:0 !important;{% endif %}">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
 
               <img
-                style="{% if block.settings.is_imgFixed == 'true' %} width:100%;height:600px;{% endif %}{% if block.settings.is_imgFixed == 'false' %} width:100%;height:520px; {% endif %}"
+                style=" {% if section.settings.is_imgBg == 'true' %}width:408px;{% endif %}{% if section.settings.is_imgBg == 'false' %}width:490px;height:580px;margin: 0 auto;display: block;{% endif %}"
                 class="image-wrapper"
                 src={{ block.settings.image_1 | image_url }} />
 
@@ -297,7 +301,22 @@
         "default": "image_first",
         "label": "t:sections.image-with-text.settings.layout.label",
         "info": "t:sections.image-with-text.settings.layout.info"
-      }
+      },
+       {
+            "type": "select",
+            "id": "is_imgBg",
+            "options": [
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+            "default": "false",
+            "label": "分块图片是否有背景色"
+          }
     ],
     "blocks": [
       {
@@ -547,20 +566,6 @@
             "type": "image_picker",
             "id": "image_1",
             "label": "第一张图片"
-          }, {
-            "type": "select",
-            "id": "is_imgFixed",
-            "options": [
-              {
-                "value": "true",
-                "label": "是"
-              }, {
-                "value": "false",
-                "label": "否"
-              }
-            ],
-            "default": "false",
-            "label": "图片是否占满容器"
           }
         ]
       }, {

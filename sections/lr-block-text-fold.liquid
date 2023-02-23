@@ -1,5 +1,3 @@
-{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
@@ -14,7 +12,6 @@
       }
 
     }
-
 
     @media screen and (min-width: 750px) {
       #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
@@ -35,26 +32,71 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
     ;
   }
-  @media screen and (min-width: 750px) {
-    .lr-block-text-fold__content {
-      display: flex;
-      justify-content: space-between;
-    }
-    .lr-block-text-fold__item {
-      width: 49%;
-    }
-    .lr-block-text-fold__item .image_1 {
-      width: 100%;
-    }
-    .fold-wrapper-head {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid black;
-    }
+  .lr-block-text-fold__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .lr-block-text-fold__item {
+    width: 49%;
+  }
+  .lr-block-text-fold_item_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .lr-block-text-fold__item .image_1 {
+    width: 100%;
+  }
+  .fold-wrapper-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: relative;
+  }
+  .fold-wrapper-text {
+    display: none;
+  }
+  .fold-wrapper-head img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  img.folded-img {
+    top: 30%;
+    transform: rotate(180deg);
+  }
+  .fold-wrapper_button {
+    background: none;
+    border-radius: 20px;
+    padding: 0 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .fold-wrapper_button img {
+    margin-left: 14px;
+    vertical-align: middle;
   }
   @media screen and (max-width:1280px) {}
 
-  @media screen and (max-width: 750px) {}
+  @media screen and (max-width: 750px) {
+
+    .lr-block-text-fold__content {
+      flex-wrap: wrap;
+    }
+    .lr-block-text-fold__item {
+      width: 98% !important;
+    }
+    .fold-wrapper_button {
+      position: relative !important;
+      bottom: unset;
+      margin: 14px auto;
+    }
+
+  }
 {%- endstyle -%}
 
 <div
@@ -79,7 +121,7 @@
         {% endcase %}
       {% endfor %}
     </div>
-    <div class="lr-block-text-fold__item">
+    <div class="lr-block-text-fold__item lr-block-text-fold_item_text">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "fold_wrapper" %}
@@ -88,24 +130,64 @@
               class="fold-wrapper-head"
               onclick="clickFoldItem(event)"
               style="font-size:{{ block.settings.heading_size }}px;">
-              {{ block.settings.heading }}
-              <img src="{{ 'fold.png'|asset_url }}" />
+              <h2>{{ block.settings.heading }}</h2>
+              <img class="" src="{{ 'fold.png'|asset_url }}" />
             </div>
             <div class="fold-wrapper-text" style="font-size:{{ block.settings.text_size }}px;">
               {{ block.settings.text }}
             </div>
           </div>
+          {% when 'button' %}
+          <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="fold-wrapper_button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+            <img
+              src="{{   'button_logo_2.png' | asset_url }}"
+              width="12"
+              height="12" />
+          </a>
         {% endcase %}
       {% endfor %}
     </div>
 
-  </div>
+    <!--      {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'button' %}
+    <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="fold-wrapper_button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+    <img
+    src="{{   'button_logo_2.png' | asset_url }}"
+    width="12"
+    height="12" />
+    </a>
+    {% endcase %}
+    {% endfor %} --></div>
 </div>
 
+
+
 <script>
-  window.onload = function() {};
+  window.onload = function() {
+    console.log("ewqew")
+
+  };
   var clickFoldItem = function(event) {
-    console.log("item", event)
+    var event = event || window.event;
+    if (event.target.className != 'fold-wrapper-head') {
+
+// event.stopPropagation();
+    } else {
+      var fold_text = event.target.nextElementSibling;
+      console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
+      if (event.target.style.borderBottom != "none") {
+        event.target.style.borderBottom = "none";
+        fold_text.style.display = "block";
+        event.target.getElementsByTagName('img')[0].className = "folded-img";
+      } else {
+        event.target.style.borderBottom = "1px solid black";
+        fold_text.style.display = "none";
+        event.target.getElementsByTagName('img')[0].className = "";
+
+      }
+    }
+
   }
 </script>
 

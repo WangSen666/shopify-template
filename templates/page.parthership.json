@@ -1,0 +1,469 @@
+{
+  "sections": {
+    "0086e982-2b50-4e3b-b5c1-09d93e53a8b8": {
+      "type": "banner-component-1",
+      "blocks": {
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become PODX GO Partner",
+            "heading_size": "h1",
+            "font_size": 36,
+            "margin_top": 122,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "abfec780-7548-4c36-a213-d8f2bf643fb9": {
+          "type": "heading",
+          "settings": {
+            "heading": "We know it takes more than a great product to satisfy customers and broaden the accessibility of affordable dream homes.  That's why we are actively looking for reselling, media communication, and home design partners globally.",
+            "heading_size": "h1",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1": {
+          "type": "bannerComponentBottomInfo",
+          "settings": {
+            "heading": "",
+            "banner_button_place": "right",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "price": "",
+            "banner_button_link": "",
+            "banner_button_label": "",
+            "banner_button_link_1": "",
+            "banner_button_label_1": "",
+            "is_border": "true"
+          }
+        },
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "Download Brochure",
+            "banner_button_link": "",
+            "font_size": 18
+          }
+        },
+        "4991807a-719b-461d-89ed-cf1f6fa593b9": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 60,
+            "banner_href_text": "Dealer Program",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-45.png",
+            "href_id": ""
+          }
+        },
+        "6442020b-68cd-47b0-8735-c33a3267a7f1": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 60,
+            "banner_href_text": "Co-Creation Lab",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-44.png",
+            "href_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0",
+        "abfec780-7548-4c36-a213-d8f2bf643fb9",
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1",
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2",
+        "4991807a-719b-461d-89ed-cf1f6fa593b9",
+        "6442020b-68cd-47b0-8735-c33a3267a7f1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/18.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "23de8b24-9276-477b-978a-ca61883420d8": {
+      "type": "rich-text-button",
+      "blocks": {
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Co-Creation Lab",
+            "heading_size": "h1",
+            "font_size": 36,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Individuals and cooperations who with passion and belief can affect the world's future and people's life are welcome to be part of PODX GO!  The PODX GO home Grande S1 is supported by individuals who shared their dream home ideas with us, and companies in off-grid solar solutions, creative furniture, smart home applications, and NOAH.",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "091a569b-5462-4f83-b44a-b45e74eb4887": {
+          "type": "text",
+          "settings": {
+            "text": "They are in the life-changing squad.",
+            "font_size": 20,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-2": {
+          "type": "button",
+          "settings": {
+            "banner_button_label": "Button label",
+            "banner_button_link": "",
+            "font_size": 14,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-3": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/1-11.png"
+          }
+        },
+        "45859504-6639-45cb-aa4d-d1e9c99dba24": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/1-10.png"
+          }
+        },
+        "81ec5f5a-cc4a-482e-a25e-31cddd9ab08c": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/1-09.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-0",
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-1",
+        "091a569b-5462-4f83-b44a-b45e74eb4887",
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-2",
+        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-3",
+        "45859504-6639-45cb-aa4d-d1e9c99dba24",
+        "81ec5f5a-cc4a-482e-a25e-31cddd9ab08c"
+      ],
+      "settings": {
+      }
+    },
+    "6fe9ba78-fca2-42c9-ab07-e0c3473a95ae": {
+      "type": "lr-block-text-fold",
+      "blocks": {
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "As a PODX GO Dealer Partner",
+            "font-weight": 400,
+            "font_size": 24,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-3": {
+          "type": "image_1",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/18.jpg"
+          }
+        },
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-1": {
+          "type": "text",
+          "settings": {
+            "text": "For Reseller Program, Get in Touch with Business Teamdealer.us@podxgo.com",
+            "font_size": 18,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-4": {
+          "type": "fold_wrapper",
+          "settings": {
+            "heading": "A growing market with opportunities",
+            "heading_size": 24,
+            "text": "PODX GO homes are designed for possibilities and freedom. Whether your business is in RV dealership or Tiny Home Builders, or own an RV park, or vacation resort, or just having an idea about Airbnb, PODX GO will help you build and sell.",
+            "text_size": 18
+          }
+        },
+        "5cba8b01-b4ec-48a3-ba9f-3fb296f1af6f": {
+          "type": "fold_wrapper",
+          "settings": {
+            "heading": "We bring the customers to you",
+            "heading_size": 24,
+            "text": "PODX GO homes are designed for possibilities and freedom. Whether your business is in RV dealership or Tiny Home Builders, or own an RV park, or vacation resort, or just having an idea about Airbnb, PODX GO will help you build and sell.",
+            "text_size": 18
+          }
+        },
+        "c7d94e2f-3405-450d-9392-1707b5f130e4": {
+          "type": "fold_wrapper",
+          "settings": {
+            "heading": "We make it easier for everyone",
+            "heading_size": 24,
+            "text": "PODX GO homes are designed for possibilities and freedom. Whether your business is in RV dealership or Tiny Home Builders, or own an RV park, or vacation resort, or just having an idea about Airbnb, PODX GO will help you build and sell.",
+            "text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-0",
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-2",
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-3",
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-1",
+        "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-4",
+        "5cba8b01-b4ec-48a3-ba9f-3fb296f1af6f",
+        "c7d94e2f-3405-450d-9392-1707b5f130e4"
+      ],
+      "settings": {
+        "layout": "image_first"
+      }
+    },
+    "cacc527b-9b28-426c-b16e-1ee06493a8be": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Stay Tuned",
+            "heading_size": "h1"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "7720d25f-feb7-4006-ac60-42f1440e0fe2": {
+      "type": "rich-text-button",
+      "blocks": {
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Co-Creation Lab",
+            "heading_size": "h1",
+            "font_size": 36,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-1": {
+          "type": "text",
+          "settings": {
+            "text": "Individuals and cooperations who with passion and belief can affect the world's future and people's life are welcome to be part of PODX GO!  The PODX GO home Grande S1 is supported by individuals who shared their dream home ideas with us, and companies in off-grid solar solutions, creative furniture, smart home applications, and NOAH.",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-2": {
+          "type": "button",
+          "settings": {
+            "banner_button_label": "Learn More",
+            "banner_button_link": "",
+            "font_size": 24,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-3": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+          }
+        },
+        "d3b74d28-cf94-4ff0-8fa2-59fef60eb7a6": {
+          "type": "text",
+          "settings": {
+            "text": "They are in the life-changing squad.",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-0",
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-1",
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-2",
+        "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-3",
+        "d3b74d28-cf94-4ff0-8fa2-59fef60eb7a6"
+      ],
+      "settings": {
+      }
+    },
+    "4495e877-7877-4943-a731-1b9420bee3fa": {
+      "type": "rich-text-button",
+      "blocks": {
+        "template--15619111551076__4495e877-7877-4943-a731-1b9420bee3fa-16771359344372a0d8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO Host Program",
+            "heading_size": "h1",
+            "font_size": 36,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15619111551076__4495e877-7877-4943-a731-1b9420bee3fa-16771359344372a0d8-1": {
+          "type": "text",
+          "settings": {
+            "text": "Become a PODX GO Host and share your experience with others. We hope our hosts embody PODX GO values and become part of tiny home innovations. All PODX GO homeowners are eligible to join the Host Program. As a host, you will virtually connect with potential customers to help answer any questions they have about PODX GO homes.",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15619111551076__4495e877-7877-4943-a731-1b9420bee3fa-16771359344372a0d8-2": {
+          "type": "button",
+          "settings": {
+            "banner_button_label": "Coming soon",
+            "banner_button_link": "",
+            "font_size": 24,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "23b05509-42ac-4044-b284-18ca73f7e849": {
+          "type": "text",
+          "settings": {
+            "text": "They are in the life-changing squad.",
+            "font_size": 16,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111551076__4495e877-7877-4943-a731-1b9420bee3fa-16771359344372a0d8-0",
+        "template--15619111551076__4495e877-7877-4943-a731-1b9420bee3fa-16771359344372a0d8-1",
+        "template--15619111551076__4495e877-7877-4943-a731-1b9420bee3fa-16771359344372a0d8-2",
+        "23b05509-42ac-4044-b284-18ca73f7e849"
+      ],
+      "settings": {
+      }
+    },
+    "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Stay Tuned",
+            "heading_size": "h1"
+          }
+        },
+        "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
+          }
+        },
+        "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-0",
+        "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-1",
+        "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
+    "main",
+    "23de8b24-9276-477b-978a-ca61883420d8",
+    "6fe9ba78-fca2-42c9-ab07-e0c3473a95ae",
+    "cacc527b-9b28-426c-b16e-1ee06493a8be",
+    "7720d25f-feb7-4006-ac60-42f1440e0fe2",
+    "4495e877-7877-4943-a731-1b9420bee3fa",
+    "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea"
+  ]
+}
