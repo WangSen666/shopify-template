@@ -200,12 +200,91 @@
         "layout": "image_first",
         "is_imgBg": "false"
       }
+    },
+    "d99f99d1-4c3c-4dc6-9751-f49fabb2e28a": {
+      "type": "video",
+      "settings": {
+        "heading": "PODX GO homes are completed up to 99% in our automation factory and delivered to you within 90 days.  Our unique approach to tiny homes reduces construction and delivery costs by up to 70% and reduces the assessment time from days to only 15 mins DIY experience. It is also equipped with smart home devices and off-grid energy solutions that give you the freedom to live wherever you want.",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/18.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "button_label": "Visit Our Factory",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "font_size": 20,
+        "font_weight": 400
+      }
+    },
+    "ae5562b8-bef6-4424-a0a5-78ca060d5999": {
+      "type": "diversified-and-multi-column",
+      "blocks": {
+        "ff38da4e-67f9-4da5-9f56-33c2a74b63ce": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-46.png",
+            "heading_1": "Address",
+            "heading_size": 18,
+            "text_1": "5050 S Archibald Ave",
+            "text_2": "Ontario, CA 91762",
+            "text_size": 20
+          }
+        },
+        "a702b323-a1ae-4d37-b4dd-7e42f5a81ee7": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-48.png",
+            "heading_1": "Business Hours",
+            "heading_size": 14,
+            "text_1": "Monday to Friday",
+            "text_2": "8:30am to 5:00pm PST",
+            "text_size": 14
+          }
+        },
+        "template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-49.png",
+            "heading_1": "Chat Online",
+            "heading_size": 14,
+            "text_1": "Monday to Friday",
+            "text_2": "8:00am to 3:00pm PST",
+            "text_size": 14
+          }
+        },
+        "5b686877-eb2a-4cac-9e46-b46f3295017b": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/podxgo_-___2-50.png",
+            "heading_1": "Email",
+            "heading_size": 18,
+            "text_1": "support@podxgo.com",
+            "text_2": "dealer@podxgo.com",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "ff38da4e-67f9-4da5-9f56-33c2a74b63ce",
+        "a702b323-a1ae-4d37-b4dd-7e42f5a81ee7",
+        "template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0",
+        "5b686877-eb2a-4cac-9e46-b46f3295017b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_5c272315-9fca-41ee-ad6d-0799cad64bd8.png",
+        "heading": "loves to hear from and support our customers and partners",
+        "font_size": 24
+      }
     }
   },
   "order": [
     "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
     "main",
     "cacc527b-9b28-426c-b16e-1ee06493a8be",
-    "c17fce45-651b-48b6-8d30-5140858d7f13"
+    "c17fce45-651b-48b6-8d30-5140858d7f13",
+    "d99f99d1-4c3c-4dc6-9751-f49fabb2e28a",
+    "ae5562b8-bef6-4424-a0a5-78ca060d5999"
   ]
 }
