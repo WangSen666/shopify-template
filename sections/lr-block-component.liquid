@@ -228,7 +228,7 @@
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
 
               <img
-                style=" {% if section.settings.is_imgBg == 'true' %}width:408px;{% endif %}{% if section.settings.is_imgBg == 'false' %}width:490px;height:580px;{% endif %}"
+                style=" {% if section.settings.is_imgBg == 'true' %}width:408px;{% endif %}{% if section.settings.is_imgBg == 'false' %}width:490px;height:580px;margin: 0 auto;display: block;{% endif %}"
                 class="image-wrapper"
                 src={{ block.settings.image_1 | image_url }} />
 
