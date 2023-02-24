@@ -69,14 +69,19 @@
       
     };
   }
- .lr-blocks-banner__box .banner__buttons .button {
+   .lr-blocks-banner__box  .lr-blockcomponent__button{
+      width:100%;
+       max-width:unset !important;
+     display:flex;
+   }
+ .lr-blocks-banner__box  .lr-blockcomponent__button .button {
     background: none;
     /* color: #fff; */
     /* border: 1px solid #fff; */
     border-radius: 20px;
     padding: 6px 14px;
   }
-  .lr-blocks-banner__box .banner__buttons .button img {
+  .lr-blocks-banner__box  .lr-blockcomponent__button .button img {
     margin-left: 14px;
     vertical-align: middle;
   }
@@ -89,7 +94,7 @@
     margin: 0 auto;
     padding: 14px 0;
   }
-
+ 
   .card-flex-box {
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +112,9 @@
       margin: 24px auto !important;;
       text-align: center !important;
       background:none !important;
+    }
+    .lr-blocks-banner__box .banner__heading{
+      text-align:center !important;
     }
     .image-wrapper {
       width: 300px !important;
@@ -157,7 +165,7 @@
             <h2
               class="banner__heading {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
+              style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;{% if section.settings.layout=='image_first' %} text-align:right;{% endif %}{% if section.settings.layout=='text_first' %} text-align:left !important;{% endif %}">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
             {%- when 'text' -%}
@@ -169,9 +177,9 @@
             </div>
             {%- when 'buttons' -%}
             <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              class="banner__buttons lr-blockcomponent__button {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }}
-              style="margin-top:{{  block.settings.margin_top }}px;margin-bottom:{{  block.settings.margin_bottom }}px;">
+              style="margin-top:{{  block.settings.margin_top }}px;margin-bottom:{{  block.settings.margin_bottom }}px;{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
               {%- if block.settings.button_label_1 != blank -%}
                 <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
 

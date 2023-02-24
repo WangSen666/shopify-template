@@ -263,40 +263,6 @@
         "layout": "image_first"
       }
     },
-    "cacc527b-9b28-426c-b16e-1ee06493a8be": {
-      "type": "newsletter",
-      "blocks": {
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sign Up and Stay Tuned",
-            "heading_size": "h1"
-          }
-        },
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
-          }
-        },
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0",
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1",
-        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "7720d25f-feb7-4006-ac60-42f1440e0fe2": {
       "type": "rich-text-button",
       "blocks": {
@@ -421,6 +387,17 @@
       "settings": {
       }
     },
+    "29ebf23e-ce95-43ac-961b-af70545a457e": {
+      "type": "main-contact-form",
+      "settings": {
+        "font-weight": 400,
+        "heading": "Become A Partner",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea": {
       "type": "newsletter",
       "blocks": {
@@ -461,9 +438,9 @@
     "main",
     "23de8b24-9276-477b-978a-ca61883420d8",
     "6fe9ba78-fca2-42c9-ab07-e0c3473a95ae",
-    "cacc527b-9b28-426c-b16e-1ee06493a8be",
     "7720d25f-feb7-4006-ac60-42f1440e0fe2",
     "4495e877-7877-4943-a731-1b9420bee3fa",
+    "29ebf23e-ce95-43ac-961b-af70545a457e",
     "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea"
   ]
 }
