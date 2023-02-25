@@ -70,19 +70,24 @@
     {%- for block in section.blocks -%}
       <div class="with_bg_card-box"  onclick="clickWithBgCard(event)">
       <script>
+      
         var clickWithBgCard=function(event){
           console.log("event",event.target.parentNode)
           event.stopPropagation()
+          let wWidth = document.documentElement.clientWidth;
+        let scrollTop = document.documentElement.scrollTop;
+        if (wWidth >= 990) {
           if(event.target.className!='with_bg_card-item'){
             return ;
           }else{
-           $('.with_bg_card-box').siblings().css({
-              "width":"33%"
-           })
-      event.target.parentNode.style.width="45%"
-      console.log( $('.with_bg_card-box').siblings())
-      
-          }
+             $('.with_bg_card-box').siblings().css({
+                "width":"33%"
+             })
+              event.target.parentNode.style.width="45%"
+          } 
+
+        }
+         
           
         }
         window.onload=function(){
