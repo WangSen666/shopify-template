@@ -265,15 +265,14 @@
             "font_color": "#000"
           }
         },
-        "2f633ae3-d489-4300-81b3-5370eb1a7392": {
-          "type": "heading",
+        "fe2110e7-b44a-4206-86d3-1be6364997e4": {
+          "type": "text",
           "settings": {
-            "heading": "A sealed folding dwelling built with the PODX GO® Hyadraulic System and solid steel structure that can be put in a variety of environments. All parts are manufactured in a highly precise factory and carefully packaged just for you.",
-            "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 20,
-            "margin-top": 34,
-            "margin-bottom": 26,
+            "text": "A sealed folding dwelling built with the PODX GO® Hyadraulic System and solid steel structure that can be put in a variety of environments. All parts are manufactured in a highly precise factory and carefully packaged just for you.",
+            "text_style": "body",
+            "font_size": 18,
+            "margin-top": 0,
+            "margin-bottom": 0,
             "font_color": "#000"
           }
         },
@@ -329,7 +328,7 @@
       },
       "block_order": [
         "template--15597986709604__88d3df49-d732-44f6-ae60-87564fc3b463-1676378176d94c79b5-0",
-        "2f633ae3-d489-4300-81b3-5370eb1a7392",
+        "fe2110e7-b44a-4206-86d3-1be6364997e4",
         "template--15597986709604__88d3df49-d732-44f6-ae60-87564fc3b463-1676378176d94c79b5-2",
         "template--15597986709604__88d3df49-d732-44f6-ae60-87564fc3b463-1676378176d94c79b5-3",
         "template--15597986709604__88d3df49-d732-44f6-ae60-87564fc3b463-1676378176d94c79b5-4",
