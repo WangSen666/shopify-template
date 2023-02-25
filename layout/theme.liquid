@@ -430,12 +430,11 @@
           $(".default_logo").css({"display":"none"});
           $(".scrollTop_logo").css({"display":"block"});
           
-          $('.header-wrapper li:hover').css({color:"black"})
+          $('.header-wrapper>li:hover').css({color:"black"})
         } else {
           header.style.backgroundColor = "unset";
           $(".header .header__menu-item").css({"color": "#fff"})
-          $('.header-wrapper li:hover').css({color:"#fff"})
-          
+          $('.header-wrapper>li:hover').css({color:"#fff"})
            $(".default_logo").css({"display":"block"});
           $(".scrollTop_logo").css({"display":"none"});
           console.log("往下滚动了")
