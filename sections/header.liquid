@@ -120,7 +120,9 @@
   .search-icon{
     margin-right:14px;
   }
-
+  .scrollTop_logo{
+    display:none;
+  }
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -412,11 +414,26 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          <a class="default_logo" href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if section.settings.logo != blank -%}
               {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
               {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+                class: 'header__heading-logo',
+                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                height: logo_height,
+                width: section.settings.logo_width,
+                alt: logo_alt
+              }}
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+           <a class="scrollTop_logo" href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+            {%- if section.settings.logo != blank -%}
+              {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
+              {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
+              {{ 'logo-dark-T.png' | asset_url: width: section.settings.width | image_tag:
                 class: 'header__heading-logo',
                 widths: '50, 100, 150, 200, 250, 300, 400, 500',
                 height: logo_height,
