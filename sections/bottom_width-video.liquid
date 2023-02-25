@@ -125,7 +125,7 @@
        {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'button' -%}
-          <a style="color:black;border:1px solid black;" {% if block.settings.button_label_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+          <a style="color:black;border:1px solid black;" target="downloadFile" {% if block.settings.button_label_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
               <img
                 style="margin-left:6px;"
               src="{{   'button_logo_2.png' | asset_url }}"
