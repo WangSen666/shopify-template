@@ -74,62 +74,6 @@
         "show_text_below": true
       }
     },
-    "0ff86bcd-2f40-4df6-a5b0-5618ff45a4ac": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/99E8E4CD-50A1-44c9-A234-44CFE6132DFC_30ea0c6a-4792-4860-b266-5ee9fd5ca2f5.png",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "button_label": "",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "font_size": 20,
-        "font_weight": 400
-      }
-    },
-    "83be5532-7b04-459f-a347-18646600f063": {
-      "type": "bottom_width-video",
-      "blocks": {
-        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "first_words": "Image",
-            "last_words": "banner",
-            "heading_size": "h1",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24,
-            "heading_color": "#000",
-            "font_weight": 400
-          }
-        },
-        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-1": {
-          "type": "buttomItem",
-          "settings": {
-            "heading": "Image banner",
-            "font_size": 24,
-            "font_color": "#000"
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-0",
-        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-1"
-      ],
-      "settings": {
-        "is_show_select": "false",
-        "cover_image": "shopify:\/\/shop_images\/18.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "button_label": ""
-      }
-    },
     "3ff863fe-33c0-4765-9287-c87e262a93d2": {
       "type": "card-component-with-bg",
       "blocks": {
@@ -795,8 +739,6 @@
   },
   "order": [
     "45cbd826-d11e-470e-ad3e-aff37d062584",
-    "0ff86bcd-2f40-4df6-a5b0-5618ff45a4ac",
-    "83be5532-7b04-459f-a347-18646600f063",
     "3ff863fe-33c0-4765-9287-c87e262a93d2",
     "16120155-bf92-4303-8a4b-19304e4d01f5",
     "3a7ceead-5109-443a-8288-e7d3be855076",
