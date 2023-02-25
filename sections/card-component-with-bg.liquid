@@ -70,12 +70,13 @@
     {%- for block in section.blocks -%}
       <div class="with_bg_card-box"  onclick="clickWithBgCard('event')">
       <script>
+        var clickWithBgCard=function(event){
+          console.log("event",event)
+          
+        }
         window.onload=function(){
           var withBgCard=$(".with_bg_card");
-          var clickWithBgCard=function(event){
-            console.log("event",event)
-            
-          }
+          
           console.log("dadaa",withBgCard);
          
            
