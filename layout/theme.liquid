@@ -427,10 +427,15 @@
           console.log("往滚动了")
           header.style.backgroundColor = "#fff";
           $(".header .header__menu-item").css({"color": "black"})
+          $(".default_logo").css({"display":"none"});
+          $(".scrollTop_logo").css({"display":"block"});
+          
 
         } else {
           header.style.backgroundColor = "unset";
           $(".header .header__menu-item").css({"color": "#fff"})
+           $(".default_logo").css({"display":"block"});
+          $(".scrollTop_logo").css({"display":"none"});
           console.log("往下滚动了")
 
         }
