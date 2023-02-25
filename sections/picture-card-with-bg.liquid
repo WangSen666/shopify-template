@@ -134,7 +134,7 @@ onload="this.media='all'"> {% endcomment %}
 {% comment %} <div class="color-{{ section.settings.color_scheme }} gradient isolate" style="padding-top: {{ section.settings.padding_top }}px;padding-bottom: {{ section.settings.padding_bottom }}px;"></div> {% endcomment %}
 
 
-<div id="{{ section.settings.id }}-card" class="page-width picture-card-with-bg">
+<div id="{{ section.settings.id }}-card {{ section.settings.href_url_id }}" class="page-width picture-card-with-bg">
   {% if section.settings.is_showTitle == 'true' %}
     <div class="picture-card-head">
       {%if section.settings.is_titleBlock=='true'%}
@@ -264,6 +264,12 @@ onload="this.media='all'"> {% endcomment %}
         "default": "false",
         "label": "标题头部是否左右分块"
       }, 
+      {
+        "type":"text",
+        "id":"href_url_id",
+        "label":"链接模块ID(例：id-1)"
+        
+      },
       {
         "type": "select",
         "id": "is_showTitle",
