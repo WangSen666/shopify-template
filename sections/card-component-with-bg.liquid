@@ -76,7 +76,9 @@
           if(event.target.className!='with_bg_card-item'){
             return ;
           }else{
-           $('.with_bg_card-box').siblings()
+           $('.with_bg_card-box').siblings().css({
+              "width":"unset"
+           })
       console.log( $('.with_bg_card-box').siblings())
       
           }
