@@ -424,7 +424,7 @@
         let wWidth = document.documentElement.clientWidth;
         let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 10 && wWidth >= 990) {
-          console.log("往滚动了")
+          console.log("往下滚动了")
           header.style.backgroundColor = "#fff";
           $(".header__menu-item span").css({"color": "black"})
           $(".default_logo").css({"display":"none"});
@@ -441,7 +441,7 @@
           })
            $(".default_logo").css({"display":"block"});
           $(".scrollTop_logo").css({"display":"none"});
-          console.log("往下滚动了")
+          console.log("往上滚动了")
 
         }
         // if (scrollTop >= 10) {
