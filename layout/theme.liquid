@@ -426,7 +426,7 @@
         if (scrollTop > 10 && wWidth >= 990) {
           console.log("往滚动了")
           header.style.backgroundColor = "#fff";
-          $(".header .header__menu-item").css({"color": "black"})
+          $(".header__menu-item span").css({"color": "black"})
           $(".default_logo").css({"display":"none"});
           $(".scrollTop_logo").css({"display":"block"});
           
@@ -435,7 +435,7 @@
           })
         } else {
           header.style.backgroundColor = "unset";
-          $(".header .header__menu-item").css({"color": "#fff"})
+          $(".header__menu-item span").css({"color": "#fff"})
            $('.header__menu-item').hover(function(){
              $('.header__menu-item span').css({color:"#fff"})
           })
