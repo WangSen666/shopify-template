@@ -279,7 +279,7 @@
         "template--15597986709604__88d3df49-d732-44f6-ae60-87564fc3b463-1676378176d94c79b5-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "check Quality Testing Report",
+            "button_label_1": "Check Quality Testing Report",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
