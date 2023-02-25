@@ -431,16 +431,13 @@
           $(".scrollTop_logo").css({"display":"block"});
           
           $('.header__menu-item').hover(function(){
-            console.log('wrqwr')
-             $('.header__menu-item').css({color:"black"})
+             $('.header__menu-item span').css({color:"black"})
           })
         } else {
           header.style.backgroundColor = "unset";
           $(".header .header__menu-item").css({"color": "#fff"})
            $('.header__menu-item').hover(function(){
-            console.log('wrqwr')
-             
-             $('.header__menu-item').css({color:"#fff"})
+             $('.header__menu-item span').css({color:"#fff"})
           })
            $(".default_logo").css({"display":"block"});
           $(".scrollTop_logo").css({"display":"none"});
