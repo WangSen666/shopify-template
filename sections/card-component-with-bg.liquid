@@ -99,8 +99,8 @@
 <script>
   window.onload=function(){
     var withGgCardBox=$(".with_bg_card-box");
-    var clickWitthBgCardImg=function(){
-      
+    var clickWitthBgCardImg=function(event){
+      console.log("event",event)
     }
     withGgCardBox.addEventListener('click',clickWitthBgCardImg,false)
      
