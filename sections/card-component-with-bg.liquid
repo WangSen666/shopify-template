@@ -68,7 +68,7 @@
 <div id="with_bg_card-{{ section.id }}" class="with_bg_card color-{{ section.settings.color_scheme }} ">
   <div class="with_bg_card page-width {% if  section.settings.modile_num=='three' %}width_bg_card-three{% endif %} {% if  section.settings.modile_num=='two' %}width_bg_card-two{% endif %}">
     {%- for block in section.blocks -%}
-      <div class="with_bg_card-box"  onclick="clickWithBgCard('event')">
+      <div class="with_bg_card-box"  onclick="clickWithBgCard()">
       <script>
         var clickWithBgCard=function(event){
           console.log("event",event)
