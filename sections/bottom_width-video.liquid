@@ -1,12 +1,419 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner-component__content::before  {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}
+        %;
+        content: '';
+        display: block;
+      }
+
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
+    ;
+  }
+
+  @media screen and (max-width: 750px) {
+/*     .bottom-with-bg-image-content .banner__box {
+      min-height:30rem;
+      width: 90% !important;
+      position: relative;
+    } */
+    .banner-bottom-info {
+      transform: skew(0) !important;
+    }
+    .banner-bottom-info-item-box {
+      padding: 0 !important;
+      border: none !important;
+      transform: skew(0) !important;
+    }
+    .banner-bottom-info-item-box img {
+      transform: skew(0) !important;
+      width: 24px;
+      height: 24px;
+    }
+    .banner-bottom-info-item-box p {
+      font-size: 14px !important;
+      transform: skew(0) !important;
+      margin: 0 auto;
+    }
+    .yello-text {
+      display: none;
+    }
+  }
+  .bottom-with-bg-image-content {
+    height: 100% !important;
+    position: relative;
+    padding: 0 !important;
+  }
+  .bottom-with-bg-image-content .banner__box {
+    min-height:50rem;
+      width: 98% !important;
+      position: relative;
+  }
+
+  .banner-bottom-info {
+    width: 100%;
+    background: #B5EF35;
+    /* transform: skew(-20deg); */
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
+    position: absolute;
+    bottom: 40px;
+    border-radius: 40px;
+    transform: skew(-10deg);
+  }
+  .banner-bottom-info-item {
+    display: flex;
+    align-items: center;
+  }
+  .banner-bottom-info-item-box {
+    transform: skew(-10deg);
+    border-right: 4px solid #fff;
+    padding: 0 44px;
+  }
+  .banner-bottom-info-item:nth-child(3) .banner-bottom-info-item-box {
+    border-right: none;
+  }
+  .yello-text {
+    position: absolute;
+    top: -30px;
+    font-size: 80px;
+    color: #E8F9C3;
+
+  }
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="bg_wrapper banner    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+<!--   {%- if section.settings.image != blank -%}
+    <div class="banner__media media  {% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+      {%-liquid
+        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+        if section.settings.image_2 != blank
+          assign image_class = "banner__media-image-half"
+        endif
+        if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
+          assign sizes = "(min-width: 750px) 50vw, 100vw"
+        elsif section.settings.image_2 != blank
+          assign sizes = "50vw"
+        else
+          assign sizes = "100vw"
+        endif
+      -%}
+      {{ section.settings.image | image_url: width: 1500 | image_tag: 
+       loading: 'lazy'
+       , width: section.settings.image.width
+       , height: image_height
+       , class: image_class
+       , sizes: sizes
+       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+       , alt: section.settings.image.alt | escape }}
+    </div>
+
+  {%- endif -%} -->
+  <div class="banner__content bottom-with-bg-image-content  page-width">
+    <div class="banner__box banner__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+          <h2
+            class=""
+            {{ block.shopify_attributes }}
+            style="position:relative;text-align:center;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span class="yello-text" style="left:10px;">{{ block.settings.first_words }}</span>
+            <span id="test-span" style="z-index:10;position:relative;">{{ block.settings.heading }}</span>
+            <span class="yello-text" style="right:0">{{ block.settings.last_words }}</span>
+          </h2>
+
+        {%- endcase -%}
+      {%- endfor -%}
+      {% if section.settings.is_show_select == "true" %}
+        <div class="banner-bottom-info">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'buttomItem' -%}
+
+              <div class="banner-bottom-info-item" {{ block.shopify_attributes }}>
+
+                <div class="banner-bottom-info-item-box" style="">
+                  <img
+                    style="transform:skew(20deg);"
+                    src="{{ block.settings.image | image_url }}"
+                    width="60"
+                    height="60" />
+                  <p id="test-p" style="font-size:{{block.settings.font_size}}px;color:{{block.settings.font_color}};transform:skew(20deg);">{{ block.settings.heading }}</p>
+                </div>
+              </div>
+            {%- endcase -%}
+          {% endfor %}
+        </div>
+
+      {% endif %}
+
+    </div>
+  </div>
+  <deferred-media class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}" style="border-radius:16px;" data-media-id="{{ section.settings.video_url.id }}"
+      {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
+    >
+      <button
+        id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
+        class="video-section__poster media deferred-media__poster media--landscape"
+        type="button"
+        style="border-radius:16px;"
+        aria-label="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
+      >
+        {%- if section.settings.cover_image != blank -%}
+          {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}{%- endcapture -%}
+          {%- assign alt = 'sections.video.load_video' | t: description: section.settings.description | escape -%}
+          {{ section.settings.cover_image | image_url: width: 3840 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: alt
+          }}
+        {%- else -%}
+          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {%- endif -%}
+        <div class="deferred-media__poster-button motion-reduce video-button">
+<!--           {%- render 'icon-play' -%} -->
+          {{ section.settings.button_label }}
+          <img src="{{ 'button_logo_1.png' |asset_url}}" />
+        </div>
+      </button>
+      <template>
+        {%- if section.settings.video_url.type == 'youtube' -%}
+          <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+        {%- else -%}
+          <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+        {%- endif -%}
+      </template>
+    </deferred-media>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "底部部分带有背景的图片元素",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      
+      {
+        "type": "select",
+        "id": "is_show_select",
+        "options": [
+          {
+            "value": "true",
+            "label": "是"
+          }, {
+            "value": "false",
+            "label": "否"
+          }
+        ],
+        "default": "false",
+        "label": "是否显示底部黄色背景部分"
+      },
+      {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "t:sections.video.settings.cover_image.label"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.video.settings.video_url.label",
+      "placeholder": "t:sections.video.settings.video_url.placeholder",
+      "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "t:sections.video.settings.description.label",
+      "info": "t:sections.video.settings.description.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.video.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type":"text",
+      "id":"button_label",
+      "label":"按钮内容"
+    }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.image-banner.blocks.heading.name",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "text",
+            "id": "first_words",
+            "default": "Image",
+            "label": "文本第一个单词"
+          },
+          {
+            "type": "text",
+            "id": "last_words",
+            "default": "banner",
+            "label": "文本最后一个单词"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              }, {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              }, {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 100,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      }, {
+        "type": "buttomItem",
+        "name": "底部元素",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "背景图"
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }
+        ]
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "底部部分带有背景的图片元素",
+        "blocks": [
+          {
+            "type": "heading"
+          }, {
+            "type": "buttomItem"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
