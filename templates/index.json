@@ -582,6 +582,7 @@
         },
         "5b7c54e2-a9d8-4f54-9b32-e1808bfe7ee0": {
           "type": "pictureCard",
+          "disabled": true,
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
             "image_width": 82
@@ -589,6 +590,7 @@
         },
         "45e6768c-14cb-4922-b671-55636001640a": {
           "type": "pictureCard",
+          "disabled": true,
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
             "image_width": 82
