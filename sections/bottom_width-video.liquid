@@ -34,11 +34,19 @@
 <div class="color-{{ section.settings.color_scheme }} gradient" style="background:#F7F7F5;">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div{% if section.settings.full_width %} class="page-width"{% endif %}>
-      {%- unless section.settings.heading == blank -%}
-        <div class="title-wrapper title-wrapper--no-top-margin">
-          <h2 class="title {{ section.settings.heading_size }}" style="font-size:{{ section.settings.font_size }}px;font-weight:{{ section.settings.font_weight }}">{{ section.settings.heading }}</h2>
-        </div>
-      {%- endunless -%}
+       {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+        <h2
+            class=""
+            {{ block.shopify_attributes }}
+            style="position:relative;text-align:center;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span class="yello-text" style="left:10px;">{{ block.settings.first_words }}</span>
+            <span id="test-span" style="z-index:10;position:relative;">{{ block.settings.heading }}</span>
+            <span class="yello-text" style="right:0">{{ block.settings.last_words }}</span>
+          </h2>
+           {%- endcase -%}
+      {%- endfor -%}
     </div>
     <noscript>
       <div class="video-section__media"
