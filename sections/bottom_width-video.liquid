@@ -99,10 +99,9 @@
 
   }
 {%- endstyle -%}
-
-<div id="Banner-{{ section.id }}" class="bg_wrapper banner    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
-  <div class="banner__content bottom-with-bg-image-content  page-width" style="padding:24px 0;">
-    <div class="banner__box banner__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient" style="background:#F7F7F5;">
+  <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+    <div{% if section.settings.full_width %} class="page-width"{% endif %}>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
@@ -117,14 +116,11 @@
 
         {%- endcase -%}
       {%- endfor -%}
-     <div class="color-{{ section.settings.color_scheme }} gradient" style="background:#F7F7F5;">
-  <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
-    <div{% if section.settings.full_width %} class="page-width"{% endif %}>
-      {%- unless section.settings.heading == blank -%}
+<!--       {%- unless section.settings.heading == blank -%}
         <div class="title-wrapper title-wrapper--no-top-margin">
           <h2 class="title {{ section.settings.heading_size }}" style="font-size:{{ section.settings.font_size }}px;font-weight:{{ section.settings.font_weight }}">{{ section.settings.heading }}</h2>
         </div>
-      {%- endunless -%}
+      {%- endunless -%} -->
     </div>
     <noscript>
       <div class="video-section__media"
@@ -185,10 +181,7 @@
   </div>
 </div>
 
-    </div>
-  </div>
-  
-</div>
+
 
 {% schema %}
   {
