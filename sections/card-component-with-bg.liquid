@@ -72,6 +72,12 @@
       <script>
         var clickWithBgCard=function(event){
           console.log("event",event)
+          if(event.target!=this){
+            return ;
+          }else{
+          console.log("event",event)
+      
+          }
           
         }
         window.onload=function(){
