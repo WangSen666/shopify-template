@@ -95,7 +95,7 @@
           "type": "button",
           "settings": {
             "button_label_1": "Download Floorplan",
-            "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0596\/2249\/0212\/files\/Home_Lavida_Tiny_House_V.png?v=1677317637",
+            "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0596\/2249\/0212\/files\/48a3823e1ee72a1a06a62cbdcb4a5cd0.txt?v=1677319217",
             "button_style_secondary_1": false,
             "button_color": "#000",
             "margin_top": 0,
@@ -618,6 +618,7 @@
       ],
       "settings": {
         "is_titleBlock": "false",
+        "href_url_id": "",
         "is_showTitle": "true",
         "layout": "big_image_first",
         "card_num": "2"
