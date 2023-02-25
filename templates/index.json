@@ -12,7 +12,7 @@
             "margin_top": 80,
             "margin_bottom": 24,
             "heading_color": "#fff",
-            "font_weight": 400
+            "font_weight": 800
           }
         },
         "d55ce47c-cb3a-418b-a3be-2742aabc1300": {
@@ -20,11 +20,11 @@
           "settings": {
             "heading": "Crowdfunding Ongoing!",
             "heading_size": "h1",
-            "font_size": 40,
+            "font_size": 52,
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#fff",
-            "font_weight": 400
+            "font_weight": 800
           }
         },
         "9c34708f-d8ff-401c-94b2-4acd4397dd82": {
