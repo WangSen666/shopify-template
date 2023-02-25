@@ -73,7 +73,7 @@
         var clickWithBgCard=function(event){
           console.log("event",event.target.className)
           event.stopPropagation()
-          if(event.target.className!='with_bg_card-item'){
+          if(event.target.className!='with_bg_card-box'){
             return ;
           }else{
            $('.'+event.target.className).siblings()
