@@ -192,10 +192,10 @@
           "settings": {
             "image_1": "shopify:\/\/shop_images\/podxgo_-___2-46.png",
             "heading_1": "Address",
-            "heading_size": 18,
+            "heading_size": 20,
             "text_1": "5050 S Archibald Ave",
             "text_2": "Ontario, CA 91762",
-            "text_size": 20
+            "text_size": 14
           }
         },
         "a702b323-a1ae-4d37-b4dd-7e42f5a81ee7": {
@@ -203,7 +203,7 @@
           "settings": {
             "image_1": "shopify:\/\/shop_images\/podxgo_-___2-48.png",
             "heading_1": "Business Hours",
-            "heading_size": 14,
+            "heading_size": 20,
             "text_1": "Monday to Friday",
             "text_2": "8:30am to 5:00pm PST",
             "text_size": 14
@@ -214,7 +214,7 @@
           "settings": {
             "image_1": "shopify:\/\/shop_images\/podxgo_-___2-49.png",
             "heading_1": "Chat Online",
-            "heading_size": 14,
+            "heading_size": 20,
             "text_1": "Monday to Friday",
             "text_2": "8:00am to 3:00pm PST",
             "text_size": 14
@@ -225,7 +225,7 @@
           "settings": {
             "image_1": "shopify:\/\/shop_images\/podxgo_-___2-50.png",
             "heading_1": "Email",
-            "heading_size": 18,
+            "heading_size": 20,
             "text_1": "support@podxgo.com",
             "text_2": "dealer@podxgo.com",
             "text_size": 14

@@ -116,6 +116,7 @@
         },
         "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label_1": "Button label",
             "button_link_1": "",
@@ -133,7 +134,7 @@
         "template--15619111551076__6fe9ba78-fca2-42c9-ab07-e0c3473a95ae-1677135687ff3a181f-1": {
           "type": "text",
           "settings": {
-            "text": "For Reseller Program, Get in Touch with Business Teamdealer.us@podxgo.com",
+            "text": "For Reseller Program, Get in Touch with Business Team dealer.us@podxgo.com",
             "font_size": 18,
             "margin-top": 0,
             "margin-bottom": 0,
