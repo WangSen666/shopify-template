@@ -143,32 +143,7 @@
 
         {%- endcase -%}
       {%- endfor -%}
-      {% if section.settings.is_show_select == "true" %}
-        <div class="banner-bottom-info">
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'buttomItem' -%}
-
-              <div class="banner-bottom-info-item" {{ block.shopify_attributes }}>
-
-                <div class="banner-bottom-info-item-box" style="">
-                  <img
-                    style="transform:skew(20deg);"
-                    src="{{ block.settings.image | image_url }}"
-                    width="60"
-                    height="60" />
-                  <p id="test-p" style="font-size:{{block.settings.font_size}}px;color:{{block.settings.font_color}};transform:skew(20deg);">{{ block.settings.heading }}</p>
-                </div>
-              </div>
-            {%- endcase -%}
-          {% endfor %}
-        </div>
-
-      {% endif %}
-
-    </div>
-  </div>
-  <deferred-media class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}" style="border-radius:16px;" data-media-id="{{ section.settings.video_url.id }}"
+     <deferred-media class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}" style="border-radius:16px;" data-media-id="{{ section.settings.video_url.id }}"
       {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
     >
       <button
@@ -204,6 +179,10 @@
         {%- endif -%}
       </template>
     </deferred-media>
+
+    </div>
+  </div>
+  
 </div>
 
 {% schema %}
