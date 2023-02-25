@@ -371,24 +371,22 @@
             "font_color": "#000"
           }
         },
-        "34f590a4-bf87-4d6c-aba3-de1a8c686eea": {
-          "type": "heading",
+        "872155f7-ea48-4e1e-a09f-87365b7da358": {
+          "type": "text",
           "settings": {
-            "heading": "Your PODX GO is not just a house with pre-equipped furniture. It is connected with your feelings and activities.",
-            "heading_size": "h1",
-            "font-weight": 400,
+            "text": "Your PODX GO is not just a house with pre-equipped furniture. It is connected with your feelings and activities.",
+            "text_style": "body",
             "font_size": 20,
             "margin-top": 30,
             "margin-bottom": 0,
             "font_color": "#000"
           }
         },
-        "c2f55ae3-1954-4308-b7d6-5fdb5d8ab399": {
-          "type": "heading",
+        "8c0886f8-3605-426e-afe9-4c20d68a5815": {
+          "type": "text",
           "settings": {
-            "heading": "Thanks to Edge ONE, the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!",
-            "heading_size": "h1",
-            "font-weight": 400,
+            "text": "Thanks to Edge ONE, the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!Learn More",
+            "text_style": "body",
             "font_size": 20,
             "margin-top": 0,
             "margin-bottom": 32,
@@ -419,8 +417,8 @@
       "block_order": [
         "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-0",
         "912f0829-dc7e-4773-906b-17a3ae39eebc",
-        "34f590a4-bf87-4d6c-aba3-de1a8c686eea",
-        "c2f55ae3-1954-4308-b7d6-5fdb5d8ab399",
+        "872155f7-ea48-4e1e-a09f-87365b7da358",
+        "8c0886f8-3605-426e-afe9-4c20d68a5815",
         "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-2",
         "template--15597986709604__16661c52-f36f-4518-afb5-1fed2485d653-1676378176d94c79b5-3"
       ],
