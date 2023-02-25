@@ -74,6 +74,42 @@
         "show_text_below": true
       }
     },
+    "2f630401-249f-472f-8cf8-d74a90225e94": {
+      "type": "bottom_width-video",
+      "blocks": {
+        "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ingenious Spaces and Storage Design",
+            "first_words": "Ingenious",
+            "last_words": "Storage",
+            "heading_size": "h1",
+            "font_size": 36,
+            "margin_top": 24,
+            "margin_bottom": 44,
+            "heading_color": "#000",
+            "font_weight": 900
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0"
+      ],
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/18.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "button_label": "﻿player",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "font_size": 20,
+        "font_weight": 400
+      }
+    },
     "3ff863fe-33c0-4765-9287-c87e262a93d2": {
       "type": "card-component-with-bg",
       "blocks": {
@@ -735,46 +771,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "2f630401-249f-472f-8cf8-d74a90225e94": {
-      "type": "bottom_width-video",
-      "blocks": {
-        "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ingenious Spaces and Storage Design",
-            "first_words": "Ingenious",
-            "last_words": "Storage",
-            "heading_size": "h1",
-            "font_size": 36,
-            "margin_top": 24,
-            "margin_bottom": 44,
-            "heading_color": "#000",
-            "font_weight": 900
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0"
-      ],
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/18.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "button_label": "",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "font_size": 20,
-        "font_weight": 400
-      }
     }
   },
   "order": [
     "45cbd826-d11e-470e-ad3e-aff37d062584",
+    "2f630401-249f-472f-8cf8-d74a90225e94",
     "3ff863fe-33c0-4765-9287-c87e262a93d2",
     "16120155-bf92-4303-8a4b-19304e4d01f5",
     "3a7ceead-5109-443a-8288-e7d3be855076",
@@ -785,7 +786,6 @@
     "4a6aed55-5b72-479d-aa4f-cf8629c1247a",
     "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1",
     "b231cb1b-3200-4748-a578-3b75a4137632",
-    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6",
-    "2f630401-249f-472f-8cf8-d74a90225e94"
+    "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6"
   ]
 }
