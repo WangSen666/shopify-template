@@ -547,5 +547,5 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+  <script> (function () { var s = document.createElement('script'); s.src = 'https://cdn.willdesk.com/wdc/willdesk.min.js?v='; s.src += new Date().getTime(); document.body.appendChild(s); })(); </script> </body>
 </html>
