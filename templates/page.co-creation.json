@@ -74,15 +74,15 @@
         "show_text_below": true
       }
     },
-    "c379e254-4479-46c4-a625-84e43bf0d895": {
-      "type": "bottom-with-bg-image",
+    "83be5532-7b04-459f-a347-18646600f063": {
+      "type": "bottom_width-video",
       "blocks": {
-        "template--15597986709604__c379e254-4479-46c4-a625-84e43bf0d895-16763765686fb36af5-0": {
+        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-0": {
           "type": "heading",
           "settings": {
-            "heading": "Ingenious Spaces and Storage Design",
-            "first_words": "Ingenious",
-            "last_words": "Design",
+            "heading": "Image banner",
+            "first_words": "Image",
+            "last_words": "banner",
             "heading_size": "h1",
             "font_size": 24,
             "margin_top": 24,
@@ -91,7 +91,7 @@
             "font_weight": 400
           }
         },
-        "template--15597986709604__c379e254-4479-46c4-a625-84e43bf0d895-16763765686fb36af5-1": {
+        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-1": {
           "type": "buttomItem",
           "settings": {
             "heading": "Image banner",
@@ -101,12 +101,16 @@
         }
       },
       "block_order": [
-        "template--15597986709604__c379e254-4479-46c4-a625-84e43bf0d895-16763765686fb36af5-0",
-        "template--15597986709604__c379e254-4479-46c4-a625-84e43bf0d895-16763765686fb36af5-1"
+        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-0",
+        "template--15597986709604__83be5532-7b04-459f-a347-18646600f063-167731313302ea2cb7-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/20230208133303.jpg",
-        "is_show_select": "false"
+        "is_show_select": "false",
+        "cover_image": "shopify:\/\/shop_images\/18.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "button_label": ""
       }
     },
     "3ff863fe-33c0-4765-9287-c87e262a93d2": {
@@ -774,7 +778,7 @@
   },
   "order": [
     "45cbd826-d11e-470e-ad3e-aff37d062584",
-    "c379e254-4479-46c4-a625-84e43bf0d895",
+    "83be5532-7b04-459f-a347-18646600f063",
     "3ff863fe-33c0-4765-9287-c87e262a93d2",
     "16120155-bf92-4303-8a4b-19304e4d01f5",
     "3a7ceead-5109-443a-8288-e7d3be855076",
