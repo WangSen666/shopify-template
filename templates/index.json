@@ -269,7 +269,7 @@
         "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/20230206105704.jpg",
+        "image": "shopify:\/\/shop_images\/Home_Grande_S1_Tiny_House.png",
         "image_overlay_opacity": 30,
         "is_lr": "true",
         "show_text_box": true,
@@ -407,9 +407,9 @@
         "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/s2_bc41ac16-e01f-4292-a846-7f8155d677d7.jpg",
+        "image": "shopify:\/\/shop_images\/Home_Smart_Home.png",
         "image_overlay_opacity": 20,
-        "is_lr": "true",
+        "is_lr": "false",
         "show_text_box": true,
         "layout": "text_first",
         "is_imgBg": "true"
