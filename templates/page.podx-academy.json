@@ -44,7 +44,7 @@
             "banner_href_text": "know-How",
             "font_size": 18,
             "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-42.png",
-            "href_id": ""
+            "href_id": "﻿partnership-id1"
           }
         },
         "6442020b-68cd-47b0-8735-c33a3267a7f1": {
@@ -139,6 +139,7 @@
       ],
       "settings": {
         "is_titleBlock": "false",
+        "href_url_id": "",
         "is_showTitle": "false",
         "layout": "big_image_first",
         "card_num": "2"
@@ -196,6 +197,7 @@
       ],
       "settings": {
         "is_titleBlock": "false",
+        "href_url_id": "",
         "is_showTitle": "false",
         "layout": "big_image_last",
         "card_num": "3"
@@ -242,6 +244,7 @@
       ],
       "settings": {
         "is_titleBlock": "false",
+        "href_url_id": "﻿partnership-id1",
         "is_showTitle": "false",
         "layout": "big_image_first",
         "card_num": "2"
