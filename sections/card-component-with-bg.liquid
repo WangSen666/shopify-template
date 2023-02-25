@@ -76,7 +76,8 @@
           if(event.target.className!='with_bg_card-item'){
             return ;
           }else{
-          console.log("event",event)
+           $('.'+event.target.className).siblings()
+      console.log($('.'+event.target.className).siblings())
       
           }
           
