@@ -237,7 +237,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/products\/测试产品1",
+            "button_link_1": "shopify:\/\/pages\/models",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -383,7 +383,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/products\/测试产品1",
+            "button_link_1": "shopify:\/\/pages\/models",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -464,7 +464,7 @@
             "font_color": "#fff",
             "bg_opcity": 0.4,
             "button_label_1": "Available Now",
-            "button_link_1": ""
+            "button_link_1": "shopify:\/\/pages\/models"
           }
         },
         "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
@@ -710,6 +710,7 @@
       ],
       "settings": {
         "is_titleBlock": "true",
+        "href_url_id": "",
         "is_showTitle": "true",
         "layout": "big_image_first",
         "card_num": "2"
