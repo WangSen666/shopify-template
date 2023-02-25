@@ -90,10 +90,25 @@
             "heading_color": "#000",
             "font_weight": 900
           }
+        },
+        "a40714e3-0241-4b59-b275-fb9a40f53c4a": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Download Floorplan",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
         }
       },
       "block_order": [
-        "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0"
+        "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0",
+        "a40714e3-0241-4b59-b275-fb9a40f53c4a"
       ],
       "settings": {
         "heading": "Video",
