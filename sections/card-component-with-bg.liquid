@@ -71,7 +71,7 @@
       <div class="with_bg_card-box"  onclick="clickWithBgCard(event)">
       <script>
         var clickWithBgCard=function(event){
-          console.log("event",event.parent())
+          console.log("event",event.parentNode)
           event.stopPropagation()
           if(event.target.className!='with_bg_card-item'){
             return ;
