@@ -212,7 +212,7 @@
           "type": "button",
           "settings": {
             "banner_button_label": "Learn More",
-            "banner_button_link": "",
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/co-creation-lab",
             "font_size": 24,
             "button_color": "#000",
             "margin_top": 0,
