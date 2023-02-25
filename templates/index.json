@@ -135,7 +135,6 @@
         "44c85d5d-2941-4841-9d0a-47d291b0a05d"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1-banner-4_51594a57-1456-4d90-a5ca-0ad8d4e8a341.jpg",
         "is_show_select": "true"
       }
     },
@@ -734,7 +733,8 @@
         },
         "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-2": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
