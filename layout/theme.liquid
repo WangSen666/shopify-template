@@ -15,6 +15,7 @@
       href="{{  'font.css' | asset_url }}"
       type="text/css"
       rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     {%- if settings.favicon != blank -%}
       <link
@@ -422,6 +423,17 @@
         
         let wWidth = document.documentElement.clientWidth;
         let scrollTop = document.documentElement.scrollTop;
+        if (scrollTop > 10 && wWidth >= 990) {
+          console.log("往滚动了")
+          header.style.backgroundColor = "#fff";
+          $(".header .header__menu-item").css({"color": "black"})
+
+        } else {
+          header.style.backgroundColor = "unset";
+          $(".header .header__menu-item").css({"color": "#fff"})
+          console.log("往下滚动了")
+
+        }
         // if (scrollTop >= 10) {
         //   header.style.display = "none"
         // } else {

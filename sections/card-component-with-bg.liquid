@@ -47,7 +47,7 @@
   }
   @media screen and (max-width: 750px) {
     .with_bg_card-img {
-      max-height: 42rem !important;
+      max-height: 36rem !important;
     }
     .with_bg_card-item-wrapper h2{
       font-size:20px !important;
@@ -68,7 +68,37 @@
 <div id="with_bg_card-{{ section.id }}" class="with_bg_card color-{{ section.settings.color_scheme }} ">
   <div class="with_bg_card page-width {% if  section.settings.modile_num=='three' %}width_bg_card-three{% endif %} {% if  section.settings.modile_num=='two' %}width_bg_card-two{% endif %}">
     {%- for block in section.blocks -%}
-      <div class="with_bg_card-box" >
+      <div class="with_bg_card-box"  onclick="clickWithBgCard(event)">
+      <script>
+      
+        var clickWithBgCard=function(event){
+          console.log("event",event.target.parentNode)
+          event.stopPropagation()
+          let wWidth = document.documentElement.clientWidth;
+        let scrollTop = document.documentElement.scrollTop;
+        if (wWidth >= 990) {
+          if(event.target.className!='with_bg_card-item'){
+            return ;
+          }else{
+             $('.with_bg_card-box').siblings().css({
+                "width":"33%"
+             })
+              event.target.parentNode.style.width="45%"
+          } 
+
+        }
+         
+          
+        }
+        window.onload=function(){
+          var withBgCard=$(".with_bg_card");
+          
+          console.log("dadaa",withBgCard);
+         
+           
+        }
+        
+      </script>
         <div class="with_bg_card-img">
           <img src="{{ block.settings.picture-card-item|image_url }}" />
         </div>
@@ -96,7 +126,10 @@
 
   </div>
 
+
 </div>
+
+
 
 {% schema %}
   {

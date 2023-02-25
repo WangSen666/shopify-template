@@ -100,88 +100,6 @@
         "padding_bottom": 28
       }
     },
-    "23de8b24-9276-477b-978a-ca61883420d8": {
-      "type": "rich-text-button",
-      "blocks": {
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Co-Creation Lab",
-            "heading_size": "h1",
-            "font_size": 36,
-            "margin_top": 24,
-            "margin_bottom": 24,
-            "heading_color": "#000",
-            "font_weight": 400
-          }
-        },
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-1": {
-          "type": "text",
-          "settings": {
-            "text": "Individuals and cooperations who with passion and belief can affect the world's future and people's life are welcome to be part of PODX GO!  The PODX GO home Grande S1 is supported by individuals who shared their dream home ideas with us, and companies in off-grid solar solutions, creative furniture, smart home applications, and NOAH.",
-            "font_size": 16,
-            "margin_top": 24,
-            "margin_bottom": 24,
-            "text_color": "#000",
-            "font_weight": 400
-          }
-        },
-        "091a569b-5462-4f83-b44a-b45e74eb4887": {
-          "type": "text",
-          "settings": {
-            "text": "They are in the life-changing squad.",
-            "font_size": 20,
-            "margin_top": 24,
-            "margin_bottom": 24,
-            "text_color": "#000",
-            "font_weight": 400
-          }
-        },
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-2": {
-          "type": "button",
-          "settings": {
-            "banner_button_label": "Button label",
-            "banner_button_link": "",
-            "font_size": 14,
-            "button_color": "#000",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-3": {
-          "type": "rich_text_img",
-          "settings": {
-            "font_size": 24,
-            "rich_text_img": "shopify:\/\/shop_images\/1-11.png"
-          }
-        },
-        "45859504-6639-45cb-aa4d-d1e9c99dba24": {
-          "type": "rich_text_img",
-          "settings": {
-            "font_size": 24,
-            "rich_text_img": "shopify:\/\/shop_images\/1-10.png"
-          }
-        },
-        "81ec5f5a-cc4a-482e-a25e-31cddd9ab08c": {
-          "type": "rich_text_img",
-          "settings": {
-            "font_size": 24,
-            "rich_text_img": "shopify:\/\/shop_images\/1-09.png"
-          }
-        }
-      },
-      "block_order": [
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-0",
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-1",
-        "091a569b-5462-4f83-b44a-b45e74eb4887",
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-2",
-        "template--15616021135460__23de8b24-9276-477b-978a-ca61883420d8-167698468852f8e62b-3",
-        "45859504-6639-45cb-aa4d-d1e9c99dba24",
-        "81ec5f5a-cc4a-482e-a25e-31cddd9ab08c"
-      ],
-      "settings": {
-      }
-    },
     "6fe9ba78-fca2-42c9-ab07-e0c3473a95ae": {
       "type": "lr-block-text-fold",
       "blocks": {
@@ -436,7 +354,6 @@
   "order": [
     "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
     "main",
-    "23de8b24-9276-477b-978a-ca61883420d8",
     "6fe9ba78-fca2-42c9-ab07-e0c3473a95ae",
     "7720d25f-feb7-4006-ac60-42f1440e0fe2",
     "4495e877-7877-4943-a731-1b9420bee3fa",
