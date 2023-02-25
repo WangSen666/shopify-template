@@ -742,15 +742,15 @@
         "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "first_words": "Image",
-            "last_words": "banner",
+            "heading": "Ingenious Spaces and Storage Design",
+            "first_words": "Ingenious",
+            "last_words": "Storage",
             "heading_size": "h1",
-            "font_size": 24,
+            "font_size": 36,
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#000",
-            "font_weight": 400
+            "font_weight": 900
           }
         }
       },
