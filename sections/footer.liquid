@@ -370,7 +370,7 @@
         </div>
       {%- endif -%}
 
-      <a style="" {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link }}"{% endif %}class="button footer_button {% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label| escape }}
+      <a style="" target="_blank" {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link }}"{% endif %}class="button footer_button {% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label| escape }}
         <img
         src="{{   'button_logo_1.png' | asset_url }}"
         width="12"
