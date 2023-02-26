@@ -128,7 +128,7 @@
         "template--15597986709604__3ff863fe-33c0-4765-9287-c87e262a93d2-167637755714220c70-0": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo.png",
+            "picture-card-item": "shopify:\/\/shop_images\/living_room.png",
             "heading": "Living Room",
             "heading_1": "120 sq.ft Relax Space",
             "font_size": 44,
@@ -141,7 +141,7 @@
         "aa752092-400f-471a-85e9-62f3f1793da9": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo.png",
+            "picture-card-item": "shopify:\/\/shop_images\/bedroom_30fbf0e0-dfb7-4219-adfe-23d650ec0874.png",
             "heading": "Bedroom",
             "heading_1": "Sleeps of 2",
             "font_size": 44,
@@ -154,7 +154,7 @@
         "945aad5c-611a-4c75-8b41-394724e9e2f5": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/20230206105704.jpg",
+            "picture-card-item": "shopify:\/\/shop_images\/kitchen.png",
             "heading": "Kitchen",
             "heading_1": "Full Fitted Kitchen",
             "font_size": 42,
@@ -167,7 +167,7 @@
         "2772c150-98d0-4684-832e-97ce36684814": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo.png",
+            "picture-card-item": "shopify:\/\/shop_images\/bathroom.png",
             "heading": "Bathroom",
             "heading_1": "Full Sized Shower",
             "font_size": 44,
