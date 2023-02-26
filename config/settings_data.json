@@ -188,8 +188,8 @@
           "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c"
         ],
         "settings": {
-          "button_label": "faffadfsa",
-          "button_Link": "shopify:\/\/pages\/about-podx-go",
+          "button_label": "Make an Appointment",
+          "button_Link": "https:\/\/calendly.com\/podxgo\/customer-30mins?month=2023-02",
           "color_scheme": "inverse",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
