@@ -202,6 +202,13 @@
                   <div class="footer-block__details-content rte">
                     {{ block.settings.subtext }}
                   </div>
+                {% when 'button' %}
+                     <a style="" {% if block.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link }}"{% endif %}class="button footer_button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label| escape }}
+                    <img
+                    src="{{   'button_logo_1.png' | asset_url }}"
+                    width="12"
+                    height="12" />
+                </a>
                   <div class="footer-block--newsletter">
                     {%- if section.settings.newsletter_enable and block.settings.heading contains 'Subscribe' -%}
                       <div class="footer-block__newsletter">
@@ -244,13 +251,7 @@
                     {%- endif -%}
 
                   </div>
-                  {% when 'button' %}
-                     <a style="" {% if block.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link }}"{% endif %}class="button footer_button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label| escape }}
-                    <img
-                    src="{{   'button_logo_1.png' | asset_url }}"
-                    width="12"
-                    height="12" />
-                </a>
+                  
 
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank -%}
