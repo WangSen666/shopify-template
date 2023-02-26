@@ -196,8 +196,8 @@ onload="this.media='all'"> {% endcomment %}
               src="{{ block.settings.picture_item | image_url }}" />
             <div class="picture-card-item-bottom">
               <div class="picture-card-item-text">
-                <div>{{ block.settings.heading_1 }}</div>
-                <div>{{ block.settings.heading_2 }}</div>
+                <div style="font-weight:bold;">{{ block.settings.heading_1 }}</div>
+                <div style="font-weight:bold;">{{ block.settings.heading_2 }}</div>
               </div>
               <a target="_blank" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
                 <img
