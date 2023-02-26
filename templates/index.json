@@ -159,7 +159,6 @@
             "text": "Order Your Home Online and DIY in 15Mins",
             "text_style": "body",
             "font_size": 18,
-            "font-weight": 400,
             "margin-top": 12,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -183,7 +182,6 @@
             "text": "Complete interior design with healthy and eco-friendly materials",
             "text_style": "body",
             "font_size": 18,
-            "font-weight": 400,
             "margin-top": 12,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -207,7 +205,6 @@
             "text": "Fully fitted bedroom, bathroom, kitchen and living room.",
             "text_style": "subtitle",
             "font_size": 18,
-            "font-weight": 400,
             "margin-top": 0,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -231,7 +228,6 @@
             "text": "Allow you to move virtually anywhere that's permissible by zoning regulations.",
             "text_style": "body",
             "font_size": 18,
-            "font-weight": 400,
             "margin-top": 6,
             "margin-bottom": 34,
             "font_color": "#fff"
@@ -326,7 +322,6 @@
             "text": "Hazard detectors to guard against fire, smoke,  floods, and break-ins.",
             "text_style": "body",
             "font_size": 18,
-            "font-weight": 400,
             "margin-top": 12,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -350,7 +345,6 @@
             "text": "Creating various experiences throughout the days-wake up, relax, work, movie night, and goodnight.",
             "text_style": "body",
             "font_size": 18,
-            "font-weight": 400,
             "margin-top": 12,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -380,7 +374,6 @@
             "text": "All PODX GO pre-equipped smart devices and plugs are only connected to you. NOT us.",
             "text_style": "body",
             "font_size": 18,
-            "font-weight": 400,
             "margin-top": 12,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -532,7 +525,6 @@
             "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
             "text_style": "body",
             "font_size": 20,
-            "font-weight": 400,
             "margin-top": 6,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -570,7 +562,6 @@
             "text": "Thank You for Your Support on the Tiny Home's Big Dreams!",
             "text_style": "body",
             "font_size": 20,
-            "font-weight": 400,
             "margin-top": 22,
             "margin-bottom": 50,
             "font_color": "#000"
@@ -648,7 +639,7 @@
         "5ed01a38-46c3-443e-a8f6-6ab70911b0fe": {
           "type": "heading",
           "settings": {
-            "heading": "Having questions about start your tiny home journey? No worries. We are here to help.",
+            "heading": "Having questions about start your tiny home journey?                          No worries. We are here to help.",
             "text_color": "#000",
             "font_size": 20,
             "font_weight": 400
