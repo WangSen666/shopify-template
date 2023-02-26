@@ -189,7 +189,7 @@
         ],
         "settings": {
           "button_label": "Make an Appointment",
-          "button_link": "shopify:\/\/pages\/about-podx-go",
+          "button_link": "https:\/\/calendly.com\/podxgo\/customer-30mins?month=2023-02",
           "color_scheme": "inverse",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
