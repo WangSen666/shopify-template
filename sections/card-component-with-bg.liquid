@@ -106,7 +106,7 @@
 <!--         <div class="with_bg_card-img">
           <img src="{{ block.settings.picture-card-item|image_url }}" />
         </div> -->
-        <div class="with_bg_card-item" style="background:rgba(0,0,0,{{block.settings.bg_opcity}});background-image:url({{ block.settings.picture-card-item|image_url }});">
+        <div class="with_bg_card-item" style="background:rgba(0,0,0,{{block.settings.bg_opcity}});background-image:url({{ block.settings.picture-card-item|image_url }});background-size:cover;">
           <div class="with_bg_card-item-wrapper">
             <h2 style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;">{{ block.settings.heading }}</h2>
             {%  if block.settings.button_label_1!=blank %}
