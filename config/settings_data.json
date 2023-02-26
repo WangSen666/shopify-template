@@ -180,20 +180,12 @@
               "heading": "",
               "menu": "footer"
             }
-          },
-          "6e4d6594-1df5-4a6b-9734-bdd7c117a29d": {
-            "type": "button",
-            "settings": {
-              "button_label": "",
-              "button_Link": ""
-            }
           }
         },
         "block_order": [
           "51f9b9e3-ff6c-4caf-82c4-5e5b62745f47",
           "footer-2",
-          "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c",
-          "6e4d6594-1df5-4a6b-9734-bdd7c117a29d"
+          "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c"
         ],
         "settings": {
           "color_scheme": "inverse",
