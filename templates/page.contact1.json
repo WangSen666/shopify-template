@@ -103,6 +103,7 @@
             "text": "PODX GO is a U.S. and China-based global company with a team of avid RVers, designers, architects, and technologists and we have over a decade of experience in renewable energy, RVing, AIoT, and sustainability.",
             "text_style": "body",
             "font_size": 18,
+            "font_weight": 200,
             "margin-top": 18,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -113,7 +114,8 @@
           "settings": {
             "text": "Every day, we actively work to create an eco-conscious and true prefab home with foldable, mobility, smart, proven durability, and appealing aesthetics that you can order online and visit our local partner showroom.",
             "text_style": "body",
-            "font_size": 16,
+            "font_size": 18,
+            "font_weight": 200,
             "margin-top": 12,
             "margin-bottom": 12,
             "font_color": "#000"
@@ -125,6 +127,7 @@
             "text": "We believe the intersection of the rising housing pressures, visibility and disruptive effects of climate change, and desires of living with a minimalist and sustainable lifestyle offer PODX GO a unique opportunity of imbuing our brand with the urgency and drive of a social movement.",
             "text_style": "body",
             "font_size": 18,
+            "font_weight": 200,
             "margin-top": 0,
             "margin-bottom": 14,
             "font_color": "#000"
