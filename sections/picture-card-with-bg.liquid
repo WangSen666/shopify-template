@@ -182,11 +182,11 @@ onload="this.media='all'"> {% endcomment %}
     {% endif %}
   {% endif %}
   <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reverse;{%endif%}">
-    <div class="picture-card-item-box" style="height:100%;">
+    <div class="picture-card-item-box" >
       {% for block in section.blocks %}
           {% case block.type %}
             {% when "picture_card_big" %}
-      <div class="picture-card-item " style="background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;">
+      <div class="picture-card-item " style="background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;height:100%;">
         
 <!--             <img
               style="max-height:768px;display:block;"
