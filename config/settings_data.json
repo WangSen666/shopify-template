@@ -180,20 +180,12 @@
               "heading": "",
               "menu": "footer"
             }
-          },
-          "c927b18b-eb9a-48cb-b9ea-595592e9c080": {
-            "type": "button",
-            "settings": {
-              "button_label": "wqrwqe",
-              "button_Link": "shopify:\/\/collections\/all"
-            }
           }
         },
         "block_order": [
           "51f9b9e3-ff6c-4caf-82c4-5e5b62745f47",
           "footer-2",
-          "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c",
-          "c927b18b-eb9a-48cb-b9ea-595592e9c080"
+          "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c"
         ],
         "settings": {
           "color_scheme": "inverse",
