@@ -354,7 +354,8 @@
       {%- endif -%}
     </div>
   {%- endif -%}
-{%  for block in section.settings.block %}
+  <div class="footer__content-bottom">
+    {%  for block in section.settings.block %}
           {% case block.type %}
          {% when 'button' %}
              <a style="" {% if block.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link }}"{% endif %}class="button footer_button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label| escape }}
@@ -366,7 +367,6 @@
 
             {% endcase %}
           {% endfor %}
-  <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
