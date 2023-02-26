@@ -185,15 +185,15 @@ onload="this.media='all'"> {% endcomment %}
   {% endif %}
   <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reverse;{%endif%}">
     <div class="picture-card-item-box">
-      
-      <div class="picture-card-item ">
-        {% for block in section.blocks %}
+      {% for block in section.blocks %}
           {% case block.type %}
             {% when "picture_card_big" %}
-            <img
+      <div class="picture-card-item " style="background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;">
+        
+<!--             <img
               style="max-height:768px;display:block;"
               class="picture-card-bg"
-              src="{{ block.settings.picture_item | image_url }}" />
+              src="{{ block.settings.picture_item | image_url }}" /> -->
             <div class="picture-card-item-bottom">
               <div class="picture-card-item-text">
                 <div style="font-weight:bold;">{{ block.settings.heading_1 }}</div>
@@ -207,10 +207,10 @@ onload="this.media='all'"> {% endcomment %}
               </a>
 
             </div>
-          {%- endcase -%}
-        {%- endfor -%}
+          
       </div>
-   
+   {%- endcase -%}
+        {%- endfor -%}
     </div>
     <div class="picture-card-item-box" style="max-height:768px;">
 
