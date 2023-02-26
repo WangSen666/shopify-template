@@ -380,6 +380,12 @@
           padding:4rem 0 !important;
         }
       }
+
+/*       博客内容中的样式 */
+      .article-template__content p{
+        word-break:break-all;
+        word-wrap:break-word;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
