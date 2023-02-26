@@ -147,7 +147,7 @@ onload="this.media='all'"> {% endcomment %}
           {%- endcase -%}
         {%- endfor -%}
       </div>
-      <div class="picture-card-head-item" style="height:100%;">
+      <div class="picture-card-head-item" >
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading_1' -%}
@@ -182,7 +182,7 @@ onload="this.media='all'"> {% endcomment %}
     {% endif %}
   {% endif %}
   <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reverse;{%endif%}">
-    <div class="picture-card-item-box">
+    <div class="picture-card-item-box" style="height:100%;">
       {% for block in section.blocks %}
           {% case block.type %}
             {% when "picture_card_big" %}
