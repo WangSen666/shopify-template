@@ -217,11 +217,11 @@ onload="this.media='all'"> {% endcomment %}
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "picture_card" %}
-          <div class="picture-card-item picture-card-item-small" style="height:{{ 100 | divided_by: section.settings.card_num }}%;">
-            <img
+          <div class="picture-card-item picture-card-item-small" style="height:{{ 100 | divided_by: section.settings.card_num }}%;background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;">
+<!--             <img
               class="picture-card-item-small-img"
               src="{{ block.settings.picture_item | image_url }}"
-              style="width:100%;" />
+              style="width:100%;" /> -->
             <div class="picture-card-item-bottom">
               <div class="picture-card-item-text">
                 <div style="font-weight:bold;">{{ block.settings.heading_1 }}</div>
