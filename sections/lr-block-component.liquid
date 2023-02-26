@@ -172,7 +172,7 @@
             <div
               class="banner__text {{ block.settings.text_style }}"
               {{ block.shopify_attributes }}
-              style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
+              style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;font-weight:{{ blocks.settings.font-weight }};">
               <span>{{ block.settings.text | escape }}</span>
             </div>
             {%- when 'buttons' -%}
@@ -450,6 +450,15 @@
             "unit": "px",
             "label": "字体大小",
             "default": 24
+          },
+          {
+            "type": "range",
+            "id": "font-weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
           },
           {
             "type": "range",
