@@ -353,6 +353,13 @@
           {%- endfor -%}
         </div>
       {%- endif -%}
+
+      <a style="" {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link }}"{% endif %}class="button footer_button {% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label| escape }}
+        <img
+        src="{{   'button_logo_1.png' | asset_url }}"
+        width="12"
+        height="12" />
+    </a>
     </div>
   {%- endif -%}
 
@@ -361,12 +368,7 @@
 
          
   <div class="footer__content-bottom">
-   <a style="" {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link }}"{% endif %}class="button footer_button {% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label| escape }}
-        <img
-        src="{{   'button_logo_1.png' | asset_url }}"
-        width="12"
-        height="12" />
-    </a>
+   
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
