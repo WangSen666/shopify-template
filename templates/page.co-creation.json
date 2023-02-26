@@ -516,115 +516,6 @@
         "padding_bottom": 36
       }
     },
-    "4a6aed55-5b72-479d-aa4f-cf8629c1247a": {
-      "type": "rich-text-image",
-      "disabled": true,
-      "blocks": {
-        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p><strong>You have more questions?<\/strong><\/p>",
-            "heading_size": "h1",
-            "font-weight": 400
-          }
-        },
-        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our 24\/7 customer service will reach out to you ASAP.<\/p>"
-          }
-        },
-        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-3": {
-          "type": "button",
-          "settings": {
-            "button_label": "CONTACT US",
-            "button_link": "shopify:\/\/pages\/contact",
-            "button_style_secondary": false,
-            "button_background": "#B5EF35",
-            "btn_radius": 0
-          }
-        }
-      },
-      "block_order": [
-        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-0",
-        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-2",
-        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-3"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1": {
-      "type": "picture-card-with-bg",
-      "blocks": {
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Having questions about start your tiny home journey?  No worries. We are here to help.",
-            "text_color": "#000",
-            "font_size": 20,
-            "font_weight": 800
-          }
-        },
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-2": {
-          "type": "head_button",
-          "settings": {
-            "button_label_1": "Schedule a Call with us",
-            "button_url_1": "https:\/\/calendly.com\/podxgo\/customer-30mins?month=2023-02",
-            "button_color": "#000"
-          }
-        },
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-3": {
-          "type": "picture_card_big",
-          "settings": {
-            "picture_item": "shopify:\/\/shop_images\/tiny_house_PODX_GO.png",
-            "heading_1": "How will",
-            "heading_2": "you get your PODX GO home?",
-            "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/blogs\/how-to\/process-of-buying-podxgo"
-          }
-        },
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-4": {
-          "type": "picture_card",
-          "settings": {
-            "picture_item": "shopify:\/\/shop_images\/deserted-farm-housing-in-baren-lands.jpg",
-            "heading_1": "Zoning,",
-            "heading_2": "Insurances, Loan...……",
-            "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide"
-          }
-        },
-        "7fe64ae1-f6ba-4465-ada8-2843b3183ae5": {
-          "type": "picture_card",
-          "settings": {
-            "picture_item": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg",
-            "heading_1": "Become our",
-            "heading_2": "partner in your neighborhood",
-            "button_label_1": "Learn More",
-            "button_link_1": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-0",
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-2",
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-3",
-        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-4",
-        "7fe64ae1-f6ba-4465-ada8-2843b3183ae5"
-      ],
-      "settings": {
-        "is_titleBlock": "false",
-        "href_url_id": "",
-        "is_showTitle": "true",
-        "layout": "big_image_first",
-        "card_num": "2"
-      }
-    },
     "b231cb1b-3200-4748-a578-3b75a4137632": {
       "type": "lr-block-component",
       "blocks": {
@@ -754,6 +645,115 @@
         "is_imgBg": "false"
       }
     },
+    "4a6aed55-5b72-479d-aa4f-cf8629c1247a": {
+      "type": "rich-text-image",
+      "disabled": true,
+      "blocks": {
+        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>You have more questions?<\/strong><\/p>",
+            "heading_size": "h1",
+            "font-weight": 400
+          }
+        },
+        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our 24\/7 customer service will reach out to you ASAP.<\/p>"
+          }
+        },
+        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-3": {
+          "type": "button",
+          "settings": {
+            "button_label": "CONTACT US",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false,
+            "button_background": "#B5EF35",
+            "btn_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-0",
+        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-2",
+        "template--15559734788196__4a6aed55-5b72-479d-aa4f-cf8629c1247a-1671587908d557e879-3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Having questions about start your tiny home journey?  No worries. We are here to help.",
+            "text_color": "#000",
+            "font_size": 20,
+            "font_weight": 800
+          }
+        },
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-2": {
+          "type": "head_button",
+          "settings": {
+            "button_label_1": "Schedule a Call with us",
+            "button_url_1": "https:\/\/calendly.com\/podxgo\/customer-30mins?month=2023-02",
+            "button_color": "#000"
+          }
+        },
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_PODX_GO.png",
+            "heading_1": "How will",
+            "heading_2": "you get your PODX GO home?",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/blogs\/how-to\/process-of-buying-podxgo"
+          }
+        },
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/deserted-farm-housing-in-baren-lands.jpg",
+            "heading_1": "Zoning,",
+            "heading_2": "Insurances, Loan...……",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide"
+          }
+        },
+        "7fe64ae1-f6ba-4465-ada8-2843b3183ae5": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-0",
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-2",
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-3",
+        "template--15597986709604__6c65b232-5d4c-4c18-8dce-4ad47c38e8b1-16767018167eaff61e-4",
+        "7fe64ae1-f6ba-4465-ada8-2843b3183ae5"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "href_url_id": "",
+        "is_showTitle": "true",
+        "layout": "big_image_first",
+        "card_num": "2"
+      }
+    },
     "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6": {
       "type": "newsletter",
       "blocks": {
@@ -799,9 +799,9 @@
     "16661c52-f36f-4518-afb5-1fed2485d653",
     "1993a033-3558-4c3f-b88e-839572631560",
     "main",
+    "b231cb1b-3200-4748-a578-3b75a4137632",
     "4a6aed55-5b72-479d-aa4f-cf8629c1247a",
     "6c65b232-5d4c-4c18-8dce-4ad47c38e8b1",
-    "b231cb1b-3200-4748-a578-3b75a4137632",
     "fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6"
   ]
 }
