@@ -544,6 +544,12 @@
 {% schema %}
   {
     "name": "t:sections.footer.name",
+    "settings":[
+       {"type":"text","id":"button_label","label":"按钮文案"},
+      {
+        "type":"url","id":"button_Link","label":"按钮链接地址"
+      }
+    ],
     "blocks": [
       {
         "type": "link_list",
@@ -579,16 +585,6 @@
           }
         ]
       }, 
-      {
-        "type":"button",
-        "name":"底部按钮",
-        "settings":[
-          {"type":"text","id":"button_label","label":"按钮文案"},
-          {
-            "type":"url","id":"button_Link","label":"按钮链接地址"
-          }
-        ]
-      },
       {
         "type": "image",
         "name": "Image",
