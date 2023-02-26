@@ -571,7 +571,7 @@
           "type": "head_button",
           "settings": {
             "button_label_1": "Schedule a Call with us",
-            "button_url_1": "",
+            "button_url_1": "https:\/\/calendly.com\/podxgo\/customer-30mins?month=2023-02",
             "button_color": "#000"
           }
         },
