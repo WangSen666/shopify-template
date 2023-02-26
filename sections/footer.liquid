@@ -103,6 +103,19 @@
     text-align: left;
     color: #fff;
   }
+  .footer_button {
+    background: none;
+    border-radius: 20px;
+    padding: 0 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border:1px solid #fff;
+  }
+  .footer_button img {
+    margin-left: 14px;
+    vertical-align: middle;
+  }
   /*    .company-logo . */
   @media screen and (min-width: 750px) {
     .footer {
@@ -231,6 +244,14 @@
                     {%- endif -%}
 
                   </div>
+                  {% when 'button' %}
+                     <a style="" {% if block.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link }}"{% endif %}class="button footer_button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label| escape }}
+                    <img
+                    src="{{   'button_logo_2.png' | asset_url }}"
+                    width="12"
+                    height="12" />
+                </a>
+
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
@@ -453,14 +474,12 @@
           </div>
         {%- endif -%}
         <div class="footer__copyright caption">
-<!--           <small class="copyright__content">&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+          <!--           <small class="copyright__content">&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
           </small> -->
           <small class="copyright__content">&copy;Copyright  {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url -}}.
           </small>
 <!--           <small class="copyright__content">{{ powered_by_link }}</small> -->
           <small class="copyright__content">All rights reserved.</small>
-          
-          
         </div>
       </div>
     </div>
@@ -558,7 +577,18 @@
             "label": "t:sections.footer.blocks.text.settings.subtext.label"
           }
         ]
-      }, {
+      }, 
+      {
+        "type":"button",
+        "name":"底部按钮",
+        "settings":[
+          {"type":"text","id":"button_label","label":"按钮文案"},
+          {
+            "type":"url","id":"button_Link","label":"按钮链接地址"
+          }
+        ]
+      },
+      {
         "type": "image",
         "name": "Image",
         "settings": [
@@ -716,6 +746,9 @@
           "type": "link_list"
         }, {
           "type": "text"
+        },
+        {
+          "type":"button"
         }
       ]
     }
