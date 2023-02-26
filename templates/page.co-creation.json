@@ -271,6 +271,7 @@
             "text": "A sealed folding dwelling built with the PODX GO® Hyadraulic System and solid steel structure that can be put in a variety of environments. All parts are manufactured in a highly precise factory and carefully packaged just for you.",
             "text_style": "body",
             "font_size": 18,
+            "font-weight": 700,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -377,6 +378,7 @@
             "text": "Your PODX GO is not just a house with pre-equipped furniture. It is connected with your feelings and activities.",
             "text_style": "body",
             "font_size": 20,
+            "font-weight": 400,
             "margin-top": 30,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -388,6 +390,7 @@
             "text": "Thanks to Edge ONE, the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!Learn More",
             "text_style": "body",
             "font_size": 20,
+            "font-weight": 400,
             "margin-top": 0,
             "margin-bottom": 32,
             "font_color": "#000"
@@ -463,6 +466,7 @@
             "text": "Having a solar system allows you to live away from the electricity grid.  But in addition, it can also help you reduce your electricity bills, and it's also a reliable emergency backup power source. PODX GO homes offer you an Energy Freedom Package with  Renogy Lycan 5000 Power Box, the all-in-one solar and energy storage solutions that start from 5kWh to 40kWh.",
             "text_style": "body",
             "font_size": 20,
+            "font-weight": 400,
             "margin-top": 48,
             "margin-bottom": 48,
             "font_color": "#000"
@@ -642,6 +646,7 @@
             "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
             "text_style": "body",
             "font_size": 20,
+            "font-weight": 400,
             "margin-top": 20,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -685,6 +690,7 @@
             "text": "Thank You for Your Support on the Tiny Home's Big Dreams!",
             "text_style": "body",
             "font_size": 20,
+            "font-weight": 400,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
