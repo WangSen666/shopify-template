@@ -354,7 +354,18 @@
       {%- endif -%}
     </div>
   {%- endif -%}
+{%  for block in section.settings.block %}
+          {% case block.type %}
+         {% when 'button' %}
+             <a style="" {% if block.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link }}"{% endif %}class="button footer_button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label| escape }}
+            <img
+            src="{{   'button_logo_1.png' | asset_url }}"
+            width="12"
+            height="12" />
+        </a>
 
+            {% endcase %}
+          {% endfor %}
   <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
@@ -468,18 +479,7 @@
             </ul>
           </div>
         {%- endif -%}
-        {%  for block in section.settings.block %}
-          {% case block.type %}
-         {% when 'button' %}
-             <a style="" {% if block.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link }}"{% endif %}class="button footer_button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label| escape }}
-            <img
-            src="{{   'button_logo_1.png' | asset_url }}"
-            width="12"
-            height="12" />
-        </a>
-
-            {% endcase %}
-          {% endfor %}
+        
         <div class="footer__copyright caption">
           <!--           <small class="copyright__content">&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
           </small> -->
