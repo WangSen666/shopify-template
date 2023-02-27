@@ -170,7 +170,7 @@
   $(".fold-wrapper").click(function(){
     var index=$(".fold-wrapper").index(this);
     
-    if($(".fold-wrapper").eq(index).css("border-bottom")!='none'){
+    if($(".fold-wrapper").eq(index).css("border-bottom").css("border")!='none'){
       $(".fold-wrapper").eq(index).children(0).children(1).addClass("folded-img")
       $(".fold-wrapper").eq(index).css("border-bottom","none");
       $(".fold-wrapper").eq(index).children(1).css("display","block");
