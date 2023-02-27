@@ -125,7 +125,7 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "fold_wrapper" %}
-          <div class="fold-wrapper" onclick="clickFoldItem(event)">
+          <div class="fold-wrapper">
             <div
               class="fold-wrapper-head"
               style="font-size:{{ block.settings.heading_size }}px;">
@@ -167,21 +167,28 @@
     console.log("ewqew")
 
   };
+  $(".fold-wrapper").onclick=function(){
+    var index=$(".fold-wrapper").index(this);
+    if($(".fold-wrapper").eq(index).css("border-bottom")!='none'){
+      console.log("wrq", $(".fold-wrapper").eq(index).children(img))
+      // $(".fold-wrapper").eq(index).children()
+    }
+  }
   var clickFoldItem = function(event){
       var _this=$(this);
       var event = event || window.event;
       var fold_text = event.target.nextElementSibling;
       // console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
-      if ($('_this .fold-wrapper').css("borderBottom") != "none") {
-        $('_this .fold-wrapper').css("border-ottom","none");
+      if ($('.fold-wrapper').css("borderBottom") != "none") {
+        $('.fold-wrapper').css("border-ottom","none");
         
-       $('_this .fold-wrapper-text').css("display","block");
-        $('_this .fold-wrapper-head img').addClass("folded-img");
+       $('.fold-wrapper-text').css("display","block");
+        $('.fold-wrapper-head img').addClass("folded-img");
         // event.target.getElementsByTagName('img')[0].className = "folded-img";
       } else {
-       $('_this .fold-wrapper').css("border-bottom","1px solid black");
-        $('_this .fold-wrapper-text').css("display","none");
-        $(' _this .fold-wrapper-head img').removeClass("folded-img");
+       $('.fold-wrapper').css("border-bottom","1px solid black");
+        $('.fold-wrapper-text').css("display","none");
+        $('.fold-wrapper-head img').removeClass("folded-img");
         
 
       }
