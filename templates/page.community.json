@@ -1,0 +1,296 @@
+{
+  "sections": {
+    "0086e982-2b50-4e3b-b5c1-09d93e53a8b8": {
+      "type": "banner-component-1",
+      "blocks": {
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO Academy",
+            "heading_size": "h1",
+            "font_size": 48,
+            "margin_top": 122,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 600
+          }
+        },
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1": {
+          "type": "bannerComponentBottomInfo",
+          "settings": {
+            "heading": "",
+            "banner_button_place": "right",
+            "heading_1": "Kitchen\/Bedroom\/Great Room",
+            "price": "",
+            "banner_button_link": "",
+            "banner_button_label": "",
+            "banner_button_link_1": "",
+            "banner_button_label_1": "",
+            "is_border": "false"
+          }
+        },
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "Download Floorplan",
+            "banner_button_link": "",
+            "font_size": 18
+          }
+        },
+        "4991807a-719b-461d-89ed-cf1f6fa593b9": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 60,
+            "banner_href_text": "know-How",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-42.png",
+            "href_id": ""
+          }
+        },
+        "6442020b-68cd-47b0-8735-c33a3267a7f1": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 60,
+            "banner_href_text": "Co-Creation Lab",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2-44.png",
+            "href_id": ""
+          }
+        },
+        "ffecce46-5f20-46fa-8f36-ed34bb92ef26": {
+          "type": "banner_href_icon",
+          "settings": {
+            "icon_width": 60,
+            "banner_href_text": "Reseller Program",
+            "font_size": 18,
+            "icon_item": "shopify:\/\/shop_images\/podxgo_-___2_2d1037dc-ceab-4419-9ab7-77206d182a72.png",
+            "href_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0",
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1",
+        "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2",
+        "4991807a-719b-461d-89ed-cf1f6fa593b9",
+        "6442020b-68cd-47b0-8735-c33a3267a7f1",
+        "ffecce46-5f20-46fa-8f36-ed34bb92ef26"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/01.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_design_6dde8f30-5553-4945-9665-19f9becd3f93.png",
+            "heading_1": "Join in Co-Creation Lab.",
+            "heading_2": "Find out how we create safer,smarter, more beautiful, and affordable tiny homes.",
+            "button_label_1": "Design Your Home",
+            "button_link_1": "https:\/\/form.jotform.com\/PODX\/co-creation-lab"
+          }
+        },
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_PODX_GO_6f3daaca-6028-49e3-8f16-9bdbf4870223.png",
+            "heading_1": "How will you",
+            "heading_2": "get your PODX GO home?",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/blogs\/how-to\/process-of-buying-podxgo"
+          }
+        },
+        "2eeede2b-68e0-4778-bd5d-b1ef7d6a6ea3": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
+            "button_link_1": "https:\/\/form.jotform.com\/PODX\/dealer-application"
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-3",
+        "template--15616021135460__3d5e40ee-235a-4ef0-860b-16a231f89f24-1676981877fab81048-4",
+        "2eeede2b-68e0-4778-bd5d-b1ef7d6a6ea3"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "href_url_id": "",
+        "is_showTitle": "false",
+        "layout": "big_image_first",
+        "card_num": "2"
+      }
+    },
+    "4ed248af-9dc2-4718-99ad-42f0ae5c736e": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
+            "heading_1": "PODX GO Quality Testing Report",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/4_06c2cb2e-e827-4b8f-aecd-290857b6e9d0.jpg",
+            "heading_1": "Download Grande S1 Floorplan",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "febfefa3-18eb-4429-ae90-2b32d8723f67": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/off-grid_tiny_house.png",
+            "heading_1": "Upgrade Off-Grid Kit and Home Appliances Kit",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "29ed5737-8bdb-4580-8079-c54a58e571ac": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/deserted-farm-housing-in-baren-lands.jpg",
+            "heading_1": "Zoning, Insurances, Loan...",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide"
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-3",
+        "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-4",
+        "febfefa3-18eb-4429-ae90-2b32d8723f67",
+        "29ed5737-8bdb-4580-8079-c54a58e571ac"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "href_url_id": "",
+        "is_showTitle": "false",
+        "layout": "big_image_last",
+        "card_num": "3"
+      }
+    },
+    "7e29cb9e-96fa-4ebd-b240-abe0de88455f": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_smart_home.png",
+            "heading_1": "What's Edge ONE?",
+            "heading_2": "More Than a Collection of Smart Gadgets",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/off-roading-on-volcanic-sand-field.jpg",
+            "heading_1": "What type of vehicle do I need",
+            "heading_2": "to move with my PODX GO home?",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        },
+        "a09c0897-4858-4678-82ab-aff29a6d8c86": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_sewage_water.png",
+            "heading_1": "How are water, sewage and power handled?",
+            "heading_2": "",
+            "button_label_1": "Learn More",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3",
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4",
+        "a09c0897-4858-4678-82ab-aff29a6d8c86"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "href_url_id": "﻿partnership-id1",
+        "is_showTitle": "false",
+        "layout": "big_image_first",
+        "card_num": "2"
+      }
+    },
+    "cacc527b-9b28-426c-b16e-1ee06493a8be": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Stay Tuned",
+            "heading_size": "h1"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
+          }
+        },
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-0",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-1",
+        "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "0086e982-2b50-4e3b-b5c1-09d93e53a8b8",
+    "main",
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24",
+    "4ed248af-9dc2-4718-99ad-42f0ae5c736e",
+    "7e29cb9e-96fa-4ebd-b240-abe0de88455f",
+    "cacc527b-9b28-426c-b16e-1ee06493a8be"
+  ]
+}
