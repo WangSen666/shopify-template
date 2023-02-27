@@ -128,7 +128,7 @@
           <div class="fold-wrapper">
             <div
               class="fold-wrapper-head"
-              onclick="clickFoldItem(event)"
+              onclick=""
               style="font-size:{{ block.settings.heading_size }}px;">
               <h2>{{ block.settings.heading }}</h2>
               <img class="" src="{{ 'fold1.png'|asset_url }}" />
@@ -168,6 +168,7 @@
     console.log("ewqew")
 
   };
+  
   var clickFoldItem = function(event) {
     var event = event || window.event;
     if (event.target.className != 'fold-wrapper-head') { // event.stopPropagation();
