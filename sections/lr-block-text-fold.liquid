@@ -125,7 +125,7 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "fold_wrapper" %}
-          <div class="fold-wrapper">
+          <div class="fold-wrapper" onclick="clickFoldItem">
             <div
               class="fold-wrapper-head"
               style="font-size:{{ block.settings.heading_size }}px;">
