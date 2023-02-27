@@ -176,13 +176,13 @@
         $('.fold-wrapper').css("border-bottom":"none");
         
        $('.fold-wrapper-text').css("display","block");
-        // fold-wrapper-head
-        $('.fold-wrapper-head img').className = "folded-img";
+        $('.fold-wrapper-head img').addClass("folded-img");
         // event.target.getElementsByTagName('img')[0].className = "folded-img";
       } else {
-       $('.fold-wrapper').style.borderBottom = "1px solid black";
-        $('.fold-wrapper-text').style.display = "none";
-       $('.fold-wrapper-head img').getElementsByTagName('img')[0].className = "";
+       $('.fold-wrapper').css("border-bottom":"1px solid black");
+        $('.fold-wrapper-text')..css("display","none");
+        $('.fold-wrapper-head img').removeClass("folded-img");
+        
 
       }
   }
