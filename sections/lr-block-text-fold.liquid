@@ -172,10 +172,10 @@
       var event = event || window.event;
       var fold_text = event.target.nextElementSibling;
       console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
-      if ($('.fold-wrapper').style.borderBottom != "none") {
-        $('.fold-wrapper').style.borderBottom = "none";
+      if ($('.fold-wrapper').css("border-bottom") != "none") {
+        $('.fold-wrapper').css("border-bottom":"none");
         
-       $('.fold-wrapper-text').style.display = "block";
+       $('.fold-wrapper-text').css("display","block");
         // fold-wrapper-head
         $('.fold-wrapper-head img').className = "folded-img";
         // event.target.getElementsByTagName('img')[0].className = "folded-img";
