@@ -169,7 +169,9 @@
   };
   $(".fold-wrapper").click(function(){
     var index=$(".fold-wrapper").index(this);
-    console.log("rqwer",$(".fold-wrapper").eq(index).children()[0].css("border-bottom").search('none'))
+    console.log("rqwer",$(".fold-wrapper").eq(index).children()[0])
+    
+    // console.log("rqwer",$(".fold-wrapper").eq(index).children()[0].css("border-bottom").search('none'))
     // if($(".fold-wrapper").eq(index).children()[0].css("border-bottom").search('none')!= -1){
     //   $(".fold-wrapper").eq(index).children(0).children(1).addClass("folded-img")
     //   $(".fold-wrapper").eq(index).css("border-bottom","none");
