@@ -289,8 +289,8 @@
           "settings": {
             "heading": "Edge ONE",
             "heading_size": "h1",
-            "font-weight": 700,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -313,8 +313,8 @@
           "settings": {
             "heading": "Your Security Guard",
             "heading_size": "h1",
-            "font-weight": 800,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -337,8 +337,8 @@
           "settings": {
             "heading": "Your Smart Housekeeper",
             "heading_size": "h1",
-            "font-weight": 800,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -367,8 +367,8 @@
           "settings": {
             "heading": "Your Choice to be Offline to Protect Your Privacy",
             "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
