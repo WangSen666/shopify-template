@@ -73,6 +73,8 @@
     border-radius: 20px;
     padding: 0 24px;
     min-height: 34px;
+    font-size:18px;
+    font-weight:bold;
   }
   .picture-card-item-button img {
     margin-left: 6px;
@@ -194,8 +196,8 @@ onload="this.media='all'"> {% endcomment %}
               src="{{ block.settings.picture_item | image_url }}" /> -->
             <div class="picture-card-item-bottom">
               <div class="picture-card-item-text">
-                <div style="font-weight:bold;">{{ block.settings.heading_1 }}</div>
-                <div style="font-weight:bold;">{{ block.settings.heading_2 }}</div>
+                <div style="font-weight:bold;font-size:{{ block.settings.font_size }}px;">{{ block.settings.heading_1 }}</div>
+                <div style="font-weight:bold;font-size:{{ block.settings.font_size }}px;">{{ block.settings.heading_2 }}</div>
               </div>
               <a target="_blank" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
                 <img
@@ -222,8 +224,8 @@ onload="this.media='all'"> {% endcomment %}
               style="width:100%;" /> -->
             <div class="picture-card-item-bottom">
               <div class="picture-card-item-text">
-                <div style="font-weight:bold;">{{ block.settings.heading_1 }}</div>
-                <div style="font-weight:bold;">{{ block.settings.heading_2 }}</div>
+                <div style="font-weight:bold;font-size:{{ block.settings.font_size }}px;">{{ block.settings.heading_1 }}</div>
+                <div style="font-weight:bold;font-size:{{ block.settings.font_size }}px;">{{ block.settings.heading_2 }}</div>
               </div>
               <a target="_blank"  {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="picture-card-item-button button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
                  <img
@@ -459,6 +461,16 @@ onload="this.media='all'"> {% endcomment %}
             "type": "url",
             "id": "button_link_1",
             "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
           }
         ]
       }, {
@@ -491,6 +503,16 @@ onload="this.media='all'"> {% endcomment %}
             "type": "url",
             "id": "button_link_1",
             "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
           }
         ]
       }
