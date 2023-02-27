@@ -169,33 +169,36 @@
   };
   $(".fold-wrapper").click(function(){
     var index=$(".fold-wrapper").index(this);
-      console.log("wrq", $(".fold-wrapper").eq(index).children())
     
     if($(".fold-wrapper").eq(index).css("border-bottom")!='none'){
-      
-      console.log("wrq2", $(".fold-wrapper").eq(index).children())
-      // $(".fold-wrapper").eq(index).children()
+      $(".fold-wrapper").eq(index).children(0).children(1).addClass("folded-img")
+      $(".fold-wrapper").eq(index).css("border-bottom","none");
+      $(".fold-wrapper").eq(index).children(1).css("display","block");
+    }else{
+      $(".fold-wrapper").eq(index).children(0).children(1).removeClass("folded-img")
+      $(".fold-wrapper").eq(index).css("border-bottom","1px solid black");
+      $(".fold-wrapper").eq(index).children(1).css("display","none");
     }
   })
-  var clickFoldItem = function(event){
-      var _this=$(this);
-      var event = event || window.event;
-      var fold_text = event.target.nextElementSibling;
-      // console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
-      if ($('.fold-wrapper').css("borderBottom") != "none") {
-        $('.fold-wrapper').css("border-bottom","none");
+  // var clickFoldItem = function(event){
+  //     var _this=$(this);
+  //     var event = event || window.event;
+  //     var fold_text = event.target.nextElementSibling;
+  //     // console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
+  //     if ($('.fold-wrapper').css("borderBottom") != "none") {
+  //       $('.fold-wrapper').css("border-bottom","none");
         
-       $('.fold-wrapper-text').css("display","block");
-        $('.fold-wrapper-head img').addClass("folded-img");
-        // event.target.getElementsByTagName('img')[0].className = "folded-img";
-      } else {
-       $('.fold-wrapper').css("border-bottom","1px solid black");
-        $('.fold-wrapper-text').css("display","none");
-        $('.fold-wrapper-head img').removeClass("folded-img");
+  //      $('.fold-wrapper-text').css("display","block");
+  //       $('.fold-wrapper-head img').addClass("folded-img");
+  //       // event.target.getElementsByTagName('img')[0].className = "folded-img";
+  //     } else {
+  //      $('.fold-wrapper').css("border-bottom","1px solid black");
+  //       $('.fold-wrapper-text').css("display","none");
+  //       $('.fold-wrapper-head img').removeClass("folded-img");
         
 
-      }
-  }
+  //     }
+  // }
   // var clickFoldItem = function(event) {
   //   var event = event || window.event;
   //   if (event.target.className != 'fold-wrapper-head') { // event.stopPropagation();
