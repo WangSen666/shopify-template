@@ -169,6 +169,8 @@
   };
   $(".fold-wrapper").onclick=function(){
     var index=$(".fold-wrapper").index(this);
+      console.log("wrq", $(".fold-wrapper").eq(index).children(img))
+    
     if($(".fold-wrapper").eq(index).css("border-bottom")!='none'){
       console.log("wrq", $(".fold-wrapper").eq(index).children(img))
       // $(".fold-wrapper").eq(index).children()
