@@ -146,8 +146,8 @@
           "settings": {
             "heading": "GRANDE S1",
             "heading_size": "h1",
-            "font-weight": 900,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -170,8 +170,8 @@
           "settings": {
             "heading": "340 sq.ft",
             "heading_size": "h1",
-            "font-weight": 900,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -194,8 +194,8 @@
           "settings": {
             "heading": "Spaces to Live, Work and Relax",
             "heading_size": "h1",
-            "font-weight": 900,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -218,8 +218,8 @@
           "settings": {
             "heading": "Moveable with Ease",
             "heading_size": "h1",
-            "font-weight": 900,
-            "font_size": 24,
+            "font-weight": 600,
+            "font_size": 32,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
