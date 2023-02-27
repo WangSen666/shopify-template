@@ -172,7 +172,8 @@
       console.log("wrq", $(".fold-wrapper").eq(index).children())
     
     if($(".fold-wrapper").eq(index).css("border-bottom")!='none'){
-      // console.log("wrq", $(".fold-wrapper").eq(index).children(img))
+      
+      console.log("wrq2", $(".fold-wrapper").eq(index).children())
       // $(".fold-wrapper").eq(index).children()
     }
   })
@@ -182,7 +183,7 @@
       var fold_text = event.target.nextElementSibling;
       // console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
       if ($('.fold-wrapper').css("borderBottom") != "none") {
-        $('.fold-wrapper').css("border-ottom","none");
+        $('.fold-wrapper').css("border-bottom","none");
         
        $('.fold-wrapper-text').css("display","block");
         $('.fold-wrapper-head img').addClass("folded-img");
