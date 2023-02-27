@@ -173,14 +173,14 @@
       var fold_text = event.target.nextElementSibling;
       // console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
       if ($('.fold-wrapper').css("borderBottom") != "none") {
-        $('.fold-wrapper').css({"border-ottom","none"});
+        $('.fold-wrapper').css("border-ottom","none");
         
-       $('.fold-wrapper-text').css({"display","block"});
+       $('.fold-wrapper-text').css("display","block");
         $('.fold-wrapper-head img').addClass("folded-img");
         // event.target.getElementsByTagName('img')[0].className = "folded-img";
       } else {
-       $('.fold-wrapper').css({"border-bottom","1px solid black"});
-        $('.fold-wrapper-text').css({"display","none"});
+       $('.fold-wrapper').css("border-bottom","1px solid black");
+        $('.fold-wrapper-text').css("display","none");
         $('.fold-wrapper-head img').removeClass("folded-img");
         
 
