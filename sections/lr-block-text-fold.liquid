@@ -175,6 +175,7 @@
       $(".fold-wrapper").eq(index).css("border-bottom","none");
       $(".fold-wrapper").eq(index).children(1).css("display","block");
     }else{
+      debugger;
       $(".fold-wrapper").eq(index).children(0).children(1).removeClass("folded-img")
       $(".fold-wrapper").eq(index).css("border-bottom","1px solid black");
       $(".fold-wrapper").eq(index).children(1).css("display","none");
