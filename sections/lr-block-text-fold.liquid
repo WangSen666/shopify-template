@@ -168,19 +168,20 @@
 
   };
   var clickFoldItem = function(event){
+      var _this=$(this);
       var event = event || window.event;
       var fold_text = event.target.nextElementSibling;
       // console.log("event.target.children[1]", event.target.getElementsByTagName('img')[0])
-      if ($('.fold-wrapper').css("borderBottom") != "none") {
-        $('.fold-wrapper').css("border-ottom","none");
+      if ($('_this .fold-wrapper').css("borderBottom") != "none") {
+        $('_this .fold-wrapper').css("border-ottom","none");
         
-       $('.fold-wrapper-text').css("display","block");
-        $('.fold-wrapper-head img').addClass("folded-img");
+       $('_this .fold-wrapper-text').css("display","block");
+        $('_this .fold-wrapper-head img').addClass("folded-img");
         // event.target.getElementsByTagName('img')[0].className = "folded-img";
       } else {
-       $('.fold-wrapper').css("border-bottom","1px solid black");
-        $('.fold-wrapper-text').css("display","none");
-        $('.fold-wrapper-head img').removeClass("folded-img");
+       $('_this .fold-wrapper').css("border-bottom","1px solid black");
+        $('_this .fold-wrapper-text').css("display","none");
+        $(' _this .fold-wrapper-head img').removeClass("folded-img");
         
 
       }
