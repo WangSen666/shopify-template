@@ -524,7 +524,7 @@
           "settings": {
             "heading": "Why PODX GO?",
             "heading_size": "h1",
-            "font-weight": 700,
+            "font-weight": 600,
             "font_size": 36,
             "margin-top": 0,
             "margin-bottom": 0,
@@ -537,7 +537,7 @@
             "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
             "text_style": "body",
             "font_size": 20,
-            "font_weight": 400,
+            "font_weight": 100,
             "margin-top": 20,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -548,8 +548,8 @@
           "settings": {
             "heading": "PODX  is changing that.",
             "heading_size": "h1",
-            "font-weight": 700,
-            "font_size": 20,
+            "font-weight": 600,
+            "font_size": 26,
             "margin-top": 12,
             "margin-bottom": 36,
             "font_color": "#000"
@@ -581,7 +581,7 @@
             "text": "Thank You for Your Support on the Tiny Home's Big Dreams!",
             "text_style": "body",
             "font_size": 20,
-            "font_weight": 400,
+            "font_weight": 100,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
