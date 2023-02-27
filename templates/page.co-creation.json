@@ -88,7 +88,7 @@
             "margin_top": 24,
             "margin_bottom": 44,
             "heading_color": "#000",
-            "font_weight": 900
+            "font_weight": 600
           }
         },
         "a40714e3-0241-4b59-b275-fb9a40f53c4a": {
@@ -131,7 +131,7 @@
             "picture-card-item": "shopify:\/\/shop_images\/living_room.png",
             "heading": "Living Room",
             "heading_1": "120 sq.ft Relax Space",
-            "font_size": 44,
+            "font_size": 30,
             "font_color": "#fff",
             "bg_opcity": 0,
             "button_label_1": "",
@@ -144,7 +144,7 @@
             "picture-card-item": "shopify:\/\/shop_images\/bedroom_30fbf0e0-dfb7-4219-adfe-23d650ec0874.png",
             "heading": "Bedroom",
             "heading_1": "Sleeps of 2",
-            "font_size": 44,
+            "font_size": 30,
             "font_color": "#fff",
             "bg_opcity": 0,
             "button_label_1": "",
@@ -157,7 +157,7 @@
             "picture-card-item": "shopify:\/\/shop_images\/kitchen.png",
             "heading": "Kitchen",
             "heading_1": "Full Fitted Kitchen",
-            "font_size": 42,
+            "font_size": 30,
             "font_color": "#fff",
             "bg_opcity": 0,
             "button_label_1": "",
@@ -170,7 +170,7 @@
             "picture-card-item": "shopify:\/\/shop_images\/bathroom.png",
             "heading": "Bathroom",
             "heading_1": "Full Sized Shower",
-            "font_size": 44,
+            "font_size": 30,
             "font_color": "#fff",
             "bg_opcity": 0,
             "button_label_1": "",
@@ -206,7 +206,7 @@
             "picture-card-item": "shopify:\/\/shop_images\/99E8E4CD-50A1-44c9-A234-44CFE6132DFC.png",
             "heading": "Folded",
             "heading_1": "120 square footageL x  W x  H Travel TrailerWith NOAH Seal",
-            "font_size": 48,
+            "font_size": 30,
             "font_color": "#fff",
             "bg_opcity": 0,
             "button_label_1": "",
@@ -219,7 +219,7 @@
             "picture-card-item": "shopify:\/\/shop_images\/8_2f43902e-8942-4751-842c-ef58c315d3ed.jpg",
             "heading": "On the Road",
             "heading_1": "Towable with F350 or equivalentEasier titling and registration with proper certification",
-            "font_size": 44,
+            "font_size": 30,
             "font_color": "#fff",
             "bg_opcity": 0,
             "button_label_1": "",
@@ -232,7 +232,7 @@
             "picture-card-item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
             "heading": "Unfold",
             "heading_1": "364 square footageL x  W x  H Travel TrailerWith NOAH Seal",
-            "font_size": 42,
+            "font_size": 30,
             "font_color": "#fff",
             "bg_opcity": 0,
             "button_label_1": "",
@@ -258,7 +258,7 @@
           "settings": {
             "heading": "Proven Durability & Healthy",
             "heading_size": "h1",
-            "font-weight": 900,
+            "font-weight": 600,
             "font_size": 36,
             "margin-top": 0,
             "margin-bottom": 0,
@@ -271,7 +271,7 @@
             "text": "A sealed folding dwelling built with the PODX GO® Hyadraulic System and solid steel structure that can be put in a variety of environments. All parts are manufactured in a highly precise factory and carefully packaged just for you.",
             "text_style": "body",
             "font_size": 18,
-            "font_weight": 400,
+            "font_weight": 100,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -353,8 +353,8 @@
           "settings": {
             "heading": "EDGE ONE(LOGO)",
             "heading_size": "h1",
-            "font-weight": 900,
-            "font_size": 44,
+            "font-weight": 600,
+            "font_size": 36,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -365,8 +365,8 @@
           "settings": {
             "heading": "Your Smart Housekeeper",
             "heading_size": "h1",
-            "font-weight": 800,
-            "font_size": 44,
+            "font-weight": 600,
+            "font_size": 36,
             "margin-top": 0,
             "margin-bottom": 40,
             "font_color": "#000"
@@ -378,7 +378,7 @@
             "text": "Your PODX GO is not just a house with pre-equipped furniture. It is connected with your feelings and activities.",
             "text_style": "body",
             "font_size": 20,
-            "font_weight": 400,
+            "font_weight": 100,
             "margin-top": 30,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -390,7 +390,7 @@
             "text": "Thanks to Edge ONE, the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!Learn More",
             "text_style": "body",
             "font_size": 20,
-            "font_weight": 400,
+            "font_weight": 100,
             "margin-top": 0,
             "margin-bottom": 32,
             "font_color": "#000"
@@ -441,8 +441,8 @@
           "settings": {
             "heading": "Sustainability &",
             "heading_size": "h1",
-            "font-weight": 800,
-            "font_size": 42,
+            "font-weight": 600,
+            "font_size": 36,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -453,8 +453,8 @@
           "settings": {
             "heading": "Energy Freedom",
             "heading_size": "h1",
-            "font-weight": 800,
-            "font_size": 42,
+            "font-weight": 600,
+            "font_size": 36,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
@@ -466,7 +466,7 @@
             "text": "Having a solar system allows you to live away from the electricity grid.  But in addition, it can also help you reduce your electricity bills, and it's also a reliable emergency backup power source. PODX GO homes offer you an Energy Freedom Package with  Renogy Lycan 5000 Power Box, the all-in-one solar and energy storage solutions that start from 5kWh to 40kWh.",
             "text_style": "body",
             "font_size": 20,
-            "font_weight": 400,
+            "font_weight": 100,
             "margin-top": 48,
             "margin-bottom": 48,
             "font_color": "#000"
