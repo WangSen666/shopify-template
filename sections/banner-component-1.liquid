@@ -207,7 +207,7 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
           <h2
-            class=""
+            class="banner-component-heading"
             {{ block.shopify_attributes }}
             style="width:430px;text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
             <span>{{ block.settings.heading | escape }}</span>
@@ -216,10 +216,10 @@
           {% when "text" %}
           <div>
             <p
-            class=""
+            class="banner-component-text"
             {{ block.shopify_attributes }}
             style="width:430px;text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
-            <span>{{ block.settings.heading | escape }}</span>
+            <span>{{ block.settings.text | escape }}</span>
             </p>
           </div>
           {%  when 'buttons' %}
@@ -520,6 +520,73 @@
         ]
       },
       {
+        "type": "text",
+        "name": "banner副标题",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 400,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      },
+      {
         "type": "bannerComponentBottomInfo",
         "name": "banner底部内容",
         "settings": [
@@ -664,6 +731,7 @@
           }, {
             "type": "bannerComponentBottomInfo"
           },
+          {"type":"text"},
           {"type":"buttons"},
           {"type":"banner_href_icon"}
           
