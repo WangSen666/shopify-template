@@ -212,6 +212,16 @@
             style="width:430px;text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
+
+          {% when "text" %}
+          <div>
+            <p
+            class=""
+            {{ block.shopify_attributes }}
+            style="width:430px;text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span>{{ block.settings.heading | escape }}</span>
+            </p>
+          </div>
           {%  when 'buttons' %}
           {% if block.settings.banner_button_label != blank %}
             <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
