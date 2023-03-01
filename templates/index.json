@@ -158,8 +158,8 @@
           "settings": {
             "text": "Order Your Home Online and DIY in 15Mins",
             "text_style": "body",
-            "font_size": 18,
-            "font_weight": 400,
+            "font_size": 24,
+            "font_weight": 500,
             "margin-top": 12,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -168,10 +168,10 @@
         "fb46235e-7d6d-4fdd-8ba6-91abf3a27505": {
           "type": "heading",
           "settings": {
-            "heading": "340 sq.ft",
+            "heading": "340 sq.ft Pricing Lower as",
             "heading_size": "h1",
             "font-weight": 600,
-            "font_size": 32,
+            "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -191,6 +191,7 @@
         },
         "1f23f78d-d888-436a-89e9-19ea472b54b3": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Spaces to Live, Work and Relax",
             "heading_size": "h1",
@@ -203,6 +204,7 @@
         },
         "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Fully fitted bedroom, bathroom, kitchen and living room.",
             "text_style": "subtitle",
@@ -216,10 +218,10 @@
         "c057506a-1e86-427c-a8df-53a01fc2ea1d": {
           "type": "heading",
           "settings": {
-            "heading": "Moveable with Ease",
+            "heading": "Freedom to Move and Expand",
             "heading_size": "h1",
             "font-weight": 600,
-            "font_size": 32,
+            "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -228,7 +230,7 @@
         "88fcdd67-8a3e-4c28-b8e7-008aa23f1dc4": {
           "type": "text",
           "settings": {
-            "text": "Allow you to move virtually anywhere that's permissible by zoning regulations.",
+            "text": "llow you to move virtually anywhere that's permissible by zoning regulations.",
             "text_style": "body",
             "font_size": 18,
             "font_weight": 400,
