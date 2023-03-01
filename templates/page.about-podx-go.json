@@ -15,11 +15,10 @@
             "font_weight": 600
           }
         },
-        "76bb0fb9-1e34-4eb4-9ca1-7df63a073c7e": {
-          "type": "heading",
+        "8d4e8f68-bb3b-4892-81d2-8909aaa2937c": {
+          "type": "text",
           "settings": {
-            "heading": "Backyard \/ On the Road \/ Campground \/ Tiny Home Community",
-            "heading_size": "h1",
+            "text": "Backyard \/ On the Road \/ Campground \/ Tiny Home Community",
             "font_size": 16,
             "margin_top": 24,
             "margin_bottom": 24,
@@ -27,14 +26,13 @@
             "font_weight": 400
           }
         },
-        "e14c4803-65c5-4dd4-a185-59ae7dbe3a2a": {
-          "type": "heading",
+        "2caabf3c-0e38-4cd5-9ab1-26675f275a65": {
+          "type": "text",
           "settings": {
-            "heading": "We are a visionary tech leader on a mission to solve global housing affordability and create a comfortable home full of possibilities and freedom to dwell in.",
-            "heading_size": "h1",
+            "text": "We are a visionary tech leader on a mission to solve global housing affordability and create a comfortable home full of possibilities and freedom to dwell in.",
             "font_size": 16,
             "margin_top": 24,
-            "margin_bottom": 36,
+            "margin_bottom": 30,
             "heading_color": "#fff",
             "font_weight": 400
           }
@@ -56,8 +54,8 @@
       },
       "block_order": [
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-0",
-        "76bb0fb9-1e34-4eb4-9ca1-7df63a073c7e",
-        "e14c4803-65c5-4dd4-a185-59ae7dbe3a2a",
+        "8d4e8f68-bb3b-4892-81d2-8909aaa2937c",
+        "2caabf3c-0e38-4cd5-9ab1-26675f275a65",
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-1"
       ],
       "settings": {
