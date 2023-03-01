@@ -292,7 +292,7 @@
             "heading": "Edge ONE",
             "heading_size": "h1",
             "font-weight": 600,
-            "font_size": 32,
+            "font_size": 38,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -303,8 +303,8 @@
           "settings": {
             "heading": "Connected Your Feelings and Actives with PODX GO Home",
             "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 20,
+            "font-weight": 500,
+            "font_size": 24,
             "margin-top": 12,
             "margin-bottom": 32,
             "font_color": "#fff"
@@ -316,7 +316,7 @@
             "heading": "Your Security Guard",
             "heading_size": "h1",
             "font-weight": 600,
-            "font_size": 32,
+            "font_size": 28,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -340,7 +340,7 @@
             "heading": "Your Smart Housekeeper",
             "heading_size": "h1",
             "font-weight": 600,
-            "font_size": 32,
+            "font_size": 28,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
@@ -370,7 +370,7 @@
             "heading": "Your Choice to be Offline to Protect Your Privacy",
             "heading_size": "h1",
             "font-weight": 600,
-            "font_size": 32,
+            "font_size": 28,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#fff"
