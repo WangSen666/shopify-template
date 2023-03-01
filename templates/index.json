@@ -430,10 +430,10 @@
         "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0": {
           "type": "heading",
           "settings": {
-            "heading": "PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle",
+            "heading": "PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle.",
             "heading_size": "h1",
-            "font-weight": 600,
-            "font_size": 36,
+            "font-weight": 400,
+            "font_size": 26,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#000"
