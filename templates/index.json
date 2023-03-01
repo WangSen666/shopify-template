@@ -313,7 +313,7 @@
         "c2aa4090-6618-4f4a-9ad1-768e37e30b41": {
           "type": "heading",
           "settings": {
-            "heading": "Your Security Guard",
+            "heading": "| Your Security Guard",
             "heading_size": "h1",
             "font-weight": 600,
             "font_size": 28,
@@ -337,7 +337,7 @@
         "c770a36b-7001-4dd5-9e66-50a0526a1f45": {
           "type": "heading",
           "settings": {
-            "heading": "Your Smart Housekeeper",
+            "heading": "| Your Smart Housekeeper",
             "heading_size": "h1",
             "font-weight": 600,
             "font_size": 28,
@@ -367,7 +367,7 @@
         "3e9a1f26-6b7c-485e-b279-d1aabcb8075c": {
           "type": "heading",
           "settings": {
-            "heading": "Your Choice to be Offline to Protect Your Privacy",
+            "heading": "| Your Choice to be Offline to Protect Your Privacy",
             "heading_size": "h1",
             "font-weight": 600,
             "font_size": 28,
