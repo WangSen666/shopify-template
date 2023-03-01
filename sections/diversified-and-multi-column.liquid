@@ -3,7 +3,7 @@
   .diversified-and-multi-column-list{
     flex-wrap:wrap;
   }
-  .diversified-and-multi-column   h2{
+  .diversified-and-multi-column-heading{
     width:80% ;
     margin:0 auto;
     text-align:left;
@@ -65,7 +65,7 @@
 <div class="diversified-and-multi-column page-width" >
     <div style="font-size:{{ section.settings.font_size }}px;font-weight:bold;color:black;" class="diversified-and-multi-column-heading">
       <img src={{ section.settings.image | image_url }} />
-      <h2>{{ section.settings.heading }}</h2>
+      <h2 class="diversified-and-multi-column-heading">{{ section.settings.heading }}</h2>
       
     </div>
 
