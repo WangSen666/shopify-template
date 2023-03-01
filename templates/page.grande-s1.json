@@ -41,14 +41,13 @@
             "font_weight": 600
           }
         },
-        "973a8934-6673-447b-92a0-eaab5e37586e": {
-          "type": "heading",
+        "55717eed-cad4-4ce5-8914-363749eda200": {
+          "type": "text",
           "settings": {
-            "heading": "The world's first tiny house on crowdfunding platform.Get your exclusive early bird rewards now!",
-            "heading_size": "h1",
-            "font_size": 16,
-            "margin_top": 24,
-            "margin_bottom": 24,
+            "text": "The world's first tiny house on crowdfunding platform.Get your exclusive early bird rewards now!",
+            "font_size": 20,
+            "margin_top": 20,
+            "margin_bottom": 20,
             "heading_color": "#fff",
             "font_weight": 400
           }
@@ -58,7 +57,7 @@
         "template--15597986709604__45cbd826-d11e-470e-ad3e-aff37d062584-1676376200535a7b69-0",
         "template--15597986709604__45cbd826-d11e-470e-ad3e-aff37d062584-1676376200535a7b69-1",
         "ecf6c800-10dc-491e-b295-bffde7267997",
-        "973a8934-6673-447b-92a0-eaab5e37586e"
+        "55717eed-cad4-4ce5-8914-363749eda200"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/model_tiny_house_Grande_S1.png",
