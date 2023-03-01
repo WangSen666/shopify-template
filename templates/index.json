@@ -465,7 +465,7 @@
           "type": "with_bg_card",
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/Home_Grande_Tiny_House_V.png",
-            "heading": "GRANDE SI",
+            "heading": "GRANDE S1",
             "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
@@ -478,12 +478,12 @@
           "type": "with_bg_card",
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/Home_Libre_tiny_House_Vertical.png",
-            "heading": "LIBRE SI",
+            "heading": "LIBRE S1",
             "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
-            "button_label_1": "Learn More",
+            "button_label_1": "Coming Soon",
             "button_link_1": ""
           }
         },
@@ -491,12 +491,12 @@
           "type": "with_bg_card",
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/Home_Lavida_Tiny_House_V.png",
-            "heading": "LAVIDA SI",
+            "heading": "LAVIDA S1",
             "heading_1": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
-            "button_label_1": "Learn More",
+            "button_label_1": "Coming Soon",
             "button_link_1": ""
           }
         }
