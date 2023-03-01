@@ -43,6 +43,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+    @media screen and (max-width: 750px) {
+      .yello-text{
+        display:none;
+      }
+    }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient" style="background:#F7F7F5;">
