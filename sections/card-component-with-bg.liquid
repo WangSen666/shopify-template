@@ -206,6 +206,33 @@
             "id": "heading",
             "label": "标题内容"
           },
+           {
+            "type": "range",
+            "id": "font_size",
+            "label": "标题字体大小",
+            "min": 12,
+            "max": 60,
+            "step": 2,
+            "default": 20
+          },
+          {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }, 
           {
             "type": "text",
             "id": "heading_1",
@@ -240,33 +267,7 @@
             "label":"副标题字体粗细"
           },
           
-          {
-            "type": "range",
-            "id": "font_size",
-            "label": "字体大小",
-            "min": 12,
-            "max": 60,
-            "step": 2,
-            "default": 20
-          },
-          {
-            "type": "select",
-            "id": "font_color",
-            "options": [
-              {
-                "value": "#B5EF35",
-                "label": "主题色"
-              }, {
-                "value": "#fff",
-                "label": "白色"
-              }, {
-                "value": "#000",
-                "label": "黑色"
-              }
-            ],
-            "default": "#000",
-            "label": "字体颜色"
-          }, {
+         {
             "type": "range",
             "id": "bg_opcity",
             "label": "阴影程度",
