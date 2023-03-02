@@ -17,6 +17,7 @@
         },
         "d55ce47c-cb3a-418b-a3be-2742aabc1300": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Signature Tiny House on Wheels",
             "heading_size": "h1",
@@ -44,7 +45,7 @@
         "7f8ecb83-842b-4bde-aece-eec9acb8db2d": {
           "type": "text",
           "settings": {
-            "text": "The world's first tiny house on crowdfunding platform. Get your exclusive early bird rewards now!",
+            "text": "Expand your tiny home from a trailer to a 3X  larger apartment with the push of a button!",
             "font_size": 20,
             "margin_top": 20,
             "margin_bottom": 20,
