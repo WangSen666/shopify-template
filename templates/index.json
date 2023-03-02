@@ -17,8 +17,9 @@
         },
         "d55ce47c-cb3a-418b-a3be-2742aabc1300": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Crowdfunding Ongoing!",
+            "heading": "Signature Tiny House on Wheels",
             "heading_size": "h1",
             "font_size": 52,
             "margin_top": 24,
@@ -36,7 +37,7 @@
             "price": "",
             "banner_button_link": "shopify:\/\/pages\/about-podx-go",
             "banner_button_label": "Back us on Indiegogo",
-            "banner_button_link_1": "shopify:\/\/pages\/contact",
+            "banner_button_link_1": "shopify:\/\/pages\/about-podx-go",
             "banner_button_label_1": "Download Floorplan",
             "is_border": "true"
           }
@@ -44,7 +45,7 @@
         "7f8ecb83-842b-4bde-aece-eec9acb8db2d": {
           "type": "text",
           "settings": {
-            "text": "The world's first tiny house on crowdfunding platform. Get your exclusive early bird rewards now!",
+            "text": "Expand your tiny home from a trailer to a 3X  larger apartment with the push of a button!",
             "font_size": 20,
             "margin_top": 20,
             "margin_bottom": 20,
@@ -472,7 +473,7 @@
             "font_color": "#fff",
             "bg_opcity": 0.4,
             "button_label_1": "Available Now",
-            "button_link_1": "shopify:\/\/pages\/models"
+            "button_link_1": "shopify:\/\/pages\/grande-s1"
           }
         },
         "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
