@@ -123,6 +123,16 @@
   .scrollTop_logo{
     display:none;
   }
+  .header__menu-item{
+    position:relative;
+  }
+   .header__menu-item .border-bottom{
+     position:absolute;
+     height:2px;
+     width:100%;
+     background:#99CC33;
+/*      display:none; */
+   }
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -452,6 +462,7 @@
                     <details id="Details-HeaderMenu-{{ forloop.index }}">
                       <summary class="header__menu-item list-menu__item link focus-inset">
                         <span >{{ link.title | escape }}</span>
+                          <div class="bottom-border"></div>
                         {% render 'icon-caret' %}
                       </summary>
                       <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure gradient caption-large motion-reduce global-settings-popup" role="list" tabindex="-1">
