@@ -118,18 +118,18 @@
               </a>
             {% endif %}
             {%  if block.settings.heading_1!=blank %}
-              <div style="color:#fff;font-size:24px;font-weight:bold;">
+              <div style="color:#fff;font-size:{{ block.settings.text_font_size }}px;font-weight:{{ block.settings.text_font_weight }}">
                 {{ block.settings.heading_1 }}
               </div>
               
             {% endif %}
             {%  if block.settings.heading_2!=blank %}
-              <div style="color:#fff;font-size:24px;font-weight:bold;">
+              <div style="color:#fff;font-size:{{ block.settings.text_font_size }}px;font-weight:{{ block.settings.text_font_weight }}">
                 {{ block.settings.heading_2 }}
               </div>
             {% endif %}
             {%  if block.settings.heading_3!=blank %}
-              <div style="color:#fff;font-size:24px;font-weight:bold;">
+              <div style="color:#fff;font-size:{{ block.settings.text_font_size }}px;font-weight:{{ block.settings.text_font_weight }}">
                 {{ block.settings.heading_3 }}
               </div>
             {% endif %}
@@ -215,6 +215,24 @@
             "type": "text",
             "id": "heading_2",
             "label": "副标题内容行2"
+          },
+          {
+            "type":"range",
+            "id":"text_font_size",
+            "max":30,
+            "min":12,
+            "default":14,
+            "step":2,
+            "label":"副标题字体大小"
+          },
+          {
+            "type":"range",
+            "id":"text_font_weight",
+            "max":900,
+            "min":100,
+            "default":400,
+            "step":100,
+            "label":"副标题字体粗细"
           },
           {
             "type": "text",
