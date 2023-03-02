@@ -100,6 +100,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .card-flex-box  .img-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
   .card-flex-box img {
     margin: 14px;
   }
@@ -125,6 +130,9 @@
     }
     .banner__text{
       text-align:left;
+    }
+    .card-flex-box  .img-box img{
+      margin:0;
     }
   }
   
@@ -223,7 +231,7 @@
             {%- case block.type -%}
 
               {%- when 'pictureCard' -%}
-              <div class="m">
+              <div class="img-box">
                 <img
                   src="{{ block.settings.picture-card-item  | image_url }}"
                   width="{{block.settings.image_width }}"
