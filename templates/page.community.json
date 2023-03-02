@@ -32,7 +32,7 @@
         "template--15616021135460__0086e982-2b50-4e3b-b5c1-09d93e53a8b8-16768937560421d8ca-2": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "Download Floorplan",
+            "banner_button_label": "",
             "banner_button_link": "",
             "font_size": 18
           }
