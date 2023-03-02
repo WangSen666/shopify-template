@@ -75,6 +75,7 @@
     },
     "2f630401-249f-472f-8cf8-d74a90225e94": {
       "type": "bottom_width-video",
+      "disabled": true,
       "blocks": {
         "template--15597986709604__2f630401-249f-472f-8cf8-d74a90225e94-16773147530dfeda2a-0": {
           "type": "heading",
