@@ -244,7 +244,12 @@
                 height="12" />
             </div>
             {% endif %}
-          {%- when 'bannerComponentBottomInfo' -%}
+          
+        {%- endcase -%}
+      {%- endfor -%}
+      {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'bannerComponentBottomInfo' -%}
           <div class="banner-component-1-bottom-info" style="{% if block.settings.is_border == 'true' %}border-bottom: 1px solid #fff;{% endif %} {% if block.settings.banner_button_place=="left" %}flex-direction: row-reverse{% endif %};">
             <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
             {% if block.settings.heading!=blank %}
@@ -293,7 +298,8 @@
               {% endif %}
             </div>
           </div>
-        {%- endcase -%}
+
+       {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
