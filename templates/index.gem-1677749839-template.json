@@ -1,0 +1,771 @@
+{
+  "sections": {
+    "c5eaed5f-15ac-4792-8196-d6bc57339809": {
+      "type": "banner-component-1",
+      "blocks": {
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO Grande S1",
+            "heading_size": "h1",
+            "font_size": 40,
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 600
+          }
+        },
+        "d55ce47c-cb3a-418b-a3be-2742aabc1300": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Signature Tiny House on Wheels",
+            "heading_size": "h1",
+            "font_size": 52,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 600
+          }
+        },
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1": {
+          "type": "bannerComponentBottomInfo",
+          "settings": {
+            "heading": "Your New Life from Here",
+            "banner_button_place": "right",
+            "heading_1": "",
+            "price": "",
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/design-yours",
+            "banner_button_label": "Start Your Tiny Home Plan",
+            "banner_button_link_1": "",
+            "banner_button_label_1": "",
+            "is_border": "true"
+          }
+        },
+        "7f8ecb83-842b-4bde-aece-eec9acb8db2d": {
+          "type": "text",
+          "settings": {
+            "text": "Expand your tiny home from a trailer to a 3X  larger apartment with the push of a button!",
+            "font_size": 20,
+            "margin_top": 20,
+            "margin_bottom": 20,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "aef85398-5a17-4d10-8f9e-16bb9d094e34": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "",
+            "banner_button_link": "",
+            "font_size": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-0",
+        "d55ce47c-cb3a-418b-a3be-2742aabc1300",
+        "template--15597986676836__c5eaed5f-15ac-4792-8196-d6bc57339809-16758279837d8e8513-1",
+        "7f8ecb83-842b-4bde-aece-eec9acb8db2d",
+        "aef85398-5a17-4d10-8f9e-16bb9d094e34"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Home_Banner_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "033b3367-c7f0-4783-b027-9f0f99922544": {
+      "type": "bottom-with-bg-image",
+      "blocks": {
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "From online to on-site, your tiny house in a snap!",
+            "first_words": "",
+            "last_words": "",
+            "heading_size": "h1",
+            "font_size": 44,
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 600
+          }
+        },
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-1": {
+          "type": "buttomItem",
+          "settings": {
+            "heading": "Set up in 15mins all by yourself",
+            "font_size": 20,
+            "image": "shopify:\/\/shop_images\/podxgo_-___-16.png",
+            "font_color": "#fff"
+          }
+        },
+        "a6d48897-bf40-4031-95f1-1adb451d9565": {
+          "type": "buttomItem",
+          "settings": {
+            "heading": "Delivery within 90 days",
+            "font_size": 20,
+            "image": "shopify:\/\/shop_images\/podxgo_-___-14.png",
+            "font_color": "#fff"
+          }
+        },
+        "44c85d5d-2941-4841-9d0a-47d291b0a05d": {
+          "type": "buttomItem",
+          "settings": {
+            "heading": "Showroom in California",
+            "font_size": 20,
+            "image": "shopify:\/\/shop_images\/podxgo_-___-15.png",
+            "font_color": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-0",
+        "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-1",
+        "a6d48897-bf40-4031-95f1-1adb451d9565",
+        "44c85d5d-2941-4841-9d0a-47d291b0a05d"
+      ],
+      "settings": {
+        "is_show_select": "true"
+      }
+    },
+    "6f0f9185-0ff7-4717-acde-1ce2378221cc": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "GRANDE S1",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 38,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1": {
+          "type": "text",
+          "settings": {
+            "text": "Order Your Home Online and DIY in 15Mins",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 500,
+            "margin-top": 12,
+            "margin-bottom": 32,
+            "font_color": "#fff"
+          }
+        },
+        "fb46235e-7d6d-4fdd-8ba6-91abf3a27505": {
+          "type": "heading",
+          "settings": {
+            "heading": "340 sq.ft",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 28,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2": {
+          "type": "text",
+          "settings": {
+            "text": "Complete interior design with healthy and eco-friendly materials, fully fitted bedroom, bathroom, kitchen and living room.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 400,
+            "margin-top": 12,
+            "margin-bottom": 32,
+            "font_color": "#fff"
+          }
+        },
+        "1f23f78d-d888-436a-89e9-19ea472b54b3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Spaces to Live, Work and Relax",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 32,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Fully fitted bedroom, bathroom, kitchen and living room.",
+            "text_style": "subtitle",
+            "font_size": 18,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 32,
+            "font_color": "#fff"
+          }
+        },
+        "c057506a-1e86-427c-a8df-53a01fc2ea1d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Freedom to Move and Expand",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 28,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "88fcdd67-8a3e-4c28-b8e7-008aa23f1dc4": {
+          "type": "text",
+          "settings": {
+            "text": "llow you to move virtually anywhere that's permissible by zoning regulations.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 400,
+            "margin-top": 6,
+            "margin-bottom": 34,
+            "font_color": "#fff"
+          }
+        },
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/pages\/grande-s1",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#fff",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961": {
+          "type": "right_text_wrapper",
+          "settings": {
+            "right_text": "",
+            "font_size": 24,
+            "is_border": "false"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-0",
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-1",
+        "fb46235e-7d6d-4fdd-8ba6-91abf3a27505",
+        "0d4fdb6e-d01b-4a70-81fa-50f7d825a9b2",
+        "1f23f78d-d888-436a-89e9-19ea472b54b3",
+        "e0832fe1-cc4f-4249-bcc0-4a7ffd3751fc",
+        "c057506a-1e86-427c-a8df-53a01fc2ea1d",
+        "88fcdd67-8a3e-4c28-b8e7-008aa23f1dc4",
+        "template--15597986676836__6f0f9185-0ff7-4717-acde-1ce2378221cc-16760340273ade64ea-2",
+        "19ae4d0f-5b55-4b56-88dd-79aa4ba3e961"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Home_Grande_S1_Tiny_House.png",
+        "image_overlay_opacity": 30,
+        "is_lr": "true",
+        "show_text_box": true,
+        "layout": "text_first",
+        "is_imgBg": "false"
+      }
+    },
+    "abef059e-668c-4e67-9c88-66335cba3a1e": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Edge ONE",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 38,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "12ac83e8-097f-48c1-90f5-cff436c9f23c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Connected Your Feelings and Actives with PODX GO Home",
+            "heading_size": "h1",
+            "font-weight": 500,
+            "font_size": 24,
+            "margin-top": 12,
+            "margin-bottom": 32,
+            "font_color": "#fff"
+          }
+        },
+        "c2aa4090-6618-4f4a-9ad1-768e37e30b41": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Security Guard",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 28,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-1": {
+          "type": "text",
+          "settings": {
+            "text": "Hazard detectors to guard against fire, smoke,  floods, and break-ins.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 400,
+            "margin-top": 12,
+            "margin-bottom": 32,
+            "font_color": "#fff"
+          }
+        },
+        "c770a36b-7001-4dd5-9e66-50a0526a1f45": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Smart Housekeeper",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 28,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "cb89656f-eec3-445c-bf61-c44c232fa839": {
+          "type": "text",
+          "settings": {
+            "text": "Creating various experiences throughout the days-wake up, relax, work, movie night, and goodnight.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 400,
+            "margin-top": 12,
+            "margin-bottom": 32,
+            "font_color": "#fff"
+          }
+        },
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-3": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/63d76316e4b08db239129142.png"
+          }
+        },
+        "3e9a1f26-6b7c-485e-b279-d1aabcb8075c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Choice to be Offline to Protect Your Privacy",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 28,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#fff"
+          }
+        },
+        "9c7d6088-9196-43b0-a971-3dfeb44678a2": {
+          "type": "text",
+          "settings": {
+            "text": "All PODX GO pre-equipped smart devices and plugs are only connected to you. NOT us.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 400,
+            "margin-top": 12,
+            "margin-bottom": 32,
+            "font_color": "#fff"
+          }
+        },
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/pages\/grande-s1",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#fff",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-0",
+        "12ac83e8-097f-48c1-90f5-cff436c9f23c",
+        "c2aa4090-6618-4f4a-9ad1-768e37e30b41",
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-1",
+        "c770a36b-7001-4dd5-9e66-50a0526a1f45",
+        "cb89656f-eec3-445c-bf61-c44c232fa839",
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-3",
+        "3e9a1f26-6b7c-485e-b279-d1aabcb8075c",
+        "9c7d6088-9196-43b0-a971-3dfeb44678a2",
+        "template--15597986676836__abef059e-668c-4e67-9c88-66335cba3a1e-1676085286d64d6bea-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Home_Smart_Home.png",
+        "image_overlay_opacity": 20,
+        "is_lr": "false",
+        "show_text_box": true,
+        "layout": "text_first",
+        "is_imgBg": "true"
+      }
+    },
+    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle.",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 26,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5": {
+          "type": "right_text_wrapper",
+          "settings": {
+            "right_text": "Whether you're a first-time homeowner, looking to travel and take your home with you,  or just want to downsize and have an extra home in the backyard",
+            "font_size": 20,
+            "is_border": "true"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-0",
+        "template--15597986676836__e19af359-5cf5-4a9e-9337-1640a8b0c1a2-16760960806076b5de-5"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true,
+        "layout": "text_first",
+        "is_imgBg": "false"
+      }
+    },
+    "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
+      "type": "card-component-with-bg",
+      "blocks": {
+        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/Home_Grande_Tiny_House_V.png",
+            "heading": "GRANDE S1",
+            "font_size": 36,
+            "font_color": "#fff",
+            "heading_1": "",
+            "heading_2": "",
+            "heading_3": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "bg_opcity": 0.4,
+            "button_label_1": "Available Now",
+            "button_link_1": "shopify:\/\/pages\/grande-s1"
+          }
+        },
+        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/Home_Libre_tiny_House_Vertical.png",
+            "heading": "LIBRE S1",
+            "font_size": 36,
+            "font_color": "#fff",
+            "heading_1": "",
+            "heading_2": "",
+            "heading_3": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "bg_opcity": 0.4,
+            "button_label_1": "Coming Soon",
+            "button_link_1": ""
+          }
+        },
+        "41d3954f-97fc-4a32-bb41-1c9d35c2f473": {
+          "type": "with_bg_card",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png",
+            "heading": "LAVIDA S1",
+            "font_size": 36,
+            "font_color": "#fff",
+            "heading_1": "",
+            "heading_2": "",
+            "heading_3": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "bg_opcity": 0.4,
+            "button_label_1": "Coming Soon",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__60f671a1-7f8e-412f-b0f6-056de9bc85bc-16761050292d33ac80-0",
+        "224d1ee8-f0d6-4ef0-a5d0-10872ea33631",
+        "41d3954f-97fc-4a32-bb41-1c9d35c2f473"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "modile_num": "three"
+      }
+    },
+    "8bd58e50-4c4c-4374-9837-2903a599cddb": {
+      "type": "lr-block-component",
+      "blocks": {
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why PODX GO?",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 36,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-1": {
+          "type": "text",
+          "settings": {
+            "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
+            "text_style": "body",
+            "font_size": 20,
+            "font_weight": 100,
+            "margin-top": 6,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "b455aa90-8c8e-4419-bd53-1855e2b3826d": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX  is changing that.",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 32,
+            "margin-top": 22,
+            "margin-bottom": 28,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Meet Our Team",
+            "button_link_1": "shopify:\/\/pages\/about-podx-go",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b": {
+          "type": "text",
+          "settings": {
+            "text": "Thank You for Your Support on the Tiny Home's Big Dreams!",
+            "text_style": "body",
+            "font_size": 20,
+            "font_weight": 100,
+            "margin-top": 22,
+            "margin-bottom": 50,
+            "font_color": "#000"
+          }
+        },
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-4": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/Renogy_Color-Gray_Logo_BrandLine_RGB.png",
+            "image_width": 150
+          }
+        },
+        "7a10bc36-f177-48f5-a62e-42f4f9502449": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/tiny_house_on_wheels_folding.png"
+          }
+        },
+        "5b7c54e2-a9d8-4f54-9b32-e1808bfe7ee0": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/NOAH-RDI-1-TP-1024x435-1.png",
+            "image_width": 150
+          }
+        },
+        "45e6768c-14cb-4922-b671-55636001640a": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/logo3.png",
+            "image_width": 82
+          }
+        },
+        "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e": {
+          "type": "pictureCard",
+          "settings": {
+            "picture-card-item": "shopify:\/\/shop_images\/logo_53a2c645-3706-43bd-8d39-93403bc003a9.png",
+            "image_width": 82
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-0",
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-1",
+        "b455aa90-8c8e-4419-bd53-1855e2b3826d",
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2",
+        "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b",
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-4",
+        "7a10bc36-f177-48f5-a62e-42f4f9502449",
+        "5b7c54e2-a9d8-4f54-9b32-e1808bfe7ee0",
+        "45e6768c-14cb-4922-b671-55636001640a",
+        "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true,
+        "layout": "text_first",
+        "is_imgBg": "false"
+      }
+    },
+    "817a5069-6e91-49ec-aff0-da615eb133ea": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO Academy",
+            "text_color": "#000",
+            "font_size": 36,
+            "font_weight": 600
+          }
+        },
+        "5ed01a38-46c3-443e-a8f6-6ab70911b0fe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Having questions about start your tiny home journey?                          No worries. We are here to help.",
+            "text_color": "#000",
+            "font_size": 20,
+            "font_weight": 400
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1": {
+          "type": "heading_1",
+          "settings": {
+            "heading_1": "We are here to help",
+            "text_color": "#B5EF35",
+            "font_size": 78,
+            "font_weight": 900
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_PODX_GO_6f3daaca-6028-49e3-8f16-9bdbf4870223.png",
+            "heading_1": "How will",
+            "heading_2": "you get your PODX GO home?",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/blogs\/how-to\/process-of-buying-podxgo"
+          }
+        },
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/deserted-farm-housing-in-baren-lands.jpg",
+            "heading_1": "Zoning,",
+            "heading_2": "Insurances, Loan...……",
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide"
+          }
+        },
+        "c9f46c3c-d9e5-4e1d-9806-02dafdb10b29": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg",
+            "heading_1": "Become our",
+            "heading_2": "partner in your neighborhood",
+            "button_label_1": "Learn More",
+            "button_link_1": "https:\/\/form.jotform.com\/PODX\/dealer-application"
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0",
+        "5ed01a38-46c3-443e-a8f6-6ab70911b0fe",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2",
+        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3",
+        "c9f46c3c-d9e5-4e1d-9806-02dafdb10b29"
+      ],
+      "settings": {
+        "is_titleBlock": "true",
+        "href_url_id": "",
+        "is_showTitle": "true",
+        "layout": "big_image_first",
+        "card_num": "2"
+      }
+    },
+    "2fc4a141-20b7-4e60-a81a-cb54d29e005b": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Stay Tuned",
+            "heading_size": "h1"
+          }
+        },
+        "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Tiny Home Tips and Stories \/ Sustainable Living Tips \/ New Models \/ Campaigns<\/p>"
+          }
+        },
+        "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-0",
+        "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-1",
+        "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "c5eaed5f-15ac-4792-8196-d6bc57339809",
+    "033b3367-c7f0-4783-b027-9f0f99922544",
+    "6f0f9185-0ff7-4717-acde-1ce2378221cc",
+    "abef059e-668c-4e67-9c88-66335cba3a1e",
+    "e19af359-5cf5-4a9e-9337-1640a8b0c1a2",
+    "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
+    "8bd58e50-4c4c-4374-9837-2903a599cddb",
+    "817a5069-6e91-49ec-aff0-da615eb133ea",
+    "2fc4a141-20b7-4e60-a81a-cb54d29e005b"
+  ]
+}
