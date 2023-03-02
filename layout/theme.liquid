@@ -480,11 +480,11 @@
   window.onload=function(){
     $("p").each(function(){
       var $this = $(this);
-      $this.html($this.html().replace(/&nbsp;/g,''));
+      $this.html($this.html().replace(/&nbsp;/g,' '));
     })
    $("span.text").each(function(){
     var $this = $(this);
-    $this.html($this.html().replace(/&nbsp;/g,''));
+    $this.html($this.html().replace(/&nbsp;/g,' '));
   })
   }
   window.dataLayer = window.dataLayer || [];
