@@ -469,6 +469,8 @@
             "picture-card-item": "shopify:\/\/shop_images\/Home_Grande_Tiny_House_V.png",
             "heading": "GRANDE S1",
             "heading_1": "",
+            "heading_2": "",
+            "heading_3": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -482,6 +484,8 @@
             "picture-card-item": "shopify:\/\/shop_images\/Home_Libre_tiny_House_Vertical.png",
             "heading": "LIBRE S1",
             "heading_1": "",
+            "heading_2": "",
+            "heading_3": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -495,6 +499,8 @@
             "picture-card-item": "shopify:\/\/shop_images\/Home_Lavida_Tiny_House_V.png",
             "heading": "LAVIDA S1",
             "heading_1": "",
+            "heading_2": "",
+            "heading_3": "",
             "font_size": 36,
             "font_color": "#fff",
             "bg_opcity": 0.4,
@@ -600,17 +606,15 @@
         },
         "45e6768c-14cb-4922-b671-55636001640a": {
           "type": "pictureCard",
-          "disabled": true,
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "picture-card-item": "shopify:\/\/shop_images\/logo3.png",
             "image_width": 82
           }
         },
         "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e": {
           "type": "pictureCard",
-          "disabled": true,
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/podxgo_-___-17.png",
+            "picture-card-item": "shopify:\/\/shop_images\/logo_53a2c645-3706-43bd-8d39-93403bc003a9.png",
             "image_width": 82
           }
         }
