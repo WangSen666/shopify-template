@@ -244,8 +244,8 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-/*   max-width: var(--page-width); */
-  max-width: 1660px;
+  max-width: var(--page-width);
+/*   max-width: 1660px; */
   
   margin: 0 auto;
   padding: 0 1.5rem;
