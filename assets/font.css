@@ -88,3 +88,8 @@
   font-family: 'SegoeUIVF';
   src: url('SegoeUIVF.ttf') format('truetype')
 }
+
+@font-face {
+  font-family: 'impact';
+  src: url('impact-2.ttf') format('truetype')
+}
