@@ -546,6 +546,8 @@
                 {%- else -%}
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span>{{ link.title | escape }}</span>
+                        <div class="bottom-border"></div>
+                    
                   </a>
                 {%- endif -%}
               </li>
