@@ -134,7 +134,7 @@
         "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Srart Application",
+            "button_label_1": "",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
