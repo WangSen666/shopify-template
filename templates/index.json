@@ -468,11 +468,13 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/Home_Grande_Tiny_House_V.png",
             "heading": "GRANDE S1",
+            "font_size": 36,
+            "font_color": "#fff",
             "heading_1": "",
             "heading_2": "",
             "heading_3": "",
-            "font_size": 36,
-            "font_color": "#fff",
+            "text_font_size": 14,
+            "text_font_weight": 400,
             "bg_opcity": 0.4,
             "button_label_1": "Available Now",
             "button_link_1": "shopify:\/\/pages\/grande-s1"
@@ -483,11 +485,13 @@
           "settings": {
             "picture-card-item": "shopify:\/\/shop_images\/Home_Libre_tiny_House_Vertical.png",
             "heading": "LIBRE S1",
+            "font_size": 36,
+            "font_color": "#fff",
             "heading_1": "",
             "heading_2": "",
             "heading_3": "",
-            "font_size": 36,
-            "font_color": "#fff",
+            "text_font_size": 14,
+            "text_font_weight": 400,
             "bg_opcity": 0.4,
             "button_label_1": "Coming Soon",
             "button_link_1": ""
@@ -496,13 +500,15 @@
         "41d3954f-97fc-4a32-bb41-1c9d35c2f473": {
           "type": "with_bg_card",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/Home_Lavida_Tiny_House_V.png",
+            "picture-card-item": "shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png",
             "heading": "LAVIDA S1",
+            "font_size": 36,
+            "font_color": "#fff",
             "heading_1": "",
             "heading_2": "",
             "heading_3": "",
-            "font_size": 36,
-            "font_color": "#fff",
+            "text_font_size": 14,
+            "text_font_weight": 400,
             "bg_opcity": 0.4,
             "button_label_1": "Coming Soon",
             "button_link_1": ""
