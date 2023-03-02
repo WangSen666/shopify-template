@@ -496,7 +496,6 @@
                 {%- else -%}
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span >{{ link.title | escape }}</span>
-                          <div class="bottom-border"></div>
                   </a>
                 {%- endif -%}
               </li>
@@ -513,6 +512,8 @@
                     <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                       <summary class="header__menu-item list-menu__item link focus-inset">
                         <span >{{ link.title | escape }}</span>
+                          <div class="bottom-border"></div>
+                        
                         {% render 'icon-caret' %}
                       </summary>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
