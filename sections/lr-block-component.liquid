@@ -248,12 +248,13 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'image_wrapper' and block.settings.image_1 != blank -%}
-
-              <img
-                style=" {% if section.settings.is_imgBg == 'true' %}width:408px;{% endif %}{% if section.settings.is_imgBg == 'false' %}width:490px;height:580px;margin: 0 auto;display: block;{% endif %}"
+              <div class="image-wrapper"   style=" background:url({{ block.settings.image_1 | image_url }}) no-repeat center center;background-size:cover; {% if section.settings.is_imgBg == 'true' %}width:408px;{% endif %}{% if section.settings.is_imgBg == 'false' %}width:490px;height:580px;margin: 0 auto;display: block;{% endif %}">
+<!--                 <img
                 class="image-wrapper"
                 src={{ block.settings.image_1 | image_url }} />
-
+ -->
+              </div>
+              
               {%- when 'right_text_wrapper' -%}
               <div class="right-text-wrapper" style="font-size:{{block.settings.font_size}}px;{%- if block.settings.is_border == 'true' -%}border-bottom:2px solid #B1EB35;{%- endif -%}">
                 {{ block.settings.right_text }}
