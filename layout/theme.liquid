@@ -477,14 +477,16 @@
   </head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NQWX9ZDY7"></script>
 <script>
-  $("p").each(function(){
-    var $this = $(this);
-    $this.html($this.html().replace(/&nbsp;/g,''));
-  })
+  window.onload=function(){
+    $("p").each(function(){
+      var $this = $(this);
+      $this.html($this.html().replace(/&nbsp;/g,''));
+    })
    $("span.text").each(function(){
     var $this = $(this);
     $this.html($this.html().replace(/&nbsp;/g,''));
   })
+  }
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
