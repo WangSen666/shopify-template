@@ -121,6 +121,17 @@
               <div style="color:#fff;font-size:24px;font-weight:bold;">
                 {{ block.settings.heading_1 }}
               </div>
+              
+            {% endif %}
+            {%  if block.settings.heading_2!=blank %}
+              <div style="color:#fff;font-size:24px;font-weight:bold;">
+                {{ block.settings.heading_2 }}
+              </div>
+            {% endif %}
+            {%  if block.settings.heading_3!=blank %}
+              <div style="color:#fff;font-size:24px;font-weight:bold;">
+                {{ block.settings.heading_3 }}
+              </div>
             {% endif %}
             
           </div>
