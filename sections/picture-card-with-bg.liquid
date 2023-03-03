@@ -221,12 +221,13 @@ onload="this.media='all'"> {% endcomment %}
    {%- endcase -%}
         {%- endfor -%}
     </div>
-    <div class="picture-card-item-box" style="max-height:380px;">
+<!--     max-height:380px; -->
+    <div class="picture-card-item-box" style="">
 
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "picture_card" %}
-          <div class="picture-card-item picture-card-item-small" style="height:{{ 100 | divided_by: section.settings.card_num }}%;background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;">
+          <div class="picture-card-item picture-card-item-small" style="height:380px;background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;">
 <!--             <img
               class="picture-card-item-small-img"
               src="{{ block.settings.picture_item | image_url }}"
