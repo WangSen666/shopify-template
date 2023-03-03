@@ -138,6 +138,9 @@
     .picture-card-item-bottom{
       flex-wrap:wrap;
     }
+    .big-picture-card-item-box{
+      height:380px;
+    }
   }
 {%- endstyle -%}
 
@@ -199,7 +202,7 @@ onload="this.media='all'"> {% endcomment %}
     {% endif %}
   {% endif %}
   <div class="picture-card-box" style="flex-direction:{% if section.settings.layout == 'big_image_last' %} row-reverse;{%endif%}">
-    <div class="picture-card-item-box" >
+    <div class="picture-card-item-box big-picture-card-item-box" >
       {% for block in section.blocks %}
           {% case block.type %}
             {% when "picture_card_big" %}
