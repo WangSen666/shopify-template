@@ -150,6 +150,7 @@
       "blocks": {
         "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-3": {
           "type": "picture_card_big",
+          "disabled": true,
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/79FFB9DC-1495-45f8-A61E-D914A6BE1C391.png",
             "heading_1": "PODX GO Quality Testing Report",
@@ -160,6 +161,7 @@
         },
         "template--15616021135460__4ed248af-9dc2-4718-99ad-42f0ae5c736e-1676981877fab81048-4": {
           "type": "picture_card",
+          "disabled": true,
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/4_06c2cb2e-e827-4b8f-aecd-290857b6e9d0.jpg",
             "heading_1": "Download Grande S1 Floorplan",
@@ -208,6 +210,7 @@
       "blocks": {
         "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3": {
           "type": "picture_card_big",
+          "disabled": true,
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/tiny_house_smart_home.png",
             "heading_1": "What's Edge ONE?",
@@ -218,6 +221,7 @@
         },
         "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4": {
           "type": "picture_card",
+          "disabled": true,
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/off-roading-on-volcanic-sand-field.jpg",
             "heading_1": "What type of vehicle do I need",
@@ -228,6 +232,7 @@
         },
         "a09c0897-4858-4678-82ab-aff29a6d8c86": {
           "type": "picture_card",
+          "disabled": true,
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/tiny_house_sewage_water.png",
             "heading_1": "How are water, sewage and power handled?",
