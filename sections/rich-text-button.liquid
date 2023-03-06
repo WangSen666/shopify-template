@@ -101,7 +101,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {% when 'rich_text_img' %}
-          <img width="{{ block.settings.img_width }}" height="26" src="{{ block.settings.rich_text_img | image_url }}" />
+          <img width="{{ block.settings.img_width }}" height="{{ block.settings.img_height }}" src="{{ block.settings.rich_text_img | image_url }}" />
       {% endcase %}
     {% endfor %}
     </div>
@@ -355,6 +355,15 @@
             "max":110,
             "step":2,
             "label":"图片宽度",
+            "default":30
+          },
+          {
+            "type":"range",
+            "id":"img_height",
+            "min":20,
+            "max":110,
+            "step":2,
+            "label":"图片高度",
             "default":30
           },
           {
