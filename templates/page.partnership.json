@@ -221,8 +221,8 @@
         "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-3": {
           "type": "rich_text_img",
           "settings": {
-            "font_size": 24,
-            "rich_text_img": "shopify:\/\/shop_images\/podxgo_-___-17.png"
+            "font_size": 36,
+            "rich_text_img": "shopify:\/\/shop_images\/Renogy_Color-Gray_Logo_BrandLine_RGB.png"
           }
         },
         "d3b74d28-cf94-4ff0-8fa2-59fef60eb7a6": {
@@ -235,6 +235,20 @@
             "text_color": "#000",
             "font_weight": 400
           }
+        },
+        "47f52a8d-2924-4883-a009-bab4ab94d7ff": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/NOAH-RDI-1-TP-1024x435-1.png"
+          }
+        },
+        "bfc36e59-73c5-4df7-b386-09d735af3c09": {
+          "type": "rich_text_img",
+          "settings": {
+            "font_size": 24,
+            "rich_text_img": "shopify:\/\/shop_images\/logo3.png"
+          }
         }
       },
       "block_order": [
@@ -242,7 +256,9 @@
         "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-1",
         "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-2",
         "template--15619111551076__7720d25f-feb7-4006-ac60-42f1440e0fe2-16771359344372a0d8-3",
-        "d3b74d28-cf94-4ff0-8fa2-59fef60eb7a6"
+        "d3b74d28-cf94-4ff0-8fa2-59fef60eb7a6",
+        "47f52a8d-2924-4883-a009-bab4ab94d7ff",
+        "bfc36e59-73c5-4df7-b386-09d735af3c09"
       ],
       "settings": {
       }
