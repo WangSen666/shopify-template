@@ -101,7 +101,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {% when 'rich_text_img' %}
-          <img height="26" src="{{ block.settings.rich_text_img | image_url }}" />
+          <img width="{{ block.settings.img_width }}" height="26" src="{{ block.settings.rich_text_img | image_url }}" />
       {% endcase %}
     {% endfor %}
     </div>
