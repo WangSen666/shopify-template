@@ -610,19 +610,22 @@
     },
     "1672909950d79615a4": {
       "type": "apps",
-      "blocks": {
-        "3316674c-57b9-4315-aadf-2f5344cca123": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": ""
-          }
-        }
-      },
-      "block_order": [
-        "3316674c-57b9-4315-aadf-2f5344cca123"
-      ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "c4276609-895d-40ae-afc1-ee7754de3c41": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/First_Look_PODX_GO_Grande_S1_Interior_Design.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=asFLUEPcBYM",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -638,6 +641,7 @@
     "5b076acf-4c6c-4e33-b22d-f347e15f5967",
     "5e90d13b-23c2-4988-b271-691555503d66",
     "dc319046-72c9-416e-acdf-236f7dee755c",
-    "1672909950d79615a4"
+    "1672909950d79615a4",
+    "c4276609-895d-40ae-afc1-ee7754de3c41"
   ]
 }
